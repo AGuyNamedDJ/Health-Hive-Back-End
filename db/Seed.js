@@ -7,7 +7,7 @@ const { client } = require('./index');
 
     // Patient Imports
 
-    
+
     // Staff Imports
 
 
@@ -61,6 +61,55 @@ const { client } = require('./index');
                 "is_active" BOOLEAN DEFAULT true,
                 FOREIGN KEY (id) REFERENCES user(id)
               );
+              CREATE TABLE appointment(
+                id SERIAL PRIMARY KEY,
+                date TIMESTAMP NOT NULL,
+                time TIME NOT NULL,
+                location VARCHAR(100) NOT NULL,
+                patient_id INTEGER REFERENCES patient(id),
+                staff_id INTEGER REFERENCES staff(id) DEFAULT NULL,
+                treatment_id INTEGER REFERENCES treatment(id) DEFAULT NULL
+            );
+            CREATE TABLE medical_record (
+                id SERIAL PRIMARY KEY,
+                patient_id INTEGER REFERENCES patient(id),
+                diagnosis VARCHAR(500) NOT NULL,
+                symptoms TEXT NOT NULL,
+                status VARCHAR(25) NOT NULL DEFAULT 'Alive',
+                FOREIGN KEY (patient_id) REFERENCES patient(id)
+              );
+              CREATE TABLE medication (
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(100) NOT NULL,
+                dosage_form VARCHAR(25) NOT NULL,
+                route VARCHAR(100) NOT NULL,
+                sig VARCHAR(500) NOT NULL,
+                indication VARCHAR(500) NOT NULL,
+                start_date DATE NOT NULL,
+                length_of_therapy INTEGER NOT NULL,
+                refills INTEGER NOT NULL,
+                pharmacy VARCHAR(100) DEFAULT NULL,
+                treatment_id INTEGER REFERENCES treatment(id),
+                provider_id INTEGER REFERENCES staff(id),
+                FOREIGN KEY (treatment_id) REFERENCES treatment(id),
+                FOREIGN KEY (provider_id) REFERENCES staff(id)
+              );
+              CREATE TABLE procedure (
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(100) NOT NULL,
+                description TEXT NOT NULL,
+                date_performed DATE NOT NULL,
+                patient_id INTEGER REFERENCES patient(id),
+                treatment_id INTEGER REFERENCES treatment(id),
+                staff_id INTEGER REFERENCES staff(id),
+                FOREIGN KEY (patient_id) REFERENCES patient(id),
+                FOREIGN KEY (treatment_id) REFERENCES treatment(id),
+                FOREIGN KEY (staff_id) REFERENCES staff(id)
+            );
+            
+
+              
+            
               
 
             `);
