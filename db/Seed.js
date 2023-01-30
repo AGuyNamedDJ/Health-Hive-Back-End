@@ -14,39 +14,35 @@ const { client } = require('./index');
     // Treatment Imports
 
 
-// Step 2: User Methods
+// Step 2: Users Methods
     // Method: Drop Tables
     async function dropTables(){
         try {
             console.log("Dropping tables... ");
             await client.query(`
-            DROP TABLE IF EXISTS user;
-            DROP TABLE IF EXISTS patient;
-            DROP TABLE IF EXISTS staff;
-            DROP TABLE IF EXISTS appointment;
-            DROP TABLE IF EXISTS medical_record;
-            DROP TABLE IF EXISTS staff;
-            DROP TABLE IF EXISTS medication;
-            DROP TABLE IF EXISTS procedure;
-            DROP TABLE IF EXISTS procedure_staff;
-            DROP TABLE IF EXISTS treatment_plan;
+            DROP TABLE IF EXISTS procedure_staff CASCADE;
+            DROP TABLE IF EXISTS procedure CASCADE;
+            DROP TABLE IF EXISTS treatment_plan CASCADE;
+            DROP TABLE IF EXISTS medication CASCADE;
+            DROP TABLE IF EXISTS staff CASCADE;
+            DROP TABLE IF EXISTS medical_record CASCADE;
+            DROP TABLE IF EXISTS appointment CASCADE;
+            DROP TABLE IF EXISTS patient CASCADE;
+            DROP TABLE IF EXISTS users CASCADE;
             `)
-
             console.log("Finished dropping tables.")
         } catch(error){
             console.log("Error dropping tables!")
-            console.log(error.detail)
+            console.log(error)
         }
     };
 
-
     // Method: Create Tables:
-    // Method: createTables
     async function createTables() {
         try {
             console.log('Starting to build tables...');
             await client.query(`
-            CREATE TABLE user(
+            CREATE TABLE users(
                 id SERIAL PRIMARY KEY,
                 username VARCHAR(25) UNIQUE NOT NULL,
                 password VARCHAR(25) NOT NULL,
@@ -63,25 +59,7 @@ const { client } = require('./index');
                 phone_number VARCHAR(15) NOT NULL,
                 email VARCHAR(50) UNIQUE NOT NULL,
                 emergency_contact_name VARCHAR(50) NOT NULL,
-                emergency_contact_phone VARCHAR(15) NOT NULL,
-                FOREIGN KEY (id) REFERENCES user(id)
-            );
-            CREATE TABLE appointment(
-                id SERIAL PRIMARY KEY,
-                date TIMESTAMP NOT NULL,
-                time TIME NOT NULL,
-                location VARCHAR(100) NOT NULL,
-                patient_id INTEGER REFERENCES patient(id),
-                staff_id INTEGER REFERENCES staff(id) DEFAULT NULL,
-                treatment_id INTEGER REFERENCES treatment(id) DEFAULT NULL
-            );
-            CREATE TABLE medical_record (
-                id SERIAL PRIMARY KEY,
-                patient_id INTEGER REFERENCES patient(id),
-                diagnosis VARCHAR(500) NOT NULL,
-                symptoms TEXT NOT NULL,
-                status VARCHAR(25) NOT NULL DEFAULT 'Alive',
-                FOREIGN KEY (patient_id) REFERENCES patient(id)
+                emergency_contact_phone VARCHAR(15) NOT NULL
             );
             CREATE TABLE staff (
                 id SERIAL PRIMARY KEY,
@@ -90,7 +68,32 @@ const { client } = require('./index');
                 specialty VARCHAR(100) NOT NULL,
                 provider_id VARCHAR(100) UNIQUE NULL,
                 email VARCHAR(50) NOT NULL,
-                phone VARCHAR(20) NOT NULL,
+                phone VARCHAR(20) NOT NULL
+            );
+            CREATE TABLE treatment_plan (
+                id SERIAL PRIMARY KEY,
+                plan TEXT NOT NULL,
+                patient_id INTEGER REFERENCES patient(id),
+                provider_id INTEGER REFERENCES staff(id),
+                FOREIGN KEY (patient_id) REFERENCES patient(id),
+                FOREIGN KEY (provider_id) REFERENCES staff(id)
+            );
+            CREATE TABLE appointment(
+                id SERIAL PRIMARY KEY,
+                date TIMESTAMP NOT NULL,
+                time TIME NOT NULL,
+                location VARCHAR(100) NOT NULL,
+                patient_id INTEGER REFERENCES patient(id),
+                staff_id INTEGER REFERENCES staff(id) DEFAULT NULL,
+                treatment_id INTEGER REFERENCES treatment_plan(id) DEFAULT NULL
+            );
+            CREATE TABLE medical_record (
+                id SERIAL PRIMARY KEY,
+                patient_id INTEGER REFERENCES patient(id),
+                diagnosis VARCHAR(500) NOT NULL,
+                symptoms TEXT NOT NULL,
+                status VARCHAR(25) NOT NULL DEFAULT 'Alive',
+                FOREIGN KEY (patient_id) REFERENCES patient(id)
             );
             CREATE TABLE medication (
                 id SERIAL PRIMARY KEY,
@@ -103,9 +106,9 @@ const { client } = require('./index');
                 length_of_therapy INTEGER NOT NULL,
                 refills INTEGER NOT NULL,
                 pharmacy VARCHAR(100) DEFAULT NULL,
-                treatment_id INTEGER REFERENCES treatment(id),
+                treatment_id INTEGER REFERENCES treatment_plan(id),
                 provider_id INTEGER REFERENCES staff(id),
-                FOREIGN KEY (treatment_id) REFERENCES treatment(id),
+                FOREIGN KEY (treatment_id) REFERENCES treatment_plan(id),
                 FOREIGN KEY (provider_id) REFERENCES staff(id)
             );
             CREATE TABLE procedure (
@@ -114,25 +117,18 @@ const { client } = require('./index');
                 description TEXT NOT NULL,
                 date_performed DATE NOT NULL,
                 patient_id INTEGER REFERENCES patient(id),
-                treatment_id INTEGER REFERENCES treatment(id),
+                treatment_id INTEGER REFERENCES treatment_plan(id),
                 staff_id INTEGER REFERENCES staff(id),
                 FOREIGN KEY (patient_id) REFERENCES patient(id),
-                FOREIGN KEY (treatment_id) REFERENCES treatment(id),
+                FOREIGN KEY (treatment_id) REFERENCES treatment_plan(id),
                 FOREIGN KEY (staff_id) REFERENCES staff(id)
             );
             CREATE TABLE procedure_staff (
+                id SERIAL PRIMARY KEY,
                 procedure_id INTEGER REFERENCES procedure(id),
                 staff_id INTEGER REFERENCES staff(id),
-                PRIMARY KEY (procedure_id, staff_id)
-                );                  
-            CREATE TABLE treatment_plan (
-                id SERIAL PRIMARY KEY,
-                plan TEXT NOT NULL,
-                patient_id INTEGER REFERENCES patient(id),
-                provider_id INTEGER REFERENCES staff(id),
-                FOREIGN KEY (patient_id) REFERENCES patient(id),
-                FOREIGN KEY (provider_id) REFERENCES staff(id)
-            );
+                UNIQUE (procedure_id, staff_id)
+            );                  
             `);
             console.log('Finished building tables.');
             } catch (error) {
@@ -151,6 +147,7 @@ const { client } = require('./index');
         client.connect();
         console.log("Running DB function...")
         await dropTables();
+        await createTables();
         } catch (error) {
         console.log("Error during rebuildDB!")
         console.log(error.detail);
@@ -158,6 +155,14 @@ const { client } = require('./index');
     }
 
     // Test DB:
+    async function testDB() {
+        try {
+            console.log("Starting to test database...");
+        } catch (error) {
+            console.log("Error during testDB!");
+            console.log(error);
+        }
+    };
 
 
 rebuildDB()
