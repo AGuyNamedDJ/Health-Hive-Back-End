@@ -3,7 +3,7 @@ const { create } = require('domain');
 const { client } = require('./index');
 
 // Page Imports
-
+const { createUsers, getAllUsers } = require('./Users');
 
     // Patient Imports
 
