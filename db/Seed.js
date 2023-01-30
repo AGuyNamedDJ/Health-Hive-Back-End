@@ -137,9 +137,27 @@ const { createUsers, getAllUsers } = require('./Users');
             }
         };
 
-
-    // Create Initials:
-
+    // Method: createInitialUsers
+    async function createInitialUsers() {
+        console.log("Starting to create users...")
+        try {
+            await createUsers({
+                username: 'dalron',
+                password: 'dalron',
+                email: 'dalron@hiveback.com',
+                is_active: true,
+            });
+            await createUsers({
+                username: 'guest',
+                password: 'guest',
+                email: 'guest@hiveback.com',
+            });
+            console.log("Finished creating users.");
+        } catch (error) {
+            console.error("Error when creating users!");
+            console.log(error);
+        }
+    };
 
     // Rebuild DB:
     async function rebuildDB() {
@@ -148,6 +166,7 @@ const { createUsers, getAllUsers } = require('./Users');
         console.log("Running DB function...")
         await dropTables();
         await createTables();
+        await createInitialUsers();
         } catch (error) {
         console.log("Error during rebuildDB!")
         console.log(error.detail);
@@ -158,12 +177,16 @@ const { createUsers, getAllUsers } = require('./Users');
     async function testDB() {
         try {
             console.log("Starting to test database...");
+
+            // userTest
+            console.log("Calling getAllUsers...")
+            const users = await getAllUsers();
+            console.log("User results: ", users)
         } catch (error) {
             console.log("Error during testDB!");
             console.log(error);
         }
     };
-
 
 rebuildDB()
     .then(testDB)
