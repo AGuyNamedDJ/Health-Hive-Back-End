@@ -23,7 +23,13 @@ const { client } = require('./index');
             DROP TABLE IF EXISTS user;
             DROP TABLE IF EXISTS patient;
             DROP TABLE IF EXISTS staff;
-            DROP TABLE IF EXISTS treatment;
+            DROP TABLE IF EXISTS appointment;
+            DROP TABLE IF EXISTS medical_record;
+            DROP TABLE IF EXISTS staff;
+            DROP TABLE IF EXISTS medication;
+            DROP TABLE IF EXISTS procedure;
+            DROP TABLE IF EXISTS procedure_staff;
+            DROP TABLE IF EXISTS treatment_plan;
             `)
 
             console.log("Finished dropping tables.")
@@ -58,10 +64,9 @@ const { client } = require('./index');
                 email VARCHAR(50) UNIQUE NOT NULL,
                 emergency_contact_name VARCHAR(50) NOT NULL,
                 emergency_contact_phone VARCHAR(15) NOT NULL,
-                "is_active" BOOLEAN DEFAULT true,
                 FOREIGN KEY (id) REFERENCES user(id)
-              );
-              CREATE TABLE appointment(
+            );
+            CREATE TABLE appointment(
                 id SERIAL PRIMARY KEY,
                 date TIMESTAMP NOT NULL,
                 time TIME NOT NULL,
@@ -77,8 +82,17 @@ const { client } = require('./index');
                 symptoms TEXT NOT NULL,
                 status VARCHAR(25) NOT NULL DEFAULT 'Alive',
                 FOREIGN KEY (patient_id) REFERENCES patient(id)
-              );
-              CREATE TABLE medication (
+            );
+            CREATE TABLE staff (
+                id SERIAL PRIMARY KEY,
+                name VARCHAR(100) NOT NULL,
+                title VARCHAR(100) NOT NULL,
+                specialty VARCHAR(100) NOT NULL,
+                provider_id VARCHAR(100) UNIQUE NULL,
+                email VARCHAR(50) NOT NULL,
+                phone VARCHAR(20) NOT NULL,
+            );
+            CREATE TABLE medication (
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(100) NOT NULL,
                 dosage_form VARCHAR(25) NOT NULL,
@@ -93,8 +107,8 @@ const { client } = require('./index');
                 provider_id INTEGER REFERENCES staff(id),
                 FOREIGN KEY (treatment_id) REFERENCES treatment(id),
                 FOREIGN KEY (provider_id) REFERENCES staff(id)
-              );
-              CREATE TABLE procedure (
+            );
+            CREATE TABLE procedure (
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(100) NOT NULL,
                 description TEXT NOT NULL,
@@ -106,12 +120,19 @@ const { client } = require('./index');
                 FOREIGN KEY (treatment_id) REFERENCES treatment(id),
                 FOREIGN KEY (staff_id) REFERENCES staff(id)
             );
-            
-
-              
-            
-              
-
+            CREATE TABLE procedure_staff (
+                procedure_id INTEGER REFERENCES procedure(id),
+                staff_id INTEGER REFERENCES staff(id),
+                PRIMARY KEY (procedure_id, staff_id)
+                );                  
+            CREATE TABLE treatment_plan (
+                id SERIAL PRIMARY KEY,
+                plan TEXT NOT NULL,
+                patient_id INTEGER REFERENCES patient(id),
+                provider_id INTEGER REFERENCES staff(id),
+                FOREIGN KEY (patient_id) REFERENCES patient(id),
+                FOREIGN KEY (provider_id) REFERENCES staff(id)
+            );
             `);
             console.log('Finished building tables.');
             } catch (error) {
