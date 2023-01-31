@@ -65,7 +65,7 @@ async function getStaffByTitle(title) {
 };
 
 // getStaffBySpecialty
-async function getStaffByTitle(specialty) {
+async function getStaffBySpecialty(specialty) {
     try {
         const { rows: [ staff ] } = await client.query(`
         SELECT *
@@ -100,5 +100,6 @@ module.exports = {
     getAllStaff,
     getStaffById,
     getStaffByTitle,
+    getStaffBySpecialty,
     getStaffByProviderId
 };

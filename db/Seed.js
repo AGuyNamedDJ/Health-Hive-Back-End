@@ -38,6 +38,7 @@ const { createUsers, getAllUsers } = require('./Users');
         getAllStaff,
         getStaffById,
         getStaffByTitle,
+        getStaffBySpecialty,
         getStaffByProviderId} = require('./staff/Staff');
 
     // Treatment Imports;
@@ -220,7 +221,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 specialty: 'Internal Medicine',
                 provider_id: 1537,
                 email: 'jsalmon@healthhive.com',
-                phone: '8886462524'
+                phone_number: '8886462524'
             });
 
             console.log('Finished creating users.');
@@ -258,7 +259,8 @@ const { createUsers, getAllUsers } = require('./Users');
         await createTables();
         await createInitialUsers();
         await createInitialPatient();
-        createInitialAppointment();
+        await createInitialStaff();
+        await createInitialAppointment();
         } catch (error) {
         console.log('Error during rebuildDB!')
         console.log(error.detail);
@@ -325,6 +327,10 @@ const { createUsers, getAllUsers } = require('./Users');
             const staffTitle = await getStaffByTitle('Physician');
             console.log('Staff results: ', staffTitle)
 
+            console.log('Calling getStaffBySpecialty...')
+            const staffSpecia = await getStaffBySpecialty('Internal Medicine');
+            console.log('Staff results: ', staffSpecia)
+
             console.log('Calling getStaffByProviderId...')
             const staffProviderId = await getStaffByProviderId(1537);
             console.log('Staff results: ', staffProviderId)
@@ -353,7 +359,6 @@ const { createUsers, getAllUsers } = require('./Users');
             console.log('Calling appointmentTreatment...')
             const appointmentTreatment = await getAppointmentByTreatmentId(1);
             console.log('User results: ', appointmentTreatment)
-
 
             // Medical Record Testing;
 
