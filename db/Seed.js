@@ -6,7 +6,25 @@ const { client } = require('./index');
 const { createUsers, getAllUsers } = require('./Users');
 
     // Patient Imports;
+    const { createPatient,
+        getPatientById,
+        getAllPatient,
+        getPatientByLastName,
+        getPatientByDateOfBirth,
+        getPatientByAddress,
+        getPatientByPhoneNumber,
+        getPatientByEmail,
+        getPatientByEmergencyContactName,
+        getPatientByEmergencyContactPhone } = require('./patient/Patient');
 
+    const { createAppointment,
+        getAllAppointment,
+        getAppointmentById,
+        getAppointmentByDate,
+        getAppointmentByPatientId,
+        getPatientByStaffId,
+        getPatientByTreatmentId } = require('./patient/Appointment');
+    
 
     // Staff Imports;
 
@@ -144,17 +162,34 @@ const { createUsers, getAllUsers } = require('./Users');
             await createUsers({
                 username: 'dalron',
                 password: 'dalron',
-                email: 'dalron@hiveback.com',
+                email: 'dalron@healthhive.com',
                 is_active: true,
             });
             await createUsers({
                 username: 'guest',
                 password: 'guest',
-                email: 'guest@hiveback.com',
+                email: 'guest@healthhive.com',
             });
             console.log("Finished creating users.");
         } catch (error) {
             console.error("Error when creating users!");
+            console.log(error);
+        }
+    };
+
+    // Method: createInitialPatient;
+    async function createInitialPatient() {
+        console.log("Starting to create patient...")
+        try {
+            await createUsers({
+                username: 'dalron',
+                password: 'dalron',
+                email: 'dalron@healthhive.com',
+                is_active: true,
+            });
+            console.log("Finished creating patient.");
+        } catch (error) {
+            console.error("Error when creating patient!");
             console.log(error);
         }
     };
