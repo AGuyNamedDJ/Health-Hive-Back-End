@@ -1,21 +1,21 @@
-// Step 1: Import Client & Exports
+// Step 1: Import Client & Exports;
 const { create } = require('domain');
 const { client } = require('./index');
 
-// Page Imports
+// Page Imports;
 const { createUsers, getAllUsers } = require('./Users');
 
-    // Patient Imports
+    // Patient Imports;
 
 
-    // Staff Imports
+    // Staff Imports;
 
 
-    // Treatment Imports
+    // Treatment Imports;
 
 
-// Step 2: Users Methods
-    // Method: Drop Tables
+// Step 2: Users Methods;
+    // Method: Drop Tables;
     async function dropTables(){
         try {
             console.log("Dropping tables... ");
@@ -137,7 +137,7 @@ const { createUsers, getAllUsers } = require('./Users');
             }
         };
 
-    // Method: createInitialUsers
+    // Method: createInitialUsers;
     async function createInitialUsers() {
         console.log("Starting to create users...")
         try {
@@ -178,7 +178,7 @@ const { createUsers, getAllUsers } = require('./Users');
         try {
             console.log("Starting to test database...");
 
-            // userTest
+            // User testing;
             console.log("Calling getAllUsers...")
             const users = await getAllUsers();
             console.log("User results: ", users)

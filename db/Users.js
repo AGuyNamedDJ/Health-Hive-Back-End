@@ -16,7 +16,7 @@ async function createUsers({username, password, email}) {
     } catch (error) {
         console.log(error)
     }
-}
+};
 
 // getAllUsers
 async function getAllUsers(){
@@ -30,7 +30,7 @@ async function getAllUsers(){
     } catch (error) {
         console.log(error)
     }
-}
+};
 
 //getUsersById
 async function getUsersById(userId) {
@@ -48,7 +48,7 @@ async function getUsersById(userId) {
     } catch (error) {
         throw error
     }
-}
+};
 
 //getUsersByUsername
 async function getUsersByUsername(username){
@@ -62,11 +62,11 @@ async function getUsersByUsername(username){
     } catch (error) {
         console.log(error)
     }
-}
+};
 
 module.exports = {
     createUsers,
     getUsersById,
     getAllUsers,
     getUsersByUsername,   
-}
+};
