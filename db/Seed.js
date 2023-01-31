@@ -48,6 +48,12 @@ const { createUsers, getAllUsers } = require('./Users');
         getTreatmentPlanByPatientId,
         getTreatmentPlanByProviderId} =require('./treatment/TreatmentPlan');
 
+    const{ createMedication,
+        getAllMedication,
+        getMedicationById,
+        getMedicationByPharmacy,
+        getMedicationByTreatmentId,
+        getMedicationByProviderId} =require('./treatment/Medication');
 
 // Step 2: Users Methods;
     // Method: Drop Tables;
