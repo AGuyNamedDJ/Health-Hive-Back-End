@@ -101,7 +101,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name VARCHAR(100) NULL,
                 title VARCHAR(100) NULL,
                 specialty VARCHAR(100) NOT NULL,
-                provider_id VARCHAR(100) UNIQUE NULL,
+                provider_id INTEGER UNIQUE NULL,
                 email VARCHAR(50) NOT NULL,
                 phone_number VARCHAR(10) NOT NULL
             );
@@ -148,7 +148,6 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id INTEGER REFERENCES patient(id),
                 treatment_id INTEGER REFERENCES treatment_plan(id),
                 staff_id INTEGER REFERENCES staff(id)
-
             );
             CREATE TABLE procedure_staff(
                 id SERIAL PRIMARY KEY,
