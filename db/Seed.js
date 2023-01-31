@@ -206,6 +206,25 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
+    // Method: createInitialAppointment;
+    async function createInitialAppointment() {
+        console.log('Starting to create users...')
+        try {
+            await createAppointment({
+                date: '2023-01-05',
+                time: '1500',
+                location: 'Internal Medicine',
+                patient_id: 1,
+                staff_id: 1,
+                treatment_Id: 1
+            });
+            console.log('Finished creating appointment.');
+        } catch (error) {
+            console.error('Error when creating appointment!');
+            console.log(error);
+        }
+    };
+
     // Rebuild DB:
     async function rebuildDB() {
         try {
@@ -232,42 +251,49 @@ const { createUsers, getAllUsers } = require('./Users');
             console.log('User results: ', users)
 
             // Patient Testing;
-            console.log('Calling getAllPatient...')
-            const patient = await getAllPatient();
-            console.log('User results: ', patient)
+            // console.log('Calling getAllPatient...')
+            // const patient = await getAllPatient();
+            // console.log('User results: ', patient)
 
-            console.log('Calling getPatientId...')
-            const patientId = await getPatientById(1);
-            console.log('patientId results: ', patientId)
+            // console.log('Calling getPatientId...')
+            // const patientId = await getPatientById(1);
+            // console.log('patientId results: ', patientId)
 
-            console.log('Calling getPatientByLastName...')
-            const patientLN = await getPatientByLastName('Smith');
-            console.log('patientLN results: ', patientLN)
+            // console.log('Calling getPatientByLastName...')
+            // const patientLN = await getPatientByLastName('Smith');
+            // console.log('patientLN results: ', patientLN)
 
-            console.log('Calling getPatientByDateOfBirth...')
-            const patientDOB = await getPatientByDateOfBirth('1997-06-15');
-            console.log('patientDOB results: ', patientDOB)
+            // console.log('Calling getPatientByDateOfBirth...')
+            // const patientDOB = await getPatientByDateOfBirth('1997-06-15');
+            // console.log('patientDOB results: ', patientDOB)
 
-            console.log('Calling getPatientByAddress...')
-            const patientAdy = await getPatientByAddress('283 W Kennedy Dr, Chicago, IL, 60605');
-            console.log('patientAdy results: ', patientAdy)
+            // console.log('Calling getPatientByAddress...')
+            // const patientAdy = await getPatientByAddress('283 W Kennedy Dr, Chicago, IL, 60605');
+            // console.log('patientAdy results: ', patientAdy)
 
-            console.log('Calling getPatientByPhoneNumber...')
-            const patientPhone = await getPatientByPhoneNumber('7084684948');
-            console.log('patientPhone results: ', patientPhone)
+            // console.log('Calling getPatientByPhoneNumber...')
+            // const patientPhone = await getPatientByPhoneNumber('7084684948');
+            // console.log('patientPhone results: ', patientPhone)
 
-            console.log('Calling getPatientByEmail...')
-            const patientEmail = await getPatientByEmail('jsmith97@gmail.com');
-            console.log('patientEmail results: ', patientEmail)
+            // console.log('Calling getPatientByEmail...')
+            // const patientEmail = await getPatientByEmail('jsmith97@gmail.com');
+            // console.log('patientEmail results: ', patientEmail)
 
-            console.log('Calling getPatientByEmergencyContactName...')
-            const patientEmeCont = await getPatientByEmergencyContactName('Sheryl Smith');
-            console.log('patientcont results: ', patientEmeCont)
+            // console.log('Calling getPatientByEmergencyContactName...')
+            // const patientEmeCont = await getPatientByEmergencyContactName('Sheryl Smith');
+            // console.log('patientcont results: ', patientEmeCont)
 
-            console.log('Calling getPatientByEmergencyContactPhone...')
-            const patientEmPho = await getPatientByEmergencyContactPhone('7081664345');
-            console.log('patientphone results: ', patientEmPho)
+            // console.log('Calling getPatientByEmergencyContactPhone...')
+            // const patientEmPho = await getPatientByEmergencyContactPhone('7081664345');
+            // console.log('patientphone results: ', patientEmPho)
 
+            // Appointment Testing;
+            console.log('Calling getAllAppointment...')
+            const appointment = await getAllAppointment();
+            console.log('User results: ', appointment)
+
+
+            // Medical Record Testing;
 
         } catch (error) {
             console.log('Error during testDB!');
