@@ -141,13 +141,13 @@ const { createUsers, getAllUsers } = require('./Users');
                 route VARCHAR(100) NOT NULL,
                 sig VARCHAR(500) NOT NULL,
                 indication VARCHAR(500) NOT NULL,
-                day_supply VARCHAR(500) NOT NULL,
+                day_supply VARCHAR(20) NOT NULL,
                 start_date DATE NOT NULL,
-                length_of_therapy INTEGER NOT NULL,
+                length_of_therapy VARCHAR(25) NOT NULL,
                 refills INTEGER NOT NULL,
                 pharmacy VARCHAR(100) DEFAULT NULL,
-                treatment_id INTEGER REFERENCES treatment_plan(id),
-                provider_id INTEGER REFERENCES staff(id)
+                treatment_id INTEGER REFERENCES treatment_plan(id) DEFAULT NULL,
+                provider_id INTEGER REFERENCES staff(provider_id)
             );
             CREATE TABLE procedure(
                 id SERIAL PRIMARY KEY,
@@ -307,7 +307,6 @@ const { createUsers, getAllUsers } = require('./Users');
                 pharmacy: 'CVS Health',
                 treatment_id: 1,
                 provider_id: 1537
-
             });
             console.log('Finished creating medication.');
         } catch (error) {
@@ -451,13 +450,34 @@ const { createUsers, getAllUsers } = require('./Users');
             const medicalRecord = await getAllMedicalRecord();
             console.log('medical record results: ', medicalRecord);
 
-            console.log('Calling getMedicalRecordById...');
-            const medicalRecordId = await getMedicalRecordById(1);
-            console.log('medical record Id results: ', medicalRecordId);
+            // console.log('Calling getMedicalRecordById...');
+            // const medicalRecordId = await getMedicalRecordById(1);
+            // console.log('medical record Id results: ', medicalRecordId);
 
-            console.log('Calling getMedicalRecordByPatientId...');
-            const medicalRecordPatientId = await getMedicalRecordByPatientId(1);
-            console.log('medical record patientId results: ', medicalRecordPatientId);
+            // console.log('Calling getMedicalRecordByPatientId...');
+            // const medicalRecordPatientId = await getMedicalRecordByPatientId(1);
+            // console.log('medical record patientId results: ', medicalRecordPatientId);
+
+            // Medication Testing
+            console.log('Calling getAllMedication...');
+            const medication = await getAllMedication();
+            console.log('medication results: ', medication);
+
+            console.log('Calling getMedicationById...');
+            const medicationById = await getMedicationById(1);
+            console.log('medication results: ', medicationById);
+
+            console.log('Calling getMedicationByPharmacy...');
+            const medicationPharm = await getMedicationByPharmacy('CVS Health');
+            console.log('medicationPharm results: ', medicationPharm);
+
+            console.log('Calling getMedicationByTreatmentId...');
+            const medicationTreatment = await getMedicationByTreatmentId(1);
+            console.log('medicationTreatment results: ', medicationTreatment);
+
+            console.log('Calling getMedicationByProviderId...');
+            const medicationProvider = await getMedicationByProviderId(1537);
+            console.log('medicationProvider results: ', medicationProvider);
 
         } catch (error) {
             console.log('Error during testDB!');
