@@ -32,71 +32,58 @@ async function getAllTreatmentPlan() {
     }
 };
 
-// getStaffById
-async function getStaffById(id) {
+// getTreatmentPlanById
+async function getTreatmentPlanById(id) {
     try {
-        const { rows: [ staff ] } = await client.query(`
+        const { rows: [ treatment_plan ] } = await client.query(`
         SELECT *
-        FROM staff
+        FROM treatment_plan
         WHERE id= $1;
         `,[id]);
 
-        if (!staff) {
+        if (!treatment_plan) {
             return null
         }
-        return staff;
+        return treatment_plan;
     } catch (error) {
         console.log(error)
     }
 };
 
-// getStaffByTitle
-async function getStaffByTitle(title) {
+// getTreatmentPlanByPatientId
+async function getTreatmentPlanByPatientId(patient_id) {
     try {
-        const { rows: [ staff ] } = await client.query(`
+        const { rows: [ treatment_plan ] } = await client.query(`
         SELECT *
-        FROM staff
-        WHERE title= $1;
-        `,[title]);
+        FROM treatment_plan
+        WHERE patient_id= $1;
+        `,[patient_id]);
 
-        return staff;
+        return treatment_plan;
     } catch (error) {
         console.log(error)
     }
 };
 
-// getStaffBySpecialty
-async function getStaffBySpecialty(specialty) {
+// getTreatmentPlanByProviderId
+async function getTreatmentPlanByProviderId(provider_Id) {
     try {
-        const { rows: [ staff ] } = await client.query(`
+        const { rows: [ treatment_plan ] } = await client.query(`
         SELECT *
-        FROM staff
-        WHERE specialty= $1;
-        `,[specialty]);
-
-        return staff;
-    } catch (error) {
-        console.log(error)
-    }
-};
-
-// getStaffByProviderId
-async function getStaffByProviderId(provider_Id) {
-    try {
-        const { rows: [ staff ] } = await client.query(`
-        SELECT *
-        FROM staff
+        FROM treatment_plan
         WHERE provider_Id= $1;
         `,[provider_Id]);
 
-        return staff;
+        return treatment_plan;
     } catch (error) {
         console.log(error)
     }
 };
-
 
 module.exports = {
     createTreatmentPlan,
     getAllTreatmentPlan,
+    getTreatmentPlanById,
+    getTreatmentPlanByPatientId,
+    getTreatmentPlanByProviderId
 };

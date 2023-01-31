@@ -42,6 +42,11 @@ const { createUsers, getAllUsers } = require('./Users');
         getStaffByProviderId} = require('./staff/Staff');
 
     // Treatment Imports;
+    const { createTreatmentPlan,
+        getAllTreatmentPlan,
+        getTreatmentPlanById,
+        getTreatmentPlanByPatientId,
+        getTreatmentPlanByProviderId} =require('./treatment/TreatmentPlan');
 
 
 // Step 2: Users Methods;
