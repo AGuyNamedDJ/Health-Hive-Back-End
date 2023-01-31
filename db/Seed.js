@@ -55,6 +55,13 @@ const { createUsers, getAllUsers } = require('./Users');
         getMedicationByTreatmentId,
         getMedicationByProviderId} =require('./treatment/Medication');
 
+    const { createProcedure,
+        getAllProcedure,
+        getProcedureById,
+        getProcedureByPatientId,
+        getProcedureByTreatmentId,
+        getProcedureByStaffId} = require('./treatment/Procedure');
+
 // Step 2: Users Methods;
     // Method: Drop Tables;
     async function dropTables(){
@@ -463,21 +470,21 @@ const { createUsers, getAllUsers } = require('./Users');
             const medication = await getAllMedication();
             console.log('medication results: ', medication);
 
-            console.log('Calling getMedicationById...');
-            const medicationById = await getMedicationById(1);
-            console.log('medication results: ', medicationById);
+            // console.log('Calling getMedicationById...');
+            // const medicationById = await getMedicationById(1);
+            // console.log('medication results: ', medicationById);
 
-            console.log('Calling getMedicationByPharmacy...');
-            const medicationPharm = await getMedicationByPharmacy('CVS Health');
-            console.log('medicationPharm results: ', medicationPharm);
+            // console.log('Calling getMedicationByPharmacy...');
+            // const medicationPharm = await getMedicationByPharmacy('CVS Health');
+            // console.log('medicationPharm results: ', medicationPharm);
 
-            console.log('Calling getMedicationByTreatmentId...');
-            const medicationTreatment = await getMedicationByTreatmentId(1);
-            console.log('medicationTreatment results: ', medicationTreatment);
+            // console.log('Calling getMedicationByTreatmentId...');
+            // const medicationTreatment = await getMedicationByTreatmentId(1);
+            // console.log('medicationTreatment results: ', medicationTreatment);
 
-            console.log('Calling getMedicationByProviderId...');
-            const medicationProvider = await getMedicationByProviderId(1537);
-            console.log('medicationProvider results: ', medicationProvider);
+            // console.log('Calling getMedicationByProviderId...');
+            // const medicationProvider = await getMedicationByProviderId(1537);
+            // console.log('medicationProvider results: ', medicationProvider);
 
         } catch (error) {
             console.log('Error during testDB!');
