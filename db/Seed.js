@@ -25,6 +25,13 @@ const { createUsers, getAllUsers } = require('./Users');
         getPatientByStaffId,
         getPatientByTreatmentId } = require('./patient/Appointment');
     
+    const { createMedicalRecord,
+        getAllMedicalRecord,
+        getMedicalRecordById,
+        getMedicalRecordByDiagnosis,
+        getMedicalRecordByPatientId,
+        getMedicalRecordBySymptom,
+        getMedicalRecordByStatus } = require('./patient/MedicalRecord');
 
     // Staff Imports;
 

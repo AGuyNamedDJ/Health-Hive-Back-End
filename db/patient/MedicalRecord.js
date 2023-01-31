@@ -121,5 +121,5 @@ module.exports = {
     getMedicalRecordByDiagnosis,
     getMedicalRecordByPatientId,
     getMedicalRecordBySymptom,
-    getMedicalRecordByStatus,
+    getMedicalRecordByStatus
 };
