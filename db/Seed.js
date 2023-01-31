@@ -112,12 +112,14 @@ const { createUsers, getAllUsers } = require('./Users');
                 provider_id INTEGER REFERENCES staff(provider_id),
                 FOREIGN KEY (provider_id) REFERENCES staff(provider_id)
               );              
-            CREATE TABLE appointment(
+              CREATE TABLE appointment(
                 id SERIAL PRIMARY KEY,
                 date TIMESTAMP NOT NULL,
                 time TIME NOT NULL,
                 location VARCHAR(100) NOT NULL,
-                patient_id INTEGER REFERENCES patient(id)
+                patient_id INTEGER REFERENCES patient(id),
+                staff_id INTEGER REFERENCES staff(id) DEFAULT NULL,
+                treatment_id INTEGER REFERENCES treatment_plan(id) DEFAULT NULL
             );
             CREATE TABLE medical_record (
                 id SERIAL PRIMARY KEY,
