@@ -84,7 +84,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 email VARCHAR(50) UNIQUE NOT NULL,
                 "is_active" BOOLEAN DEFAULT true
             );
-            CREATE TABLE patient (
+            CREATE TABLE patient(
                 id SERIAL PRIMARY KEY,
                 first_name VARCHAR(25) NOT NULL,
                 last_name VARCHAR(25) NOT NULL,
@@ -96,41 +96,37 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name VARCHAR(50) NOT NULL,
                 emergency_contact_phone VARCHAR(10) NOT NULL
             );
-            CREATE TABLE staff (
+            CREATE TABLE staff(
                 id SERIAL PRIMARY KEY,
-                name VARCHAR(100) NOT NULL,
-                title VARCHAR(100) NOT NULL,
+                name VARCHAR(100) NULL,
+                title VARCHAR(100) NULL,
                 specialty VARCHAR(100) NOT NULL,
                 provider_id VARCHAR(100) UNIQUE NULL,
                 email VARCHAR(50) NOT NULL,
                 phone_number VARCHAR(10) NOT NULL
             );
-            CREATE TABLE treatment_plan (
+            CREATE TABLE treatment_plan(
                 id SERIAL PRIMARY KEY,
                 plan TEXT NOT NULL,
                 patient_id INTEGER REFERENCES patient(id),
-                provider_id INTEGER REFERENCES staff(id),
-                FOREIGN KEY (patient_id) REFERENCES patient(id),
-                FOREIGN KEY (provider_id) REFERENCES staff(id)
+                provider_id INTEGER REFERENCES staff(id)
+
             );
             CREATE TABLE appointment(
                 id SERIAL PRIMARY KEY,
                 date TIMESTAMP NOT NULL,
                 time TIME NOT NULL,
                 location VARCHAR(100) NOT NULL,
-                patient_id INTEGER REFERENCES patient(id),
-                staff_id INTEGER REFERENCES staff(id) DEFAULT NULL,
-                treatment_id INTEGER REFERENCES treatment_plan(id) DEFAULT NULL
+                patient_id INTEGER REFERENCES patient(id)
             );
             CREATE TABLE medical_record (
                 id SERIAL PRIMARY KEY,
                 patient_id INTEGER REFERENCES patient(id),
                 diagnosis VARCHAR(500) NOT NULL,
                 symptoms TEXT NOT NULL,
-                status VARCHAR(25) NOT NULL DEFAULT 'Alive',
-                FOREIGN KEY (patient_id) REFERENCES patient(id)
+                status VARCHAR(25) NOT NULL DEFAULT 'Alive'
             );
-            CREATE TABLE medication (
+            CREATE TABLE medication(
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(100) NOT NULL,
                 dosage_form VARCHAR(25) NOT NULL,
@@ -142,23 +138,19 @@ const { createUsers, getAllUsers } = require('./Users');
                 refills INTEGER NOT NULL,
                 pharmacy VARCHAR(100) DEFAULT NULL,
                 treatment_id INTEGER REFERENCES treatment_plan(id),
-                provider_id INTEGER REFERENCES staff(id),
-                FOREIGN KEY (treatment_id) REFERENCES treatment_plan(id),
-                FOREIGN KEY (provider_id) REFERENCES staff(id)
+                provider_id INTEGER REFERENCES staff(id)
             );
-            CREATE TABLE procedure (
+            CREATE TABLE procedure(
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(100) NOT NULL,
                 description TEXT NOT NULL,
                 date_performed DATE NOT NULL,
                 patient_id INTEGER REFERENCES patient(id),
                 treatment_id INTEGER REFERENCES treatment_plan(id),
-                staff_id INTEGER REFERENCES staff(id),
-                FOREIGN KEY (patient_id) REFERENCES patient(id),
-                FOREIGN KEY (treatment_id) REFERENCES treatment_plan(id),
-                FOREIGN KEY (staff_id) REFERENCES staff(id)
+                staff_id INTEGER REFERENCES staff(id)
+
             );
-            CREATE TABLE procedure_staff (
+            CREATE TABLE procedure_staff(
                 id SERIAL PRIMARY KEY,
                 procedure_id INTEGER REFERENCES procedure(id),
                 staff_id INTEGER REFERENCES staff(id),
@@ -240,7 +232,7 @@ const { createUsers, getAllUsers } = require('./Users');
     async function createInitialTreatmentPlan() {
         console.log('Starting to create treatment plan...')
         try {
-            await createStaff({
+            await createTreatmentPlan({
                 plan: 'Example',
                 patient_id: 1,
                 provider_id: 1537,
@@ -301,9 +293,9 @@ const { createUsers, getAllUsers } = require('./Users');
             console.log('User results: ', users)
 
             // Patient Testing;
-            // console.log('Calling getAllPatient...')
-            // const patient = await getAllPatient();
-            // console.log('User results: ', patient)
+            console.log('Calling getAllPatient...')
+            const patient = await getAllPatient();
+            console.log('User results: ', patient)
 
             // console.log('Calling getPatientId...')
             // const patientId = await getPatientById(1);
@@ -342,21 +334,21 @@ const { createUsers, getAllUsers } = require('./Users');
             const staff = await getAllStaff();
             console.log('Staff results: ', staff)
 
-            console.log('Calling getStaffById...')
-            const staffId = await getStaffById(1);
-            console.log('Staff results: ', staffId)
+            // console.log('Calling getStaffById...')
+            // const staffId = await getStaffById(1);
+            // console.log('Staff results: ', staffId)
 
-            console.log('Calling getStaffByTitle...')
-            const staffTitle = await getStaffByTitle('Physician');
-            console.log('Staff results: ', staffTitle)
+            // console.log('Calling getStaffByTitle...')
+            // const staffTitle = await getStaffByTitle('Physician');
+            // console.log('Staff results: ', staffTitle)
 
-            console.log('Calling getStaffBySpecialty...')
-            const staffSpecia = await getStaffBySpecialty('Internal Medicine');
-            console.log('Staff results: ', staffSpecia)
+            // console.log('Calling getStaffBySpecialty...')
+            // const staffSpecia = await getStaffBySpecialty('Internal Medicine');
+            // console.log('Staff results: ', staffSpecia)
 
-            console.log('Calling getStaffByProviderId...')
-            const staffProviderId = await getStaffByProviderId(1537);
-            console.log('Staff results: ', staffProviderId)
+            // console.log('Calling getStaffByProviderId...')
+            // const staffProviderId = await getStaffByProviderId(1537);
+            // console.log('Staff results: ', staffProviderId)
 
             // Treatment Plan Testing;
             console.log('Calling getAllTreatmentPlan...')
