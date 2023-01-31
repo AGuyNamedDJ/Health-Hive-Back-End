@@ -62,6 +62,11 @@ const { createUsers, getAllUsers } = require('./Users');
         getProcedureByTreatmentId,
         getProcedureByStaffId} = require('./treatment/Procedure');
 
+    const { createProcedureStaff,
+        getAllProcedureStaff,
+        getProcedureStaffById,
+        getProcedureStaffByStaffId} =require('./treatment/ProcedureStaff');
+
 // Step 2: Users Methods;
     // Method: Drop Tables;
     async function dropTables(){
