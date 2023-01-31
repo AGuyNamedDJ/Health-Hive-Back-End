@@ -3,13 +3,13 @@ const { client } = require('../Index');
 const bcrypt = require('bcrypt')
 
 // createMedicalRecord
-async function createMedicalRecord({patient_id, diagnosis, sympotoms, status}) {
+async function createMedicalRecord({patient_id, diagnosis, symptoms, status}) {
     try {
         const { rows: [medical_record] } = await client.query(`
-            INSERT INTO medical_record(patient_id, diagnosis, sympotoms, status)
+            INSERT INTO medical_record(patient_id, diagnosis, symptoms, status)
             VALUES($1, $2, $3, $4)
             RETURNING *;
-        `, [patient_id, diagnosis, sympotoms, status]);
+        `, [patient_id, diagnosis, symptoms, status]);
         
         return medical_record
     } catch (error) {

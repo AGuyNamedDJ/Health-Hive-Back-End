@@ -274,7 +274,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'John Smith',
                 diagnosis: 'HBP Example',
                 symptoms: 'fainting',
-                status: alive
+                status: 'alive'
             });
             console.log('Finished creating medical record.');
         } catch (error) {
@@ -413,9 +413,17 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('appointment results: ', appointmentTreatment)
 
             // Medical Record Testing;
-            console.log('Calling getAllMedicalRecord...')
+            console.log('Calling getAllMedicalRecord...');
             const medicalRecord = await getAllMedicalRecord();
-            console.log('medical record results: ', medicalRecord)
+            console.log('medical record results: ', medicalRecord);
+
+            console.log('Calling getMedicalRecordById...');
+            const medicalRecordId = await getMedicalRecordById(1);
+            console.log('medical record Id results: ', medicalRecordId);
+
+            console.log('Calling getMedicalRecordByPatientId...');
+            const medicalRecordPatientId = await getMedicalRecordByPatientId(1);
+            console.log('medical record patientId results: ', medicalRecordPatientId);
 
         } catch (error) {
             console.log('Error during testDB!');
