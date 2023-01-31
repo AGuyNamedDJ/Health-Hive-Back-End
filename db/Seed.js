@@ -1,6 +1,6 @@
 // Step 1: Import Client & Exports;
 const { create } = require('domain');
-const { client } = require('./index');
+const { client } = require('./Index');
 
 // Page Imports;
 const { createUsers, getAllUsers } = require('./Users');
@@ -43,7 +43,7 @@ const { createUsers, getAllUsers } = require('./Users');
     // Method: Drop Tables;
     async function dropTables(){
         try {
-            console.log("Dropping tables... ");
+            console.log('Dropping tables... ');
             await client.query(`
             DROP TABLE IF EXISTS procedure_staff CASCADE;
             DROP TABLE IF EXISTS procedure CASCADE;
@@ -55,9 +55,9 @@ const { createUsers, getAllUsers } = require('./Users');
             DROP TABLE IF EXISTS patient CASCADE;
             DROP TABLE IF EXISTS users CASCADE;
             `)
-            console.log("Finished dropping tables.")
+            console.log('Finished dropping tables.')
         } catch(error){
-            console.log("Error dropping tables!")
+            console.log('Error dropping tables!')
             console.log(error)
         }
     };
@@ -81,10 +81,10 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_of_birth DATE NOT NULL,
                 gender VARCHAR(10) NOT NULL,
                 address VARCHAR(100) NOT NULL,
-                phone_number VARCHAR(15) NOT NULL,
+                phone_number VARCHAR(10) NOT NULL,
                 email VARCHAR(50) UNIQUE NOT NULL,
                 emergency_contact_name VARCHAR(50) NOT NULL,
-                emergency_contact_phone VARCHAR(15) NOT NULL
+                emergency_contact_phone VARCHAR(10) NOT NULL
             );
             CREATE TABLE staff (
                 id SERIAL PRIMARY KEY,
@@ -93,7 +93,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 specialty VARCHAR(100) NOT NULL,
                 provider_id VARCHAR(100) UNIQUE NULL,
                 email VARCHAR(50) NOT NULL,
-                phone VARCHAR(20) NOT NULL
+                phone VARCHAR(10) NOT NULL
             );
             CREATE TABLE treatment_plan (
                 id SERIAL PRIMARY KEY,
@@ -164,39 +164,44 @@ const { createUsers, getAllUsers } = require('./Users');
 
     // Method: createInitialUsers;
     async function createInitialUsers() {
-        console.log("Starting to create users...")
+        console.log('Starting to create users...')
         try {
             await createUsers({
-                username: 'dalron',
-                password: 'dalron',
-                email: 'dalron@healthhive.com',
-                is_active: true,
+                username: 'admin',
+                password: 'admin',
+                email: 'admin@healthhive.com',
             });
             await createUsers({
                 username: 'guest',
                 password: 'guest',
                 email: 'guest@healthhive.com',
             });
-            console.log("Finished creating users.");
+            console.log('Finished creating users.');
         } catch (error) {
-            console.error("Error when creating users!");
+            console.error('Error when creating users!');
             console.log(error);
         }
     };
 
     // Method: createInitialPatient;
     async function createInitialPatient() {
-        console.log("Starting to create patient...")
+        console.log('Starting to create patient...')
         try {
-            await createUsers({
-                username: 'dalron',
-                password: 'dalron',
-                email: 'dalron@healthhive.com',
-                is_active: true,
+            await createPatient({
+                first_name: 'John',
+                last_name: 'Smith',
+                date_of_birth: '1997-06-15',
+                gender: 'male',
+                address: '283 W Kennedy Dr, Chicago, IL, 60605',
+                phone_number: '7084684948',
+                email: 'jsmith97@gmail.com',
+                emergency_contact_name: 'Sheryl Smith',
+                emergency_contact_phone: '7081664345'
+
             });
-            console.log("Finished creating patient.");
+            console.log('Finished creating patient.');
         } catch (error) {
-            console.error("Error when creating patient!");
+            console.error('Error when creating patient!');
             console.log(error);
         }
     };
@@ -205,12 +210,13 @@ const { createUsers, getAllUsers } = require('./Users');
     async function rebuildDB() {
         try {
         client.connect();
-        console.log("Running DB function...")
+        console.log('Running DB function...')
         await dropTables();
         await createTables();
         await createInitialUsers();
+        await createInitialPatient();
         } catch (error) {
-        console.log("Error during rebuildDB!")
+        console.log('Error during rebuildDB!')
         console.log(error.detail);
         }
     }
@@ -218,14 +224,21 @@ const { createUsers, getAllUsers } = require('./Users');
     // Test DB:
     async function testDB() {
         try {
-            console.log("Starting to test database...");
+            console.log('Starting to test database...');
 
-            // User testing;
-            console.log("Calling getAllUsers...")
+            // User Testing;
+            console.log('Calling getAllUsers...')
             const users = await getAllUsers();
-            console.log("User results: ", users)
+            console.log('User results: ', users)
+
+            // Patient Testing;
+            console.log('Calling getAllPatient...')
+            const patient = await getAllPatient();
+            console.log('patient results: ', patient)
+
+
         } catch (error) {
-            console.log("Error during testDB!");
+            console.log('Error during testDB!');
             console.log(error);
         }
     };
