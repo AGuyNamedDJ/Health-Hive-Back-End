@@ -6,10 +6,10 @@ const bcrypt = require('bcrypt');
 async function createMedication({name, dosage_form, route, sig, indication, start_date, length_of_therapy, refills, pharmacy, treatment_id, provider_id}) {
     try {
         const { rows: [medication] } = await client.query(`
-            INSERT INTO medication(name, dosage_form, route, sig, indication, start_date, length_of_therapy, refills, pharmacy, treatment_id, provider_id)
-            VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
+            INSERT INTO medication(name, dosage_form, route, sig, indication, day_supply, day_supply, start_date, length_of_therapy, refills, pharmacy, treatment_id, provider_id)
+            VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
             RETURNING *;
-        `, [name, dosage_form, route, sig, indication, start_date, length_of_therapy, refills, pharmacy, treatment_id, provider_id]);
+        `, [name, dosage_form, route, sig, indication, day_supply, start_date, length_of_therapy, refills, pharmacy, treatment_id, provider_id]);
         
         return medication
     } catch (error) {

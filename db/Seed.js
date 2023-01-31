@@ -141,6 +141,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 route VARCHAR(100) NOT NULL,
                 sig VARCHAR(500) NOT NULL,
                 indication VARCHAR(500) NOT NULL,
+                day_supply VARCHAR(500) NOT NULL,
                 start_date DATE NOT NULL,
                 length_of_therapy INTEGER NOT NULL,
                 refills INTEGER NOT NULL,
@@ -289,6 +290,32 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
+    // Method: createInitialMedication;
+    async function createInitialMedication() {
+        console.log('Starting to create medication...')
+        try {
+            await createMedication({
+                name: 'Amlodipine Besylate',
+                dosage_form: 'tablet',
+                route: 'oral',
+                sig: '5mg BID',
+                indication: 'Hypertension',
+                day_supply: '30',
+                start_date: '2022-08-15',
+                length_of_therapy: '12 Months',
+                refills: '3',
+                pharmacy: 'CVS Health',
+                treatment_id: 1,
+                provider_id: 1537
+
+            });
+            console.log('Finished creating medication.');
+        } catch (error) {
+            console.error('Error when creating medication!');
+            console.log(error);
+        }
+    };
+
     // Rebuild DB:
     async function rebuildDB() {
         try {
@@ -302,6 +329,7 @@ const { createUsers, getAllUsers } = require('./Users');
             await createInitialTreatmentPlan();
             await createInitialAppointment();
             await createInitialMedicalRecord();
+            await createInitialMedication();
         } catch (error) {
             console.log('Error during rebuildDB!')
             console.log(error.detail);
