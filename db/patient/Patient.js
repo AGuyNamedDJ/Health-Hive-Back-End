@@ -1,12 +1,12 @@
 // Requires
-const { client } = require("./index");
-const bcrypt = require('bcrypt')
+const { client } = require('../Index');
+const bcrypt = require('bcrypt');
 
 // createPatient
 async function createPatient({first_name, last_name, date_of_birth, gender, address, phone_number, email, emergency_contact_name, emergency_contact_phone}) {
     try {
         const { rows: [patient] } = await client.query(`
-            INSERT INTO users(first_name, last_name, date_of_birth, gender, address, phone_number, email, emergency_contact_name, emergency_contact_phone)
+            INSERT INTO patient(first_name, last_name, date_of_birth, gender, address, phone_number, email, emergency_contact_name, emergency_contact_phone)
             VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9)
             RETURNING *;
         `, [first_name, last_name, date_of_birth, gender, address, phone_number, email, emergency_contact_name, emergency_contact_phone]);

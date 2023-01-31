@@ -1,5 +1,5 @@
 // Requires
-const { client } = require("./index");
+const { client } = require("./Index");
 const bcrypt = require('bcrypt')
 
 // createUsers
