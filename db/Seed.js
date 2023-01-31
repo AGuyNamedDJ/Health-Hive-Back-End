@@ -218,7 +218,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'Joseph Salmon',
                 title: 'Physician',
                 specialty: 'Internal Medicine',
-                provider_id: '1537',
+                provider_id: 1537,
                 email: 'jsalmon@healthhive.com',
                 phone: '8886462524'
             });
@@ -312,6 +312,23 @@ const { createUsers, getAllUsers } = require('./Users');
             // const patientEmPho = await getPatientByEmergencyContactPhone('7081664345');
             // console.log('patientphone results: ', patientEmPho)
 
+            // Staff Testing;
+            console.log('Calling getAllStaff...')
+            const staff = await getAllStaff();
+            console.log('Staff results: ', staff)
+
+            console.log('Calling getStaffById...')
+            const staffId = await getStaffById(1);
+            console.log('Staff results: ', staffId)
+
+            console.log('Calling getStaffByTitle...')
+            const staffTitle = await getStaffByTitle('Physician');
+            console.log('Staff results: ', staffTitle)
+
+            console.log('Calling getStaffByProviderId...')
+            const staffProviderId = await getStaffByProviderId(1537);
+            console.log('Staff results: ', staffProviderId)
+            
             // Appointment Testing;
             console.log('Calling getAllAppointment...')
             const appointment = await getAllAppointment();
