@@ -229,16 +229,33 @@ const { createUsers, getAllUsers } = require('./Users');
                 phone_number: '8886462524'
             });
 
-            console.log('Finished creating users.');
+            console.log('Finished creating staff.');
         } catch (error) {
-            console.error('Error when creating users!');
+            console.error('Error when creating staff!');
+            console.log(error);
+        }
+    };
+
+    //Method: createInitialTreatmentPlan
+    async function createInitialTreatmentPlan() {
+        console.log('Starting to create treatment plan...')
+        try {
+            await createStaff({
+                plan: 'Example',
+                patient_id: 1,
+                provider_id: 1537,
+            });
+
+            console.log('Finished creating treatment plan.');
+        } catch (error) {
+            console.error('Error when creating treatment plan!');
             console.log(error);
         }
     };
 
     // Method: createInitialAppointment;
     async function createInitialAppointment() {
-        console.log('Starting to create users...')
+        console.log('Starting to create appointment...')
         try {
             await createAppointment({
                 date: '2023-01-05',
@@ -265,12 +282,13 @@ const { createUsers, getAllUsers } = require('./Users');
         await createInitialUsers();
         await createInitialPatient();
         await createInitialStaff();
+        await createInitialTreatmentPlan();
         await createInitialAppointment();
         } catch (error) {
         console.log('Error during rebuildDB!')
         console.log(error.detail);
         }
-    }
+    };
 
     // Test DB:
     async function testDB() {
@@ -339,6 +357,23 @@ const { createUsers, getAllUsers } = require('./Users');
             console.log('Calling getStaffByProviderId...')
             const staffProviderId = await getStaffByProviderId(1537);
             console.log('Staff results: ', staffProviderId)
+
+            // Treatment Plan Testing;
+            console.log('Calling getAllTreatmentPlan...')
+            const treatment = await getAllTreatmentPlan();
+            console.log('User results: ', treatment)
+
+            console.log('Calling treatmentId...')
+            const treatmentId = await getTreatmentPlanById(1);
+            console.log('User results: ', treatmentId)
+
+            console.log('Calling getTreatmentPlanByProviderId...')
+            const treatmentProvider = await getTreatmentPlanByProviderId(1537);
+            console.log('User results: ', treatmentProvider)
+
+            console.log('Calling getTreatmentPlanByPatientId...')
+            const treatmentPatient = await getTreatmentPlanByPatientId(1);
+            console.log('User results: ', treatmentPatient)
             
             // Appointment Testing;
             console.log('Calling getAllAppointment...')

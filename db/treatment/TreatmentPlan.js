@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 async function createTreatmentPlan({plan, patient_id, provider_id}) {
     try {
         const { rows: [treatment_plan] } = await client.query(`
-            INSERT INTO staff(plan, patient_id, provider_id)
+            INSERT INTO treatment_plan(plan, patient_id, provider_id)
             VALUES($1, $2, $3)
             RETURNING *;
         `, [plan, patient_id, provider_id]);
@@ -22,11 +22,10 @@ async function getAllTreatmentPlan() {
     try {
         const { rows } = await client.query(`
             SELECT *
-            FROM treatment_plan
-            RETURNING *;
+            FROM treatment_plan;
         `,);
         
-        return treatment_plan
+        return rows
     } catch (error) {
         console.log(error)
     }
