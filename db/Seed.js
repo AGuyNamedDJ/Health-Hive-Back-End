@@ -265,21 +265,40 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
+    // Method: createInitialMedicalRecord;
+    async function createInitialMedicalRecord() {
+        console.log('Starting to create medical record...')
+        try {
+            await createMedicalRecord({
+                patient_id: '1',
+                name: 'John Smith',
+                diagnosis: 'HBP Example',
+                symptoms: 'fainting',
+                status: alive
+            });
+            console.log('Finished creating medical record.');
+        } catch (error) {
+            console.error('Error when creating medical record!');
+            console.log(error);
+        }
+    };
+
     // Rebuild DB:
     async function rebuildDB() {
         try {
-        client.connect();
-        console.log('Running DB function...')
-        await dropTables();
-        await createTables();
-        await createInitialUsers();
-        await createInitialPatient();
-        await createInitialStaff();
-        await createInitialTreatmentPlan();
-        await createInitialAppointment();
+            client.connect();
+            console.log('Running DB function...')
+            await dropTables();
+            await createTables();
+            await createInitialUsers();
+            await createInitialPatient();
+            await createInitialStaff();
+            await createInitialTreatmentPlan();
+            await createInitialAppointment();
+            await createInitialMedicalRecord();
         } catch (error) {
-        console.log('Error during rebuildDB!')
-        console.log(error.detail);
+            console.log('Error during rebuildDB!')
+            console.log(error.detail);
         }
     };
 
@@ -354,46 +373,49 @@ const { createUsers, getAllUsers } = require('./Users');
             // Treatment Plan Testing;
             console.log('Calling getAllTreatmentPlan...')
             const treatment = await getAllTreatmentPlan();
-            console.log('User results: ', treatment)
+            console.log('Treatment results: ', treatment)
 
-            console.log('Calling treatmentId...')
-            const treatmentId = await getTreatmentPlanById(1);
-            console.log('User results: ', treatmentId)
+            // console.log('Calling treatmentId...')
+            // const treatmentId = await getTreatmentPlanById(1);
+            // console.log('Treatment results: ', treatmentId)
 
-            console.log('Calling getTreatmentPlanByProviderId...')
-            const treatmentProvider = await getTreatmentPlanByProviderId(1537);
-            console.log('User results: ', treatmentProvider)
+            // console.log('Calling getTreatmentPlanByProviderId...')
+            // const treatmentProvider = await getTreatmentPlanByProviderId(1537);
+            // console.log('Treatment results: ', treatmentProvider)
 
-            console.log('Calling getTreatmentPlanByPatientId...')
-            const treatmentPatient = await getTreatmentPlanByPatientId(1);
-            console.log('User results: ', treatmentPatient)
+            // console.log('Calling getTreatmentPlanByPatientId...')
+            // const treatmentPatient = await getTreatmentPlanByPatientId(1);
+            // console.log('Treatment results: ', treatmentPatient)
             
             // Appointment Testing;
             console.log('Calling getAllAppointment...')
             const appointment = await getAllAppointment();
-            console.log('User results: ', appointment)
+            console.log('appointment results: ', appointment)
 
-            console.log('Calling appointmentdate...')
-            const appointmentdate = await getAppointmentByDate('2023-01-05');
-            console.log('User results: ', appointmentdate)
+            // console.log('Calling appointmentdate...')
+            // const appointmentdate = await getAppointmentByDate('2023-01-05');
+            // console.log('appointment results: ', appointmentdate)
 
-            console.log('Calling appointmentId...')
-            const appointmentId = await getAppointmentById(1);
-            console.log('User results: ', appointmentId)
+            // console.log('Calling appointmentId...')
+            // const appointmentId = await getAppointmentById(1);
+            // console.log('appointment results: ', appointmentId)
 
-            console.log('Calling getAlappointmentPatientIdlAppointment...')
-            const appointmentPatientId = await getAppointmentByPatientId(1);
-            console.log('User results: ', appointmentPatientId)
+            // console.log('Calling getAlappointmentPatientIdlAppointment...')
+            // const appointmentPatientId = await getAppointmentByPatientId(1);
+            // console.log('appointment results: ', appointmentPatientId)
 
-            console.log('Calling appointmentStaff...')
-            const appointmentStaff= await getAppointmentByStaffId(1);
-            console.log('User results: ', appointmentStaff)
+            // console.log('Calling appointmentStaff...')
+            // const appointmentStaff= await getAppointmentByStaffId(1);
+            // console.log('appointment results: ', appointmentStaff)
 
-            console.log('Calling appointmentTreatment...')
-            const appointmentTreatment = await getAppointmentByTreatmentId(1);
-            console.log('User results: ', appointmentTreatment)
+            // console.log('Calling appointmentTreatment...')
+            // const appointmentTreatment = await getAppointmentByTreatmentId(1);
+            // console.log('appointment results: ', appointmentTreatment)
 
             // Medical Record Testing;
+            console.log('Calling getAllMedicalRecord...')
+            const medicalRecord = await getAllMedicalRecord();
+            console.log('medical record results: ', medicalRecord)
 
         } catch (error) {
             console.log('Error during testDB!');
