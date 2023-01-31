@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 async function createProcedure({name, description, date_performed, patient_id, treatment_id, staff_id}) {
     try {
         const { rows: [procedure] } = await client.query(`
-            INSERT INTO medication(name, description, date_performed, patient_id, treatment_id, staff_id)
+            INSERT INTO procedure(name, description, date_performed, patient_id, treatment_id, staff_id)
             VALUES($1, $2, $3, $4, $5, $6)
             RETURNING *;
         `, [name, description, date_performed, patient_id, treatment_id, staff_id]);
@@ -52,7 +52,7 @@ async function getProcedureById(id) {
 // getProcedureByPatientId
 async function getProcedureByPatientId(pharmacy) {
     try {
-        const { rows: [ medication ] } = await client.query(`
+        const { rows: [ procedure ] } = await client.query(`
         SELECT *
         FROM procedure
         WHERE pharmacy= $1;
@@ -67,7 +67,7 @@ async function getProcedureByPatientId(pharmacy) {
 // getProcedureByTreatmentId
 async function getProcedureByTreatmentId(treatment_id) {
     try {
-        const { rows: [ medication ] } = await client.query(`
+        const { rows: [ procedure ] } = await client.query(`
         SELECT *
         FROM procedure
         WHERE treatment_id= $1;
@@ -82,7 +82,7 @@ async function getProcedureByTreatmentId(treatment_id) {
 // getProcedureByStaffId
 async function getProcedureByStaffId(staff_id) {
     try {
-        const { rows: [ medication ] } = await client.query(`
+        const { rows: [ procedure ] } = await client.query(`
         SELECT *
         FROM procedure
         WHERE staff_id= $1;

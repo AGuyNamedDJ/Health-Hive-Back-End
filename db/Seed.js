@@ -48,7 +48,7 @@ const { createUsers, getAllUsers } = require('./Users');
         getTreatmentPlanByPatientId,
         getTreatmentPlanByProviderId} =require('./treatment/TreatmentPlan');
 
-    const{ createMedication,
+    const { createMedication,
         getAllMedication,
         getMedicationById,
         getMedicationByPharmacy,
@@ -322,6 +322,25 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
+    // Method: createInitialProcedure;
+    async function createInitialProcedure() {
+        console.log('Starting to create procedure...')
+        try {
+            await createProcedure({
+                name: 'Blood Testing',
+                description: "A blood test at a hospital involves drawing a sample of blood from a vein in the arm. The process typically starts with identifying the patient and verifying their information. The healthcare provider then cleans the area where the blood will be drawn, and inserts a needle into a vein. The blood is collected into a vial and then sent to a laboratory for analysis. The results of the blood test can provide information on various aspects of a patient's health, such as blood cell counts, cholesterol levels, and markers for disease. The test results are usually available within a few days to a week.",
+                date_performed: '2022-11-15',
+                patient_id: 1,
+                treatment_id: 1,
+                staff_id: 1
+            });
+            console.log('Finished creating procedure.');
+        } catch (error) {
+            console.error('Error when creating procedure!');
+            console.log(error);
+        }
+    };
+
     // Rebuild DB:
     async function rebuildDB() {
         try {
@@ -336,6 +355,7 @@ const { createUsers, getAllUsers } = require('./Users');
             await createInitialAppointment();
             await createInitialMedicalRecord();
             await createInitialMedication();
+            await createInitialProcedure();
         } catch (error) {
             console.log('Error during rebuildDB!')
             console.log(error.detail);
@@ -485,6 +505,11 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('Calling getMedicationByProviderId...');
             // const medicationProvider = await getMedicationByProviderId(1537);
             // console.log('medicationProvider results: ', medicationProvider);
+
+            // Procedure Testing
+            console.log('Calling getAllProcedure...')
+            const procedure = await getAllProcedure();
+            console.log('procedure results: ', procedure)
 
         } catch (error) {
             console.log('Error during testDB!');
