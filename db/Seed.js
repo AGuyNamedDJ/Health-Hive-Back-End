@@ -22,8 +22,8 @@ const { createUsers, getAllUsers } = require('./Users');
         getAppointmentById,
         getAppointmentByDate,
         getAppointmentByPatientId,
-        getPatientByStaffId,
-        getPatientByTreatmentId } = require('./patient/Appointment');
+        getAppointmentByStaffId,
+        getAppointmentByTreatmentId } = require('./patient/Appointment');
     
     const { createMedicalRecord,
         getAllMedicalRecord,
@@ -34,7 +34,11 @@ const { createUsers, getAllUsers } = require('./Users');
         getMedicalRecordByStatus } = require('./patient/MedicalRecord');
 
     // Staff Imports;
-
+    const { createStaff,
+        getAllStaff,
+        getStaffById,
+        getStaffByTitle,
+        getStaffByProviderId} = require('./staff/Staff');
 
     // Treatment Imports;
 
@@ -93,7 +97,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 specialty VARCHAR(100) NOT NULL,
                 provider_id VARCHAR(100) UNIQUE NULL,
                 email VARCHAR(50) NOT NULL,
-                phone VARCHAR(10) NOT NULL
+                phone_number VARCHAR(10) NOT NULL
             );
             CREATE TABLE treatment_plan (
                 id SERIAL PRIMARY KEY,
@@ -206,13 +210,33 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
+    // Method: createInitialStaff;
+    async function createInitialStaff() {
+        console.log('Starting to create Staff...')
+        try {
+            await createStaff({
+                name: 'Joseph Salmon',
+                title: 'Physician',
+                specialty: 'Internal Medicine',
+                provider_id: '1537',
+                email: 'jsalmon@healthhive.com',
+                phone: '8886462524'
+            });
+
+            console.log('Finished creating users.');
+        } catch (error) {
+            console.error('Error when creating users!');
+            console.log(error);
+        }
+    };
+
     // Method: createInitialAppointment;
     async function createInitialAppointment() {
         console.log('Starting to create users...')
         try {
             await createAppointment({
                 date: '2023-01-05',
-                time: '1500',
+                time: '15:00',
                 location: 'Internal Medicine',
                 patient_id: 1,
                 staff_id: 1,
@@ -234,6 +258,7 @@ const { createUsers, getAllUsers } = require('./Users');
         await createTables();
         await createInitialUsers();
         await createInitialPatient();
+        createInitialAppointment();
         } catch (error) {
         console.log('Error during rebuildDB!')
         console.log(error.detail);
@@ -291,6 +316,26 @@ const { createUsers, getAllUsers } = require('./Users');
             console.log('Calling getAllAppointment...')
             const appointment = await getAllAppointment();
             console.log('User results: ', appointment)
+
+            console.log('Calling appointmentdate...')
+            const appointmentdate = await getAppointmentByDate('2023-01-05');
+            console.log('User results: ', appointmentdate)
+
+            console.log('Calling appointmentId...')
+            const appointmentId = await getAppointmentById(1);
+            console.log('User results: ', appointmentId)
+
+            console.log('Calling getAlappointmentPatientIdlAppointment...')
+            const appointmentPatientId = await getAppointmentByPatientId(1);
+            console.log('User results: ', appointmentPatientId)
+
+            console.log('Calling appointmentStaff...')
+            const appointmentStaff= await getAppointmentByStaffId(1);
+            console.log('User results: ', appointmentStaff)
+
+            console.log('Calling appointmentTreatment...')
+            const appointmentTreatment = await getAppointmentByTreatmentId(1);
+            console.log('User results: ', appointmentTreatment)
 
 
             // Medical Record Testing;

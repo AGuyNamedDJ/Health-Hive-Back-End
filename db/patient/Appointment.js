@@ -80,8 +80,8 @@ async function getAppointmentByPatientId(patient_id){
     }
 };
 
-// getPatientByStaffId
-async function getPatientByStaffId(staff_id){
+// getAppointmentByStaffId
+async function getAppointmentByStaffId(staff_id){
     try {
         const { rows: [appointment] } = await client.query(`
         SELECT *
@@ -96,8 +96,8 @@ async function getPatientByStaffId(staff_id){
     }
 };
 
-// getPatientByTreatmentId
-async function getPatientByTreatmentId(treatment_id){
+// getAppointmentByTreatmentId
+async function getAppointmentByTreatmentId(treatment_id){
     try {
         const { rows: [appointment] } = await client.query(`
         SELECT *
@@ -120,6 +120,6 @@ module.exports = {
     getAppointmentById,
     getAppointmentByDate,
     getAppointmentByPatientId,
-    getPatientByStaffId,
-    getPatientByTreatmentId
+    getAppointmentByStaffId,
+    getAppointmentByTreatmentId
 };
