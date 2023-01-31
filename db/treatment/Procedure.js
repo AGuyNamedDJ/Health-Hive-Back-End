@@ -50,13 +50,13 @@ async function getProcedureById(id) {
 };
 
 // getProcedureByPatientId
-async function getProcedureByPatientId(pharmacy) {
+async function getProcedureByPatientId(patient_id) {
     try {
         const { rows: [ procedure ] } = await client.query(`
         SELECT *
         FROM procedure
-        WHERE pharmacy= $1;
-        `,[pharmacy]);
+        WHERE patient_id= $1;
+        `,[patient_id]);
 
         return procedure;
     } catch (error) {

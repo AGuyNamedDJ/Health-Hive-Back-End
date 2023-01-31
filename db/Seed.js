@@ -511,6 +511,22 @@ const { createUsers, getAllUsers } = require('./Users');
             const procedure = await getAllProcedure();
             console.log('procedure results: ', procedure)
 
+            console.log('Calling getProcedureById...')
+            const procedureId = await getProcedureById(1);
+            console.log('procedure results: ', procedureId)
+
+            console.log('Calling getProcedureByPatientId...')
+            const procedurePatientId = await getProcedureByPatientId(1);
+            console.log('procedurePatientId results: ', procedurePatientId)
+
+            console.log('Calling getProcedureByTreatmentId...')
+            const procedureTreat = await getProcedureByTreatmentId(1);
+            console.log('procedureTreat results: ', procedureTreat)
+
+            console.log('Calling getProcedureByStaffId...')
+            const procedureStaff = await getProcedureByStaffId(1);
+            console.log('procedureStaff results: ', procedureStaff)
+
         } catch (error) {
             console.log('Error during testDB!');
             console.log(error);
