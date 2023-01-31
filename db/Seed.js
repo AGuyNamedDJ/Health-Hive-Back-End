@@ -289,7 +289,7 @@ const { createUsers, getAllUsers } = require('./Users');
         console.log('Starting to create medical record...')
         try {
             await createMedicalRecord({
-                patient_id: '1',
+                patient_id: 1,
                 name: 'John Smith',
                 diagnosis: 'HBP Example',
                 symptoms: 'fainting',
@@ -346,6 +346,21 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
+    // Method: createInitialProcedureStaff;
+    async function createInitialProcedureStaff() {
+        console.log('Starting to create procedure staff...')
+        try {
+            await createProcedureStaff({
+                procedure_id: 1,
+                staff_id: 1
+            });
+            console.log('Finished creating procedure staff.');
+        } catch (error) {
+            console.error('Error when creating procedure staff!');
+            console.log(error);
+        }
+    };
+
     // Rebuild DB:
     async function rebuildDB() {
         try {
@@ -361,6 +376,7 @@ const { createUsers, getAllUsers } = require('./Users');
             await createInitialMedicalRecord();
             await createInitialMedication();
             await createInitialProcedure();
+            await createInitialProcedureStaff();
         } catch (error) {
             console.log('Error during rebuildDB!')
             console.log(error.detail);
@@ -516,26 +532,41 @@ const { createUsers, getAllUsers } = require('./Users');
             const procedure = await getAllProcedure();
             console.log('procedure results: ', procedure)
 
-            console.log('Calling getProcedureById...')
-            const procedureId = await getProcedureById(1);
-            console.log('procedure results: ', procedureId)
+            // console.log('Calling getProcedureById...')
+            // const procedureId = await getProcedureById(1);
+            // console.log('procedure results: ', procedureId)
 
-            console.log('Calling getProcedureByPatientId...')
-            const procedurePatientId = await getProcedureByPatientId(1);
-            console.log('procedurePatientId results: ', procedurePatientId)
+            // console.log('Calling getProcedureByPatientId...')
+            // const procedurePatientId = await getProcedureByPatientId(1);
+            // console.log('procedurePatientId results: ', procedurePatientId)
 
-            console.log('Calling getProcedureByTreatmentId...')
-            const procedureTreat = await getProcedureByTreatmentId(1);
-            console.log('procedureTreat results: ', procedureTreat)
+            // console.log('Calling getProcedureByTreatmentId...')
+            // const procedureTreat = await getProcedureByTreatmentId(1);
+            // console.log('procedureTreat results: ', procedureTreat)
 
-            console.log('Calling getProcedureByStaffId...')
-            const procedureStaff = await getProcedureByStaffId(1);
+            // console.log('Calling getProcedureByStaffId...')
+            // const procedureStaff = await getProcedureByStaffId(1);
+            // console.log('procedureStaff results: ', procedureStaff)
+
+            // Procedure Staff Testing
+            console.log('Calling getAllProcedureStaff...')
+            const procedureStaff = await getAllProcedureStaff();
             console.log('procedureStaff results: ', procedureStaff)
+
+            console.log('Calling getProcedureStaffById...')
+            const procedureStaffId = await getProcedureStaffById(1);
+            console.log('procedureStaffId results: ', procedureStaffId)
+
+            console.log('Calling getProcedureStaffByStaffId...')
+            const procedureStaffByStaffId = await getProcedureStaffByStaffId(1);
+            console.log('procedure results: ', procedureStaffByStaffId)
 
         } catch (error) {
             console.log('Error during testDB!');
             console.log(error);
-        }
+            console.error(error);
+            console.error(error.message)
+;        }
     };
 
 rebuildDB()

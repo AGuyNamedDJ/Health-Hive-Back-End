@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 async function createProcedureStaff({procedure_id, staff_id}) {
     try {
         const { rows: [procedure_staff] } = await client.query(`
-            INSERT INTO procedure_staff(procedure_id staff_id)
+            INSERT INTO procedure_staff(procedure_id, staff_id)
             VALUES($1, $2)
             RETURNING *;
         `, [procedure_id, staff_id]);
@@ -23,7 +23,7 @@ async function getAllProcedureStaff() {
         const { rows } = await client.query(`
             SELECT *
             FROM procedure_staff;
-        `,);
+        `);
         
         return rows
     } catch (error) {
