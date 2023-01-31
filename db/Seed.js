@@ -353,6 +353,7 @@ const { createUsers, getAllUsers } = require('./Users');
             await createProcedureStaff({
                 procedure_id: 1,
                 staff_id: 1
+                    // use an array for 1+
             });
             console.log('Finished creating procedure staff.');
         } catch (error) {
@@ -553,13 +554,13 @@ const { createUsers, getAllUsers } = require('./Users');
             const procedureStaff = await getAllProcedureStaff();
             console.log('procedureStaff results: ', procedureStaff)
 
-            console.log('Calling getProcedureStaffById...')
-            const procedureStaffId = await getProcedureStaffById(1);
-            console.log('procedureStaffId results: ', procedureStaffId)
+            // console.log('Calling getProcedureStaffById...')
+            // const procedureStaffId = await getProcedureStaffById(1);
+            // console.log('procedureStaffId results: ', procedureStaffId)
 
-            console.log('Calling getProcedureStaffByStaffId...')
-            const procedureStaffByStaffId = await getProcedureStaffByStaffId(1);
-            console.log('procedure results: ', procedureStaffByStaffId)
+            // console.log('Calling getProcedureStaffByStaffId...')
+            // const procedureStaffByStaffId = await getProcedureStaffByStaffId(1);
+            // console.log('procedure results: ', procedureStaffByStaffId)
 
         } catch (error) {
             console.log('Error during testDB!');
