@@ -234,7 +234,39 @@ const { createUsers, getAllUsers } = require('./Users');
             // Patient Testing;
             console.log('Calling getAllPatient...')
             const patient = await getAllPatient();
-            console.log('patient results: ', patient)
+            console.log('User results: ', patient)
+
+            console.log('Calling getPatientId...')
+            const patientId = await getPatientById(1);
+            console.log('patientId results: ', patientId)
+
+            console.log('Calling getPatientByLastName...')
+            const patientLN = await getPatientByLastName('Smith');
+            console.log('patientLN results: ', patientLN)
+
+            console.log('Calling getPatientByDateOfBirth...')
+            const patientDOB = await getPatientByDateOfBirth('1997-06-15');
+            console.log('patientDOB results: ', patientDOB)
+
+            console.log('Calling getPatientByAddress...')
+            const patientAdy = await getPatientByAddress('283 W Kennedy Dr, Chicago, IL, 60605');
+            console.log('patientAdy results: ', patientAdy)
+
+            console.log('Calling getPatientByPhoneNumber...')
+            const patientPhone = await getPatientByPhoneNumber('7084684948');
+            console.log('patientPhone results: ', patientPhone)
+
+            console.log('Calling getPatientByEmail...')
+            const patientEmail = await getPatientByEmail('jsmith97@gmail.com');
+            console.log('patientEmail results: ', patientEmail)
+
+            console.log('Calling getPatientByEmergencyContactName...')
+            const patientEmeCont = await getPatientByEmergencyContactName('Sheryl Smith');
+            console.log('patientcont results: ', patientEmeCont)
+
+            console.log('Calling getPatientByEmergencyContactPhone...')
+            const patientEmPho = await getPatientByEmergencyContactPhone('7081664345');
+            console.log('patientphone results: ', patientEmPho)
 
 
         } catch (error) {
