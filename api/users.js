@@ -101,34 +101,47 @@ const usersRouter = express.Router();
 
         // request must have both
         if (!username || !password) {
-        next({
-            name: "MissingCredentialsError",
-            message: "Please supply both a username and password"
-        });
+            next({
+                name: "MissingCredentialsError!",
+                message: "Please supply both a username and password."
+            });
         }
 
         try {
-        const user = await getUserByUsername(username);
+            const user = await getUsersByUsername(username);
 
-        if (user && user.password == password) {
-            const newToken = jwt.sign({id:user.id, username}, JWT_SECRET, {expiresIn: "1w"})
-            console.log(newToken)
-            res.send({ message: "you're logged in!", token: newToken, success: true });
-        } else {
-            next({ 
-            name: 'IncorrectCredentialsError', 
-            message: 'Username or password is incorrect'
-            });
-        }
+            // Unverified user;
+            if (!user) {
+                next({ 
+                    name: 'IncorrectCredentialsError!', 
+                    message: 'Username &/or password is incorrect!'
+                });
+            }
+    
+            // Verify if hashed db pw matches pw from request
+            const passwordMatch = await bcrypt.compare(password, user.password);
+    
+            // Verified user;
+            if (passwordMatch) {
+                // Create Token & Return
+                const newToken = jwt.sign({ id: user.id, username }, JWT_SECRET, { expiresIn: "1w" });
+                res.send({ message: "You're logged in!", token: newToken, success: true });
+            } else {
+                next({ 
+                    name: 'IncorrectCredentialsError!', 
+                    message: 'Username &/or password is incorrect!'
+                });
+            }
         } catch(error) {
-        console.log(error);
-        next(error);
+            console.log(error);
+            next(error);
         }
     });
 
     // Profile
     usersRouter.get('/profile', async (req, res, next) => {
-        const myUserInfo = await getUserbyUsername();
+        const { username } = req.body;
+        const myUserInfo = await getUsersByUsername(username);
         res.send({
             myUserInfo
         })
@@ -136,4 +149,4 @@ const usersRouter = express.Router();
 
 module.exports = {
     usersRouter
-}
+};
