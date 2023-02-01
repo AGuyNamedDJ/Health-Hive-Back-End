@@ -41,7 +41,7 @@ apiRouter.use(async (req, res, next) => {
             message: `Authorization token must start with ${ prefix }`
         });
     }
-})
+});
 
 // Routers
 const { patientRouter } = require('./patient/patient');

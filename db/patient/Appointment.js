@@ -149,22 +149,22 @@ async function updateAppointment(id, fields = {}) {
     }
 };
 
-async function testUpdateAppointment() {
-    const id = 1;
-    const fields = {
-        date: '2022-01-01',
-        time: '10:00:00',
-        patient_id: 2,
-        procedure_id: 1
-    };
+// async function testUpdateAppointment() {
+//     const id = 1;
+//     const fields = {
+//         date: '2022-01-01',
+//         time: '10:00:00',
+//         patient_id: 2,
+//         procedure_id: 1
+//     };
   
-    try {
-        const updatedAppointment = await updateAppointment(id, fields);
-        console.log(`Appointment with id ${id} was updated successfully:`, updatedAppointment);
-    } catch (error) {
-        console.error(`Error updating appointment with id ${id}:`, error);
-    }
-};
+//     try {
+//         const updatedAppointment = await updateAppointment(id, fields);
+//         console.log(`Appointment with id ${id} was updated successfully:`, updatedAppointment);
+//     } catch (error) {
+//         console.error(`Error updating appointment with id ${id}:`, error);
+//     }
+// };
 
 testUpdateAppointment();
 

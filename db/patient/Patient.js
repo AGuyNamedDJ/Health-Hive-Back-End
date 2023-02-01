@@ -160,6 +160,30 @@ async function getPatientByEmergencyContactPhone(emergency_contact_phone) {
     }
 };
 
+// updatePatient
+async function updatePatient(id, fields = {}) {
+    const setString = Object.keys(fields)
+        .map((key, index) => `"${key}"=$${index + 1}`)
+        .join(", ");
+  
+    if (setString.length === 0) {
+        return;
+    }
+  
+    try {
+        const { rows: [patient] } = await client.query(`
+            UPDATE patient
+            SET ${setString}
+            WHERE "id"='${id}'
+            RETURNING *;
+        `, Object.values(fields));
+  
+        return patient;
+    } catch (error) {
+        console.log(error)
+    }
+};
+
 module.exports = {
     createPatient,
     getPatientById,
@@ -170,5 +194,6 @@ module.exports = {
     getPatientByPhoneNumber,
     getPatientByEmail,
     getPatientByEmergencyContactName,
-    getPatientByEmergencyContactPhone
+    getPatientByEmergencyContactPhone,
+    updatePatient
 };

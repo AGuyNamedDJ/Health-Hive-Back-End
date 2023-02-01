@@ -9,7 +9,8 @@ const { createPatient,
     getPatientByPhoneNumber,
     getPatientByEmail,
     getPatientByEmergencyContactName,
-    getPatientByEmergencyContactPhone } = require('../../db/patient/Patient');
+    getPatientByEmergencyContactPhone, 
+    updatePatient } = require('../../db/patient/Patient');
 
     const { requireUser, requireActiveUser  } = require('../utilities');
 
@@ -157,6 +158,59 @@ const patientRouter = express.Router();
         } catch (error) {
             console.log("Error getting patientEMCPhone!")
             console.log(error)
+        }
+    });
+
+    // PATCH/postPatient
+    patientRouter.patch("/:id", async (req, res, next) => {
+        try {
+            const { id } = req.params;
+            const { first_name, last_name, date_of_birth, gender, address, phone_number, email, emergency_contact_name, emergency_contact_phone } = req.body;
+            const updateFields = {};
+            updateFields.id = id;
+
+            // Fields;
+            if (first_name) {
+                updateFields.first_name = first_name;
+            } if (last_name) {
+                updateFields.last_name = last_name;
+            } if (date_of_birth) {
+                updateFields.date_of_birth = date_of_birth;
+            } if (gender) {
+                updateFields.gender = gender;
+            } if (address) {
+                updateFields.address = address;
+            } if (phone_number) {
+                updateFields.phone_number = phone_number;
+            } if (email) {
+                updateFields.email = email;
+            } if (emergency_contact_name) {
+                updateFields.emergency_contact_name = emergency_contact_name;
+            } if (emergency_contact_phone) {
+                updateFields.emergency_contact_phone = emergency_contact_phone;
+        
+            } if (!(await getPatientById(id))) {
+                next({
+                    name: "PatientNotFoundError",
+                    message: `Patient named ${id} not found`,
+                    error: "Error! ",
+                });
+            } else {
+                const response = await updatePatient(updateFields);
+                
+                if (response) {
+                    res.send(response);
+                } else {
+                    next({
+                        name: "NoFieldsToUpdate",
+                        message: `Enter a field to update.`,
+                        error: "Error! ",
+                    });
+                }
+            }
+        } catch (error) {
+            console.log(error);
+            next(error);
         }
     });
 

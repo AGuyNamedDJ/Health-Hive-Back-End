@@ -15,7 +15,8 @@ const { createUsers, getAllUsers } = require('./Users');
         getPatientByPhoneNumber,
         getPatientByEmail,
         getPatientByEmergencyContactName,
-        getPatientByEmergencyContactPhone } = require('./patient/Patient');
+        getPatientByEmergencyContactPhone,
+        updatePatient } = require('./patient/Patient');
 
     const { createAppointment,
         getAllAppointment,
