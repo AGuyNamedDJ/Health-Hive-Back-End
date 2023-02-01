@@ -75,12 +75,37 @@ async function destroyProcedureStaff(id){
     } catch (error) {
         console.log(error)
     }
-}
+};
+
+// updateProcedureStaff
+async function updateProcedureStaff(id, fields = {}) {
+    const setString = Object.keys(fields)
+        .map((key, index) => `"${key}"=$${index + 1}`)
+        .join(", ");
+  
+    if (setString.length === 0) {
+        return;
+    }
+  
+    try {
+        const { rows: [procedure_staff] } = await client.query(`
+            UPDATE procedure_staff
+            SET ${setString}
+            WHERE "id"='${id}'
+            RETURNING *;
+        `, Object.values(fields));
+  
+        return procedure_staff;
+    } catch (error) {
+        console.log(error)
+    }
+};
 
 module.exports = {
     createProcedureStaff,
     getAllProcedureStaff,
     getProcedureStaffById,
     getProcedureStaffByStaffId,
-    destroyProcedureStaff
+    destroyProcedureStaff,
+    updateProcedureStaff
 };

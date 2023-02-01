@@ -107,6 +107,29 @@ async function destroyStaff(id){
     }
 }
 
+// updateStaff
+async function updateStaff(id, fields = {}) {
+    const setString = Object.keys(fields)
+        .map((key, index) => `"${key}"=$${index + 1}`)
+        .join(", ");
+  
+    if (setString.length === 0) {
+        return;
+    }
+  
+    try {
+        const { rows: [staff] } = await client.query(`
+            UPDATE staff
+            SET ${setString}
+            WHERE "id"='${id}'
+            RETURNING *;
+        `, Object.values(fields));
+  
+        return staff;
+    } catch (error) {
+        console.log(error)
+    }
+};
 
 module.exports = {
     createStaff,
@@ -115,5 +138,6 @@ module.exports = {
     getStaffByTitle,
     getStaffBySpecialty,
     getStaffByProviderId,
-    destroyStaff
+    destroyStaff,
+    updateStaff
 };

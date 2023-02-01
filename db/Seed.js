@@ -24,7 +24,8 @@ const { createUsers, getAllUsers } = require('./Users');
         getAppointmentByPatientId,
         getAppointmentByStaffId,
         getAppointmentByTreatmentId,
-        destroyAppointment } = require('./patient/Appointment');
+        destroyAppointment,
+        updateAppointment } = require('./patient/Appointment');
     
     const { createMedicalRecord,
         getAllMedicalRecord,
@@ -32,7 +33,8 @@ const { createUsers, getAllUsers } = require('./Users');
         getMedicalRecordByDiagnosis,
         getMedicalRecordByPatientId,
         getMedicalRecordBySymptom,
-        getMedicalRecordByStatus } = require('./patient/MedicalRecord');
+        getMedicalRecordByStatus,
+        updateMedicalRecord } = require('./patient/MedicalRecord');
 
     // Staff Imports;
     const { createStaff,
@@ -41,7 +43,8 @@ const { createUsers, getAllUsers } = require('./Users');
         getStaffByTitle,
         getStaffBySpecialty,
         getStaffByProviderId,
-        destroyStaff } = require('./staff/Staff');
+        destroyStaff,
+        updateStaff } = require('./staff/Staff');
 
     // Treatment Imports;
     const { createTreatmentPlan,
@@ -49,14 +52,16 @@ const { createUsers, getAllUsers } = require('./Users');
         getTreatmentPlanById,
         getTreatmentPlanByPatientId,
         getTreatmentPlanByProviderId,
-        destroyTreatmentPlan } =require('./treatment/TreatmentPlan');
+        destroyTreatmentPlan,
+        updateTreatmentPlan } =require('./treatment/TreatmentPlan');
 
     const { createMedication,
         getAllMedication,
         getMedicationById,
         getMedicationByPharmacy,
         getMedicationByTreatmentId,
-        getMedicationByProviderId } =require('./treatment/Medication');
+        getMedicationByProviderId,
+        updateMedication } =require('./treatment/Medication');
 
     const { createProcedure,
         getAllProcedure,
@@ -64,13 +69,15 @@ const { createUsers, getAllUsers } = require('./Users');
         getProcedureByPatientId,
         getProcedureByTreatmentId,
         getProcedureByStaffId,
-        destroyProcedure } = require('./treatment/Procedure');
+        destroyProcedure,
+        updateProcedure } = require('./treatment/Procedure');
 
     const { createProcedureStaff,
         getAllProcedureStaff,
         getProcedureStaffById,
         getProcedureStaffByStaffId,
-        destroyProcedureStaff } =require('./treatment/ProcedureStaff');
+        destroyProcedureStaff,
+        updateProcedureStaff } =require('./treatment/ProcedureStaff');
 
 // Step 2: Users Methods;
     // Method: Drop Tables;
@@ -578,7 +585,7 @@ const { createUsers, getAllUsers } = require('./Users');
             console.log(error);
             console.error(error);
             console.error(error.message)
-;        }
+        }
     };
 
 rebuildDB()

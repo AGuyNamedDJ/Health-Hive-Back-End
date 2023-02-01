@@ -125,6 +125,50 @@ async function destroyAppointment(id){
     }
 }
 
+// updateAppointment
+async function updateAppointment(id, fields = {}) {
+    const setString = Object.keys(fields)
+        .map((key, index) => `"${key}"=$${index + 1}`)
+        .join(", ");
+  
+    if (setString.length === 0) {
+        return;
+    }
+  
+    try {
+        const { rows: [appointment] } = await client.query(`
+            UPDATE appointment
+            SET ${setString}
+            WHERE "id"='${id}'
+            RETURNING *;
+        `, Object.values(fields));
+  
+        return appointment;
+    } catch (error) {
+        console.log(error)
+    }
+};
+
+async function testUpdateAppointment() {
+    const id = 1;
+    const fields = {
+        date: '2022-01-01',
+        time: '10:00:00',
+        patient_id: 2,
+        procedure_id: 1
+    };
+  
+    try {
+        const updatedAppointment = await updateAppointment(id, fields);
+        console.log(`Appointment with id ${id} was updated successfully:`, updatedAppointment);
+    } catch (error) {
+        console.error(`Error updating appointment with id ${id}:`, error);
+    }
+};
+
+testUpdateAppointment();
+
+
 module.exports = {
     createAppointment,
     getAllAppointment,
@@ -133,5 +177,6 @@ module.exports = {
     getAppointmentByPatientId,
     getAppointmentByStaffId,
     getAppointmentByTreatmentId,
-    destroyAppointment
+    destroyAppointment,
+    updateAppointment
 };

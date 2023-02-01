@@ -90,7 +90,31 @@ async function destroyTreatmentPlan(id){
     } catch (error) {
         console.log(error)
     }
-}
+};
+
+// updateTreatmentPlan
+async function updateTreatmentPlan(id, fields = {}) {
+    const setString = Object.keys(fields)
+        .map((key, index) => `"${key}"=$${index + 1}`)
+        .join(", ");
+  
+    if (setString.length === 0) {
+        return;
+    }
+  
+    try {
+        const { rows: [treatment_plan] } = await client.query(`
+            UPDATE treatment_plan
+            SET ${setString}
+            WHERE "id"='${id}'
+            RETURNING *;
+        `, Object.values(fields));
+  
+        return treatment_plan;
+    } catch (error) {
+        console.log(error)
+    }
+};
 
 module.exports = {
     createTreatmentPlan,
@@ -98,5 +122,6 @@ module.exports = {
     getTreatmentPlanById,
     getTreatmentPlanByPatientId,
     getTreatmentPlanByProviderId,
-    destroyTreatmentPlan
+    destroyTreatmentPlan,
+    updateTreatmentPlan
 };

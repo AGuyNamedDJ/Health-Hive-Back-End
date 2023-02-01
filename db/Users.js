@@ -64,6 +64,31 @@ async function getUsersByUsername(username){
     }
 };
 
+// updateUsers
+// async function updateUsers(id, fields = {}) {
+//     const setString = Object.keys(fields).map(
+//         (key, index) => `"${ key }"=$${ index + 1 }`
+//     ).join(', ');
+  
+//     if (setString.length === 0) {
+//         return;
+//     }
+  
+//     try {
+//         const { rows: [ users ] } = await client.query(`
+//             UPDATE users
+//             SET ${ setString }
+//             WHERE id=${ id }
+//             RETURNING *;
+//         `, Object.values(fields));
+  
+//         return users;
+//     } catch (error) {
+//       console.error(error);
+//     }
+// };
+
+
 module.exports = {
     createUsers,
     getUsersById,

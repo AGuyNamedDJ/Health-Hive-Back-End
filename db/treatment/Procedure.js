@@ -105,7 +105,32 @@ async function destroyProcedure(id){
     } catch (error) {
         console.log(error)
     }
-}
+};
+
+// updateProcedure
+async function updateProcedure(id, fields = {}) {
+    const setString = Object.keys(fields)
+        .map((key, index) => `"${key}"=$${index + 1}`)
+        .join(", ");
+  
+    if (setString.length === 0) {
+        return;
+    }
+  
+    try {
+        const { rows: [procedure] } = await client.query(`
+            UPDATE procedure
+            SET ${setString}
+            WHERE "id"='${id}'
+            RETURNING *;
+        `, Object.values(fields));
+  
+        return procedure;
+    } catch (error) {
+        console.log(error)
+    }
+};
+
 
 module.exports = {
     createProcedure,
@@ -114,5 +139,6 @@ module.exports = {
     getProcedureByPatientId,
     getProcedureByTreatmentId,
     getProcedureByStaffId,
-    destroyProcedure
+    destroyProcedure,
+    updateProcedure
 };
