@@ -499,6 +499,12 @@ const { createUsers, getAllUsers } = require('./Users');
             // const appointmentTreatment = await getAppointmentByTreatmentId(1);
             // console.log('appointment results: ', appointmentTreatment)
 
+            // console.log('Calling destroy Appointment...')
+            // const appointmentdestroyed = await destroyAppointment(1);
+            // console.log('destroyed appointment results: ', appointmentdestroyed)
+            // console.log("appointments", appointment)
+
+            
             // Medical Record Testing;
             console.log('Calling getAllMedicalRecord...');
             const medicalRecord = await getAllMedicalRecord();
