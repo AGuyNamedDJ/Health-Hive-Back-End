@@ -21,7 +21,6 @@ const usersRouter = express.Router();
     // Initial usersRouter
     usersRouter.use((req,res,next) => {
         console.log("A request is being made to /users...");
-
         next();
     });
 
