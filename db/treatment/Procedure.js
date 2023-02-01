@@ -94,11 +94,25 @@ async function getProcedureByStaffId(staff_id) {
     }
 };
 
+// destroyProcedure
+async function destroyProcedure(id){
+    try {
+        await client.query(`
+            DELETE
+            FROM procedure
+            WHERE "id" = $1;
+            `, [id]);
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 module.exports = {
     createProcedure,
     getAllProcedure,
     getProcedureById,
     getProcedureByPatientId,
     getProcedureByTreatmentId,
-    getProcedureByStaffId
+    getProcedureByStaffId,
+    destroyProcedure
 };

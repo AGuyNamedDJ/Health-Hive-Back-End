@@ -112,7 +112,18 @@ async function getAppointmentByTreatmentId(treatment_id){
     }
 };
 
-
+// destroyAppointment
+async function destroyAppointment(id){
+    try {
+        await client.query(`
+            DELETE
+            FROM appointment
+            WHERE "id" = $1;
+            `, [id]);
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 module.exports = {
     createAppointment,
@@ -121,5 +132,6 @@ module.exports = {
     getAppointmentByDate,
     getAppointmentByPatientId,
     getAppointmentByStaffId,
-    getAppointmentByTreatmentId
+    getAppointmentByTreatmentId,
+    destroyAppointment
 };

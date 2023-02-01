@@ -94,6 +94,19 @@ async function getStaffByProviderId(provider_Id) {
     }
 };
 
+// destroyStaff
+async function destroyStaff(id){
+    try {
+        await client.query(`
+            DELETE
+            FROM staff
+            WHERE "id" = $1;
+            `, [id]);
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 
 module.exports = {
     createStaff,
@@ -101,5 +114,6 @@ module.exports = {
     getStaffById,
     getStaffByTitle,
     getStaffBySpecialty,
-    getStaffByProviderId
+    getStaffByProviderId,
+    destroyStaff
 };

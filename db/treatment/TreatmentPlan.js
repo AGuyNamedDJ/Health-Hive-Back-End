@@ -79,10 +79,24 @@ async function getTreatmentPlanByProviderId(provider_Id) {
     }
 };
 
+// destroyTreatmentPlan
+async function destroyTreatmentPlan(id){
+    try {
+        await client.query(`
+            DELETE
+            FROM treatment_plan
+            WHERE "id" = $1;
+            `, [id]);
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 module.exports = {
     createTreatmentPlan,
     getAllTreatmentPlan,
     getTreatmentPlanById,
     getTreatmentPlanByPatientId,
-    getTreatmentPlanByProviderId
+    getTreatmentPlanByProviderId,
+    destroyTreatmentPlan
 };
