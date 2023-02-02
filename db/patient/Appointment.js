@@ -166,8 +166,7 @@ async function updateAppointment(id, fields = {}) {
 //     }
 // };
 
-testUpdateAppointment();
-
+// testUpdateAppointment();
 
 module.exports = {
     createAppointment,
