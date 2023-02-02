@@ -7,7 +7,7 @@ const { createMedication,
     getMedicationByTreatmentId,
     getMedicationByProviderId,
     updateMedication, 
-    updateMedication} = require('../../db/treatment//Medication');
+    updateMedication} = require('../../db/treatment/Medication');
 
 const { requireUser, requireActiveUser  } = require('../utilities');
 
