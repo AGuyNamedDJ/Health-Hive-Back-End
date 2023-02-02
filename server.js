@@ -1,3 +1,4 @@
+// Imports
 require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan'); 
@@ -8,7 +9,7 @@ const app = express(); // Creates express server instance
 
 // Import project dirs
 const { apiRouter } = require('./api/index');
-const { client } = require('./db/index');
+const { client } = require('./db/Index');
 
 // Middleware
 app.use(express.json());

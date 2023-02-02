@@ -52,6 +52,7 @@ const { medicationRouter } = require('./medication');
 const { procedureRouter } = require('./procedure');
 const { procedureStaffRouter } = require('./procedureStaff');
 const { treatmentPlanRouter } = require('./treatmentPlan');
+const { usersRouter } = require('./users');
 apiRouter.use('/patient', patientRouter);
 apiRouter.use('/patient/appointment', appointmentRouter);
 apiRouter.use('/patient/medicalrecord', medicalRecordRouter);
@@ -60,6 +61,7 @@ apiRouter.use('/patient/medication', medicationRouter);
 apiRouter.use('/patient/procedure', procedureRouter);
 apiRouter.use('/patient/procedure/staff', procedureStaffRouter);
 apiRouter.use('/patient/treatmentplan', treatmentPlanRouter);
+apiRouter.use('/users', usersRouter);
 
 // Export
 module.exports = { apiRouter }
