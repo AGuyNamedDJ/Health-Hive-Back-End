@@ -46,7 +46,7 @@ async function getUsersById(userId) {
         }
         return users;
     } catch (error) {
-        throw error
+        console.log(error)
     }
 };
 
