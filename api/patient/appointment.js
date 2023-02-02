@@ -16,46 +16,70 @@ const { requireUser, requireActiveUser  } = require('../utilities');
 const appointmentRouter = express.Router();
 
 // Route Handelers
-    // Initial patientRouter
+    // Initial appointmentRouter
     appointmentRouter.use((req, res, next) => {
-        console.log("A request is being made to /patient");
+        console.log("A request is being made to /appointment");
         next();
     });
 
-    // POST/patient
+    // POST/appointment
     appointmentRouter.post("/", async (req, res, next) => {
         try {
-            const patient = await getPatientByEmail(email);
+            const appointment = await getAppointmentById(id);
 
-            if (patient) {
+            if (appointment) {
                 next({
                     name: "PreExistingPatientError",
-                    message: `Patient named ${patient.email} already exists!`,
+                    message: `Appointment named ${appointment.id} already exists!`,
                     error: "Error! ",
                 });
             }
-            const newPatient = await createPatient({first_name, last_name, date_of_birth, gender, address, phone_number, email, emergency_contact_name, emergency_contact_phone});
-            res.send(newPatient);
+            const newAppointment = await createPatient({date, time, location, patient_id, staff_id, treatment_id});
+            res.send(newAppointment);
         } catch ({ name, message }) {
             next({ name, message });
         }
       });
 
-    // GET/patient
+    // GET/appointment
     appointmentRouter.get('/', async (req, res, next) =>{
         try{
-            const patient = await getAllPatient();
+            const patient = await getAllAppointment();
             res.send(patient) 
         } catch (error) {
-            console.log("Error getting all patient!")
+            console.log("Error getting all appointment!")
         }
     });
 
-    // GET/getPatientById 
+    // GET/getAppointmentById 
     appointmentRouter.get('/:id', async (req, res, next) => {
         const {id} = req.params 
         try {
-            const newPatientId = await getPatientById (id)
+            const newAppointmentId = await getAppointmentById (id)
+            res.send(newAppointmentId)
+        } catch (error) {
+            console.log("Error getting appointmentId!")
+            console.log(error)
+        }
+    });
+
+    // GET/getAppointmentByDate
+    appointmentRouter.get('/:date', async (req, res, next) => {
+        const {date} = req.params 
+        try {
+            const newAppointmentDate = await getAppointmentByDate (date)
+            res.send(newAppointmentDate)
+        } catch (error) {
+            console.log("Error getting appointmentDate!")
+            console.log(error)
+        }
+    });
+
+    // GET/getAppointmentByPatientId
+    appointmentRouter.get('/:patient_id', async (req, res, next) => {
+        const {patient_id} = req.params 
+        try {
+            const newPatientId = await getAppointmentByPatientId (patient_id)
             res.send(newPatientId)
         } catch (error) {
             console.log("Error getting patientId!")
@@ -63,50 +87,26 @@ const appointmentRouter = express.Router();
         }
     });
 
-    // GET/getPatientByLastName
-    appointmentRouter.get('/:last_name', async (req, res, next) => {
-        const {last_name} = req.params 
+    // GET/getAppointmentByStaffId
+    appointmentRouter.get('/:staff_id', async (req, res, next) => {
+        const {staff_id} = req.params 
         try {
-            const newPatientLN = await getPatientByLastName (last_name)
-            res.send(newPatientLN)
+            const newStaffId = await getAppointmentByStaffId (staff_id)
+            res.send(newStaffId)
         } catch (error) {
-            console.log("Error getting patientLN!")
+            console.log("Error getting staffId!")
             console.log(error)
         }
     });
 
-    // GET/getPatientByDateOfBirth
-    appointmentRouter.get('/:date_of_birth', async (req, res, next) => {
-        const {date_of_birth} = req.params 
+    // GET/getAppointmentByTreatmentId
+    appointmentRouter.get('/:treatment_id', async (req, res, next) => {
+        const {treatment_id} = req.params 
         try {
-            const newPatientDOB = await getPatientByDateOfBirth (date_of_birth)
-            res.send(newPatientDOB)
+            const newTreatmentId = await getAppointmentByTreatmentId (treatment_id)
+            res.send(newTreatmentId)
         } catch (error) {
-            console.log("Error getting patientDOB!")
-            console.log(error)
-        }
-    });
-
-    // GET/getPatientByAddress
-    appointmentRouter.get('/:address', async (req, res, next) => {
-        const {address} = req.params 
-        try {
-            const newPatientAddy = await getPatientByAddress (address)
-            res.send(newPatientAddy)
-        } catch (error) {
-            console.log("Error getting patientAddy!")
-            console.log(error)
-        }
-    });
-
-    // GET/getPatientByPhoneNumber
-    appointmentRouter.get('/:phone_number', async (req, res, next) => {
-        const {phone_number} = req.params 
-        try {
-            const newPatientPN = await getPatientByPhoneNumber (phone_number)
-            res.send(newPatientPN)
-        } catch (error) {
-            console.log("Error getting patientPN!")
+            console.log("Error getting treatmentId!")
             console.log(error)
         }
     });
@@ -159,5 +159,70 @@ const appointmentRouter = express.Router();
         }
     });
 
+    // PATCH/postAppointment
+    appointmentRouter.patch("/:id", async (req, res, next) => {
+        try {
+            const { id } = req.params;
+            const { date, time, location, patient_id, staff_id, treatment_id } = req.body;
+            const updateFields = {};
+            updateFields.id = id;
+
+            // Fields;
+            if (date) {
+                updateFields.date = date;
+            } if (time) {
+                updateFields.time = time;
+            } if (location) {
+                updateFields.location = location;
+            } if (patient_id) {
+                updateFields.patient_id = patient_id;
+            } if (staff_id) {
+                updateFields.staff_id = staff_id;
+            } if (treatment_id) {
+                updateFields.treatment_id = treatment_id;
+        
+            } if (!(await getAppointmentById(id))) {
+                next({
+                    name: "AppointmentNotFoundError",
+                    message: `Appointment named ${id} not found`,
+                    error: "Error! ",
+                });
+            } else {
+                const response = await updateAppointment(updateFields);
+                
+                if (response) {
+                    res.send(response);
+                } else {
+                    next({
+                        name: "NoFieldsToUpdate",
+                        message: `Enter a field to update.`,
+                        error: "Error! ",
+                    });
+                }
+            }
+        } catch (error) {
+            console.log(error);
+            next(error);
+        }
+    });
+
+    // DELETE /:id
+    appointmentRouter.delete('/:id', async (req, res, next) => {
+        try {
+          const appointment = await getAppointmentById(req.params.id);
+          if (appointment) {
+            const updatedAppointment = await updateAppointment(appointment.id, { isPublic: false });
+            res.send({ appointment: updatedAppointment });
+          } else {
+            next({
+              name: "AppointmentNotFoundError",
+              message: "That Appointment does not exist"
+            });
+          }
+        } catch ({ name, message }) {
+          next({ name, message });
+        }
+      });
+
 // Exports
-module.exports = {patientRouter};
+module.exports = {appointmentRouter};

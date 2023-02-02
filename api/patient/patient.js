@@ -27,12 +27,12 @@ const patientRouter = express.Router();
     // POST/patient
     patientRouter.post("/", async (req, res, next) => {
         try {
-            const patient = await getPatientByEmail(email);
+            const patient = await getPatientById(id);
 
             if (patient) {
                 next({
                     name: "PreExistingPatientError",
-                    message: `Patient named ${patient.email} already exists!`,
+                    message: `Patient named ${patient.id} already exists!`,
                     error: "Error! ",
                 });
             }
