@@ -90,7 +90,7 @@ const treatmentPlanRouter = express.Router();
         try {
             const { id } = req.params;
             const { plan, patient_id, provider_id } = req.body;
-            const updateFields = { id };
+            const updateFields = {};
 
             // Fields;
             if (plan) {

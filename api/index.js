@@ -45,11 +45,21 @@ apiRouter.use(async (req, res, next) => {
 
 // Routers
 const { patientRouter } = require('./patient/patient');
-
+const { appointmentRouter } = require('./patient/appointment');
+const { medicalRecordRouter } = require('./patient/medicalRecord');
+const { staffRouter } = require('./staff/staff');
+const { medicationRouter } = require('./treatment/medication');
+const { procedureRouter } = require('./treatment/procedure');
+const { procedureStaffRouter } = require('./treatment/procedureStaff');
+const { treatmentPlanRouter } = require('./treatment/treatmentPlan');
 apiRouter.use('/patient', patientRouter);
-
-
-    // There should be no ./ here 
+apiRouter.use('/patient/appointment', appointmentRouter);
+apiRouter.use('/patient/medicalrecord', medicalRecordRouter);
+apiRouter.use('/staff', staffRouter);
+apiRouter.use('/patient/medication', medicationRouter);
+apiRouter.use('/patient/procedure', procedureRouter);
+apiRouter.use('/patient/procedure/staff', procedureStaffRouter);
+apiRouter.use('/patient/treatmentplan', treatmentPlanRouter);
 
 // Export
 module.exports = { apiRouter }
