@@ -10,9 +10,9 @@ const { createPatient,
     getPatientByEmail,
     getPatientByEmergencyContactName,
     getPatientByEmergencyContactPhone, 
-    updatePatient } = require('../../db/patient/Patient');
+    updatePatient } = require('../db/Patient');
 
-    const { requireUser, requireActiveUser  } = require('../utilities');
+    const { requireUser, requireActiveUser  } = require('./utilities');
 
 // Router Middleware
 const patientRouter = express.Router();

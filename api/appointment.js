@@ -8,9 +8,9 @@ const { createAppointment,
     getAppointmentByStaffId,
     getAppointmentByTreatmentId,
     destroyAppointment,
-    updateAppointment } = require('../../db/patient/Appointment');
+    updateAppointment } = require('../db/Appointment');
 
-const { requireUser, requireActiveUser  } = require('../utilities');
+const { requireUser, requireActiveUser  } = require('./utilities');
 
 // Router Middleware
 const appointmentRouter = express.Router();

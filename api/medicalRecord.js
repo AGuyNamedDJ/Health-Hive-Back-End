@@ -7,9 +7,9 @@ const { createMedicalRecord,
     getMedicalRecordByPatientId,
     getMedicalRecordBySymptom,
     getMedicalRecordByStatus,
-    updateMedicalRecord } = require('../../db/patient/MedicalRecord');
+    updateMedicalRecord } = require('../db/MedicalRecord');
 
-const { requireUser, requireActiveUser  } = require('../utilities');
+const { requireUser, requireActiveUser  } = require('./utilities');
 
 // Router Middleware
 const medicalRecordRouter = express.Router();

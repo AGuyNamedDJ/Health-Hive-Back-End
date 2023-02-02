@@ -44,14 +44,14 @@ apiRouter.use(async (req, res, next) => {
 });
 
 // Routers
-const { patientRouter } = require('./patient/patient');
-const { appointmentRouter } = require('./patient/appointment');
-const { medicalRecordRouter } = require('./patient/medicalRecord');
-const { staffRouter } = require('./staff/staff');
-const { medicationRouter } = require('./treatment/medication');
-const { procedureRouter } = require('./treatment/procedure');
-const { procedureStaffRouter } = require('./treatment/procedureStaff');
-const { treatmentPlanRouter } = require('./treatment/treatmentPlan');
+const { patientRouter } = require('./patient');
+const { appointmentRouter } = require('./appointment');
+const { medicalRecordRouter } = require('./medicalRecord');
+const { staffRouter } = require('./staff');
+const { medicationRouter } = require('./medication');
+const { procedureRouter } = require('./procedure');
+const { procedureStaffRouter } = require('./procedureStaff');
+const { treatmentPlanRouter } = require('./treatmentPlan');
 apiRouter.use('/patient', patientRouter);
 apiRouter.use('/patient/appointment', appointmentRouter);
 apiRouter.use('/patient/medicalrecord', medicalRecordRouter);

@@ -5,9 +5,9 @@ const { createProcedureStaff,
     getProcedureStaffById,
     getProcedureStaffByStaffId,
     destroyProcedureStaff,
-    updateProcedureStaff } = require('../../db/treatment/ProcedureStaff');
+    updateProcedureStaff } = require('../db/ProcedureStaff');
 
-const { requireUser, requireActiveUser  } = require('../utilities');
+const { requireUser, requireActiveUser  } = require('./utilities');
 
 // Router Middleware
 const procedureStaffRouter = express.Router();

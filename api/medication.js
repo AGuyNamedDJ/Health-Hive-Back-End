@@ -6,9 +6,9 @@ const { createMedication,
     getMedicationByPharmacy,
     getMedicationByTreatmentId,
     getMedicationByProviderId, 
-    updateMedication} = require('../../db/treatment/Medication');
+    updateMedication} = require('../db/Medication');
 
-const { requireUser, requireActiveUser  } = require('../utilities');
+const { requireUser, requireActiveUser  } = require('./utilities');
 
 // Router Middleware
 const medicationRouter = express.Router();

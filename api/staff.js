@@ -7,9 +7,9 @@ const { createStaff,
     getStaffBySpecialty,
     getStaffByProviderId,
     destroyStaff,
-    updateStaff } = require('../../db/staff/Staff');
+    updateStaff } = require('../db/Staff');
 
-const { requireUser, requireActiveUser  } = require('../utilities');
+const { requireUser, requireActiveUser  } = require('./utilities');
 
 // Router Middleware
 const staffRouter = express.Router();

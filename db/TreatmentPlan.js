@@ -1,5 +1,5 @@
 // Requires
-const { client } = require('../Index');
+const { client } = require('./Index');
 const bcrypt = require('bcrypt');
 
 // createTreatmentPlan
