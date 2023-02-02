@@ -80,6 +80,9 @@ const { createUsers, getAllUsers } = require('./Users');
         destroyProcedureStaff,
         updateProcedureStaff } =require('./ProcedureStaff');
 
+        // console.log(__dirname);
+
+
 // Step 2: Users Methods;
     // Method: Drop Tables;
     async function dropTables(){
