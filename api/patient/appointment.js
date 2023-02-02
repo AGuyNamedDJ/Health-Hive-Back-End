@@ -164,47 +164,37 @@ const appointmentRouter = express.Router();
         try {
             const { id } = req.params;
             const { date, time, location, patient_id, staff_id, treatment_id } = req.body;
-            const updateFields = {};
-            updateFields.id = id;
+            const updateFields = { id };
 
             // Fields;
-            if (date) {
-                updateFields.date = date;
-            } if (time) {
-                updateFields.time = time;
-            } if (location) {
-                updateFields.location = location;
-            } if (patient_id) {
-                updateFields.patient_id = patient_id;
-            } if (staff_id) {
-                updateFields.staff_id = staff_id;
-            } if (treatment_id) {
-                updateFields.treatment_id = treatment_id;
+            if (date) updateFields.date = date;
+            if (time) updateFields.time = time;
+            if (location) updateFields.location = location;
+            if (patient_id) updateFields.patient_id = patient_id;
+            if (staff_id) updateFields.staff_id = staff_id;
+            if (treatment_id) updateFields.treatment_id = treatment_id;
         
-            } if (!(await getAppointmentById(id))) {
-                next({
-                    name: "AppointmentNotFoundError",
-                    message: `Appointment named ${id} not found`,
-                    error: "Error! ",
-                });
-            } else {
-                const response = await updateAppointment(updateFields);
-                
-                if (response) {
-                    res.send(response);
-                } else {
-                    next({
-                        name: "NoFieldsToUpdate",
-                        message: `Enter a field to update.`,
-                        error: "Error! ",
-                    });
-                }
+            const appointment = await getAppointmentById(id);
+            if (!appointment) {
+              return next({
+                name: "AppointmentNotFoundError",
+                message: `Appointment with ID ${id} not found`,
+              });
             }
-        } catch (error) {
-            console.log(error);
+        
+            const response = await updateAppointment(updateFields);
+            if (response) {
+              res.send({ appointment: response });
+            } else {
+              next({
+                name: "NoFieldsToUpdate",
+                message: "Please provide at least one field to update",
+              });
+            }
+          } catch (error) {
             next(error);
-        }
-    });
+          }
+        });
 
     // DELETE /:id
     appointmentRouter.delete('/:id', async (req, res, next) => {
