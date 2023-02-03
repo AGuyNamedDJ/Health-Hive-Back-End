@@ -4658,7 +4658,120 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'npatel@healthhive.com',
                 phone_number: '3386462524'
             });
-            
+            await createStaff({
+                name: 'Ralph Kim',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4678,
+                email: 'rkim@healthhive.com',
+                phone_number: '3386123456'
+            });
+            await createStaff({
+                name: 'Amanda Lee',
+                title: 'Family Medicine Physician',
+                specialty: 'Family Medicine',
+                provider_id: 5456,
+                email: 'alee@healthhive.com',
+                phone_number: '3388641239'
+            });
+            await createStaff({
+                name: 'Michael Chen',
+                title: 'Family Medicine Physician',
+                specialty: 'Family Medicine',
+                provider_id: 5343,
+                email: 'mchen@healthhive.com',
+                phone_number: '3388648765'
+            });
+            await createStaff({
+                name: 'Caroline Williams',
+                title: 'Family Medicine Physician',
+                specialty: 'Family Medicine',
+                provider_id: 5537,
+                email: 'cwilliams@healthhive.com',
+                phone_number: '8886462524'
+            });
+            await createStaff({
+                name: 'Olivia Lee',
+                title: 'Family Medicine Physician',
+                specialty: 'Family Medicine',
+                provider_id: 5382,
+                email: 'olee@healthhive.com',
+                phone_number: '8886462524'
+            });
+            await createStaff({
+                name: 'Ethan Brown',
+                title: 'Family Medicine Physician',
+                specialty: 'Family Medicine',
+                provider_id: 5201,
+                email: 'ebrown@healthhive.com',
+                phone_number: '8886462524'
+            });
+             await createStaff({
+                name: 'Isabelle Green',
+                title: 'Family Medicine Physician',
+                specialty: 'Family Medicine',
+                provider_id: 5125,
+                email: 'igreen@healthhive.com',
+                phone_number: '8886462524'
+            });
+            await createStaff({
+                name: 'Raphael Giles',
+                title: 'Family Medicine',
+                specialty: 'Family Medicine',
+                provider_id: 5723,
+                email: 'rgiles@healthhive.com',
+                phone_number: '3386130024'
+            });
+            await createStaff({
+                name: 'Aria Powell',
+                title: 'Family Medicine',
+                specialty: 'Family Medicine',
+                provider_id: 5780,
+                email: 'apowell@healthhive.com',
+                phone_number: '3386130025'
+            });
+            await createStaff({
+                name: 'Ethan Rodriguez',
+                title: 'Family Medicine',
+                specialty: 'Family Medicine',
+                provider_id: 5589,
+                email: 'erodriguez@healthhive.com',
+                phone_number: '3386130026'
+            });
+            await createStaff({
+                name: 'David Chen',
+                title: 'Gastroenterologist',
+                specialty: 'Gastroenterology',
+                provider_id: 6013,
+                email: 'dchen@healthhive.com',
+                phone_number: '3386013123'
+            }); 
+            await createStaff({
+                name: 'Samantha Brown',
+                title: 'Gastroenterologist',
+                specialty: 'Gastroenterology',
+                provider_id: 5637,
+                email: 'sbrown@healthhive.com',
+                phone_number: '3386387678'
+            });
+            await createStaff({
+                name: 'Gregory Ortiz',
+                title: 'Gastroenterologist',
+                specialty: 'Gastroenterology',
+                provider_id: 5913,
+                email: 'gortiz@healthhive.com',
+                phone_number: '3386388897'
+            });
+                
+                
+                
+    
+    
+    
+
+        
+                
+                
             
                 
                 
