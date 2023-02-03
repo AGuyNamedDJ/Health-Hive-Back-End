@@ -1005,6 +1005,62 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Avery Johnson',
                 emergency_contact_phone: '7087656666'
             });
+            await createPatient({
+                first_name: 'Michael',
+                last_name: 'Martinez',
+                date_of_birth: '1985-06-01',
+                gender: 'male',
+                address: '6789 Pine St, Chicago, IL, 60601',
+                phone_number: '7087657777',
+                email: 'michaelmartinez85@gmail.com',
+                emergency_contact_name: 'Natalie Davis',
+                emergency_contact_phone: '7087658888'
+            });
+            await createPatient({
+                first_name: 'Aria',
+                last_name: 'Hernandez',
+                date_of_birth: '1999-06-01',
+                gender: 'female',
+                address: '5234 Elm St, Chicago, IL, 60601',
+                phone_number: '7087659999',
+                email: 'ariahernandez99@gmail.com',
+                emergency_contact_name: 'Avery Johnson',
+                emergency_contact_phone: '7087650000'
+            });
+            await createPatient({
+                first_name: 'Liam',
+                last_name: 'Young',
+                date_of_birth: '1997-06-01',
+                gender: 'male',
+                address: '1234 Oak St, Atlanta, GA, 30301',
+                phone_number: '7087651111',
+                email: 'liamyoung97@gmail.com',
+                emergency_contact_name: 'Natalie Davis',
+                emergency_contact_phone: '7087652222'
+            });
+            await createPatient({
+                first_name: 'Olivia',
+                last_name: 'Lewis',
+                date_of_birth: '1991-06-01',
+                gender: 'female',
+                address: '1234 Maple St, Phoenix, AZ, 85001',
+                phone_number: '7087653333',
+                email: 'olivialewis91@gmail.com',
+                emergency_contact_name: 'Avery Johnson',
+                emergency_contact_phone: '7087654444'
+            });
+            await createPatient({
+                first_name: 'William',
+                last_name: 'Brown',
+                date_of_birth: '1993-06-01',
+                gender: 'male',
+                address: '1234 Elm St, Seattle, WA, 98101',
+                phone_number: '7087655555',
+                email: 'williambrown93@gmail.com',
+                emergency_contact_name: 'Natalie Davis',
+                emergency_contact_phone: '7087656666'
+            });
+
 
 
 
