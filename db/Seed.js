@@ -331,7 +331,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 day_supply: '30',
                 start_date: '2022-08-15',
                 length_of_therapy: '12 Months',
-                refills: '3',
+                refills: 3,
                 pharmacy: 'CVS Health',
                 treatment_id: 1,
                 provider_id: 1537
