@@ -4554,6 +4554,112 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'akim@healthhive.com',
                 phone_number: '3386146253'
             });
+            await createStaff({
+                name: 'Janet Kim',
+                title: 'Dermatologist',
+                specialty: 'Dermatology',
+                provider_id: 3567,
+                email: 'jkim@healthhive.com',
+                phone_number: '3388641234'
+            });
+            await createStaff({
+                name: 'Caroline Green',
+                title: 'Dermatologist',
+                specialty: 'Dermatology',
+                provider_id: 3456,
+                email: 'cgreen@healthhive.com',
+                phone_number: '3386745234'
+            });
+            await createStaff({
+                name: 'Michael Lee',
+                title: 'Dermatologist',
+                specialty: 'Dermatology',
+                provider_id: 3901,
+                email: 'mlee@healthhive.com',
+                phone_number: '3381234567'
+            });
+            await createStaff({
+                name: 'Nina Patel',
+                title: 'Dermatologist',
+                specialty: 'Dermatology',
+                provider_id: 3579,
+                email: 'npatel@healthhive.com',
+                phone_number: '3385555555'
+            });
+            await createStaff({
+                name: 'Olivia Smith',
+                title: 'Dermatologist',
+                specialty: 'Dermatology',
+                provider_id: 3777,
+                email: 'osmith@healthhive.com',
+                phone_number: '3388888888'
+            });
+            await createStaff({
+                name: 'Karen Johnson',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4567,
+                email: 'kjohnson@healthhive.com',
+                phone_number: '3388646548'
+            });
+            await createStaff({
+                name: 'Megan Foster',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4937,
+                email: 'mfoster@healthhive.com',
+                phone_number: '3386386552'
+            });
+            await createStaff({
+                name: 'Megan Brown',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4567,
+                email: 'mbrown@healthhive.com',
+                phone_number: '3386575890'
+            });
+            await createStaff({
+                name: 'Ava Johnson',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4579,
+                email: 'ajohnson@healthhive.com',
+                phone_number: '3386575891'
+            });
+            await createStaff({
+                name: 'Nathan Lee',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4589,
+                email: 'nlee@healthhive.com',
+                phone_number: '3386575892'
+            });
+            await createStaff({
+                name: 'Carla Kim',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4672,
+                email: 'ckim@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Trevor Green',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4385,
+                email: 'tgreen@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Nina Patel',
+                title: 'Physician',
+                specialty: 'Emergency Medicine',
+                provider_id: 4986,
+                email: 'npatel@healthhive.com',
+                phone_number: '3386462524'
+            });
+            
+            
                 
                 
                 
