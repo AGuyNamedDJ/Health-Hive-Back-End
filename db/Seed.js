@@ -5154,7 +5154,126 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'jstone@healthhive.com',
                 phone_number: '3384870442'
             });
-                
+            await createStaff({
+                name: 'Ashley Anderson',
+                title: 'Psychiatrist',
+                specialty: 'Mental Health',
+                provider_id: 5678,
+                email: 'aanderson@healthhive.com',
+                phone_number: '3386757890'
+            });
+            await createStaff({
+                name: 'Benjamin Brown',
+                title: 'Psychiatrist',
+                specialty: 'Child and Adolescent Psychiatry',
+                provider_id: 5601,
+                email: 'bbrown@healthhive.com',
+                phone_number: '3386750245'
+            });
+            await createStaff({
+                name: 'Olivia Parker',
+                title: 'Radiologist',
+                specialty: 'Diagnostic Radiology',
+                provider_id: 8123,
+                email: 'oparker@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Sophia Gonzales',
+                title: 'Radiologist',
+                specialty: 'Diagnostic Radiology',
+                provider_id: 8011,
+                email: 'sgonzales@healthhive.com',
+                phone_number: '3389994567'
+            });
+            await createStaff({
+                name: 'Olivia Kim',
+                title: 'Radiologist',
+                specialty: 'Interventional Radiology',
+                provider_id: 8012,
+                email: 'okim@healthhive.com',
+                phone_number: '3389994568'
+            });
+            await createStaff({
+                name: 'Ethan Lee',
+                title: 'Radiologist',
+                specialty: 'Nuclear Radiology',
+                provider_id: 8013,
+                email: 'elee@healthhive.com',
+                phone_number: '3389994569'
+            });
+            await createStaff({
+                name: 'Alexis Chen',
+                title: 'Surgeon',
+                specialty: 'General Surgery',
+                provider_id: 8600,
+                email: 'achen@healthhive.com',
+                phone_number: '3386602524'
+            });
+            await createStaff({
+                name: 'Andrew Chen',
+                title: 'Surgeon',
+                specialty: 'Cardiothoracic Surgery',
+                provider_id: 8960,
+                email: 'achen@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Sara Kim',
+                title: 'Surgeon',
+                specialty: 'Orthopedic Surgery',
+                provider_id: 8961,
+                email: 'skim@healthhive.com',
+                phone_number: '3386462525'
+            });
+            await createStaff({
+                name: 'William Brown',
+                title: 'Surgeon',
+                specialty: 'Plastic Surgery',
+                provider_id: 8962,
+                email: 'wbrown@healthhive.com',
+                phone_number: '3386462526'
+            });
+            await createStaff({
+                name: 'Emma Lee',
+                title: 'Surgeon',
+                specialty: 'Vascular Surgery',
+                provider_id: 8963,
+                email: 'elee@healthhive.com',
+                phone_number: '3386462527'
+            });
+            await createStaff({
+                name: 'David Parker',
+                title: 'Surgeon',
+                specialty: 'General Surgery',
+                provider_id: 8964,
+                email: 'dparker@healthhive.com',
+                phone_number: '3386462528'
+            });
+            await createStaff({
+                name: 'Rebecca Green',
+                title: 'Surgeon',
+                specialty: 'Neurosurgery',
+                provider_id: 8965,
+                email: 'rgreen@healthhive.com',
+                phone_number: '3386462529'
+            });
+            await createStaff({
+                name: 'Michael Wilson',
+                title: 'Surgeon',
+                specialty: 'Colorectal Surgery',
+                provider_id: 8966,
+                email: 'mwilson@healthhive.com',
+                phone_number: '3386462530'
+            });
+            await createStaff({
+                name: 'Emily Davis',
+                title: 'Surgeon',
+                specialty: 'Otolaryngology',
+                provider_id: 8967,
+                email: 'edavis@healthhive.com',
+                phone_number: '3386462531'
+            });
               
                 
                 
