@@ -4762,9 +4762,335 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'gortiz@healthhive.com',
                 phone_number: '3386388897'
             });
+            await createStaff({
+                name: "Megan Chen",
+                title: "Gynecologist",
+                specialty: "Gynecology",
+                provider_id: 6123,
+                email: "mchen@healthhive.com",
+                phone_number: "3386462524"
+            });
+            await createStaff({
+                name: "Jason Lee",
+                title: "Gynecologist",
+                specialty: "Gynecology",
+                provider_id: 6456,
+                email: "jlee@healthhive.com",
+                phone_number: "3386558899"
+            });
+            await createStaff({
+                name: 'Sarah Wright',
+                title: 'Neurologist',
+                specialty: 'Neurology',
+                provider_id: 6837,
+                email: 'swright@healthhive.com',
+                phone_number: '3385557780'
+            });
+            await createStaff({
+                name: 'Liam Kim',
+                title: 'Neurologist',
+                specialty: 'Neurology',
+                provider_id: 6537,
+                email: 'lkim@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Avery Chen',
+                title: 'Neurologist',
+                specialty: 'Neurology',
+                provider_id: 6547,
+                email: 'achen@healthhive.com',
+                phone_number: '3386463524'
+            });
+            await createStaff({
+                name: 'Megan Stone',
+                title: 'Nurse Practitioner',
+                specialty: 'Emergency Room',
+                provider_id: 7537,
+                email: 'mstone@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Jane Doe',
+                title: 'Nurse',
+                specialty: 'Surgical Assistant',
+                provider_id: null,
+                email: 'jdoe@healthhive.com',
+                phone_number: '3386731259'
+            });
+            await createStaff({
+                name: 'Maggie Jenkins',
+                title: 'Nurse',
+                specialty: 'RN',
+                provider_id: null,
+                email: 'mjenkins@healthhive.com',
+                phone_number: '3387369874'
+            });
+            await createStaff({
+                name: 'David Lopez',
+                title: 'Nurse',
+                specialty: 'Emergency Room',
+                provider_id: null,
+                email: 'dlopez@healthhive.com',
+                phone_number: '3387369876'
+            });
+            await createStaff({
+                name: 'Nina Chen',
+                title: 'Nurse',
+                specialty: 'Pediatrics',
+                provider_id: null,
+                email: 'nchen@healthhive.com',
+                phone_number: '3387482536'
+            });
+            await createStaff({
+                name: 'Sarah Thompson',
+                title: 'Nurse',
+                specialty: 'Surgical',
+                provider_id: null,
+                email: 'sthompson@healthhive.com',
+                phone_number: '3382341236'
+            });
+            await createStaff({
+                name: 'Kimberly James',
+                title: 'Nurse',
+                specialty: 'Emergency Room',
+                provider_id: null,
+                email: 'kjames@healthhive.com',
+                phone_number: '3386167521'
+            });
+            await createStaff({
+                name: 'Ashley Smith',
+                title: 'Nurse',
+                specialty: 'Surgical Assistant',
+                provider_id: null,
+                email: 'asmith@healthhive.com',
+                phone_number: '3386293547'
+            });
+            await createStaff({
+                name: 'Jason Brown',
+                title: 'Nurse',
+                specialty: 'Critical Care',
+                provider_id: null,
+                email: 'jbrown@healthhive.com',
+                phone_number: '3386478962'
+            });
+            await createStaff({
+                name: 'Sophie Lee',
+                title: 'Nurse',
+                specialty: 'RN',
+                provider_id: null,
+                email: 'slee@healthhive.com',
+                phone_number: '3386151733'
+            });
+            await createStaff({
+                name: 'Karen Wilson',
+                title: 'Nurse',
+                specialty: 'ER',
+                provider_id: null,
+                email: 'kwilson@healthhive.com',
+                phone_number: '3386151734'
+            });
+            await createStaff({
+                name: 'Linda Chen',
+                title: 'Nurse',
+                specialty: 'NP',
+                provider_id: 7678,
+                email: 'lchen@healthhive.com',
+                phone_number: '3386151735'
+            });
+            await createStaff({
+                name: 'Marisol Nguyen',
+                title: 'Nurse',
+                specialty: 'Emergency Room Nurse',
+                provider_id: null,
+                email: 'mnguyen@healthhive.com',
+                phone_number: '3386223949'
+            });
+            await createStaff({
+                name: 'Nina Rodriguez',
+                title: 'Nurse',
+                specialty: 'RN',
+                provider_id: null,
+                email: 'nrodriguez@healthhive.com',
+                phone_number: '3386223950'
+            });
+            await createStaff({
+                name: 'Bradley Kim',
+                title: 'Nurse',
+                specialty: 'Surgical Assistant',
+                provider_id: null,
+                email: 'bkim@healthhive.com',
+                phone_number: '3386223951'
+            });
+            await createStaff({
+                name: 'Sabrina Collins',
+                title: 'Nurse',
+                specialty: 'NP',
+                provider_id: 7832,
+                email: 'scollins@healthhive.com',
+                phone_number: '3386223952'
+            });
+            await createStaff({
+                name: 'Hazel Hayes',
+                title: 'Nurse',
+                specialty: 'RN',
+                provider_id: null,
+                email: 'hhayes@healthhive.com',
+                phone_number: '3386462524'
+            }); 
+            await createStaff({
+                name: 'Maggie Miller',
+                title: 'Nurse',
+                specialty: 'NP',
+                provider_id: 6785,
+                email: 'mmiller@healthhive.com',
+                phone_number: '3386463524'
+            }); 
+            await createStaff({
+                name: 'Nathan Nguyen',
+                title: 'Nurse',
+                specialty: 'ER',
+                provider_id: null,
+                email: 'nnguyen@healthhive.com',
+                phone_number: '3386462554'
+            });
+            await createStaff({
+                name: 'Olivia Ortiz',
+                title: 'Nurse',
+                specialty: 'Surgical Assistant',
+                provider_id: null,
+                email: 'oortiz@healthhive.com',
+                phone_number: '3386462784'
+            });
+            await createStaff({
+                name: 'Barbara Watson',
+                title: 'Nurse',
+                specialty: 'ER',
+                provider_id: null,
+                email: 'bwatson@healthhive.com',
+                phone_number: '3386703524'
+            });
+            await createStaff({
+                name: 'Carlos Martinez',
+                title: 'Nurse',
+                specialty: 'Surgical',
+                provider_id: null,
+                email: 'cmartinez@healthhive.com',
+                phone_number: '3386723524'
+            });
+            await createStaff({
+                name: 'Dawn James',
+                title: 'Nurse',
+                specialty: 'ICU',
+                provider_id: null,
+                email: 'djames@healthhive.com',
+                phone_number: '3386734524'
+            });
+            await createStaff({
+                name: 'Emily Rodriguez',
+                title: 'Nurse',
+                specialty: 'Orthopedic',
+                provider_id: null,
+                email: 'erodriguez@healthhive.com',
+                phone_number: '3386745524'
+            });
+            await createStaff({
+                name: 'Samantha Kim',
+                title: 'Oncologist',
+                specialty: 'Medical Oncology',
+                provider_id: 7589,
+                email: 'skim@healthhive.com',
+                phone_number: '3387259876'
+            });
+            await createStaff({
+                name: 'Samantha Drake',
+                title: 'Oncologist',
+                specialty: 'Breast Cancer',
+                provider_id: 7012,
+                email: 'sdrake@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Andrew Chen',
+                title: 'Oncologist',
+                specialty: 'Lung Cancer',
+                provider_id: 7032,
+                email: 'achen@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Emma Kim',
+                title: 'Oncologist',
+                specialty: 'Leukemia',
+                provider_id: 7051,
+                email: 'ekim@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Amy Lee',
+                title: 'Ophthalmologist',
+                specialty: 'Cataract Surgery',
+                provider_id: 7638,
+                email: 'alee@healthhive.com',
+                phone_number: '3387215698'
+            });
+            await createStaff({
+                name: 'Samantha Lee',
+                title: 'Ophthalmologist',
+                specialty: 'Retina and Vitreous',
+                provider_id: 7567,
+                email: 'slee@healthhive.com',
+                phone_number: '3387678935'
+            });
+            await createStaff({
+                name: 'Haley Kim',
+                title: 'Orthopedic Surgeon',
+                specialty: 'Orthopedic Surgery',
+                provider_id: 8846,
+                email: 'hkim@healthhive.com',
+                phone_number: '3388461723'
+            });
+            await createStaff({
+                name: 'Roberto Ayala',
+                title: 'Orthopedic Surgeon',
+                specialty: 'Sports Medicine',
+                provider_id: 80035,
+                email: 'rayala@healthhive.com',
+                phone_number: '3385799555'
+            });
+            await createStaff({
+                name: 'Megan Law',
+                title: 'Orthopedic Surgeon',
+                specialty: 'Orthopedics',
+                provider_id: 8001,
+                email: 'mlaw@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Megan Lee',
+                title: 'Orthopedic Surgeon',
+                specialty: 'Sports Medicine',
+                provider_id: 80023,
+                email: 'mlee@healthhive.com',
+                phone_number: '3387414632'
+            });
+            await createStaff({
+                name: 'Nathan Kim',
+                title: 'Orthopedic Surgeon',
+                specialty: 'Joint Replacement',
+                provider_id: 80036,
+                email: 'nkim@healthhive.com',
+                phone_number: '3388975284'
+            });
+
+              
                 
                 
                 
+                
+                
+                        
+            
     
     
     
