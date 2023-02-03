@@ -5274,26 +5274,167 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'edavis@healthhive.com',
                 phone_number: '3386462531'
             });
-              
+            await createStaff({
+                name: 'Maggie Kim',
+                title: 'Surgeon',
+                specialty: 'Urology',
+                provider_id: 5153,
+                email: 'mkim@healthhive.com',
+                phone_number: '3386123587'
+            });
+            await createStaff({
+                name: 'Caroline Lee',
+                title: 'Urologist',
+                specialty: 'Urology',
+                provider_id: 5674,
+                email: 'clee@healthhive.com',
+                phone_number: '3387654832'
+            });
+            await createStaff({
+                name: 'Tina Nguyen',
+                title: 'Urologist',
+                specialty: 'Urology',
+                provider_id: 5713,
+                email: 'tnguyen@healthhive.com',
+                phone_number: '3383447513'
+            });
+            await createStaff({
+                name: 'Sarah Kim',
+                title: 'Urologist',
+                specialty: 'Urology',
+                provider_id: 5911,
+                email: 'skim@healthhive.com',
+                phone_number: '3383447911'
+            });
+            await createStaff({
+                name: 'Evelyn Lockwood',
+                title: 'Pharmacist',
+                specialty: 'Pharmacy',
+                provider_id: 9073,
+                email: 'elockwood@healthhive.com',
+                phone_number: '3386237593'
+            });
+            await createStaff({
+                name: 'Jenna Thomas',
+                title: 'Pharmacist',
+                specialty: 'Pharmacy',
+                provider_id: 9015,
+                email: 'jthomas@healthhive.com',
+                phone_number: '3389825674'
+            });
+            await createStaff({
+                name: 'Michael Kim',
+                title: 'Pharmacist',
+                specialty: 'Pharmacy',
+                provider_id: 9016,
+                email: 'mkim@healthhive.com',
+                phone_number: '3389695647'
+            });
+            await createStaff({
+                name: 'Samantha Lee',
+                title: 'Pharmacist',
+                specialty: 'Pharmacy',
+                provider_id: 9017,
+                email: 'slee@healthhive.com',
+                phone_number: '3389562347'
+            });
+            await createStaff({
+                name: 'Emily Davis',
+                title: 'Pharmacist',
+                specialty: 'Pharmacy',
+                provider_id: 9018,
+                email: 'edavis@healthhive.com',
+                phone_number: '3389236784'
+            });
+            await createStaff({
+                name: 'William Chen',
+                title: 'Pharmacist',
+                specialty: 'Pharmacy',
+                provider_id: 9019,
+                email: 'wchen@healthhive.com',
+                phone_number: '3389659832'
+            });
+            await createStaff({
+                name: 'Olivia Smith',
+                title: 'Pharmacist',
+                specialty: 'Pharmacy',
+                provider_id: 9020,
+                email: 'osmith@healthhive.com',
+                phone_number: '3384674949'
+            });
+            await createStaff({
+                name: 'Sarah Lee',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5643,
+                email: 'slee@healthhive.com',
+                phone_number: '3387456343'
+            });
+            await createStaff({
+                name: 'Emily Kim',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5143,
+                email: 'ekim@healthhive.com',
+                phone_number: '3389876123'
+            });
+            await createStaff({
+                name: 'David Lee',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5198,
+                email: 'dlee@healthhive.com',
+                phone_number: '3389234567'
+            });
+            await createStaff({
+                name: 'Sophie Chen',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5121,
+                email: 'schen@healthhive.com',
+                phone_number: '3389432108'
+            });
+            await createStaff({
+                name: 'William Brown',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5104,
+                email: 'wbrown@healthhive.com',
+                phone_number: '3389657891'
+            });
+            await createStaff({
+                name: 'Olivia Jackson',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5155,
+                email: 'ojackson@healthhive.com',
+                phone_number: '3389243567'
+            });
+            await createStaff({
+                name: 'John Doe',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5178,
+                email: 'jdoe@healthhive.com',
+                phone_number: '3389123890'
+            });
+            await createStaff({
+                name: 'Jane Doe',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5163,
+                email: 'janedoe@healthhive.com',
+                phone_number: '3389234567'
+            });
+            await createStaff({
+                name: 'Robert Smith',
+                title: 'Internal Medicine Physician',
+                specialty: 'Internal Medicine',
+                provider_id: 5180,
+                email: 'rsmith@healthhive.com',
+                phone_number: '3389456789'
+            });
                 
-                
-                
-                
-                
-                        
-            
-    
-    
-    
-
-        
-                
-                
-            
-                
-                
-                
-
             console.log('Finished creating staff.');
         } catch (error) {
             console.error('Error when creating staff!');
