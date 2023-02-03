@@ -2688,526 +2688,1388 @@ const { createUsers, getAllUsers } = require('./Users');
                     emergency_contact_name: 'Caroline Johnson',
                     emergency_contact_phone: '7735668854'
                 });
+            await createPatient({
+                first_name: 'Adam',
+                last_name: 'Williams',
+                date_of_birth: '1991-12-20',
+                gender: 'male',
+                address: '1601 E 53rd St, Chicago, IL 60615',
+                phone_number: '7738772216',
+                email: 'awilliams91@gmail.com',
+                emergency_contact_name: 'Beth Williams',
+                emergency_contact_phone: '7738994488'
+            });
+            await createPatient({
+                first_name: 'Ava',
+                last_name: 'Jones',
+                date_of_birth: '1989-01-15',
+                gender: 'female',
+                address: '4858 N Lake Shore Dr, Chicago, IL 60640',
+                phone_number: '7738221144',
+                email: 'ajones89@gmail.com',
+                emergency_contact_name: 'Charles Jones',
+                emergency_contact_phone: '7738332299'
+            });
+            await createPatient({
+                first_name: 'Ashley',
+                last_name: 'Brown',
+                date_of_birth: '1996-04-19',
+                gender: 'female',
+                address: '2555 W Peterson Ave, Chicago, IL 60659',
+                phone_number: '7739115566',
+                email: 'abrown96@gmail.com',
+                emergency_contact_name: 'Daniel Brown',
+                emergency_contact_phone: '7739227788'
+            });
+            await createPatient({
+                first_name: 'Austin',
+                last_name: 'Davis',
+                date_of_birth: '1992-08-02',
+                gender: 'male',
+                address: '5151 N Broadway St, Chicago, IL 60640',
+                phone_number: '7739441133',
+                email: 'adavis92@gmail.com',
+                emergency_contact_name: 'Emily Davis',
+                emergency_contact_phone: '7739552211'
+            });
+            await createPatient({
+                first_name: 'Aiden',
+                last_name: 'Miller',
+                date_of_birth: '1998-03-05',
+                gender: 'male',
+                address: '1501 W Fullerton Ave, Chicago, IL 60614',
+                phone_number: '7739664455',
+                email: 'amiller98@gmail.com',
+                emergency_contact_name: 'Frances Miller',
+                emergency_contact_phone: '7739776611'
+            });
+            await createPatient({
+                first_name: 'Brianna',
+                last_name: 'Brown',
+                date_of_birth: '1982-06-21',
+                gender: 'female',
+                address: '102 S Michigan Ave, Chicago, IL 60603',
+                phone_number: '7739521265',
+                email: 'bbrown82@gmail.com',
+                emergency_contact_name: 'Ethan Green',
+                emergency_contact_phone: '7739521265'
+            });  
+            await createPatient({
+                first_name: 'Brittany',
+                last_name: 'Baker',
+                date_of_birth: '1990-03-02',
+                gender: 'female',
+                address: '1819 N Racine Ave, Chicago, IL 60657',
+                phone_number: '7739521265',
+                email: 'bbaker90@gmail.com',
+                emergency_contact_name: 'Emma White',
+                emergency_contact_phone: '7739521265'
+            });
+            await createPatient({
+                first_name: 'Benjamin',
+                last_name: 'Bailey',
+                date_of_birth: '1995-12-01',
+                gender: 'male',
+                address: '4747 W Fullerton Ave, Chicago, IL 60639',
+                phone_number: '7739521265',
+                email: 'bbailey95@gmail.com',
+                emergency_contact_name: 'Alex Rodriguez',
+                emergency_contact_phone: '7739521265'
+            });
+            await createPatient({
+                first_name: 'Brandon',
+                last_name: 'Brooks',
+                date_of_birth: '1997-08-11',
+                gender: 'male',
+                address: '57 W Grand Ave, Chicago, IL 60654',
+                phone_number: '7739521265',
+                email: 'bbrooks97@gmail.com',
+                emergency_contact_name: 'Avery Jones',
+                emergency_contact_phone: '7739521265'
+            });
+            await createPatient({
+                first_name: 'Bryant',
+                last_name: 'Byrd',
+                date_of_birth: '1999-05-05',
+                gender: 'male',
+                address: '2828 N Ashland Ave, Chicago, IL 60657',
+                phone_number: '7739521265',
+                email: 'bbyrd99@gmail.com',
+                emergency_contact_name: 'Abby Smith',
+                emergency_contact_phone: '7739521265'
+            });
+            await createPatient({
+                first_name: 'Bridgette',
+                last_name: 'Black',
+                date_of_birth: '1992-01-22',
+                gender: 'female',
+                address: '3133 N Clark St, Chicago, IL 60657',
+                phone_number: '7739521265',
+                email: 'bblack92@gmail.com',
+                emergency_contact_name: 'Adam Johnson',
+                emergency_contact_phone: '7739521265'
+            });
+            await createPatient({
+                first_name: 'Caroline',
+                last_name: 'Chang',
+                date_of_birth: '1958-06-15',
+                gender: 'female',
+                address: '1234 Elm St, Chicago, IL 60601',
+                phone_number: '3125551023',
+                email: 'cchang58@gmail.com',
+                emergency_contact_name: 'David Chang',
+                emergency_contact_phone: '3125551023'
+                });
+            await createPatient({
+                first_name: 'Curtis',
+                last_name: 'Collins',
+                date_of_birth: '1980-05-07',
+                gender: 'male',
+                address: '4321 Oak St, Chicago, IL 60601',
+                phone_number: '3125551024',
+                email: 'ccollins80@gmail.com',
+                emergency_contact_name: 'Caroline Collins',
+                emergency_contact_phone: '3125551024'
+            });
+            await createPatient({
+                first_name: 'Claire',
+                last_name: 'Carpenter',
+                date_of_birth: '1994-03-19',
+                gender: 'female',
+                address: '2468 Maple St, Chicago, IL 60601',
+                phone_number: '3125551025',
+                email: 'ccarpenter94@gmail.com',
+                emergency_contact_name: 'Curtis Carpenter',
+                emergency_contact_phone: '3125551025'
+            });
+            await createPatient({
+                first_name: 'Caleb',
+                last_name: 'Campbell',
+                date_of_birth: '1986-01-12',
+                gender: 'male',
+                address: '1212 Pine St, Chicago, IL 60601',
+                phone_number: '3125551026',
+                email: 'ccampbell86@gmail.com',
+                emergency_contact_name: 'Claire Campbell',
+                emergency_contact_phone: '3125551026'
+            });
+            await createPatient({
+                first_name: 'Cindy',
+                last_name: 'Chen',
+                date_of_birth: '1976-09-23',
+                gender: 'female',
+                address: '2345 Cedar St, Chicago, IL 60601',
+                phone_number: '3125551027',
+                email: 'cchen76@gmail.com',
+                emergency_contact_name: 'Caleb Chen',
+                emergency_contact_phone: '3125551027'
+            });
+            await createPatient({
+                first_name: 'Craig',
+                last_name: 'Carter',
+                date_of_birth: '1968-07-29',
+                gender: 'male',
+                address: '3456 Birch St, Chicago, IL 60601',
+                phone_number: '3125551028',
+                email: 'ccarter68@gmail.com',
+                emergency_contact_name: 'Cindy Carter',
+                emergency_contact_phone: '3125551028'
+            });
+            await createPatient({
+                first_name: 'Damon',
+                last_name: 'Nguyen',
+                date_of_birth: '1957-11-12',
+                gender: 'male',
+                address: '3034 W Montrose Ave, Chicago, IL, 60618',
+                phone_number: '2145354132',
+                email: 'damonnguyen57@gmail.com',
+                emergency_contact_name: 'Hoa Nguyen',
+                emergency_contact_phone: '6479521132'
+                });
+            await createPatient({
+                first_name: 'Daniel',
+                last_name: 'Kim',
+                date_of_birth: '1989-07-23',
+                gender: 'male',
+                address: '1723 N Keystone Ave, Evanston, IL, 60201',
+                phone_number: '8479522652',
+                email: 'dkim89@gmail.com',
+                emergency_contact_name: 'Jin Kim',
+                emergency_contact_phone: '2249522652'
+            });
+            await createPatient({
+                first_name: 'Daphne',
+                last_name: 'Ramirez',
+                date_of_birth: '1999-04-19',
+                gender: 'female',
+                address: '8234 W Howard St, Skokie, IL, 60077',
+                phone_number: '2249522652',
+                email: 'dramirez99@gmail.com',
+                emergency_contact_name: 'Josie Ramirez',
+                emergency_contact_phone: '2249522652'
+            });
+            await createPatient({
+                first_name: 'David',
+                last_name: 'Hernandez',
+                date_of_birth: '1981-12-31',
+                gender: 'male',
+                address: '2334 W Montrose Ave, Chicago, IL, 60618',
+                phone_number: '8479522652',
+                email: 'dhernandez81@gmail.com',
+                emergency_contact_name: 'Lena Hernandez',
+                emergency_contact_phone: '2249522652'
+            });
+            await createPatient({
+                first_name: 'Debra',
+                last_name: 'Garcia',
+                date_of_birth: '1974-06-23',
+                gender: 'female',
+                address: '3034 W Montrose Ave, Chicago, IL, 60618',
+                phone_number: '2249522652',
+                email: 'dgarcia74@gmail.com',
+                emergency_contact_name: 'Juan Garcia',
+                emergency_contact_phone: '2249522652'
+            });
+            await createPatient({
+                first_name: 'Derek',
+                last_name: 'Clark',
+                date_of_birth: '2002-01-19',
+                gender: 'male',
+                address: '1234 W Howard St, Skokie, IL, 60077',
+                phone_number: '2249522652',
+                email: 'dclark02@gmail.com',
+                emergency_contact_name: 'Janet Clark',
+                emergency_contact_phone: '2249522652'
+            });
+            await createPatient({
+                first_name: 'Derek',
+                last_name: 'Parker',
+                date_of_birth: '1967-07-01',
+                gender: 'male',
+                address: '1023 W Division St, Chicago, IL 60642',
+                phone_number: '3314148765',
+                email: 'dparker67@gmail.com',
+                emergency_contact_name: 'Debra Parker',
+                emergency_contact_phone: '3314148766'
+                });
+            await createPatient({
+                first_name: 'Daisy',
+                last_name: 'Johnson',
+                date_of_birth: '1981-03-08',
+                gender: 'female',
+                address: '4321 N Western Ave, Chicago, IL 60618',
+                phone_number: '2223334445',
+                email: 'dajohnson81@gmail.com',
+                emergency_contact_name: 'David Johnson',
+                emergency_contact_phone: '2223334446'
+            });
+            await createPatient({
+                first_name: 'Daniel',
+                last_name: 'Brown',
+                date_of_birth: '1974-05-12',
+                gender: 'male',
+                address: '2345 N Milwaukee Ave, Chicago, IL 60647',
+                phone_number: '1112223333',
+                email: 'dbrown74@gmail.com',
+                emergency_contact_name: 'Denise Brown',
+                emergency_contact_phone: '1112223334'
+            });
+            await createPatient({
+                first_name: 'Diana',
+                last_name: 'Davis',
+                date_of_birth: '1978-01-24',
+                gender: 'female',
+                address: '1234 S State St, Chicago, IL 60605',
+                phone_number: '4442223333',
+                email: 'ddavis78@gmail.com',
+                emergency_contact_name: 'David Davis',
+                emergency_contact_phone: '4442223334'
+            });
+            await createPatient({
+                first_name: 'David',
+                last_name: 'Johnson',
+                date_of_birth: '1982-06-02',
+                gender: 'male',
+                address: '5678 W Madison St, Chicago, IL 60661',
+                phone_number: '5552223333',
+                email: 'djohnson82@gmail.com',
+                emergency_contact_name: 'Donna Johnson',
+                emergency_contact_phone: '5552223334'
+            });
+            await createPatient({
+                first_name: 'Derek',
+                last_name: 'Smith',
+                date_of_birth: '1980-11-15',
+                gender: 'male',
+                address: '9012 S Halsted St, Chicago, IL 60620',
+                phone_number: '6662223333',
+                email: 'dsmith80@gmail.com',
+                emergency_contact_name: 'Diana Smith',
+                emergency_contact_phone: '6662223334'
+            });
+            await createPatient({
+                first_name: 'Eddie',
+                last_name: 'Johnson',
+                date_of_birth: '1968-03-07',
+                gender: 'male',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379572652',
+                email: 'ejohnson68@gmail.com',
+                emergency_contact_name: 'Evelyn Johnson',
+                emergency_contact_phone: '7379572652'
+                });
+            await createPatient({
+                first_name: 'Ella',
+                last_name: 'Wright',
+                date_of_birth: '1978-05-13',
+                gender: 'female',
+                address: '1223 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379572652',
+                email: 'ewright78@gmail.com',
+                emergency_contact_name: 'Ethan Wright',
+                emergency_contact_phone: '7379572652'
+            });
+            await createPatient({
+                first_name: 'Ethan',
+                last_name: 'Jones',
+                date_of_birth: '1988-07-19',
+                gender: 'male',
+                address: '1323 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379572652',
+                email: 'ejones88@gmail.com',
+                emergency_contact_name: 'Ella Jones',
+                emergency_contact_phone: '7379572652'
+            });
+            await createPatient({
+                first_name: 'Evelyn',
+                last_name: 'Smith',
+                date_of_birth: '1998-09-25',
+                gender: 'female',
+                address: '1423 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379572652',
+                email: 'esmith98@gmail.com',
+                emergency_contact_name: 'Eddie Smith',
+                emergency_contact_phone: '7379572652'
+            });
+            await createPatient({
+                first_name: 'Erick',
+                last_name: 'Brown',
+                date_of_birth: '2008-11-01',
+                gender: 'male',
+                address: '1523 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379572652',
+                email: 'ebrown08@gmail.com',
+                emergency_contact_name: 'Evelyn Brown',
+                emergency_contact_phone: '7379572652'
+            });
+            await createPatient({
+                first_name: 'Eve',
+                last_name: 'Davis',
+                date_of_birth: '2018-01-07',
+                gender: 'female',
+                address: '1623 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379572652',
+                email: 'edavis18@gmail.com',
+                emergency_contact_name: 'Erick Davis',
+                emergency_contact_phone: '7379572652'
+            });
+            await createPatient({
+                first_name: 'Felix',
+                last_name: 'Lopez',
+                date_of_birth: '1969-03-15',
+                gender: 'male',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'flopez69@gmail.com',
+                emergency_contact_name: 'Francisco Lopez',
+                emergency_contact_phone: '7379522652'
+                });
+            await createPatient({
+                first_name: 'Frances',
+                last_name: 'Mendoza',
+                date_of_birth: '1980-05-20',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'fmendoza80@gmail.com',
+                emergency_contact_name: 'Fernando Mendoza',
+                emergency_contact_phone: '7379522652'
+            });
                 await createPatient({
-                    first_name: 'Adam',
-                    last_name: 'Williams',
-                    date_of_birth: '1991-12-20',
-                    gender: 'male',
-                    address: '1601 E 53rd St, Chicago, IL 60615',
-                    phone_number: '7738772216',
-                    email: 'awilliams91@gmail.com',
-                    emergency_contact_name: 'Beth Williams',
-                    emergency_contact_phone: '7738994488'
+                first_name: 'Fidel',
+                last_name: 'Garcia',
+                date_of_birth: '1988-07-10',
+                gender: 'male',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'fgarcia88@gmail.com',
+                emergency_contact_name: 'Fernanda Garcia',
+                emergency_contact_phone: '7379522652'
+            });
+            await createPatient({
+                first_name: 'Flora',
+                last_name: 'Rodriguez',
+                date_of_birth: '1961-11-01',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'frodriguez61@gmail.com',
+                emergency_contact_name: 'Freddy Rodriguez',
+                emergency_contact_phone: '7379522652'
+            });
+            await createPatient({
+                first_name: 'Fernanda',
+                last_name: 'Martinez',
+                date_of_birth: '1993-06-07',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'fmartinez93@gmail.com',
+                emergency_contact_name: 'Frank Martinez',
+                emergency_contact_phone: '7379522652'
+            });    
+            await createPatient({
+                first_name: 'Freddy',
+                last_name: 'Sanchez',
+                date_of_birth: '1974-12-25',
+                gender: 'male',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'fsanchez74@gmail.com',
+                emergency_contact_name: 'Felipe Sanchez',
+                emergency_contact_phone: '7379522652'
+            });
+            await createPatient({
+                first_name: 'Gary',
+                last_name: 'Smith',
+                date_of_birth: '1960-07-05',
+                gender: 'male',
+                address: '1234 Main St, San Francisco, CA 94102',
+                phone_number: '4155556789',
+                email: 'gsmith@gmail.com',
+                emergency_contact_name: 'Gary Smith Sr.',
+                emergency_contact_phone: '4155556788'
+                });
+            await createPatient({
+                first_name: 'Gloria',
+                last_name: 'Johnson',
+                date_of_birth: '1965-01-12',
+                gender: 'female',
+                address: '567 Elm St, Dallas, TX 75201',
+                phone_number: '2145556789',
+                email: 'gjohnson@gmail.com',
+                emergency_contact_name: 'Gloria Johnson Sr.',
+                emergency_contact_phone: '2145556788'
+            });
+            await createPatient({
+                first_name: 'Greg',
+                last_name: 'Brown',
+                date_of_birth: '1970-06-01',
+                gender: 'male',
+                address: '901 Maple Ave, Seattle, WA 98104',
+                phone_number: '2065556789',
+                email: 'gbrown@gmail.com',
+                emergency_contact_name: 'Greg Brown Sr.',
+                emergency_contact_phone: '2065556788'
+            });
+            await createPatient({
+                first_name: 'Gary',
+                last_name: 'Davis',
+                date_of_birth: '1975-03-15',
+                gender: 'male',
+                address: '1234 Main St, Atlanta, GA 30303',
+                phone_number: '4045556789',
+                email: 'gdavis@gmail.com',
+                emergency_contact_name: 'Gary Davis Sr.',
+                emergency_contact_phone: '4045556788'
+            });
+            await createPatient({
+                first_name: 'Grace',
+                last_name: 'Miller',
+                date_of_birth: '1980-05-25',
+                gender: 'female',
+                address: '567 Elm St, Miami, FL 33131',
+                phone_number: '3055556789',
+                email: 'gmiller@gmail.com',
+                emergency_contact_name: 'Grace Miller Sr.',
+                emergency_contact_phone: '3055556788'
+            });
+            await createPatient({
+                first_name: 'Gordon',
+                last_name: 'Wilson',
+                date_of_birth: '1985-02-28',
+                gender: 'male',
+                address: '901 Maple Ave, Denver, CO 80202',
+                phone_number: '3035556789',
+                email: 'gwilson@gmail.com',
+                emergency_contact_name: 'Gordon Wilson Sr.',
+                emergency_contact_phone: '3035556788'
+            });
+            await createPatient({
+                first_name: 'Harold',
+                last_name: 'Johnson',
+                date_of_birth: '1978-04-08',
+                gender: 'male',
+                address: '2704 W Division St, Chicago, IL, 60622',
+                phone_number: '7372688255',
+                email: 'hjohnson78@gmail.com',
+                emergency_contact_name: 'Helen Johnson',
+                emergency_contact_phone: '7372688255'
+                });
+            await createPatient({
+                first_name: 'Hazel',
+                last_name: 'Brown',
+                date_of_birth: '1962-06-18',
+                gender: 'female',
+                address: '1550 N Damen Ave, Chicago, IL, 60622',
+                phone_number: '7372688255',
+                email: 'hbrown62@gmail.com',
+                emergency_contact_name: 'Herbert Brown',
+                emergency_contact_phone: '7372688255'
+            });
+            await createPatient({
+                first_name: 'Harper',
+                last_name: 'Davis',
+                date_of_birth: '2000-09-22',
+                gender: 'female',
+                address: '1901 W Cermak Rd, Chicago, IL, 60608',
+                phone_number: '7372688255',
+                email: 'hdavis00@gmail.com',
+                emergency_contact_name: 'Heather Davis',
+                emergency_contact_phone: '7372688255'
+            });
+            await createPatient({
+                first_name: 'Harrison',
+                last_name: 'Miller',
+                date_of_birth: '1984-12-15',
+                gender: 'male',
+                address: '1755 W North Ave, Chicago, IL, 60622',
+                phone_number: '7372688255',
+                email: 'hmiller84@gmail.com',
+                emergency_contact_name: 'Henry Miller',
+                emergency_contact_phone: '7372688255'
+            });
+            await createPatient({
+                first_name: 'Haley',
+                last_name: 'Wilson',
+                date_of_birth: '1996-03-12',
+                gender: 'female',
+                address: '1550 W Grand Ave, Chicago, IL, 60622',
+                phone_number: '7372688255',
+                email: 'hwilson96@gmail.com',
+                emergency_contact_name: 'Holly Wilson',
+                emergency_contact_phone: '7372688255'
+            });
+            await createPatient({
+                first_name: 'Hank',
+                last_name: 'Taylor',
+                date_of_birth: '1991-01-20',
+                gender: 'male',
+                address: '2704 W Division St, Chicago, IL, 60622',
+                phone_number: '7372688255',
+                email: 'htaylor91@gmail.com',
+                emergency_contact_name: 'Harold Taylor',
+                emergency_contact_phone: '7372688255'
+            });
+            await createPatient({
+                first_name: 'Isla',
+                last_name: 'Wang',
+                date_of_birth: '1974-06-18',
+                gender: 'female',
+                address: '1832 E 95th St, Chicago, IL, 60619',
+                phone_number: '8375973640',
+                email: 'iwang74@gmail.com',
+                emergency_contact_name: 'Ian Wang',
+                emergency_contact_phone: '8375973640'
+                });
+            await createPatient({
+                first_name: 'Ian',
+                last_name: 'Mendoza',
+                date_of_birth: '1977-11-26',
+                gender: 'male',
+                address: '1417 S Canal St, Chicago, IL, 60607',
+                phone_number: '6629488519',
+                email: 'imendoza77@gmail.com',
+                emergency_contact_name: 'Iris Mendoza',
+                emergency_contact_phone: '6629488519'
+            });
+            await createPatient({
+                first_name: 'Iris',
+                last_name: 'Chen',
+                date_of_birth: '1980-01-08',
+                gender: 'female',
+                address: '2239 N Milwaukee Ave, Chicago, IL, 60647',
+                phone_number: '9807334621',
+                email: 'ichen80@gmail.com',
+                emergency_contact_name: 'Isaac Chen',
+                emergency_contact_phone: '9807334621'
+            });
+            await createPatient({
+                first_name: 'Isaac',
+                last_name: 'Khan',
+                date_of_birth: '1982-05-17',
+                gender: 'male',
+                address: '2504 N Lake Shore Dr, Chicago, IL, 60614',
+                phone_number: '5908342735',
+                email: 'ikhan82@gmail.com',
+                emergency_contact_name: 'Ivy Khan',
+                emergency_contact_phone: '5908342735'
+            });
+            await createPatient({
+                first_name: 'Ivy',
+                last_name: 'Carr',
+                date_of_birth: '1984-09-23',
+                gender: 'female',
+                address: '1021 S Wabash Ave, Chicago, IL, 60605',
+                phone_number: '3897452631',
+                email: 'icarr84@gmail.com',
+                emergency_contact_name: 'Ismael Carr',
+                emergency_contact_phone: '3897452631'
+            });
+            await createPatient({
+                first_name: 'Ismael',
+                last_name: 'Gonzalez',
+                date_of_birth: '1987-12-04',
+                gender: 'male',
+                address: '1251 N LaSalle Dr, Chicago, IL, 60610',
+                phone_number: '2907854613',
+                email: 'igonzalez87@gmail.com',
+                emergency_contact_name: 'Irina Gonzalez',
+                emergency_contact_phone: '2907854613'
+            });
+            await createPatient({
+                first_name: 'James',
+                last_name: 'Fernandez',
+                date_of_birth: '1956-07-11',
+                gender: 'male',
+                address: '1117 S State St, Chicago, IL, 60605',
+                phone_number: '7315220652',
+                email: 'jfernandez56@gmail.com',
+                emergency_contact_name: 'Isabel Fernandez',
+                emergency_contact_phone: '7315220652'
+                });
+            await createPatient({
+                first_name: 'Julie',
+                last_name: 'Perez',
+                date_of_birth: '1958-08-20',
+                gender: 'female',
+                address: '5317 W Belmont Ave, Chicago, IL, 60641',
+                phone_number: '7315220652',
+                email: 'jperez58@gmail.com',
+                emergency_contact_name: 'Juan Perez',
+                emergency_contact_phone: '7315220652'
+                });
+            await createPatient({
+                first_name: 'John',
+                last_name: 'Kim',
+                date_of_birth: '1962-09-15',
+                gender: 'male',
+                address: '2120 N Ashland Ave, Chicago, IL, 60614',
+                phone_number: '7315220652',
+                email: 'jkim62@gmail.com',
+                emergency_contact_name: 'Jane Kim',
+                emergency_contact_phone: '7315220652'
+                });
+            await createPatient({
+                first_name: 'Jessica',
+                last_name: 'Park',
+                date_of_birth: '1966-10-06',
+                gender: 'female',
+                address: '3626 W Lawrence Ave, Chicago, IL, 60625',
+                phone_number: '7315220652',
+                email: 'jpark66@gmail.com',
+                emergency_contact_name: 'John Park',
+                emergency_contact_phone: '7315220652'
+                });
+            await createPatient({
+                first_name: 'Jim',
+                last_name: 'Lee',
+                date_of_birth: '1960-11-02',
+                gender: 'male',
+                address: '4711 N Broadway St, Chicago, IL, 60640',
+                phone_number: '7315220652',
+                email: 'jlee60@gmail.com',
+                emergency_contact_name: 'Jasmine Lee',
+                emergency_contact_phone: '7315220652'
+                });
+            await createPatient({
+                first_name: 'Jackie',
+                last_name: 'Smith',
+                date_of_birth: '1964-12-12',
+                gender: 'female',
+                address: '2517 N Halsted St, Chicago, IL, 60614',
+                phone_number: '7315220652',
+                email: 'jsmith64@gmail.com',
+                emergency_contact_name: 'James Smith',
+                emergency_contact_phone: '7315220652'
+                });
+            await createPatient({
+                first_name: 'Karen',
+                last_name: 'Davies',
+                date_of_birth: '1947-06-02',
+                gender: 'female',
+                address: '24 W Lake St, Northlake, IL, 60164',
+                phone_number: '8476253298',
+                email: 'kdavies47@gmail.com',
+                emergency_contact_name: 'Karen Davies',
+                emergency_contact_phone: '8476253298'
                 });
                 await createPatient({
-                    first_name: 'Ava',
-                    last_name: 'Jones',
-                    date_of_birth: '1989-01-15',
-                    gender: 'female',
-                    address: '4858 N Lake Shore Dr, Chicago, IL 60640',
-                    phone_number: '7738221144',
-                    email: 'ajones89@gmail.com',
-                    emergency_contact_name: 'Charles Jones',
-                    emergency_contact_phone: '7738332299'
+                first_name: 'Keith',
+                last_name: 'Webb',
+                date_of_birth: '1952-09-12',
+                gender: 'male',
+                address: '1224 S Dearborn St, Chicago, IL, 60605',
+                phone_number: '3126529847',
+                email: 'kwebb52@gmail.com',
+                emergency_contact_name: 'Keith Webb',
+                emergency_contact_phone: '3126529847'
                 });
-                await createPatient({
-                    first_name: 'Ashley',
-                    last_name: 'Brown',
-                    date_of_birth: '1996-04-19',
-                    gender: 'female',
-                    address: '2555 W Peterson Ave, Chicago, IL 60659',
-                    phone_number: '7739115566',
-                    email: 'abrown96@gmail.com',
-                    emergency_contact_name: 'Daniel Brown',
-                    emergency_contact_phone: '7739227788'
+            await createPatient({
+                first_name: 'Kimberly',
+                last_name: 'Burke',
+                date_of_birth: '1957-04-17',
+                gender: 'female',
+                address: '1402 N Kedzie Ave, Chicago, IL, 60651',
+                phone_number: '7739522463',
+                email: 'kburke57@gmail.com',
+                emergency_contact_name: 'Kimberly Burke',
+                emergency_contact_phone: '7739522463'
                 });
-                await createPatient({
-                    first_name: 'Austin',
-                    last_name: 'Davis',
-                    date_of_birth: '1992-08-02',
-                    gender: 'male',
-                    address: '5151 N Broadway St, Chicago, IL 60640',
-                    phone_number: '7739441133',
-                    email: 'adavis92@gmail.com',
-                    emergency_contact_name: 'Emily Davis',
-                    emergency_contact_phone: '7739552211'
+            await createPatient({
+                first_name: 'Kirsten',
+                last_name: 'Mills',
+                date_of_birth: '1962-08-11',
+                gender: 'female',
+                address: '202 S Arlington Heights Rd, Arlington Heights, IL, 60005',
+                phone_number: '8472593642',
+                email: 'kmills62@gmail.com',
+                emergency_contact_name: 'Kirsten Mills',
+                emergency_contact_phone: '8472593642'
                 });
-                await createPatient({
-                    first_name: 'Aiden',
-                    last_name: 'Miller',
-                    date_of_birth: '1998-03-05',
-                    gender: 'male',
-                    address: '1501 W Fullerton Ave, Chicago, IL 60614',
-                    phone_number: '7739664455',
-                    email: 'amiller98@gmail.com',
-                    emergency_contact_name: 'Frances Miller',
-                    emergency_contact_phone: '7739776611'
+            await createPatient({
+                first_name: 'Kurt',
+                last_name: 'Henderson',
+                date_of_birth: '1967-12-23',
+                gender: 'male',
+                address: '2323 W Devon Ave, Chicago, IL, 60659',
+                phone_number: '7736254987',
+                email: 'khenderson67@gmail.com',
+                emergency_contact_name: 'Kurt Henderson',
+                emergency_contact_phone: '7736254987'
                 });
-                await createPatient({
-                    first_name: 'Brianna',
-                    last_name: 'Brown',
-                    date_of_birth: '1982-06-21',
-                    gender: 'female',
-                    address: '102 S Michigan Ave, Chicago, IL 60603',
-                    phone_number: '7739521265',
-                    email: 'bbrown82@gmail.com',
-                    emergency_contact_name: 'Ethan Green',
-                    emergency_contact_phone: '7739521265'
-                });  
-                await createPatient({
-                    first_name: 'Brittany',
-                    last_name: 'Baker',
-                    date_of_birth: '1990-03-02',
-                    gender: 'female',
-                    address: '1819 N Racine Ave, Chicago, IL 60657',
-                    phone_number: '7739521265',
-                    email: 'bbaker90@gmail.com',
-                    emergency_contact_name: 'Emma White',
-                    emergency_contact_phone: '7739521265'
+            await createPatient({
+                first_name: 'Karen',
+                last_name: 'Baker',
+                date_of_birth: '1972-03-19',
+                gender: 'female',
+                address: '534 N La Salle Dr, Chicago, IL, 60654',
+                phone_number: '3129562378',
+                email: 'kbaker72@gmail.com',
+                emergency_contact_name: 'Karen Baker',
+                emergency_contact_phone: '3129562378'
                 });
-                await createPatient({
-                    first_name: 'Benjamin',
-                    last_name: 'Bailey',
-                    date_of_birth: '1995-12-01',
-                    gender: 'male',
-                    address: '4747 W Fullerton Ave, Chicago, IL 60639',
-                    phone_number: '7739521265',
-                    email: 'bbailey95@gmail.com',
-                    emergency_contact_name: 'Alex Rodriguez',
-                    emergency_contact_phone: '7739521265'
+            await createPatient({
+                first_name: 'Lana',
+                last_name: 'Kang',
+                date_of_birth: '1947-05-02',
+                gender: 'female',
+                address: '1823 S Michigan Ave, Chicago, IL 60616',
+                phone_number: '7345128963',
+                email: 'lkang47@gmail.com',
+                emergency_contact_name: 'Lana Kang',
+                emergency_contact_phone: '7345128963'
                 });
-                await createPatient({
-                    first_name: 'Brandon',
-                    last_name: 'Brooks',
-                    date_of_birth: '1997-08-11',
-                    gender: 'male',
-                    address: '57 W Grand Ave, Chicago, IL 60654',
-                    phone_number: '7739521265',
-                    email: 'bbrooks97@gmail.com',
-                    emergency_contact_name: 'Avery Jones',
-                    emergency_contact_phone: '7739521265'
+            await createPatient({
+                first_name: 'Liam',
+                last_name: 'Nguyen',
+                date_of_birth: '1948-11-19',
+                gender: 'male',
+                address: '823 W North Ave, Chicago, IL 60610',
+                phone_number: '7398765412',
+                email: 'lnguyen48@gmail.com',
+                emergency_contact_name: 'Liam Nguyen',
+                emergency_contact_phone: '7398765412'
                 });
-                await createPatient({
-                    first_name: 'Bryant',
-                    last_name: 'Byrd',
-                    date_of_birth: '1999-05-05',
-                    gender: 'male',
-                    address: '2828 N Ashland Ave, Chicago, IL 60657',
-                    phone_number: '7739521265',
-                    email: 'bbyrd99@gmail.com',
-                    emergency_contact_name: 'Abby Smith',
-                    emergency_contact_phone: '7739521265'
+            await createPatient({
+                first_name: 'Lucas',
+                last_name: 'Park',
+                date_of_birth: '1946-07-24',
+                gender: 'male',
+                address: '3123 N Ashland Ave, Chicago, IL 60657',
+                phone_number: '7387654512',
+                email: 'lpark46@gmail.com',
+                emergency_contact_name: 'Lucas Park',
+                emergency_contact_phone: '7387654512'
                 });
-                await createPatient({
-                    first_name: 'Bridgette',
-                    last_name: 'Black',
-                    date_of_birth: '1992-01-22',
-                    gender: 'female',
-                    address: '3133 N Clark St, Chicago, IL 60657',
-                    phone_number: '7739521265',
-                    email: 'bblack92@gmail.com',
-                    emergency_contact_name: 'Adam Johnson',
-                    emergency_contact_phone: '7739521265'
+            await createPatient({
+                first_name: 'Leah',
+                last_name: 'Kim',
+                date_of_birth: '1944-03-05',
+                gender: 'female',
+                address: '4523 S Archer Ave, Chicago, IL 60609',
+                phone_number: '7341258963',
+                email: 'lkim44@gmail.com',
+                emergency_contact_name: 'Leah Kim',
+                emergency_contact_phone: '7341258963'
                 });
-                await createPatient({
-                    first_name: 'Caroline',
-                    last_name: 'Chang',
-                    date_of_birth: '1958-06-15',
-                    gender: 'female',
-                    address: '1234 Elm St, Chicago, IL 60601',
-                    phone_number: '3125551023',
-                    email: 'cchang58@gmail.com',
-                    emergency_contact_name: 'David Chang',
-                    emergency_contact_phone: '3125551023'
-                    });
-                await createPatient({
-                    first_name: 'Curtis',
-                    last_name: 'Collins',
-                    date_of_birth: '1980-05-07',
-                    gender: 'male',
-                    address: '4321 Oak St, Chicago, IL 60601',
-                    phone_number: '3125551024',
-                    email: 'ccollins80@gmail.com',
-                    emergency_contact_name: 'Caroline Collins',
-                    emergency_contact_phone: '3125551024'
+            await createPatient({
+                first_name: 'Lila',
+                last_name: 'Brown',
+                date_of_birth: '1949-06-14',
+                gender: 'female',
+                address: '5123 W Chicago Ave, Chicago, IL 60651',
+                phone_number: '7345678912',
+                email: 'lbrown49@gmail.com',
+                emergency_contact_name: 'Lila Brown',
+                emergency_contact_phone: '7345678912'
                 });
-                await createPatient({
-                    first_name: 'Claire',
-                    last_name: 'Carpenter',
-                    date_of_birth: '1994-03-19',
-                    gender: 'female',
-                    address: '2468 Maple St, Chicago, IL 60601',
-                    phone_number: '3125551025',
-                    email: 'ccarpenter94@gmail.com',
-                    emergency_contact_name: 'Curtis Carpenter',
-                    emergency_contact_phone: '3125551025'
+            await createPatient({
+                first_name: 'Lionel',
+                last_name: 'Jones',
+                date_of_birth: '1947-12-08',
+                gender: 'male',
+                address: '1223 N Halsted St, Chicago, IL 60610',
+                phone_number: '7398745612',
+                email: 'ljones47@gmail.com',
+                emergency_contact_name: 'Lionel Jones',
+                emergency_contact_phone: '7398745612'
                 });
-                await createPatient({
-                    first_name: 'Caleb',
-                    last_name: 'Campbell',
-                    date_of_birth: '1986-01-12',
-                    gender: 'male',
-                    address: '1212 Pine St, Chicago, IL 60601',
-                    phone_number: '3125551026',
-                    email: 'ccampbell86@gmail.com',
-                    emergency_contact_name: 'Claire Campbell',
-                    emergency_contact_phone: '3125551026'
+            await createPatient({
+                first_name: 'Maddison',
+                last_name: 'Lewis',
+                date_of_birth: '1999-08-19',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'mlewis99@gmail.com',
+                emergency_contact_name: 'Martha Lewis',
+                emergency_contact_phone: '7379522652'
                 });
-                await createPatient({
-                    first_name: 'Cindy',
-                    last_name: 'Chen',
-                    date_of_birth: '1976-09-23',
-                    gender: 'female',
-                    address: '2345 Cedar St, Chicago, IL 60601',
-                    phone_number: '3125551027',
-                    email: 'cchen76@gmail.com',
-                    emergency_contact_name: 'Caleb Chen',
-                    emergency_contact_phone: '3125551027'
+            await createPatient({
+                first_name: 'Maurice',
+                last_name: 'Henderson',
+                date_of_birth: '1998-11-19',
+                gender: 'male',
+                address: '1723 N Keystone Ave, Evanston, IL, 60651',
+                phone_number: '7379522652',
+                email: 'mhenderson98@gmail.com',
+                emergency_contact_name: 'Martha Henderson',
+                emergency_contact_phone: '7379522652'
                 });
-                await createPatient({
-                    first_name: 'Craig',
-                    last_name: 'Carter',
-                    date_of_birth: '1968-07-29',
-                    gender: 'male',
-                    address: '3456 Birch St, Chicago, IL 60601',
-                    phone_number: '3125551028',
-                    email: 'ccarter68@gmail.com',
-                    emergency_contact_name: 'Cindy Carter',
-                    emergency_contact_phone: '3125551028'
+            await createPatient({
+                first_name: 'Makayla',
+                last_name: 'Rogers',
+                date_of_birth: '2000-07-19',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Schaumburg, IL, 60651',
+                phone_number: '7379522652',
+                email: 'mrogers00@gmail.com',
+                emergency_contact_name: 'Maggie Rogers',
+                emergency_contact_phone: '7379522652'
                 });
-                await createPatient({
-                    first_name: 'Damon',
-                    last_name: 'Nguyen',
-                    date_of_birth: '1957-11-12',
-                    gender: 'male',
-                    address: '3034 W Montrose Ave, Chicago, IL, 60618',
-                    phone_number: '2145354132',
-                    email: 'damonnguyen57@gmail.com',
-                    emergency_contact_name: 'Hoa Nguyen',
-                    emergency_contact_phone: '6479521132'
-                    });
-                await createPatient({
-                    first_name: 'Daniel',
-                    last_name: 'Kim',
-                    date_of_birth: '1989-07-23',
-                    gender: 'male',
-                    address: '1723 N Keystone Ave, Evanston, IL, 60201',
-                    phone_number: '8479522652',
-                    email: 'dkim89@gmail.com',
-                    emergency_contact_name: 'Jin Kim',
-                    emergency_contact_phone: '2249522652'
+            await createPatient({
+                first_name: 'Maurice',
+                last_name: 'Brown',
+                date_of_birth: '1997-09-19',
+                gender: 'male',
+                address: '1723 N Keystone Ave, Naperville, IL, 60651',
+                phone_number: '7379522652',
+                email: 'mbrown97@gmail.com',
+                emergency_contact_name: 'Maggie Brown',
+                emergency_contact_phone: '7379522652'
                 });
+            await createPatient({
+                first_name: 'Megan',
+                last_name: 'Johnson',
+                date_of_birth: '1998-05-19',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Northbrook, IL, 60651',
+                phone_number: '7379522652',
+                email: 'mjohnson98@gmail.com',
+                emergency_contact_name: 'Martha Johnson',
+                emergency_contact_phone: '7379522652'
+            });
+            await createPatient({
+                first_name: 'Mia',
+                last_name: 'Smith',
+                date_of_birth: '1999-06-19',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Skokie, IL, 60651',
+                phone_number: '7379522652',
+                email: 'msmith99@gmail.com',
+                emergency_contact_name: 'Martha Smith',
+                emergency_contact_phone: '7379522652'
+            });
+            await createPatient({
+                first_name: 'Nathan',
+                last_name: 'Martinez',
+                date_of_birth: '1957-06-08',
+                gender: 'male',
+                address: '7315 W Madison St, Chicago, IL, 60661',
+                phone_number: '3129044838',
+                email: 'nmartinez57@gmail.com',
+                emergency_contact_name: 'Nora Martinez',
+                emergency_contact_phone: '3129044838'
+            });
+            await createPatient({
+                first_name: 'Nico',
+                last_name: 'Hernandez',
+                date_of_birth: '1967-12-18',
+                gender: 'male',
+                address: '6633 N Kedzie Ave, Chicago, IL, 60645',
+                phone_number: '3122904298',
+                email: 'nhernandez67@gmail.com',
+                emergency_contact_name: 'Nina Hernandez',
+                emergency_contact_phone: '3122904298'
+            });
+            await createPatient({
+                first_name: 'Noah',
+                last_name: 'Gonzalez',
+                date_of_birth: '1977-03-20',
+                gender: 'male',
+                address: '5232 W Grand Ave, Chicago, IL, 60639',
+                phone_number: '3129563298',
+                email: 'ngonzalez77@gmail.com',
+                emergency_contact_name: 'Nora Gonzalez',
+                emergency_contact_phone: '3129563298'
+            });
+            await createPatient({
+                first_name: 'Nina',
+                last_name: 'Sanchez',
+                date_of_birth: '1987-08-19',
+                gender: 'female',
+                address: '4050 W Armitage Ave, Chicago, IL, 60639',
+                phone_number: '3122907838',
+                email: 'nsanchez87@gmail.com',
+                emergency_contact_name: 'Nico Sanchez',
+                emergency_contact_phone: '3122907838'
+            });
                 await createPatient({
-                    first_name: 'Daphne',
-                    last_name: 'Ramirez',
-                    date_of_birth: '1999-04-19',
-                    gender: 'female',
-                    address: '8234 W Howard St, Skokie, IL, 60077',
-                    phone_number: '2249522652',
-                    email: 'dramirez99@gmail.com',
-                    emergency_contact_name: 'Josie Ramirez',
-                    emergency_contact_phone: '2249522652'
+                first_name: 'Nora',
+                last_name: 'Perez',
+                date_of_birth: '1997-01-25',
+                gender: 'female',
+                address: '3250 N Oak Park Ave, Chicago, IL, 60634',
+                phone_number: '3123467838',
+                email: 'nperez97@gmail.com',
+                emergency_contact_name: 'Nathan Perez',
+                emergency_contact_phone: '3123467838'
+            });
+            await createPatient({
+                first_name: 'Natalie',
+                last_name: 'Rivera',
+                date_of_birth: '2007-09-13',
+                gender: 'female',
+                address: '2424 W North Ave, Chicago, IL, 60647',
+                phone_number: '3129044838',
+                email: 'nrivera07@gmail.com',
+                emergency_contact_name: 'Nico Rivera',
+                emergency_contact_phone: '3129044838'
+            });
+            await createPatient({
+                first_name: 'Olivia',
+                last_name: 'Nguyen',
+                date_of_birth: '1956-06-15',
+                gender: 'female',
+                address: '2451 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7735581272',
+                email: 'onguyen56@gmail.com',
+                emergency_contact_name: 'Oliver Nguyen',
+                emergency_contact_phone: '7735581272'
+            });
+            await createPatient({
+                first_name: 'Owen',
+                last_name: 'Park',
+                date_of_birth: '1950-07-07',
+                gender: 'male',
+                address: '1935 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7357095148',
+                email: 'opark50@gmail.com',
+                emergency_contact_name: 'Oliver Park',
+                emergency_contact_phone: '7357095148'
+            });
+            await createPatient({
+                first_name: 'Olivier',
+                last_name: 'Kim',
+                date_of_birth: '1962-01-12',
+                gender: 'male',
+                address: '1757 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7385567642',
+                email: 'okim62@gmail.com',
+                emergency_contact_name: 'Olivia Kim',
+                emergency_contact_phone: '7385567642'
+            });
+            await createPatient({
+                first_name: 'Orlando',
+                last_name: 'Lee',
+                date_of_birth: '1958-03-05',
+                gender: 'male',
+                address: '2021 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7397058764',
+                email: 'olee58@gmail.com',
+                emergency_contact_name: 'Olivia Lee',
+                emergency_contact_phone: '7397058764'
+            });
+            await createPatient({
+                first_name: 'Oscar',
+                last_name: 'Brown',
+                date_of_birth: '1954-11-22',
+                gender: 'male',
+                address: '2341 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7355793608',
+                email: 'obrown54@gmail.com',
+                emergency_contact_name: 'Oliver Brown',
+                emergency_contact_phone: '7355793608'
+            });
+            await createPatient({
+                first_name: 'Olivia',
+                last_name: 'Wilson',
+                date_of_birth: '1956-08-18',
+                gender: 'female',
+                address: '2211 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7735780456',
+                email: 'owilson56@gmail.com',
+                emergency_contact_name: 'Oliver Wilson',
+                emergency_contact_phone: '7735780456'
+            });
+            await createPatient({
+                first_name: 'Pamela',
+                last_name: 'Parker',
+                date_of_birth: '1942-07-12',
+                gender: 'female',
+                address: '3007 N Lake Shore Dr, Chicago, IL, 60657',
+                phone_number: '3312765652',
+                email: 'pparker42@gmail.com',
+                emergency_contact_name: 'Philip Parker',
+                emergency_contact_phone: '3312765652'
                 });
-                await createPatient({
-                    first_name: 'David',
-                    last_name: 'Hernandez',
-                    date_of_birth: '1981-12-31',
-                    gender: 'male',
-                    address: '2334 W Montrose Ave, Chicago, IL, 60618',
-                    phone_number: '8479522652',
-                    email: 'dhernandez81@gmail.com',
-                    emergency_contact_name: 'Lena Hernandez',
-                    emergency_contact_phone: '2249522652'
-                });
-                await createPatient({
-                    first_name: 'Debra',
-                    last_name: 'Garcia',
-                    date_of_birth: '1974-06-23',
-                    gender: 'female',
-                    address: '3034 W Montrose Ave, Chicago, IL, 60618',
-                    phone_number: '2249522652',
-                    email: 'dgarcia74@gmail.com',
-                    emergency_contact_name: 'Juan Garcia',
-                    emergency_contact_phone: '2249522652'
-                });
-                await createPatient({
-                    first_name: 'Derek',
-                    last_name: 'Clark',
-                    date_of_birth: '2002-01-19',
-                    gender: 'male',
-                    address: '1234 W Howard St, Skokie, IL, 60077',
-                    phone_number: '2249522652',
-                    email: 'dclark02@gmail.com',
-                    emergency_contact_name: 'Janet Clark',
-                    emergency_contact_phone: '2249522652'
-                });
-                await createPatient({
-                    first_name: 'Derek',
-                    last_name: 'Parker',
-                    date_of_birth: '1967-07-01',
-                    gender: 'male',
-                    address: '1023 W Division St, Chicago, IL 60642',
-                    phone_number: '3314148765',
-                    email: 'dparker67@gmail.com',
-                    emergency_contact_name: 'Debra Parker',
-                    emergency_contact_phone: '3314148766'
-                    });
-                await createPatient({
-                    first_name: 'Daisy',
-                    last_name: 'Johnson',
-                    date_of_birth: '1981-03-08',
-                    gender: 'female',
-                    address: '4321 N Western Ave, Chicago, IL 60618',
-                    phone_number: '2223334445',
-                    email: 'dajohnson81@gmail.com',
-                    emergency_contact_name: 'David Johnson',
-                    emergency_contact_phone: '2223334446'
-                });
-                await createPatient({
-                    first_name: 'Daniel',
-                    last_name: 'Brown',
-                    date_of_birth: '1974-05-12',
-                    gender: 'male',
-                    address: '2345 N Milwaukee Ave, Chicago, IL 60647',
-                    phone_number: '1112223333',
-                    email: 'dbrown74@gmail.com',
-                    emergency_contact_name: 'Denise Brown',
-                    emergency_contact_phone: '1112223334'
-                });
-                await createPatient({
-                    first_name: 'Diana',
-                    last_name: 'Davis',
-                    date_of_birth: '1978-01-24',
-                    gender: 'female',
-                    address: '1234 S State St, Chicago, IL 60605',
-                    phone_number: '4442223333',
-                    email: 'ddavis78@gmail.com',
-                    emergency_contact_name: 'David Davis',
-                    emergency_contact_phone: '4442223334'
-                });
-                await createPatient({
-                    first_name: 'David',
-                    last_name: 'Johnson',
-                    date_of_birth: '1982-06-02',
-                    gender: 'male',
-                    address: '5678 W Madison St, Chicago, IL 60661',
-                    phone_number: '5552223333',
-                    email: 'djohnson82@gmail.com',
-                    emergency_contact_name: 'Donna Johnson',
-                    emergency_contact_phone: '5552223334'
-                });
-                await createPatient({
-                    first_name: 'Derek',
-                    last_name: 'Smith',
-                    date_of_birth: '1980-11-15',
-                    gender: 'male',
-                    address: '9012 S Halsted St, Chicago, IL 60620',
-                    phone_number: '6662223333',
-                    email: 'dsmith80@gmail.com',
-                    emergency_contact_name: 'Diana Smith',
-                    emergency_contact_phone: '6662223334'
-                });
-                await createPatient({
-                    first_name: 'Eddie',
-                    last_name: 'Johnson',
-                    date_of_birth: '1968-03-07',
-                    gender: 'male',
-                    address: '1723 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379572652',
-                    email: 'ejohnson68@gmail.com',
-                    emergency_contact_name: 'Evelyn Johnson',
-                    emergency_contact_phone: '7379572652'
-                    });
-                await createPatient({
-                    first_name: 'Ella',
-                    last_name: 'Wright',
-                    date_of_birth: '1978-05-13',
-                    gender: 'female',
-                    address: '1223 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379572652',
-                    email: 'ewright78@gmail.com',
-                    emergency_contact_name: 'Ethan Wright',
-                    emergency_contact_phone: '7379572652'
-                });
-                await createPatient({
-                    first_name: 'Ethan',
-                    last_name: 'Jones',
-                    date_of_birth: '1988-07-19',
-                    gender: 'male',
-                    address: '1323 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379572652',
-                    email: 'ejones88@gmail.com',
-                    emergency_contact_name: 'Ella Jones',
-                    emergency_contact_phone: '7379572652'
-                });
-                await createPatient({
-                    first_name: 'Evelyn',
-                    last_name: 'Smith',
-                    date_of_birth: '1998-09-25',
-                    gender: 'female',
-                    address: '1423 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379572652',
-                    email: 'esmith98@gmail.com',
-                    emergency_contact_name: 'Eddie Smith',
-                    emergency_contact_phone: '7379572652'
-                });
-                await createPatient({
-                    first_name: 'Erick',
-                    last_name: 'Brown',
-                    date_of_birth: '2008-11-01',
-                    gender: 'male',
-                    address: '1523 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379572652',
-                    email: 'ebrown08@gmail.com',
-                    emergency_contact_name: 'Evelyn Brown',
-                    emergency_contact_phone: '7379572652'
-                });
-                await createPatient({
-                    first_name: 'Eve',
-                    last_name: 'Davis',
-                    date_of_birth: '2018-01-07',
-                    gender: 'female',
-                    address: '1623 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379572652',
-                    email: 'edavis18@gmail.com',
-                    emergency_contact_name: 'Erick Davis',
-                    emergency_contact_phone: '7379572652'
-                });
-                await createPatient({
-                    first_name: 'Felix',
-                    last_name: 'Lopez',
-                    date_of_birth: '1969-03-15',
-                    gender: 'male',
-                    address: '1723 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379522652',
-                    email: 'flopez69@gmail.com',
-                    emergency_contact_name: 'Francisco Lopez',
-                    emergency_contact_phone: '7379522652'
-                    });
-                await createPatient({
-                    first_name: 'Frances',
-                    last_name: 'Mendoza',
-                    date_of_birth: '1980-05-20',
-                    gender: 'female',
-                    address: '1723 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379522652',
-                    email: 'fmendoza80@gmail.com',
-                    emergency_contact_name: 'Fernando Mendoza',
-                    emergency_contact_phone: '7379522652'
-                });
-                    await createPatient({
-                    first_name: 'Fidel',
-                    last_name: 'Garcia',
-                    date_of_birth: '1988-07-10',
-                    gender: 'male',
-                    address: '1723 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379522652',
-                    email: 'fgarcia88@gmail.com',
-                    emergency_contact_name: 'Fernanda Garcia',
-                    emergency_contact_phone: '7379522652'
-                });
-                await createPatient({
-                    first_name: 'Flora',
-                    last_name: 'Rodriguez',
-                    date_of_birth: '1961-11-01',
-                    gender: 'female',
-                    address: '1723 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379522652',
-                    email: 'frodriguez61@gmail.com',
-                    emergency_contact_name: 'Freddy Rodriguez',
-                    emergency_contact_phone: '7379522652'
-                });
-                await createPatient({
-                    first_name: 'Fernanda',
-                    last_name: 'Martinez',
-                    date_of_birth: '1993-06-07',
-                    gender: 'female',
-                    address: '1723 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379522652',
-                    email: 'fmartinez93@gmail.com',
-                    emergency_contact_name: 'Frank Martinez',
-                    emergency_contact_phone: '7379522652'
-                });    
-                await createPatient({
-                    first_name: 'Freddy',
-                    last_name: 'Sanchez',
-                    date_of_birth: '1974-12-25',
-                    gender: 'male',
-                    address: '1723 N Keystone Ave, Chicago, IL, 60651',
-                    phone_number: '7379522652',
-                    email: 'fsanchez74@gmail.com',
-                    emergency_contact_name: 'Felipe Sanchez',
-                    emergency_contact_phone: '7379522652'
-                });
-                await createPatient({
-                    first_name: 'Gary',
-                    last_name: 'Smith',
-                    date_of_birth: '1960-07-05',
-                    gender: 'male',
-                    address: '1234 Main St, San Francisco, CA 94102',
-                    phone_number: '4155556789',
-                    email: 'gsmith@gmail.com',
-                    emergency_contact_name: 'Gary Smith Sr.',
-                    emergency_contact_phone: '4155556788'
-                    });
-                await createPatient({
-                    first_name: 'Gloria',
-                    last_name: 'Johnson',
-                    date_of_birth: '1965-01-12',
-                    gender: 'female',
-                    address: '567 Elm St, Dallas, TX 75201',
-                    phone_number: '2145556789',
-                    email: 'gjohnson@gmail.com',
-                    emergency_contact_name: 'Gloria Johnson Sr.',
-                    emergency_contact_phone: '2145556788'
-                });
-                await createPatient({
-                    first_name: 'Greg',
-                    last_name: 'Brown',
-                    date_of_birth: '1970-06-01',
-                    gender: 'male',
-                    address: '901 Maple Ave, Seattle, WA 98104',
-                    phone_number: '2065556789',
-                    email: 'gbrown@gmail.com',
-                    emergency_contact_name: 'Greg Brown Sr.',
-                    emergency_contact_phone: '2065556788'
-                });
-                await createPatient({
-                    first_name: 'Gary',
-                    last_name: 'Davis',
-                    date_of_birth: '1975-03-15',
-                    gender: 'male',
-                    address: '1234 Main St, Atlanta, GA 30303',
-                    phone_number: '4045556789',
-                    email: 'gdavis@gmail.com',
-                    emergency_contact_name: 'Gary Davis Sr.',
-                    emergency_contact_phone: '4045556788'
-                });
-                await createPatient({
-                    first_name: 'Grace',
-                    last_name: 'Miller',
-                    date_of_birth: '1980-05-25',
-                    gender: 'female',
-                    address: '567 Elm St, Miami, FL 33131',
-                    phone_number: '3055556789',
-                    email: 'gmiller@gmail.com',
-                    emergency_contact_name: 'Grace Miller Sr.',
-                    emergency_contact_phone: '3055556788'
-                });
-                await createPatient({
-                    first_name: 'Gordon',
-                    last_name: 'Wilson',
-                    date_of_birth: '1985-02-28',
-                    gender: 'male',
-                    address: '901 Maple Ave, Denver, CO 80202',
-                    phone_number: '3035556789',
-                    email: 'gwilson@gmail.com',
-                    emergency_contact_name: 'Gordon Wilson Sr.',
-                    emergency_contact_phone: '3035556788'
-                });
-                    
                 
-                    
+                await createPatient({
+                first_name: 'Paul',
+                last_name: 'Patterson',
+                date_of_birth: '1949-01-06',
+                gender: 'male',
+                address: '4205 W Armitage Ave, Chicago, IL, 60639',
+                phone_number: '7954226652',
+                email: 'ppatterson49@gmail.com',
+                emergency_contact_name: 'Patricia Patterson',
+                emergency_contact_phone: '7954226652'
+                });
+                
+                await createPatient({
+                first_name: 'Peter',
+                last_name: 'Perez',
+                date_of_birth: '1958-09-13',
+                gender: 'male',
+                address: '5107 S King Dr, Chicago, IL, 60637',
+                phone_number: '5678922652',
+                email: 'pperez58@gmail.com',
+                emergency_contact_name: 'Patricia Perez',
+                emergency_contact_phone: '5678922652'
+                });
+                
+                await createPatient({
+                first_name: 'Patricia',
+                last_name: 'Phillips',
+                date_of_birth: '1960-04-19',
+                gender: 'female',
+                address: '6209 S Kedzie Ave, Chicago, IL, 60629',
+                phone_number: '2345622652',
+                email: 'pphillips60@gmail.com',
+                emergency_contact_name: 'Paul Phillips',
+                emergency_contact_phone: '2345622652'
+                });
+                
+                await createPatient({
+                first_name: 'Phillip',
+                last_name: 'Pierce',
+                date_of_birth: '1962-08-06',
+                gender: 'male',
+                address: '7307 S Ashland Ave, Chicago, IL, 60620',
+                phone_number: '6789122652',
+                email: 'ppierce62@gmail.com',
+                emergency_contact_name: 'Patricia Pierce',
+                emergency_contact_phone: '6789122652'
+                });
+                
+                await createPatient({
+                first_name: 'Patrick',
+                last_name: 'Porter',
+                date_of_birth: '1967-02-12',
+                gender: 'male',
+                address: '8405 W Roosevelt Rd, Chicago, IL, 60620',
+                phone_number: '23456722652',
+                email: 'pporter67@gmail.com',
+                emergency_contact_name: 'Pauline Porter',
+                emergency_contact_phone: '23456722652'
+                });
+            await createPatient({
+                first_name: 'Pamela',
+                last_name: 'Parker',
+                date_of_birth: '1942-07-12',
+                gender: 'female',
+                address: '3007 N Lake Shore Dr, Chicago, IL, 60657',
+                phone_number: '3312765652',
+                email: 'pparker42@gmail.com',
+                emergency_contact_name: 'Philip Parker',
+                emergency_contact_phone: '3312765652'
+                });
+            await createPatient({
+                first_name: 'Paul',
+                last_name: 'Patterson',
+                date_of_birth: '1949-01-06',
+                gender: 'male',
+                address: '4205 W Armitage Ave, Chicago, IL, 60639',
+                phone_number: '7954226652',
+                email: 'ppatterson49@gmail.com',
+                emergency_contact_name: 'Patricia Patterson',
+                emergency_contact_phone: '7954226652'
+                });
+            await createPatient({
+                first_name: 'Peter',
+                last_name: 'Perez',
+                date_of_birth: '1958-09-13',
+                gender: 'male',
+                address: '5107 S King Dr, Chicago, IL, 60637',
+                phone_number: '5678922652',
+                email: 'pperez58@gmail.com',
+                emergency_contact_name: 'Patricia Perez',
+                emergency_contact_phone: '5678922652'
+                });
+            await createPatient({
+                first_name: 'Patricia',
+                last_name: 'Phillips',
+                date_of_birth: '1960-04-19',
+                gender: 'female',
+                address: '6209 S Kedzie Ave, Chicago, IL, 60629',
+                phone_number: '2345622652',
+                email: 'pphillips60@gmail.com',
+                emergency_contact_name: 'Paul Phillips',
+                emergency_contact_phone: '2345622652'
+                });
+            await createPatient({
+                first_name: 'Phillip',
+                last_name: 'Pierce',
+                date_of_birth: '1962-08-06',
+                gender: 'male',
+                address: '7307 S Ashland Ave, Chicago, IL, 60620',
+                phone_number: '6789122652',
+                email: 'ppierce62@gmail.com',
+                emergency_contact_name: 'Patricia Pierce',
+                emergency_contact_phone: '6789122652'
+                });
+            await createPatient({
+                first_name: 'Patrick',
+                last_name: 'Porter',
+                date_of_birth: '1967-02-12',
+                gender: 'male',
+                address: '8405 W Roosevelt Rd, Chicago, IL, 60620',
+                phone_number: '23456456652',
+                email: 'pporter67@gmail.com',
+                emergency_contact_name: 'Pauline Porter',
+                emergency_contact_phone: '23459872652'
+                });
+            await createPatient({
+                first_name: 'Quincy',
+                last_name: 'Young',
+                date_of_birth: '1978-07-23',
+                gender: 'male',
+                address: '3507 N Ashland Ave, Chicago, IL, 60657',
+                phone_number: '8476543478',
+                email: 'qyoung78@gmail.com',
+                emergency_contact_name: 'Nina Young',
+                emergency_contact_phone: '8474545678'
+                });
+            await createPatient({
+                first_name: 'Quincy',
+                last_name: 'Green',
+                date_of_birth: '1978-07-23',
+                gender: 'male',
+                address: '1947 W Grand Ave, Chicago, IL, 60612',
+                phone_number: '8474512378',
+                email: 'qgreen78@gmail.com',
+                emergency_contact_name: 'Maggie Green',
+                emergency_contact_phone: '8474323478'
+                });
+            await createPatient({
+                first_name: 'Qian',
+                last_name: 'Park',
+                date_of_birth: '1980-11-18',
+                gender: 'female',
+                address: '5725 N Broadway St, Chicago, IL, 60660',
+                phone_number: '8474586578',
+                email: 'qpark80@gmail.com',
+                emergency_contact_name: 'Tiffany Park',
+                emergency_contact_phone: '8474545678'
+                });
+            await createPatient({
+                first_name: 'Quinn',
+                last_name: 'Simmons',
+                date_of_birth: '1981-01-12',
+                gender: 'male',
+                address: '2919 N Clark St, Chicago, IL, 60657',
+                phone_number: '8868523478',
+                emergency_contact_name: 'Eliza Simmons',
+                emergency_contact_phone: '8474535478',
+                email: 'qsimmons81@gmail.com'
+                });
+            await createPatient({
+                first_name: 'Quinn',
+                last_name: 'Brown',
+                date_of_birth: '1981-01-12',
+                gender: 'male',
+                address: '4525 N Lake Shore Dr, Chicago, IL, 60640',
+                phone_number: '8474623478',
+                emergency_contact_name: 'Victoria Brown',
+                emergency_contact_phone: '8474523456',
+                email: 'qbrown81@gmail.com'
+                });
+            await createPatient({
+                first_name: 'Qian',
+                last_name: 'Williams',
+                date_of_birth: '1983-07-17',
+                gender: 'female',
+                address: '4839 N Kedzie Ave, Chicago, IL, 60625',
+                phone_number: '8474523478',
+                emergency_contact_name: 'Mia Williams',
+                emergency_contact_phone: '8474523478',
+                email: 'qwilliams83@gmail.com'
+                });
+            await createPatient({
+                first_name: 'Randy',
+                last_name: 'Nguyen',
+                date_of_birth: '1958-09-11',
+                gender: 'male',
+                address: '1235 S Wabash Ave, Chicago, IL, 60605',
+                phone_number: '4857392654',
+                email: 'rnguyen58@gmail.com',
+                emergency_contact_name: 'Jason Nguyen',
+                emergency_contact_phone: '4857392655'
+                });
+            await createPatient({
+                first_name: 'Rosa',
+                last_name: 'Park',
+                date_of_birth: '1981-12-02',
+                gender: 'female',
+                address: '836 N Michigan Ave, Evanston, IL, 60201',
+                phone_number: '9857369854',
+                email: 'rpark81@gmail.com',
+                emergency_contact_name: 'John Park',
+                emergency_contact_phone: '9857369855'
+            });
+            await createPatient({
+                first_name: 'Ryan',
+                last_name: 'Kim',
+                date_of_birth: '1994-06-22',
+                gender: 'male',
+                address: '622 S Dearborn St, Schaumburg, IL, 60193',
+                phone_number: '9857369856',
+                email: 'rkim94@gmail.com',
+                emergency_contact_name: 'Janice Kim',
+                emergency_contact_phone: '9857369857'
+            });
+            await createPatient({
+                first_name: 'Rachel',
+                last_name: 'Garcia',
+                date_of_birth: '1992-08-18',
+                gender: 'female',
+                address: '1145 S Main St, Naperville, IL, 60540',
+                phone_number: '9857369858',
+                email: 'rgarcia92@gmail.com',
+                emergency_contact_name: 'Jose Garcia',
+                emergency_contact_phone: '9857369859'
+            });
+            await createPatient({
+                first_name: 'Rebecca',
+                last_name: 'Smith',
+                date_of_birth: '1983-05-12',
+                gender: 'female',
+                address: '722 W Front St, Northbrook, IL, 60062',
+                phone_number: '9857369860',
+                email: 'rsmith83@gmail.com',
+                emergency_contact_name: 'William Smith',
+                emergency_contact_phone: '9857369861'
+            });
+            await createPatient({
+                first_name: 'Robert',
+                last_name: 'Jones',
+                date_of_birth: '1977-11-03',
+                gender: 'male',
+                address: '933 W Howard St, Skokie, IL, 60076',
+                phone_number: '9857369862',
+                email: 'rjones77@gmail.com',
+                emergency_contact_name: 'Emily Jones',
+                emergency_contact_phone: '9857369863'
+            });
+            await createPatient({
+                    first_name: 'Shawn',
+                    last_name: 'Garner',
+                    date_of_birth: '1953-11-24',
+                    gender: 'male',
+                    address: '1723 E Balmoral Ave, Chicago, IL, 60601',
+                    phone_number: '6573829574',
+                    email: 'sgarner53@gmail.com',
+                    emergency_contact_name: 'Sophia Garner',
+                    emergency_contact_phone: '6573829574'
+                });
+            await createPatient({
+                first_name: 'Samantha',
+                last_name: 'Butler',
+                date_of_birth: '1980-06-19',
+                gender: 'female',
+                address: '1723 W Lockwood Ave, Chicago, IL, 60601',
+                phone_number: '6573829575',
+                email: 'sbutler80@gmail.com',
+                emergency_contact_name: 'Steven Butler',
+                emergency_contact_phone: '6573829575'
+            });
+            await createPatient({
+                first_name: 'Sophie',
+                last_name: 'Chapman',
+                date_of_birth: '1982-12-13',
+                gender: 'female',
+                address: '1723 N Ashland Ave, Chicago, IL, 60601',
+                phone_number: '6573829576',
+                email: 'schapman82@gmail.com',
+                emergency_contact_name: 'Sophie Chapman',
+                emergency_contact_phone: '6573829576'
+            });
+            await createPatient({
+                first_name: 'Steven',
+                last_name: 'Edwards',
+                date_of_birth: '1988-05-06',
+                gender: 'male',
+                address: '1723 W Grand Ave, Chicago, IL, 60601',
+                phone_number: '6573829577',
+                email: 'sedwards88@gmail.com',
+                emergency_contact_name: 'Steven Edwards',
+                emergency_contact_phone: '6573829577'
+            });
+            await createPatient({
+                first_name: 'Sophia',
+                last_name: 'Gonzalez',
+                date_of_birth: '1999-01-01',
+                gender: 'female',
+                address: '1723 S Halsted St, Chicago, IL, 60601',
+                phone_number: '6573829578',
+                email: 'sgonzalez99@gmail.com',
+                emergency_contact_name: 'Sophia Gonzalez',
+                emergency_contact_phone: '6573829578'
+            });
+            await createPatient({
+                first_name: 'Sebastian',
+                last_name: 'Harper',
+                date_of_birth: '1998-03-19',
+                gender: 'male',
+                address: '1723 N Lincoln Ave, Chicago, IL, 60601',
+                phone_number: '6573829579',
+                email: 'sharper98@gmail.com',
+                emergency_contact_name: 'Sebastian Harper',
+                emergency_contact_phone: '6573829579'
+            });
+            
+
                     
 
             console.log('Finished creating patient.');
