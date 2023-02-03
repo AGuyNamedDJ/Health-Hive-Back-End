@@ -235,8 +235,19 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'jsmith97@gmail.com',
                 emergency_contact_name: 'Sheryl Smith',
                 emergency_contact_phone: '7081664345'
-
             });
+            await createPatient({
+                first_name: 'Emily',
+                last_name: 'Johnson',
+                date_of_birth: '1999-03-12',
+                gender: 'female',
+                address: '456 Park Ave, New York, NY, 10022',
+                phone_number: '2125557777',
+                email: 'emilyj99@gmail.com',
+                emergency_contact_name: 'William Johnson',
+                emergency_contact_phone: '2125554444'
+            });
+
             console.log('Finished creating patient.');
         } catch (error) {
             console.error('Error when creating patient!');
