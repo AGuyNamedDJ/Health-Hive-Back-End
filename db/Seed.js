@@ -5082,7 +5082,79 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'nkim@healthhive.com',
                 phone_number: '3388975284'
             });
-
+            await createStaff({
+                name: 'Hannah Kim',
+                title: 'Pediatrics Physician',
+                specialty: 'Pediatrics',
+                provider_id: 5372,
+                email: 'hkim@healthhive.com',
+                phone_number: '3387462524'
+            });
+            await createStaff({
+                name: 'Emily Green',
+                title: 'Pediatrics Physician',
+                specialty: 'Pediatrics',
+                provider_id: 5678,
+                email: 'egreen@healthhive.com',
+                phone_number: '3387456124'
+            });
+            await createStaff({
+                name: 'Sophia Torres',
+                title: 'Pediatrics Physician',
+                specialty: 'Pediatrics',
+                provider_id: 5680,
+                email: 'storres@healthhive.com',
+                phone_number: '3387456126'
+            });
+            await createStaff({
+                name: 'William Kim',
+                title: 'Pediatrics Physician',
+                specialty: 'Pediatrics',
+                provider_id: 5681,
+                email: 'wkim@healthhive.com',
+                phone_number: '3387456127'
+            });
+            await createStaff({
+                name: 'Olivia Lee',
+                title: 'Pediatrics Physician',
+                specialty: 'Pediatrics',
+                provider_id: 5682,
+                email: 'olee@healthhive.com',
+                phone_number: '3387456128'
+            });
+            await createStaff({
+                name: 'Michael Davis',
+                title: 'Pediatrics Physician',
+                specialty: 'Pediatrics',
+                provider_id: 5683,
+                email: 'mdavis@healthhive.com',
+                phone_number: '3387456129'
+            });
+            await createStaff({
+                name: 'Tess Hartman',
+                title: 'Plastic Surgeon',
+                specialty: 'Cosmetic Surgery',
+                provider_id: 8072,
+                email: 'thartman@healthhive.com',
+                phone_number: '3384870472'
+            });
+            await createStaff({
+                name: 'Bridgette Kim',
+                title: 'Plastic Surgeon',
+                specialty: 'Reconstructive Surgery',
+                provider_id: 8015,
+                email: 'bkim@healthhive.com',
+                phone_number: '3384870492'
+            });
+            await createStaff({
+                name: 'Jordan Stone',
+                title: 'Plastic Surgeon',
+                specialty: 'Aesthetic Surgery',
+                provider_id: 8047,
+                email: 'jstone@healthhive.com',
+                phone_number: '3384870442'
+            });
+                
               
                 
                 
