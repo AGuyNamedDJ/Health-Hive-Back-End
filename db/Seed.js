@@ -3744,8 +3744,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Philip Parker',
                 emergency_contact_phone: '3312765652'
                 });
-                
-                await createPatient({
+            await createPatient({
                 first_name: 'Paulie',
                 last_name: 'Patterson',
                 date_of_birth: '1979-01-06',
@@ -3756,8 +3755,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Patricia Patterson',
                 emergency_contact_phone: '7954226652'
                 });
-                
-                await createPatient({
+            await createPatient({
                 first_name: 'Pettie',
                 last_name: 'Perez',
                 date_of_birth: '1948-09-13',
@@ -3768,8 +3766,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Patricia Perez',
                 emergency_contact_phone: '5678922652'
                 });
-                
-                await createPatient({
+            await createPatient({
                 first_name: 'Patria',
                 last_name: 'Phillips',
                 date_of_birth: '1980-04-19',
@@ -3780,8 +3777,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Paul Phillips',
                 emergency_contact_phone: '2345622652'
                 });
-                
-                await createPatient({
+            await createPatient({
                 first_name: 'Phil',
                 last_name: 'Pierce',
                 date_of_birth: '1982-08-06',
@@ -3792,8 +3788,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Patricia Pierce',
                 emergency_contact_phone: '6789122652'
                 });
-                
-                await createPatient({
+            await createPatient({
                 first_name: 'Patrick',
                 last_name: 'Porter',
                 date_of_birth: '1967-02-12',
@@ -4495,6 +4490,73 @@ const { createUsers, getAllUsers } = require('./Users');
                 email: 'jsalmon@healthhive.com',
                 phone_number: '8886462524'
             });
+            await createStaff({
+                name: 'Elizabeth Nguyen',
+                title: 'Anesthesiologist',
+                specialty: 'Anesthesiology',
+                provider_id: 1537,
+                email: 'nguyen@healthhive.com',
+                phone_number: '3386462524'
+            });
+            await createStaff({
+                name: 'Megan Kim',
+                title: 'Anesthesiologist',
+                specialty: 'Anesthesiology',
+                provider_id: 1872,
+                email: 'mkim@healthhive.com',
+                phone_number: '3386992524'
+             });
+            await createStaff({
+                name: 'Kimberly Ramirez',
+                title: 'Anesthesiologist',
+                specialty: 'Anesthesiology',
+                provider_id: 1447,
+                email: 'kramirez@healthhive.com',
+                phone_number: '3389876532'
+            });
+            await createStaff({
+                name: 'David Smith',
+                title: 'Anesthesiologist',
+                specialty: 'Anesthesia',
+                provider_id: 1783,
+                email: 'dsmith@healthhive.com',
+                phone_number: '3387459821'
+            });
+            await createStaff({
+                name: 'Samantha Kim',
+                title: 'Anesthesiologist',
+                specialty: 'Anesthesiology',
+                provider_id: 1723,
+                email: 'skim@healthhive.com',
+                phone_number: '3386298574'
+            });
+            await createStaff({
+                name: 'Dr. Elizabeth Chen',
+                title: 'Cardiologist',
+                specialty: 'Cardiology',
+                provider_id: 2586,
+                email: 'echen@healthhive.com',
+                phone_number: '3386495706'
+            });
+            await createStaff({
+                name: 'Susan Kim',
+                title: 'Cardiologist',
+                specialty: 'Cardiology',
+                provider_id: 2655,
+                email: 'skim@healthhive.com',
+                phone_number: '3386223918'
+            });
+            await createStaff({
+                name: 'Ava Kim',
+                title: 'Cardiologist',
+                specialty: 'Cardiology',
+                provider_id: 2514,
+                email: 'akim@healthhive.com',
+                phone_number: '3386146253'
+            });
+                
+                
+                
 
             console.log('Finished creating staff.');
         } catch (error) {
