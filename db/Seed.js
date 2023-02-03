@@ -1799,11 +1799,11 @@ const { createUsers, getAllUsers } = require('./Users');
             await createPatient({
                 first_name: 'Emily',
                 last_name: 'Lee',
-                date_of_birth: '2000-04-23',
+                date_of_birth: '2004-04-23',
                 gender: 'female',
                 address: '1623 S Los Angeles St, Los Angeles, CA 90015',
                 phone_number: '7379522652',
-                email: 'elee00@gmail.com',
+                email: 'elee04@gmail.com',
                 emergency_contact_name: 'Emily Lee',
                 emergency_contact_phone: '7379522652'
                 });
@@ -2427,11 +2427,11 @@ const { createUsers, getAllUsers } = require('./Users');
             await createPatient({
                 first_name: 'Emma',
                 last_name: 'Lee',
-                date_of_birth: '2000-03-12',
+                date_of_birth: '2001-03-12',
                 gender: 'female',
                 address: '1133 N Orleans St, Chicago, IL, 60610',
                 phone_number: '1174291637',
-                email: 'elee00@gmail.com',
+                email: 'elee01@gmail.com',
                 emergency_contact_name: 'Emma Lee',
                 emergency_contact_phone: '1174291637'
                 });
@@ -3734,61 +3734,61 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_phone: '7735780456'
             });
             await createPatient({
-                first_name: 'Pamela',
+                first_name: 'Pamie',
                 last_name: 'Parker',
-                date_of_birth: '1942-07-12',
+                date_of_birth: '1952-07-12',
                 gender: 'female',
                 address: '3007 N Lake Shore Dr, Chicago, IL, 60657',
                 phone_number: '3312765652',
-                email: 'pparker42@gmail.com',
+                email: 'pparker52@gmail.com',
                 emergency_contact_name: 'Philip Parker',
                 emergency_contact_phone: '3312765652'
                 });
                 
                 await createPatient({
-                first_name: 'Paul',
+                first_name: 'Paulie',
                 last_name: 'Patterson',
-                date_of_birth: '1949-01-06',
+                date_of_birth: '1979-01-06',
                 gender: 'male',
                 address: '4205 W Armitage Ave, Chicago, IL, 60639',
                 phone_number: '7954226652',
-                email: 'ppatterson49@gmail.com',
+                email: 'ppatterson79@gmail.com',
                 emergency_contact_name: 'Patricia Patterson',
                 emergency_contact_phone: '7954226652'
                 });
                 
                 await createPatient({
-                first_name: 'Peter',
+                first_name: 'Pettie',
                 last_name: 'Perez',
-                date_of_birth: '1958-09-13',
+                date_of_birth: '1948-09-13',
                 gender: 'male',
                 address: '5107 S King Dr, Chicago, IL, 60637',
                 phone_number: '5678922652',
-                email: 'pperez58@gmail.com',
+                email: 'pperez48@gmail.com',
                 emergency_contact_name: 'Patricia Perez',
                 emergency_contact_phone: '5678922652'
                 });
                 
                 await createPatient({
-                first_name: 'Patricia',
+                first_name: 'Patria',
                 last_name: 'Phillips',
-                date_of_birth: '1960-04-19',
+                date_of_birth: '1980-04-19',
                 gender: 'female',
                 address: '6209 S Kedzie Ave, Chicago, IL, 60629',
                 phone_number: '2345622652',
-                email: 'pphillips60@gmail.com',
+                email: 'pphillips80@gmail.com',
                 emergency_contact_name: 'Paul Phillips',
                 emergency_contact_phone: '2345622652'
                 });
                 
                 await createPatient({
-                first_name: 'Phillip',
+                first_name: 'Phil',
                 last_name: 'Pierce',
-                date_of_birth: '1962-08-06',
+                date_of_birth: '1982-08-06',
                 gender: 'male',
                 address: '7307 S Ashland Ave, Chicago, IL, 60620',
                 phone_number: '6789122652',
-                email: 'ppierce62@gmail.com',
+                email: 'ppierce82@gmail.com',
                 emergency_contact_name: 'Patricia Pierce',
                 emergency_contact_phone: '6789122652'
                 });
@@ -4475,7 +4475,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Sophia Johnson',
                 emergency_contact_phone: '7732659845'
                 });
-                
+
             console.log('Finished creating patient.');
         } catch (error) {
             console.error('Error when creating patient!');
