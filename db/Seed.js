@@ -1466,17 +1466,184 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Michael Kim',
                 emergency_contact_phone: '3129876543'
             });
-
-
-
-
-
-
-
-
-
-
-
+            await createPatient({
+                first_name: 'David',
+                last_name: 'Gonzalez',
+                date_of_birth: '1999-03-17',
+                gender: 'male',
+                address: '789 S Oak Park Ave, Oak Park, IL, 60302',
+                phone_number: '7084561278',
+                email: 'davidgonzalez99@gmail.com',
+                emergency_contact_name: 'Juan Gonzalez',
+                emergency_contact_phone: '7084127896'
+            });
+            await createPatient({
+                first_name: 'Maria',
+                last_name: 'Rodriguez',
+                date_of_birth: '1956-12-05',
+                gender: 'female',
+                address: '567 W North Ave, Chicago, IL, 60610',
+                phone_number: '7187451293',
+                email: 'mariarodriguez56@gmail.com',
+                emergency_contact_name: 'Juan Rodriguez',
+                emergency_contact_phone: '7189876543'
+            });
+            await createPatient({
+                first_name: 'William',
+                last_name: 'Johnson',
+                date_of_birth: '2002-09-15',
+                gender: 'male',
+                address: '1234 S Oak Park Ave, Oak Park, IL, 60302',
+                phone_number: '7184678492',
+                email: 'wjohnson02@gmail.com',
+                emergency_contact_name: 'Evelyn Johnson',
+                emergency_contact_phone: '7184958672'
+            });
+            await createPatient({
+                first_name: 'Sophia',
+                last_name: 'Rodriguez',
+                date_of_birth: '1980-03-14',
+                gender: 'female',
+                address: '7353 W George St, Chicago, IL, 60656',
+                phone_number: '3122984756',
+                email: 'srodriguez80@gmail.com',
+                emergency_contact_name: 'Juan Rodriguez',
+                emergency_contact_phone: '3123567890'
+            });
+            await createPatient({
+                first_name: 'Nina',
+                last_name: 'Liu',
+                date_of_birth: '1960-01-05',
+                gender: 'female',
+                address: '6012 Forest Ave, Dallas, TX, 75204',
+                phone_number: '2146376448',
+                email: 'nliu60@gmail.com',
+                emergency_contact_name: 'Ling Liu',
+                emergency_contact_phone: '2142313445'
+            });
+            await createPatient({
+                first_name: 'Monica',
+                last_name: 'Rodriguez',
+                date_of_birth: '1985-01-17',
+                gender: 'female',
+                address: '948 W Loyola Ave, Chicago, IL, 60626',
+                phone_number: '7736574839',
+                email: 'mrodriguez85@gmail.com',
+                emergency_contact_name: 'Rodriguez Monica',
+                emergency_contact_phone: '7736574839'
+                });
+            await createPatient({
+                first_name: 'Martha',
+                last_name: 'Santos',
+                date_of_birth: '1983-12-07',
+                gender: 'female',
+                address: '5921 N Lake Shore Dr, Chicago, IL, 60660',
+                phone_number: '7732124948',
+                email: 'msantos83@gmail.com',
+                emergency_contact_name: 'Martha Santos',
+                emergency_contact_phone: '7732124948'
+                });
+            await createPatient({
+                first_name: 'Rashida',
+                last_name: 'Henderson',
+                date_of_birth: '1983-03-12',
+                gender: 'female',
+                address: '6312 W Fullerton Ave, Chicago, IL, 60707',
+                phone_number: '7738686972',
+                email: 'rhenderson83@gmail.com',
+                emergency_contact_name: 'Rashida Henderson',
+                emergency_contact_phone: '7738686972'
+                });
+            await createPatient({
+                first_name: 'Emma',
+                last_name: 'Johnson',
+                date_of_birth: '1980-03-24',
+                gender: 'female',
+                address: '3927 N Lincoln Ave, Chicago, IL, 60613',
+                phone_number: '7736038492',
+                email: 'ejohnson80@gmail.com',
+                emergency_contact_name: 'Johnson Family',
+                emergency_contact_phone: '7736038492'
+                });
+            await createPatient({
+                first_name: 'Jacqueline',
+                last_name: 'Mendoza',
+                date_of_birth: '1961-03-12',
+                gender: 'female',
+                address: '5821 N Harlem Ave, Chicago, IL, 60631',
+                phone_number: '7738254736',
+                email: 'jmendoza61@gmail.com',
+                emergency_contact_name: 'Javier Mendoza',
+                emergency_contact_phone: '7738254736'
+                });
+            await createPatient({
+                first_name: 'Marcella',
+                last_name: 'Zheng',
+                date_of_birth: '1948-02-19',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'mzheng48@gmail.com',
+                emergency_contact_name: 'Marcella Zheng',
+                emergency_contact_phone: '7379522652'
+                });       
+            await createPatient({
+                first_name: 'Karen',
+                last_name: 'Garcia',
+                date_of_birth: '1977-06-21',
+                gender: 'female',
+                address: '3204 W North Ave, Chicago, IL, 60651',
+                phone_number: '8723040615',
+                email: 'kgarcia77@gmail.com',
+                emergency_contact_name: 'Karen Garcia',
+                emergency_contact_phone: '8723040615'
+                });
+            await createPatient({
+                first_name: "Evelyn",
+                last_name: "Rojas",
+                date_of_birth: "1938-06-23",
+                gender: "female",
+                address: "1035 S Oak Park Ave, Oak Park, IL 60304",
+                phone_number: "8472658589",
+                email: "erojas38@gmail.com",
+                emergency_contact_name: "Evelyn Rojas",
+                emergency_contact_phone: "8472658589"
+                });
+            await createPatient({
+                first_name: 'Sophia',
+                last_name: 'Lee',
+                date_of_birth: '1998-08-11',
+                gender: 'female',
+                address: '8356 W Lake St, Chicago, IL 60607',
+                phone_number: '7734418603',
+                email: 'slee98@gmail.com',
+                emergency_contact_name: 'Sophia Lee',
+                emergency_contact_phone: '7734418603'
+                });
+            await createPatient({
+                first_name: 'Tyree',
+                last_name: 'Gonzalez',
+                date_of_birth: '1983-11-08',
+                gender: 'male',
+                address: '2126 W Belmont Ave, Chicago, IL, 60618',
+                phone_number: '8474561238',
+                email: 'tgonzalez83@gmail.com',
+                emergency_contact_name: 'Tyree Gonzalez',
+                emergency_contact_phone: '8474561238'
+                });
+                await createPatient({
+                    first_name: 'Caroline',
+                    last_name: 'Perez',
+                    date_of_birth: '1977-12-02',
+                    gender: 'female',
+                    address: '1131 S Kedzie Ave, Chicago, IL, 60623',
+                    phone_number: '7375563834',
+                    email: 'cperez77@gmail.com',
+                    emergency_contact_name: 'Caroline Perez',
+                    emergency_contact_phone: '7375563834'
+                    });
+                    
+                    
 
             console.log('Finished creating patient.');
         } catch (error) {
