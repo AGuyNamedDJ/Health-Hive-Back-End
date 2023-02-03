@@ -5485,10 +5485,107 @@ const { createUsers, getAllUsers } = require('./Users');
             await createMedicalRecord({
                 patient_id: 1,
                 name: 'John Smith',
-                diagnosis: 'HBP Example',
-                symptoms: 'fainting',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest tightness, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 2,
+                name: 'Emily Johnson',
+                diagnosis: 'Diabetes Type 2',
+                symptoms: 'frequent urination, excessive thirst',
                 status: 'alive'
             });
+            await createMedicalRecord({
+                patient_id: 3,
+                name: 'Olive Brown',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness on one side of the body, difficulty speaking, headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 4,
+                name: 'William Davis',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, wheezing, chest tightness, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 5,
+                name: 'Isabella Wilson',
+                diagnosis: 'Multiple Sclerosis',
+                symptoms: 'fatigue, muscle weakness, difficulty with coordination and balance',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 6,
+                name: 'Alexander Smith',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'coughing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 7,
+                name: 'Ava Jones',
+                diagnosis: 'Stroke',
+                symptoms: 'numbness, confusion, headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 8,
+                name: 'Ethan Green',
+                diagnosis: 'Gastroesophageal Reflux Disease (GERD)',
+                symptoms: 'heartburn, nausea, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 9,
+                name: 'Sophia Lee',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, shortness of breath, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 10,
+                name: 'Mason Young',
+                diagnosis: 'Arthritis',
+                symptoms: 'Joint Pain',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 11,
+                name: 'Noah Brown',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'cough, wheezing, shortness of breath',
+                status: 'alive'
+            });
+            await createMedicalRecord({
+                patient_id: 12,
+                name: 'Liam Miller',
+                diagnosis: 'Rheumatoid Arthritis',
+                symptoms: 'joint pain, swelling, fatigue',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 13,
+                name: 'Emma Davis',
+                diagnosis: 'Diabetes Mellitus Type 1',
+                symptoms: 'increased thirst, frequent urination, weight loss, fatigue',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 14,
+                name: 'Avery Anderson',
+                diagnosis: 'Chronic Myeloid Leukemia',
+                symptoms: 'fatigue, weight loss, night sweats',
+                status: 'alive'
+                });
+
+                    
+        
+    
+
+
             console.log('Finished creating medical record.');
         } catch (error) {
             console.error('Error when creating medical record!');
