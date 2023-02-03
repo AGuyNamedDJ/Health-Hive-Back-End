@@ -1631,18 +1631,83 @@ const { createUsers, getAllUsers } = require('./Users');
                 emergency_contact_name: 'Tyree Gonzalez',
                 emergency_contact_phone: '8474561238'
                 });
-                await createPatient({
-                    first_name: 'Caroline',
-                    last_name: 'Perez',
-                    date_of_birth: '1977-12-02',
-                    gender: 'female',
-                    address: '1131 S Kedzie Ave, Chicago, IL, 60623',
-                    phone_number: '7375563834',
-                    email: 'cperez77@gmail.com',
-                    emergency_contact_name: 'Caroline Perez',
-                    emergency_contact_phone: '7375563834'
-                    });
-                    
+            await createPatient({
+                first_name: 'Caroline',
+                last_name: 'Perez',
+                date_of_birth: '1977-12-02',
+                gender: 'female',
+                address: '1131 S Kedzie Ave, Chicago, IL, 60623',
+                phone_number: '7375563834',
+                email: 'cperez77@gmail.com',
+                emergency_contact_name: 'Caroline Perez',
+                emergency_contact_phone: '7375563834'
+                });
+            await createPatient({
+                first_name: 'Karen',
+                last_name: 'Hernandez',
+                date_of_birth: '1952-07-08',
+                gender: 'female',
+                address: '4027 W North Ave, Chicago, IL 60647',
+                phone_number: '7328880400',
+                email: 'khernandez52@gmail.com',
+                emergency_contact_name: 'Karen Hernandez',
+                emergency_contact_phone: '7328880400'
+                });
+            await createPatient({
+                first_name: 'Erick',
+                last_name: 'Garcia',
+                date_of_birth: '1997-08-22',
+                gender: 'male',
+                address: '2425 W Augusta Blvd, Chicago, IL 60622',
+                phone_number: '7373989290',
+                email: 'erickgarcia97@gmail.com',
+                emergency_contact_name: 'Erick Garcia',
+                emergency_contact_phone: '7373989290'
+                });
+            await createPatient({
+                first_name: 'Marcella',
+                last_name: 'Zheng',
+                date_of_birth: '1948-02-19',
+                gender: 'female',
+                address: '1723 N Keystone Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'mzheng48@gmail.com',
+                emergency_contact_name: 'Marcella Zheng',
+                emergency_contact_phone: '7379522652'
+                });
+            await createPatient({
+                first_name: 'John',
+                last_name: 'Doe',
+                date_of_birth: '1970-05-12',
+                gender: 'male',
+                address: '619 N Main St, Evanston, IL, 60201',
+                phone_number: '2108456789',
+                email: 'johndoe70@gmail.com',
+                emergency_contact_name: 'John Doe',
+                emergency_contact_phone: '2108456789'
+                });
+            await createPatient({
+                first_name: 'Jane',
+                last_name: 'Smith',
+                date_of_birth: '1992-09-23',
+                gender: 'female',
+                address: '135 W Wise Rd, Schaumburg, IL, 60193',
+                phone_number: '3108456789',
+                email: 'janesmith92@gmail.com',
+                emergency_contact_name: 'Jane Smith',
+                emergency_contact_phone: '3108456789'
+                });
+            await createPatient({
+                first_name: 'Joan',
+                last_name: 'Robinson',
+                date_of_birth: '1989-07-12',
+                gender: 'female',
+                address: '1503 N Kostner Ave, Chicago, IL, 60651',
+                phone_number: '7379522652',
+                email: 'joanr89@gmail.com',
+                emergency_contact_name: 'Joan Robinson',
+                emergency_contact_phone: '7379522652'
+                });
                     
 
             console.log('Finished creating patient.');
