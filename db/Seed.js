@@ -5580,11 +5580,170 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'fatigue, weight loss, night sweats',
                 status: 'alive'
                 });
+            await createMedicalRecord({
+                patient_id: 15,
+                name: 'Evelyn Taylor',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'persistent fatigue, headaches, muscle pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 16,
+                name: 'Abigail Johnson',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'Coughing, Chest pain, Shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 17,
+                name: 'Isabelle Wilson',
+                diagnosis: 'Irritable Bowel Syndrome (IBS)',
+                symptoms: 'Abdominal pain, bloating, and changes in bowel movements',
+                status: 'alive'
+                });            
+            await createMedicalRecord({
+                patient_id: 18,
+                name: 'Mila Moore',
+                diagnosis: 'Osteoarthritis',
+                symptoms: 'joint pain, stiffness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 19,
+                name: 'Aurora Anderson',
+                diagnosis: 'Stroke',
+                symptoms: 'Difficulty speaking, weakness on one side of the body, headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 20,
+                name: 'Eleanor Thomas',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'fatigue, decreased appetite, nausea, frequent urination',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 21,
+                name: 'Aria Moore',
+                diagnosis: 'Gastroesophageal Reflux Disease',
+                symptoms: 'Heartburn, Regurgitation, Chest pain',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 22,
+                name: 'Scarlett Wilson',
+                diagnosis: 'Chronic Migraines',
+                symptoms: 'frequent headaches, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 23,
+                name: 'Natalie Johnson',
+                diagnosis: 'Chronic Migraine',
+                symptoms: 'headache, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 24,
+                name: 'Charlotte Williams',
+                diagnosis: 'Acute Gastroenteritis',
+                symptoms: 'nausea, vomiting, diarrhea',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 25,
+                name: 'Aurora Smith',
+                diagnosis: 'Chronic Sinusitis',
+                symptoms: 'facial pain, headache, nasal congestion, runny nose',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 26,
+                name: 'Evelyn Brown',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 27,
+                name: 'Isabelle Davis',
+                diagnosis: 'Type 2 Diabetes',
+                symptoms: 'Increased thirst and hunger, frequent urination',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 28,
+                name: 'Aria Miller',
+                diagnosis: 'Anxiety Disorder',
+                symptoms: 'Panic attacks, restlessness, and excessive worry',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 29,
+                name: 'Natalie Wilson',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'fatigue, pain, headaches, depression',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 30,
+                name: 'Eleanor Anderson',
+                diagnosis: "Meniere's Disease",
+                symptoms: 'Vertigo, Tinnitus, Hearing Loss, Nausea',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 31,
+                name: 'Avery Thomas',
+                diagnosis: 'Depression',
+                symptoms: 'Loss of Interest, Fatigue, Insomnia',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 32,
+                name: 'Scarlet Johnson',
+                diagnosis: 'Stroke',
+                symptoms: 'numbness, confusion, headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 33,
+                name: 'Evelyn Davis',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness, numbness, difficulty speaking, headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 34,
+                name: 'Isabelle Anderson',
+                diagnosis: 'Diabetes Mellitus',
+                symptoms: 'Frequent Urination, Increased Thirst, Hunger, Fatigue, Slow Healing Sores',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 35,
+                name: 'Aurora Wilson',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'coughing, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 36,
+                name: 'Natalie Johnson',
+                diagnosis: 'Chronic Migraine',
+                symptoms: 'frequent headaches, sensitivity to light and sound',
+                status: 'alive'
+                });
+                await createMedicalRecord({
+                    patient_id: 37,
+                    name: 'Aria Thomas',
+                    diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                    symptoms: 'coughing, wheezing, chest tightness, shortness of breath',
+                    status: 'alive'
+                    });
 
-                    
-        
-    
 
+            
 
             console.log('Finished creating medical record.');
         } catch (error) {
