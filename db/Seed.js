@@ -6175,6 +6175,189 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'chest pain, shortness of breath',
                 status: 'alive'
                 });
+            await createMedicalRecord({
+                patient_id: 101,
+                name: 'William Perez',
+                diagnosis: 'Broken Arm',
+                symptoms: 'pain and swelling in arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 102,
+                name: 'Ava Gonzalez',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'Severe Pain, Swelling, Bruising',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 103,
+                name: 'Michael Kim',
+                diagnosis: 'Injury from Motor Vehicle Accident',
+                symptoms: 'Broken bones, internal bleeding, head injury',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 104,
+                name: 'Emma Hernandez',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'pain in the arm, swelling, and difficulty moving the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 105,
+                name: 'Olivia Parker',
+                diagnosis: 'Chest Pain',
+                symptoms: 'Chest pain, shortness of breath, fatigue, lightheadedness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 106,
+                name: 'Aiden Kim',
+                diagnosis: 'Chest Pain',
+                symptoms: 'Chest discomfort, shortness of breath, heavy sweating',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 107,
+                name: 'Evelyn Gonzalez',
+                diagnosis: 'Broken Arm',
+                symptoms: 'pain and swelling in arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 108,
+                name: 'Marcus Kim',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'fatigue, frequent urination, swelling in legs and ankles',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 109,
+                name: 'Nia Ramirez',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'nausea, fatigue, decreased appetite, increased thirst',
+                status: 'alive'
+                });     
+            await createMedicalRecord({
+                patient_id: 110,
+                name: 'Miguel Garcia',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'fatigue, swelling, difficulty breathing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 111,
+                name: 'Fatima Mohammed',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'fatigue, swelling in the legs, feet, and ankles, dry and itchy skin, decreased urine output, and changes in urine appearance',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 112,
+                name: 'Leah Parker',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'fatigue, decreased urine output, swelling',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 113,
+                name: 'Jasmine Kim',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'Fatigue, Nausea, Swelling of the legs, ankles, and feet, Reduced urine output, itchy skin',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 114,
+                name: 'David Gonzalez',
+                diagnosis: 'Chronic Migraines',
+                symptoms: 'Severe headaches, nausea',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 115,
+                name: 'Maria Rodriguez',
+                diagnosis: 'Migraine Headaches',
+                symptoms: 'Chronic headaches, nausea, light sensitivity',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 116,
+                name: 'William Johnson',
+                diagnosis: 'Migraine Headache',
+                symptoms: 'Frequent headache, nausea, and sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 117,
+                name: 'Sophia Rodriguez',
+                diagnosis: 'Migraine Headache',
+                symptoms: 'recurrent headache, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 118,
+                name: 'Nina Liu',
+                diagnosis: 'Neurological Disorder',
+                symptoms: 'Seizures, migraines, numbness in limbs',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 119,
+                name: 'Monica Rodriguez',
+                diagnosis: 'Epileptic Seizure Disorder',
+                symptoms: 'frequent seizures, sudden loss of consciousness, muscle spasms',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 120,
+                name: 'Martha Santos',
+                diagnosis: 'Cerebral Palsy',
+                symptoms: 'Difficulty walking, tremors, muscle stiffness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 121,
+                name: 'Rashida Henderson',
+                diagnosis: 'Chronic Migraine',
+                symptoms: 'frequent headache, nausea, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 122,
+                name: 'Emma Johnson',
+                diagnosis: 'Migraine Headache',
+                symptoms: 'severe headache, nausea, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 123,
+                name: 'Jacqueline Mendoza',
+                diagnosis: 'Chronic Migraines',
+                symptoms: 'recurrent headaches, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 124,
+                name: 'Marcie Zheng',
+                diagnosis: 'Migraine Headaches',
+                symptoms: 'Severe headaches, nausea, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 125,
+                name: 'Ken Garcia',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness in limbs, slurred speech, confusion',
+                status: 'alive'
+                });
+
+
+
+
+
+
+
+
 
 
 
