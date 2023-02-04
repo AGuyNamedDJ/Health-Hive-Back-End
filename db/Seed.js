@@ -5937,7 +5937,244 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'persistent cough, shortness of breath, chest tightness',
                 status: 'alive'
                 });
-
+            await createMedicalRecord({
+                patient_id: 66,
+                name: 'Liam Johnson',
+                diagnosis: 'Acute Otitis Media',
+                symptoms: 'ear pain, ear drainage, hearing loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 68,
+                name: 'William Brown',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'persistent coughing, shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 69,
+                name: 'Ethan Kim',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, coughing, wheezing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 70,
+                name: 'Emily Garcia',
+                diagnosis: 'Fibromyalgia',
+                symptoms: 'Chronic Muscle Pain, Fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 71,
+                name: 'Isabella Rodriguez',
+                diagnosis: 'Gastritis',
+                symptoms: 'Abdominal pain, nausea, vomiting, loss of appetite',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 72,
+                name: 'Michael Martinez',
+                diagnosis: 'Diabetic Neuropathy',
+                symptoms: 'numbness, tingling, weakness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 73,
+                name: 'Aria Hernandez',
+                diagnosis: 'Chronic Pain',
+                symptoms: 'Chronic pain and discomfort in different parts of the body',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 74,
+                name: 'Liam Young',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'coughing, shortness of breath, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 75,
+                name: 'Olivia Lewis',
+                diagnosis: 'Anxiety Disorder',
+                symptoms: 'Panic Attacks, Nervousness, Insomnia',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 76,
+                name: 'William Brown',
+                diagnosis: 'Type 2 Diabetes',
+                symptoms: 'excessive thirst, frequent urination, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 77,
+                name: 'Emma Green',
+                diagnosis: 'Gastroesophageal Reflux Disease (GERD)',
+                symptoms: 'heartburn, chest pain, difficulty swallowing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 78,
+                name: 'Noah Adams',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'Coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 79,
+                name: 'Aaliyah Singh',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'persistent cough, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 80,
+                name: 'Ethan Kim',
+                diagnosis: 'Pneumonia',
+                symptoms: 'cough, fever, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 81,
+                name: 'Ava Gonzalez',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest pain, wheezing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 82,
+                name: 'Liam Rodriguez',
+                diagnosis: 'Stroke',
+                symptoms: 'numbness, confusion, loss of coordination',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 83,
+                name: 'Isabella Martinez',
+                diagnosis: 'Migraine Headaches',
+                symptoms: 'Severe headaches, nausea, light sensitivity',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 84,
+                name: 'Emma Lee',
+                diagnosis: 'Anxiety Disorder',
+                symptoms: 'nervousness, worry, fear',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 85,
+                name: 'Oliver Brown',
+                diagnosis: 'Pneumonia',
+                symptoms: 'cough, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 86,
+                name: 'Sophia Davis',
+                diagnosis: 'Pulmonary Embolism',
+                symptoms: 'shortness of breath, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 87,
+                name: 'Isabella Gonzalez',
+                diagnosis: 'Chronic Migraines',
+                symptoms: 'Frequent headaches, sensitivity to light and sound',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 88,
+                name: 'Parker Kim',
+                diagnosis: 'Anxiety Disorder',
+                symptoms: 'difficulty concentrating, fatigue, restlessness, irritability',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 89,
+                name: 'Natalie Singh',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'Persistent coughing, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 90,
+                name: 'Jasmine Rodriguez',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'fatigue, muscle weakness, joint pain, headaches',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 91,
+                name: 'Ethan Brown',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 92,
+                name: 'Avery Johnson',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'Coughing, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 93,
+                name: 'Natalie Williams',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'Persistent cough, chest pain, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 94,
+                name: 'Olivia Davis',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 95,
+                name: 'Isabella Brown',
+                diagnosis: 'Broken Arm',
+                symptoms: 'pain and swelling in arm, difficulty moving arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 96,
+                name: 'Mia Johnson',
+                diagnosis: 'Gunshot Wound',
+                symptoms: 'severe pain and bleeding at the wound site',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 97,
+                name: 'Ava Miller',
+                diagnosis: 'Concussion',
+                symptoms: 'headache, dizziness, confusion',
+                status: 'alive'
+            });
+            await createMedicalRecord({
+                patient_id: 98,
+                name: 'Liam Davis',
+                diagnosis: 'Broken Arm',
+                symptoms: 'Pain and swelling in the arm, difficulty moving the arm',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 99,
+                name: 'Emily Brown',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'Pain and Swelling in Arm',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 100,
+                name: 'Isabella Gonzalez',
+                diagnosis: 'Chest pain',
+                symptoms: 'chest pain, shortness of breath',
+                status: 'alive'
+                });
 
 
 
