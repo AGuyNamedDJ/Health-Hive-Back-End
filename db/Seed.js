@@ -6350,19 +6350,174 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'weakness in limbs, slurred speech, confusion',
                 status: 'alive'
                 });
-
-
-
-
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 126,
+                name: 'Evelyn Rojas',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness on one side of the body, confusion, trouble speaking or understanding speech',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 128,
+                name: 'Sophia Lee',
+                diagnosis: 'Ophthalmic Issues',
+                symptoms: 'blurred vision, eye pain, double vision',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 129,
+                name: 'Caroline Perez',
+                diagnosis: 'Acute Myocardial Infarction (AMI)',
+                symptoms: 'Chest Pain, Shortness of Breath, Nausea, Sweating',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 130,
+                name: 'Karen Hernandez',
+                diagnosis: 'Myocardial Infarction',
+                symptoms: 'Chest Pain, Shortness of Breath, Fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 131,
+                name: 'Erick Garcia',
+                diagnosis: 'Acute Coronary Syndrome',
+                symptoms: 'Chest pain, shortness of breath, and rapid or irregular heartbeats',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 132,
+                name: 'Marcella Zheng',
+                diagnosis: 'Cardiac Arrhythmia',
+                symptoms: 'chest pain, irregular heart beat, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 133,
+                name: 'John Doe',
+                diagnosis: 'Myocardial Infarction',
+                symptoms: 'Chest pain, shortness of breath, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 134,
+                name: 'Jane Smith',
+                diagnosis: 'Chronic Dermatitis',
+                symptoms: 'Rashes, itching and redness of skin',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 135,
+                name: 'Joan Robinson',
+                diagnosis: 'Eczema',
+                symptoms: 'red and itchy skin, blistering and cracking',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 136,
+                name: 'Jacqueline Perez',
+                diagnosis: 'Skin Rash',
+                symptoms: 'Itchy red skin',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 137,
+                name: 'Curtis Elliott',
+                diagnosis: 'Eczema',
+                symptoms: 'Itching, Redness, Dry skin',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 138,
+                name: 'Mariah Garcia',
+                diagnosis: 'Eczema',
+                symptoms: 'itchy red rash, dry skin',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 139,
+                name: 'Lori Robinson',
+                diagnosis: 'Gaucher Disease',
+                symptoms: 'enlargement of the liver and spleen, anemia, low platelet count, and bone fractures',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 140,
+                name: 'Evelyn Santiago',
+                diagnosis: 'Mitochondrial disease',
+                symptoms: 'fatigue, muscle weakness, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 141,
+                name: 'Tiffany Gonzalez',
+                diagnosis: 'Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)',
+                symptoms: 'muscle weakness, numbness, and tingling',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 142,
+                name: 'Michael Chang',
+                diagnosis: 'Rare Autoimmune Disorder',
+                symptoms: 'Joint Pain, Fatigue, Rashes',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 143,
+                name: 'Evelyn Johnson',
+                diagnosis: 'Xeroderma Pigmentosum',
+                symptoms: 'Extreme sensitivity to UV light, premature aging of the skin, skin cancer',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 144,
+                name: 'Emily Lee',
+                diagnosis: 'Amyotrophic Lateral Sclerosis',
+                symptoms: 'Weakness, muscle atrophy, difficulty speaking and swallowing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 145,
+                name: 'Jasmine Nguyen',
+                diagnosis: 'Ehlers-Danlos Syndrome',
+                symptoms: 'joint pain, hypermobility, skin fragility',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 146,
+                name: 'Sofia Garcia',
+                diagnosis: 'Niemann-Pick Disease',
+                symptoms: 'difficulty swallowing, progressive loss of muscle tone, enlarged spleen and liver',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 147,
+                name: 'Oscar Rivera',
+                diagnosis: 'Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)',
+                symptoms: 'numbness, weakness, and tingling in the arms and legs',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 148,
+                name: 'Mikayla Zamora',
+                diagnosis: 'Autoimmune Disorder',
+                symptoms: 'fatigue, joint pain, rashes',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 149,
+                name: 'Ricardo Martinez',
+                diagnosis: 'Primary Aldosteronism',
+                symptoms: 'Headaches, fatigue, muscle weakness, high blood pressure',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 150,
+                name: 'Kaitlyn Bryant',
+                diagnosis: 'Autoimmune Hemolytic Anemia',
+                symptoms: 'fatigue, jaundice, shortness of breath',
+                status: 'alive'
+                });
 
 
 
