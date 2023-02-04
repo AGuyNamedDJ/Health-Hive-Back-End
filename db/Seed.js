@@ -5734,16 +5734,118 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'frequent headaches, sensitivity to light and sound',
                 status: 'alive'
                 });
-                await createMedicalRecord({
-                    patient_id: 37,
-                    name: 'Aria Thomas',
-                    diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
-                    symptoms: 'coughing, wheezing, chest tightness, shortness of breath',
-                    status: 'alive'
-                    });
+            await createMedicalRecord({
+                patient_id: 37,
+                name: 'Aria Thomas',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'coughing, wheezing, chest tightness, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 38,
+                name: 'Scarlett Davis',
+                diagnosis: 'Type 2 Diabetes',
+                symptoms: 'Frequent urination, increased thirst, blurred vision, slow healing sores',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 39,
+                name: 'Evelyn Anderson',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'tiredness, muscle weakness, joint pain, headaches, and unrefreshing sleep',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 40,
+                name: 'Isabelle Wilson',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 41,
+                name: 'Avery Johnson',
+                diagnosis: 'Upper Respiratory Infection',
+                symptoms: 'Sore throat, cough, runny nose',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 42,
+                name: 'Natalie Thomas',
+                diagnosis: 'Migraine Headaches',
+                symptoms: 'headaches, nausea, sensitivity to light and sound',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 43,
+                name: 'Aurora Davis',
+                diagnosis: 'Type 2 Diabetes',
+                symptoms: 'excessive thirst, frequent urination, weight loss, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 44,
+                name: 'Olivia Brown',
+                diagnosis: 'Chronic Migraine',
+                symptoms: 'Severe Headache, Nausea, Light Sensitivity',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 45,
+                name: 'Mia Miller',
+                diagnosis: 'Depression',
+                symptoms: 'Sadness, loss of interest, difficulty sleeping',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 46,
+                name: 'Ethan Johnson',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 47,
+                name: 'Liam Wilson',
+                diagnosis: 'Chronic Migraines',
+                symptoms: 'frequent headaches, nausea, sensitivity to light',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 48,
+                name: 'Emma Young',
+                diagnosis: 'Anxiety Disorder',
+                symptoms: 'Insomnia, Nervousness, Irritability',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 49,
+                name: 'Oliver Martin',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 50,
+                name: 'Ava Anderson',
+                diagnosis: 'Osteoarthritis',
+                symptoms: 'Joint pain and stiffness',
+                status: 'alive'
+                });
 
 
-            
+
+
+
+
+
+
+
+
+
+
+
+    
 
             console.log('Finished creating medical record.');
         } catch (error) {
