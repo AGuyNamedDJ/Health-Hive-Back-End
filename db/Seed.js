@@ -6570,21 +6570,115 @@ const { createUsers, getAllUsers } = require('./Users');
             await createMedicalRecord({
                 patient_id: 160,
                 name: 'Rita Wong',
-                diagnosis: '',
-                symptoms: '',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest pain, wheezing, shortness of breath',
                 status: 'alive'
                 });
-
-
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 161,
+                name: 'Michael Johnson',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'coughing, shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 162,
+                name: 'Julia Smith',
+                diagnosis: 'Irritable Bowel Syndrome (IBS)',
+                symptoms: 'abdominal pain, bloating, constipation or diarrhea',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 163,
+                name: 'Elizabeth Gonzalez',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 164,
+                name: 'Omar Lee',
+                diagnosis: 'Pneumonia',
+                symptoms: 'cough, fever, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 165,
+                name: 'Isabel Parker',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 166,
+                name: 'Carlos Johnson',
+                diagnosis: 'Influenza',
+                symptoms: 'fever, fatigue, sore throat, runny nose, cough',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 167,
+                name: 'Theresa Henderson',
+                diagnosis: 'Rheumatoid Arthritis',
+                symptoms: 'joint pain, swelling, fatigue, morning stiffness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 168,
+                name: 'Nicholas Johnson',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 169,
+                name: 'Maria Gonzalez',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 170,
+                name: 'William Rodriguez',
+                diagnosis: 'Diabetes Mellitus',
+                symptoms: 'increased thirst, frequent urination, fatigue, blurred vision',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 171,
+                name: 'Nina Lopez',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'cough with mucus, shortness of breath, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 172,
+                name: 'David Kim',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough with phlegm, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 173,
+                name: 'Sophie Smith',
+                diagnosis: 'Asthma',
+                symptoms: 'wheezing, shortness of breath, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 174,
+                name: 'John Brown',
+                diagnosis: 'Appendicitis',
+                symptoms: 'pain in the lower right side of the abdomen, loss of appetite, nausea, vomiting, and fever',
+                status: 'alive'
+                });
+                await createMedicalRecord({
+                    patient_id: 175,
+                    name: 'Diego Henderson',
+                    diagnosis: 'Asthma',
+                    symptoms: 'shortness of breath, wheezing, coughing',
+                    status: 'alive'
+                    });
 
 
 
