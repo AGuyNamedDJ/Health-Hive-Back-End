@@ -6672,13 +6672,131 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'pain in the lower right side of the abdomen, loss of appetite, nausea, vomiting, and fever',
                 status: 'alive'
                 });
+            await createMedicalRecord({
+                patient_id: 175,
+                name: 'Diego Henderson',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, coughing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 176,
+                name: 'Ava Hernandez',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath, loss of smell or taste',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 177,
+                name: 'Ethan Young',
+                diagnosis: 'Covid-19',
+                symptoms: 'fever, fatigue, dry cough, loss of taste or smell',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 178,
+                name: 'Sophia Garcia',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 179,
+                name: 'Mason Martinez',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 180,
+                name: 'Josue Liu',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, dry cough, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 181,
+                name: 'Maggie Kim',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, fatigue, loss of taste or smell',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 182,
+                name: 'David Garcia',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, difficulty breathing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 184,
+                name: 'Alexander Williams',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, dry cough, fatigue',
+                status: 'alive'
+                });    
+            await createMedicalRecord({
+                patient_id: 185,
+                name: 'Maurice Chung',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, dry cough, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 186,
+                name: 'Evelyn Kim',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath',
+                status: 'deceased'
+                });
                 await createMedicalRecord({
-                    patient_id: 175,
-                    name: 'Diego Henderson',
-                    diagnosis: 'Asthma',
-                    symptoms: 'shortness of breath, wheezing, coughing',
+                    patient_id: 187,
+                    name: 'Juan Gonzalez',
+                    diagnosis: 'COVID-19',
+                    symptoms: 'fever, cough, shortness of breath, body aches',
                     status: 'alive'
                     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
