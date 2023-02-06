@@ -6749,23 +6749,104 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'fever, cough, shortness of breath',
                 status: 'deceased'
                 });
-                await createMedicalRecord({
-                    patient_id: 187,
-                    name: 'Juan Gonzalez',
-                    diagnosis: 'COVID-19',
-                    symptoms: 'fever, cough, shortness of breath, body aches',
-                    status: 'alive'
-                    });
-
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 187,
+                name: 'Juan Gonzalez',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath, body aches',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 188,
+                name: 'Maria Garcia',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath, loss of taste or smell',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 189,
+                name: 'Ralph Foster',
+                diagnosis: 'COVID-19',
+                symptoms: 'Fever, cough, shortness of breath, loss of taste or smell',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 190,
+                name: 'Eliza Johnson',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath, body aches',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 191,
+                name: 'Eduardo Santos',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, fatigue, body aches',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 192,
+                name: 'Ava Baker',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 193,
+                name: 'Lucas Torres',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 194,
+                name: 'Sophia Perez',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 195,
+                name: 'Juan Garcia',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 196,
+                name: 'Erik Rios',
+                diagnosis: 'Asthma',
+                symptoms: 'Shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 197,
+                name: 'Mia Kim',
+                diagnosis: 'Chronic Migraine',
+                symptoms: 'frequent headache, sensitivity to light, nausea',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 198,
+                name: 'Karen Wong',
+                diagnosis: 'Asthma',
+                symptoms: 'wheezing, shortness of breath, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 199,
+                name: 'John Garcia',
+                diagnosis: 'Diabetes',
+                symptoms: 'frequent urination, excessive thirst, unexplained weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 200,
+                name: 'Riley Jackson',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
 
 
 
