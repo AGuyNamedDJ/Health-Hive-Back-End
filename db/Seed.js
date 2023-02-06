@@ -6518,6 +6518,76 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'fatigue, jaundice, shortness of breath',
                 status: 'alive'
                 });
+            await createMedicalRecord({
+                patient_id: 151,
+                name: 'Mariona Zheng',
+                diagnosis: 'Hereditary Hemorrhagic Telangiectasia',
+                symptoms: 'Frequent nosebleeds, skin lesions',
+                status: 'Alive'
+                });
+            await createMedicalRecord({
+                patient_id: 152,
+                name: 'Marcionia Zheng',
+                diagnosis: 'Adrenoleukodystrophy',
+                symptoms: 'Developmental delay, Weakness, Loss of vision',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 154,
+                name: 'Lillie Leon',
+                diagnosis: 'Acute Myocardial Infarction',
+                symptoms: 'Chest pain, shortness of breath, nausea, lightheadedness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 155,
+                name: 'Marvin Santos',
+                diagnosis: 'Lupus',
+                symptoms: 'fatigue, joint pain, skin rash',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 156,
+                name: 'Lorene Santiago',
+                diagnosis: 'Lupus',
+                symptoms: 'fatigue, joint pain, skin rash',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 157,
+                name: 'Nash Hodge',
+                diagnosis: '',
+                symptoms: '',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 158,
+                name: 'Lila Diaz',
+                diagnosis: 'Hypertension',
+                symptoms: 'headaches, fatigue, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 160,
+                name: 'Rita Wong',
+                diagnosis: '',
+                symptoms: '',
+                status: 'alive'
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
