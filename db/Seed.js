@@ -6924,13 +6924,117 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'shortness of breath, wheezing, coughing',
                 status: 'alive'
                 });
-                await createMedicalRecord({
-                    patient_id: 212,
-                    name: 'Michael Smith',
-                    diagnosis: 'Asthma',
-                    symptoms: 'shortness of breath, wheezing, chest tightness',
-                    status: 'alive'
-                    });
+            await createMedicalRecord({
+                patient_id: 212,
+                name: 'Michael Smith',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 213,
+                name: 'Ashley Johnson',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 214,
+                name: 'William Brown',
+                diagnosis: "Crohn's Disease",
+                symptoms: 'abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 215,
+                name: 'Jennifer Davis',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'persistent coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 216,
+                name: 'John Miller',
+                diagnosis: "Crohn's Disease",
+                symptoms: 'Abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 217,
+                name: 'Elizabeth Wilson',
+                diagnosis: 'Type 2 Diabetes',
+                symptoms: 'increased thirst, frequent urination, blurred vision, slow wound healing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 218,
+                name: 'Jasmine Garcia',
+                diagnosis: 'Pulmonary Embolism',
+                symptoms: 'shortness of breath, chest pain, rapid heart rate',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 219,
+                name: 'Ethan Wang',
+                diagnosis: 'Esophageal Cancer',
+                symptoms: 'Difficulty swallowing, weight loss, chest pain',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 220,
+                name: 'Emily Kim',
+                diagnosis: 'Stroke',
+                symptoms: 'numbness, headache, confusion',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 221,
+                name: 'Nicholas Nguyen',
+                diagnosis: 'Colorectal Cancer',
+                symptoms: 'abdominal pain, fatigue, constipation, rectal bleeding',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 222,
+                name: 'Ava Lee',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'persistent fatigue, muscle pain, headache, sleep disturbances',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 223,
+                name: 'Ava Lee',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'persistent fatigue, muscle pain, headache, sleep disturbances',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 224,
+                name: 'Avery Johnson',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 225,
+                name: 'Adam Williams',
+                diagnosis: "Crohn's Disease",
+                symptoms: 'diarrhea, abdominal pain, weight loss',
+                status: 'alive'
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
