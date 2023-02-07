@@ -6847,18 +6847,90 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'shortness of breath, wheezing, chest tightness',
                 status: 'alive'
                 });
-
-
-
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 201,
+                name: 'Emma Lee',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 202,
+                name: 'Ishmael Perez',
+                diagnosis: 'Gout',
+                symptoms: 'joint pain, swelling, redness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 203,
+                name: 'Samantha Wang',
+                diagnosis: 'Pneumonia',
+                symptoms: 'cough, fever, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 204,
+                name: 'Nathan Gonzalez',
+                diagnosis: 'Asthma',
+                symptoms: 'wheezing, shortness of breath, coughing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 205,
+                name: 'Evelyn Jones',
+                diagnosis: 'Asthma',
+                symptoms: 'wheezing, chest tightness, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 206,
+                name: 'Sophia Smith',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 207,
+                name: 'Jazmine Henderson',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 208,
+                name: 'Brayden Chen',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+            });
+            await createMedicalRecord({
+                patient_id: 209,
+                name: 'Ava Garcia',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 210,
+                name: 'Ethan Kim',
+                diagnosis: 'Gastroesophageal Reflux Disease (GERD)',
+                symptoms: 'heartburn, nausea, regurgitation, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 211,
+                name: 'Isabella Lee',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, coughing',
+                status: 'alive'
+                });
+                await createMedicalRecord({
+                    patient_id: 212,
+                    name: 'Michael Smith',
+                    diagnosis: 'Asthma',
+                    symptoms: 'shortness of breath, wheezing, chest tightness',
+                    status: 'alive'
+                    });
 
 
 
