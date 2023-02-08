@@ -7078,27 +7078,90 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'excessive thirst, frequent urination, blurred vision',
                 status: 'alive'
                 });
-                await createMedicalRecord({
-                    patient_id: 234,
-                    name: 'Bryant Byrd',
-                    diagnosis: 'Multiple Sclerosis',
-                    symptoms: 'numbness, tingling, muscle weakness',
-                    status: 'alive'
-                    });
-                await createMedicalRecord({
-                    patient_id: 235,
-                    name: 'Bridgette Black',
-                    diagnosis: 'Type 2 Diabetes',
-                    symptoms: 'increased thirst, frequent urination, blurred vision',
-                    status: 'alive'
-                    });
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 234,
+                name: 'Bryant Byrd',
+                diagnosis: 'Multiple Sclerosis',
+                symptoms: 'numbness, tingling, muscle weakness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 235,
+                name: 'Bridgette Black',
+                diagnosis: 'Type 2 Diabetes',
+                symptoms: 'increased thirst, frequent urination, blurred vision',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 236,
+                name: 'Caroline Chang',
+                diagnosis: 'Rheumatoid Arthritis',
+                symptoms: 'joint pain, swelling, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 237,
+                name: 'Curtis Collins',
+                diagnosis: "Crohn's Disease",
+                symptoms: 'abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 238,
+                name: 'Claire Carpenter',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 239,
+                name: 'Caleb Campbell',
+                diagnosis: "Crohn's disease",
+                symptoms: 'abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 240,
+                name: 'Cindy Chen',
+                diagnosis: 'Multiple Sclerosis',
+                symptoms: 'numbness or tingling in the limbs, muscle weakness, problems with coordination and balance',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 241,
+                name: 'Craig Carter',
+                diagnosis: 'Diabetes',
+                symptoms: 'excessive thirst, frequent urination, blurred vision',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 242,
+                name: 'Damon Nguyen',
+                diagnosis: 'Type 2 Diabetes',
+                symptoms: 'excessive thirst, frequent urination, increased hunger, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 243,
+                name: 'Daniel Kim',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'persistent fatigue, muscle pain, joint pain, headache, memory loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 244,
+                name: 'Daphne Ramirez',
+                diagnosis: "Crohn's disease",
+                symptoms: 'abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 245,
+                name: 'David Hernandez',
+                diagnosis: "Crohn's Disease",
+                symptoms: 'abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
 
 
 
