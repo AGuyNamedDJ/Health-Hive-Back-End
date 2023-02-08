@@ -7022,16 +7022,76 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'diarrhea, abdominal pain, weight loss',
                 status: 'alive'
                 });
-
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 226,
+                name: 'Ava Jones',
+                diagnosis: 'Meningitis',
+                symptoms: 'headache, neck pain, sensitivity to light',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 227,
+                name: 'Ashley Brown',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 228,
+                name: 'Austin Davis',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'fatigue, muscle weakness, headaches, joint pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 229,
+                name: 'Aiden Miller',
+                diagnosis: 'Fibromyalgia',
+                symptoms: 'chronic muscle pain, fatigue, sleep disturbances',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 230,
+                name: 'Brianna Brown',
+                diagnosis: 'Multiple Sclerosis',
+                symptoms: 'fatigue, muscle weakness, vision loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 231,
+                name: 'Brittany Baker',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness or numbness on one side of the face, arm, or leg, confusion, difficulty speaking or understanding, sudden severe headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 232,
+                name: 'Benjamin Bailey',
+                diagnosis: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 233,
+                name: 'Brandon Brooks',
+                diagnosis: 'Diabetes Mellitus',
+                symptoms: 'excessive thirst, frequent urination, blurred vision',
+                status: 'alive'
+                });
+                await createMedicalRecord({
+                    patient_id: 234,
+                    name: 'Bryant Byrd',
+                    diagnosis: 'Multiple Sclerosis',
+                    symptoms: 'numbness, tingling, muscle weakness',
+                    status: 'alive'
+                    });
+                await createMedicalRecord({
+                    patient_id: 235,
+                    name: 'Bridgette Black',
+                    diagnosis: 'Type 2 Diabetes',
+                    symptoms: 'increased thirst, frequent urination, blurred vision',
+                    status: 'alive'
+                    });
 
 
 
