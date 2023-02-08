@@ -7162,15 +7162,146 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'abdominal pain, diarrhea, weight loss',
                 status: 'alive'
                 });
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 246,
+                name: 'Debra Garcia',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'pain and swelling in the arm, difficulty moving the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 247,
+                name: 'Derek Clark',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'pain, swelling, difficulty in moving the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 248,
+                name: 'Derek Parker',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'pain, swelling, difficulty using the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 249,
+                name: 'Daisy Johnson',
+                diagnosis: 'Soft Tissue Injury',
+                symptoms: 'pain, swelling, bruising',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 250,
+                name: 'Daniel Brown',
+                diagnosis: 'Traumatic Brain Injury',
+                symptoms: 'headache, dizziness, memory loss, speech difficulties',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 251,
+                name: 'Diana Davis',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'pain, swelling, difficulty moving arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 252,
+                name: 'David Johnson',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'pain, swelling, limited movement in arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 253,
+                name: 'Derek Smith',
+                diagnosis: 'Bone Fracture',
+                symptoms: 'pain, swelling, limited mobility',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 254,
+                name: 'Eddie Johnson',
+                diagnosis: 'Traumatic Brain Injury',
+                symptoms: 'headache, confusion, memory loss, balance problems',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 255,
+                name: 'Ella Wright',
+                diagnosis: 'Sprained Ankle',
+                symptoms: 'pain, swelling, limited mobility',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 256,
+                name: 'Ethan Jones',
+                diagnosis: 'Fractured Arm',
+                symptoms: 'pain in the arm, swelling, difficulty moving the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 257,
+                name: 'Evelyn Smith',
+                diagnosis: 'Stress Fracture',
+                symptoms: 'pain and swelling in the affected limb, difficulty walking',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 258,
+                name: 'Erick Brown',
+                diagnosis: 'Broken Bone',
+                symptoms: 'pain, swelling, difficulty moving affected limb',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 259,
+                name: 'Eve Davis',
+                diagnosis: 'Back injury',
+                symptoms: 'Lower back pain, difficulty walking, numbness in legs',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 260,
+                name: 'Felix Lopez',
+                diagnosis: 'Broken Arm',
+                symptoms: 'pain and swelling in the arm, difficulty moving the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 261,
+                name: 'Frances Mendoza',
+                diagnosis: 'Fibromyalgia',
+                symptoms: 'chronic muscle pain, fatigue, sleep disturbances',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 262,
+                name: 'Fidel Garcia',
+                diagnosis: 'Sprained Ankle',
+                symptoms: 'pain, swelling, difficulty walking',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 263,
+                name: 'Flora Rodriguez',
+                diagnosis: 'Broken Arm',
+                symptoms: 'Pain and swelling in the arm, difficulty moving the arm, deformity in the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 264,
+                name: 'Fernanda Martinez',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 265,
+                name: 'Freddy Sanchez',
+                diagnosis: 'Bone Fracture',
+                symptoms: 'pain, swelling, difficulty moving affected limb',
+                status: 'alive'
+                });
 
 
 
