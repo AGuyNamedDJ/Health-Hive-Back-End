@@ -7302,6 +7302,125 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'pain, swelling, difficulty moving affected limb',
                 status: 'alive'
                 });
+            await createMedicalRecord({
+                patient_id: 266,
+                name: 'Gary Smith',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness, numbness, confusion',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 267,
+                name: 'Gloria Johnson',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, coughing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 268,
+                name: 'Greg Brown',
+                diagnosis: 'Stroke',
+                symptoms: 'numbness on one side of body, difficulty speaking, headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 269,
+                name: 'Gary Davis',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness, paralysis, confusion',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 270,
+                name: 'Grace Miller',
+                diagnosis: 'Rheumatoid Arthritis',
+                symptoms: 'joint pain and stiffness, fatigue, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 271,
+                name: 'Gordon Wilson',
+                diagnosis: 'Asthma',
+                symptoms: 'wheezing, shortness of breath, coughing',
+                status: 'alive'
+            });
+            await createMedicalRecord({
+                patient_id: 272,
+                name: 'Harold Johnson',
+                diagnosis: 'Chronic obstructive pulmonary disease (COPD)',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 273,
+                name: 'Hazel Brown',
+                diagnosis: "Crohn's Disease",
+                symptoms: 'abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 274,
+                name: 'Harper Davis',
+                diagnosis: 'Herniated Disc',
+                symptoms: 'Back pain, leg weakness, numbness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 275,
+                name: 'Harrison Miller',
+                diagnosis: 'Meniscal Tear',
+                symptoms: 'pain, swelling, difficulty walking',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 276,
+                name: 'Haley Wilson',
+                diagnosis: 'Anxiety Disorder',
+                symptoms: 'nervousness, excessive fear, rapid heart rate',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 277,
+                name: 'Hank Taylor',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 278,
+                name: 'Isla Wang',
+                diagnosis: 'Chronic fatigue syndrome',
+                symptoms: 'persistent fatigue, muscle pain, headaches',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 279,
+                name: 'Ian Mendoza',
+                diagnosis: 'Carpal Tunnel Syndrome',
+                symptoms: 'pain and numbness in the wrist and hand',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 280,
+                name: 'Iris Chen',
+                diagnosis: 'Asthma',
+                symptoms: 'shortness of breath, wheezing, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 281,
+                name: 'Issac Khan',
+                diagnosis: 'Migraine',
+                symptoms: 'headache, sensitivity to light, nausea',
+                status: 'alive'
+                });
+
+
+
+
+
+
+
 
 
 
