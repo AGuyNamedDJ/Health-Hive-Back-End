@@ -7414,22 +7414,139 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'headache, sensitivity to light, nausea',
                 status: 'alive'
                 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 282,
+                name: 'Ivy Carr',
+                diagnosis: 'Depression',
+                symptoms: 'lack of energy, sadness, irritability, trouble sleeping',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 283,
+                name: 'Ismael Gonzalez',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness on one side of the body, trouble speaking, sudden headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 284,
+                name: 'James Fernandez',
+                diagnosis: 'Gastroenteritis',
+                symptoms: 'Nausea, vomiting, diarrhea, abdominal pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 285,
+                name: 'Julie Perez',
+                diagnosis: 'Arthritis',
+                symptoms: 'joint pain, stiffness, and swelling',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 286,
+                name: 'John Kim',
+                diagnosis: "Crohn's disease",
+                symptoms: 'abdominal pain, diarrhea, weight loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 287,
+                name: 'Jessica Park',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness or numbness on one side of the body, trouble speaking or understanding, confusion, severe headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 288,
+                name: 'Jim Lee',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest pain, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 289,
+                name: 'Jackie Smith',
+                diagnosis: 'Myocardial Infarction',
+                symptoms: 'Chest pain, shortness of breath, nausea',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 290,
+                name: 'Karen Davies',
+                diagnosis: 'Fibromyalgia',
+                symptoms: 'chronic pain, fatigue, sleep disturbance',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 291,
+                name: 'Keith Webb',
+                diagnosis: 'Sinusitis',
+                symptoms: 'headache, nasal congestion, facial pressure',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 292,
+                name: 'Kimberly Burke',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'Coughing, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 293,
+                name: 'Kirsten Mills',
+                diagnosis: 'Chronic Fatigue Syndrome',
+                symptoms: 'persistent fatigue, muscle weakness, and difficulty sleeping',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 294,
+                name: 'Kurt Henderson',
+                diagnosis: 'Fractured Leg',
+                symptoms: 'pain and swelling in leg, difficulty walking',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 295,
+                name: 'Karen Baker',
+                diagnosis: 'Fibromyalgia',
+                symptoms: 'Chronic pain, fatigue, depression',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 296,
+                name: 'Lana Kang',
+                diagnosis: 'Asthma',
+                symptoms: 'Shortness of breath, coughing, wheezing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 297,
+                name: 'Liam Nguyen',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest pain, difficulty breathing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 298,
+                name: 'Lucas Park',
+                diagnosis: 'Stress-Induced Ulcer',
+                symptoms: 'abdominal pain, heartburn, nausea',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 299,
+                name: 'Leah Kim',
+                diagnosis: 'Anxiety disorder',
+                symptoms: 'nervousness, excessive worry, rapid heart rate',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 300,
+                name: 'Lila Brown',
+                diagnosis: 'Bacterial Pneumonia',
+                symptoms: 'coughing, chest pain, fever, difficulty breathing',
+                status: 'alive'
+                });
 
 
 
