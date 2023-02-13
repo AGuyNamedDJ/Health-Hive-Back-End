@@ -7631,24 +7631,174 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'cough, chest pain, shortness of breath, fever',
                 status: 'alive'
                 });
-                await createMedicalRecord({
-                    patient_id: 313,
-                    name: 'Natalie Rivera',
-                    diagnosis: 'Pneumonia',
-                    symptoms: 'cough, chest pain, shortness of breath, fever',
-                    status: 'alive'
-                    });
-
-
-
-
-
-
-
-
-
-
-
+            await createMedicalRecord({
+                patient_id: 313,
+                name: 'Natalie Rivera',
+                diagnosis: 'Pneumonia',
+                symptoms: 'cough, chest pain, shortness of breath, fever',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 314,
+                name: 'Olivia Nguyen',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'persistent cough, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 315,
+                name: 'Owen Park',
+                diagnosis: 'Pneumonia',
+                symptoms: 'coughing, fever, difficulty breathing, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 316,
+                name: 'Olivier Kim',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'coughing, shortness of breath, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 317,
+                name: 'Orlando Lee',
+                diagnosis: 'Asthma',
+                symptoms: 'wheezing, shortness of breath, chest tightness',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 318,
+                name: 'Oscar Brown',
+                diagnosis: 'Chronic Bronchitis',
+                symptoms: 'persistent cough, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 319,
+                name: 'Olivia Wilson',
+                diagnosis: 'Lung Cancer',
+                symptoms: 'coughing, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 320,
+                name: 'Pamie Parker',
+                diagnosis: 'Asthma',
+                symptoms: 'coughing, wheezing, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 321,
+                name: 'Paulie Patterson',
+                diagnosis: 'Allergic Rhinitis',
+                symptoms: 'runny or congested nose, sneezing, itching in the nose and eyes',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 322,
+                name: 'Pettie Perez',
+                diagnosis: 'Bacterial Pneumonia',
+                symptoms: 'coughing, chest pain, difficulty breathing, fatigue, fever',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 323,
+                name: 'Patria Phillips',
+                diagnosis: 'Diabetes Mellitus',
+                symptoms: 'excessive thirst, frequent urination, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 324,
+                name: 'Phil Pierce',
+                diagnosis: 'Cardiac Arrest',
+                symptoms: 'Chest pain, shortness of breath, loss of consciousness',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 325,
+                name: 'Pamela Parker',
+                diagnosis: 'Lung Cancer',
+                symptoms: 'coughing up blood, shortness of breath, chest pain',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 326,
+                name: 'Paul Patterson',
+                diagnosis: 'Lung Cancer',
+                symptoms: 'coughing, chest pain, shortness of breath',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 327,
+                name: 'Peter Perez',
+                diagnosis: 'Stroke',
+                symptoms: 'sudden numbness or weakness in the face, arm, or leg, especially on one side of the body, confusion, trouble speaking or understanding speech',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 328,
+                name: 'Patricia Phillips',
+                diagnosis: 'Breast Cancer',
+                symptoms: 'lump in the breast, discharge from the nipple, changes in the skin over the breast',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 329,
+                name: 'Phillip Pierce',
+                diagnosis: 'Pulmonary Embolism',
+                symptoms: 'shortness of breath, chest pain, rapid heart rate',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 330,
+                name: 'Quincy Young',
+                diagnosis: 'Acute Bronchitis',
+                symptoms: 'cough, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 331,
+                name: 'Quincy Green',
+                diagnosis: 'Chronic Kidney Disease',
+                symptoms: 'fatigue, decreased appetite, decreased urine output, swelling',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 332,
+                name: 'Qian Park',
+                diagnosis: 'Anxiety Disorder',
+                symptoms: 'restlessness, excessive worry, difficulty concentrating',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 333,
+                name: 'Quinn Simmons',
+                diagnosis: 'Lung Cancer',
+                symptoms: 'coughing up blood, chest pain, fatigue',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 334,
+                name: 'Quinn Brown',
+                diagnosis: 'Lung Cancer',
+                symptoms: 'cough, chest pain, shortness of breath',
+                status: 'deceased'
+                });
+            await createMedicalRecord({
+                patient_id: 335,
+                name: 'Qian Williams',
+                diagnosis: 'High Blood Pressure',
+                symptoms: 'headaches, chest pain, shortness of breath',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 336,
+                name: 'Randy Nguyen',
+                diagnosis: 'Rheumatoid Arthritis',
+                symptoms: 'joint pain, swelling, fatigue, and tenderness',
+                status: 'alive'
+                });
 
 
 
