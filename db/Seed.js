@@ -7547,6 +7547,120 @@ const { createUsers, getAllUsers } = require('./Users');
                 symptoms: 'coughing, chest pain, fever, difficulty breathing',
                 status: 'alive'
                 });
+            await createMedicalRecord({
+                patient_id: 301,
+                name: 'Lionel Jones',
+                diagnosis: 'Rheumatoid Arthritis',
+                symptoms: 'joint pain, swelling, fatigue',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 302,
+                name: 'Maddison Lewis',
+                diagnosis: 'Bursitis',
+                symptoms: 'Pain and swelling in the affected joint, limited range of motion',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 303,
+                name: 'Maurice Henderson',
+                diagnosis: 'Broken Arm',
+                symptoms: 'pain, swelling, difficulty moving the arm',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 304,
+                name: 'Makayla Rogers',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness on one side, difficulty speaking, headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 305,
+                name: 'Maurice Brown',
+                diagnosis: 'Back injury',
+                symptoms: 'pain and discomfort in lower back, difficulty standing or sitting for long periods, muscle spasms',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 306,
+                name: 'Megan Johnson',
+                diagnosis: 'Stroke',
+                symptoms: 'weakness on one side of the body, difficulty speaking, sudden headache',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 307,
+                name: 'Mia Smith',
+                diagnosis: 'Irritable Bowel Syndrome',
+                symptoms: 'abdominal pain, bloating, diarrhea, constipation',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 308,
+                name: 'Nathan Martinez',
+                diagnosis: 'Stress-Induced Insomnia',
+                symptoms: 'Difficulty sleeping, fatigue, irritability',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 309,
+                name: 'Nico Hernandez',
+                diagnosis: 'Fractured arm',
+                symptoms: 'pain and swelling in the arm, limited mobility',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 310,
+                name: 'Nina Sanchez',
+                diagnosis: 'Stomach Ulcer',
+                symptoms: 'abdominal pain, nausea, loss of appetite',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 311,
+                name: 'Nina Sanchez',
+                diagnosis: 'Stomach Ulcer',
+                symptoms: 'abdominal pain, nausea, loss of appetite',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 312,
+                name: 'Nora Perez',
+                diagnosis: 'Pneumonia',
+                symptoms: 'cough, chest pain, shortness of breath, fever',
+                status: 'alive'
+                });
+                await createMedicalRecord({
+                    patient_id: 313,
+                    name: 'Natalie Rivera',
+                    diagnosis: 'Pneumonia',
+                    symptoms: 'cough, chest pain, shortness of breath, fever',
+                    status: 'alive'
+                    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
