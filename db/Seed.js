@@ -5447,10 +5447,43 @@ const { createUsers, getAllUsers } = require('./Users');
         console.log('Starting to create treatment plan...')
         try {
             await createTreatmentPlan({
-                plan: 'Example',
+                plan: 'Acute Bronchitis Treatment',
                 patient_id: 1,
                 provider_id: 1537,
             });
+            await createTreatmentPlan({
+                plan: 'Diabetes Management',
+                patient_id: 2,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 3,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 4,
+                provider_id: 5155,
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             console.log('Finished creating treatment plan.');
         } catch (error) {
@@ -8161,6 +8194,21 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id: 1,
                 provider_id: 1537
             });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             console.log('Finished creating medication.');
         } catch (error) {
             console.error('Error when creating medication!');
