@@ -5054,7 +5054,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'Roberto Ayala',
                 title: 'Orthopedic Surgeon',
                 specialty: 'Sports Medicine',
-                provider_id: 80035,
+                provider_id: 8035,
                 email: 'rayala@healthhive.com',
                 phone_number: '3385799555'
             });
@@ -5070,7 +5070,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'Megan Lee',
                 title: 'Orthopedic Surgeon',
                 specialty: 'Sports Medicine',
-                provider_id: 80023,
+                provider_id: 8023,
                 email: 'mlee@healthhive.com',
                 phone_number: '3387414632'
             });
@@ -5516,16 +5516,187 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 14,
                 provider_id: 7051,
                 });
-
-
-
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 15,
+                provider_id: 5155,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 16,
+                provider_id: 5125,
+                });
+            await createTreatmentPlan({
+                plan: 'Irritable Bowel Syndrome Treatment',
+                patient_id: 17,
+                provider_id: 5913
+                });
+            await createTreatmentPlan({
+                plan: 'Osteoarthritis Treatment',
+                patient_id: 18,
+                provider_id: 8023,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 19,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 20,
+                provider_id: 5674
+                });
+            await createTreatmentPlan({
+                plan: 'Gastroesophageal Reflux Disease (GERD) Treatment',
+                patient_id: 21,
+                provider_id: 5913,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraines Treatment',
+                patient_id: 22,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraines Treatment',
+                patient_id: 23,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Gastroenteritis Treatment',
+                patient_id: 24,
+                provider_id: 5537
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Sinusitis Treatment',
+                patient_id: 25,
+                provider_id: 5201
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 26,
+                provider_id: 5382
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Treatment',
+                patient_id: 27,
+                provider_id: 5125,
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 28,
+                provider_id: 5678,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 29,
+                provider_id: 5201,
+                });
+            await createTreatmentPlan({
+                plan: "Meniere's Disease Treatment",
+                patient_id: 30,
+                provider_id: 6013,
+                });
+            await createTreatmentPlan({
+                plan: 'Depression Treatment',
+                patient_id: 31,
+                provider_id: 5601,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 32,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 33,
+                provider_id: 6537
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetes Mellitus Treatment',
+                patient_id: 34,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 35,
+                provider_id: 5780,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Management',
+                patient_id: 36,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease Treatment',
+                patient_id: 37,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Management',
+                patient_id: 38,
+                provider_id: 5143
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 39,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 40,
+                provider_id: 5121,
+                });
+            await createTreatmentPlan({
+                plan: 'Upper Respiratory Infection Treatment',
+                patient_id: 41,
+                provider_id: 5155,
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 42,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Management',
+                patient_id: 43,
+                provider_id: 5155,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Treatment',
+                patient_id: 44,
+                provider_id: 5104
+                });
+            await createTreatmentPlan({
+                plan: 'Depression Treatment',
+                patient_id: 45,
+                provider_id: 5601,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease Treatment',
+                patient_id: 46,
+                provider_id: 5180,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Management',
+                patient_id: 47,
+                provider_id: 5637,
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 48,
+                provider_id: 5678,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 49,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Osteoarthritis Treatment',
+                patient_id: 50,
+                provider_id: 8023,
+                });
+                
 
 
             console.log('Finished creating treatment plan.');
