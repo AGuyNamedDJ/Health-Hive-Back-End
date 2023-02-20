@@ -5466,13 +5466,56 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 4,
                 provider_id: 5155,
                 });
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Multiple Sclerosis Treatment',
+                patient_id: 5,
+                provider_id: 5637,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 6,
+                provider_id: 5723,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 7,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'GERD Treatment',
+                patient_id: 8,
+                provider_id: 5913,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 9,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'Arthritis Treatment',
+                patient_id: 10,
+                provider_id: 8846,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease Treatment',
+                patient_id: 11,
+                provider_id: 5537,
+                });
+            await createTreatmentPlan({
+                plan: 'Arthritis Treatment',
+                patient_id: 12,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetes Management',
+                patient_id: 13,
+                provider_id: 5382
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Myeloid Leukemia Treatment',
+                patient_id: 14,
+                provider_id: 7051,
+                });
 
 
 
