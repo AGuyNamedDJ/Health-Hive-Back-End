@@ -5584,7 +5584,7 @@ const { createUsers, getAllUsers } = require('./Users');
             await createTreatmentPlan({
                 plan: 'Anxiety Disorder Treatment',
                 patient_id: 28,
-                provider_id: 5677,
+                provider_id: 5679,
                 });
             await createTreatmentPlan({
                 plan: 'Chronic Fatigue Syndrome Treatment',
@@ -6196,6 +6196,83 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 150,
                 provider_id: 5143
                 });
+            await createTreatmentPlan({
+                plan: 'Hereditary Hemorrhagic Telangiectasia Treatment',
+                patient_id: 151,
+                provider_id: 5180
+                });
+            await createTreatmentPlan({
+                plan: 'Adrenoleukodystrophy Treatment',
+                patient_id: 152,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Adrenoleukodystrophy Treatment',
+                patient_id: 153,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Myocardial Infarction Treatment',
+                patient_id: 154,
+                provider_id: 2655,
+                });
+            await createTreatmentPlan({
+                plan: 'Lupus Treatment',
+                patient_id: 155,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Lupus Treatment',
+                patient_id: 156,
+                provider_id: 5343,
+                });
+            await createTreatmentPlan({
+                plan: 'Lupus Treatment',
+                patient_id: 157,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Hypertension Treatment',
+                patient_id: 158,
+                provider_id: 5201,
+                });
+            await createTreatmentPlan({
+                plan: 'Hypertension Treatment',
+                patient_id: 159,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 160,
+                provider_id: 5125,
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
