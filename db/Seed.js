@@ -6301,13 +6301,151 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 171,
                 provider_id: 5589,
                 });
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 172,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthmas Treatment',
+                patient_id: 173,
+                provider_id: 5537,
+                });
+            await createTreatmentPlan({
+                plan: 'Appendicitis Treatment',
+                patient_id: 174,
+                provider_id: 5343,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 175,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 176,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 177,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 178,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 179,
+                provider_id: 5198,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 180,
+                provider_id: 5121,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 181,
+                provider_id: 5104,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 182,
+                provider_id: 5155,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 183,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 184,
+                provider_id: 5180,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 185,
+                provider_id: 5163,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 186,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 187,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 188,
+                provider_id: 5155,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 189,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 190,
+                provider_id: 5180,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 191,
+                provider_id: 5163,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 192,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 193,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 194,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'COVID-19 Treatment',
+                patient_id: 195,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 196,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Treatment',
+                patient_id: 197,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 198,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetes Treatment',
+                patient_id: 199,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 200,
+                provider_id: 5343,
+                });
 
 
 
