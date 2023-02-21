@@ -5078,7 +5078,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'Nathan Kim',
                 title: 'Orthopedic Surgeon',
                 specialty: 'Joint Replacement',
-                provider_id: 80036,
+                provider_id: 8036,
                 email: 'nkim@healthhive.com',
                 phone_number: '3388975284'
             });
@@ -5896,10 +5896,121 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 90,
                 provider_id: 5178,
                 });
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 91,
+                provider_id: 5163,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 92,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 93,
+                provider_id: 5343,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 94,
+                provider_id: 5537
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Arm Treatment',
+                patient_id: 95,
+                provider_id: 8846,
+                });
+            await createTreatmentPlan({
+                plan: 'Gunshot Wound Treatment',
+                patient_id: 96,
+                provider_id: 4568,
+                });
+            await createTreatmentPlan({
+                plan: 'Concussion Treatment',
+                patient_id: 97,
+                provider_id: 4568,
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Arm Treatment',
+                patient_id: 98,
+                provider_id: 8035,
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 99,
+                provider_id: 8846,
+                });
+            await createTreatmentPlan({
+                plan: 'Chest Pain Treatment',
+                patient_id: 100,
+                provider_id: 2586,
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Arm Treatment',
+                patient_id: 104,
+                provider_id: 8036,
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 102,
+                provider_id: 8001,
+                });
+            await createTreatmentPlan({
+                plan: 'Injury from Motor Vehicle Accident Treatment',
+                patient_id: 103,
+                provider_id: 4579,
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 104,
+                provider_id: 8023,
+                });
+            await createTreatmentPlan({
+                plan: 'Chest Pain Treatment',
+                patient_id: 105,
+                provider_id: 2514,
+                });
+            await createTreatmentPlan({
+                plan: 'Chest Pain Treatment',
+                patient_id: 106,
+                provider_id: 2655,
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Arm Treatment',
+                patient_id: 107,
+                provider_id: 8846,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 108,
+                provider_id: 5674
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 109,
+                provider_id: 5674
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 110,
+                provider_id: 5713
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 111,
+                provider_id: 5911
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 112,
+                provider_id: 5713
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 113,
+                provider_id: 5911
+                });
 
 
 
