@@ -5741,14 +5741,46 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 59,
                 provider_id: 5637,
                 });
-
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 60,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 61,
+                provider_id: 5178
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 62,
+                provider_id: 5104
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 63,
+                provider_id: 5679,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 64,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 65,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Otitis Media Treatment',
+                patient_id: 66,
+                provider_id: 5382
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Otitis Media Treatment',
+                patient_id: 67,
+                provider_id: 5382
+                });
 
 
 
@@ -6264,6 +6296,13 @@ const { createUsers, getAllUsers } = require('./Users');
                 status: 'alive'
                 });
             await createMedicalRecord({
+                patient_id: 67,
+                name: 'Ava Johnson',
+                diagnosis: 'Acute Otitis Media',
+                symptoms: 'ear pain, ear drainage, hearing loss',
+                status: 'alive'
+                });
+            await createMedicalRecord({
                 patient_id: 68,
                 name: 'William Brown',
                 diagnosis: 'Chronic Bronchitis',
@@ -6677,8 +6716,15 @@ const { createUsers, getAllUsers } = require('./Users');
                 status: 'alive'
                 });
             await createMedicalRecord({
-                patient_id: 128,
+                patient_id: 127,
                 name: 'Sophia Lee',
+                diagnosis: 'Ophthalmic Issues',
+                symptoms: 'blurred vision, eye pain, double vision',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 128,
+                name: 'Tyrie Gonzalez',
                 diagnosis: 'Ophthalmic Issues',
                 symptoms: 'blurred vision, eye pain, double vision',
                 status: 'alive'
@@ -6852,6 +6898,13 @@ const { createUsers, getAllUsers } = require('./Users');
                 status: 'alive'
                 });
             await createMedicalRecord({
+                patient_id: 153,
+                name: 'Marcella Zheng',
+                diagnosis: 'Adrenoleukodystrophy',
+                symptoms: 'Developmental delay, Weakness, Loss of vision',
+                status: 'alive'
+                });
+            await createMedicalRecord({
                 patient_id: 154,
                 name: 'Lillie Leon',
                 diagnosis: 'Acute Myocardial Infarction',
@@ -6875,13 +6928,20 @@ const { createUsers, getAllUsers } = require('./Users');
             await createMedicalRecord({
                 patient_id: 157,
                 name: 'Nash Hodge',
-                diagnosis: '',
-                symptoms: '',
+                diagnosis: 'Lupus',
+                symptoms: 'fatigue, joint pain, skin rash',
                 status: 'alive'
                 });
             await createMedicalRecord({
                 patient_id: 158,
                 name: 'Lila Diaz',
+                diagnosis: 'Hypertension',
+                symptoms: 'headaches, fatigue, chest pain',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 159,
+                name: 'Mohammed Bryant',
                 diagnosis: 'Hypertension',
                 symptoms: 'headaches, fatigue, chest pain',
                 status: 'alive'
@@ -7043,6 +7103,13 @@ const { createUsers, getAllUsers } = require('./Users');
             await createMedicalRecord({
                 patient_id: 182,
                 name: 'David Garcia',
+                diagnosis: 'COVID-19',
+                symptoms: 'fever, cough, difficulty breathing',
+                status: 'alive'
+                });
+            await createMedicalRecord({
+                patient_id: 183,
+                name: 'Sophia Martinez',
                 diagnosis: 'COVID-19',
                 symptoms: 'fever, cough, difficulty breathing',
                 status: 'alive'
