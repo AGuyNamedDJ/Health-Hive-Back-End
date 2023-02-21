@@ -5781,6 +5781,124 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 67,
                 provider_id: 5382
                 });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 68,
+                provider_id: 5723
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 69,
+                provider_id: 5104,
+                });
+            await createTreatmentPlan({
+                plan: 'Fibromyalgia Treatment',
+                patient_id: 70,
+                provider_id: 5723,
+                });
+            await createTreatmentPlan({
+                plan: 'Gastritis Treatment',
+                patient_id: 71,
+                provider_id: 5913,
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetic Neuropathy Treatment',
+                patient_id: 72,
+                provider_id: 5155,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Pain Treatment',
+                patient_id: 73,
+                provider_id: 5104,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease Treatment',
+                patient_id: 74,
+                provider_id: 5125,
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Treatment',
+                patient_id: 75,
+                provider_id: 5679,
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Management',
+                patient_id: 76,
+                provider_id: 5104,
+                });
+            await createTreatmentPlan({
+                plan: 'Gastroesophageal Reflux Disease (GERD) Treatment',
+                patient_id: 77,
+                provider_id: 5637,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 78,
+                provider_id: 5121,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 79,
+                provider_id: 5104,
+                });
+            await createTreatmentPlan({
+                plan: 'Pneumonia Treatment',
+                patient_id: 80,
+                provider_id: 5343,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 81,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Recovery',
+                patient_id: 82,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 83,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 84,
+                provider_id: 5679
+                });
+            await createTreatmentPlan({
+                plan: 'Pneumonia Treatment',
+                patient_id: 85,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'Pulmonary Embolism Treatment',
+                patient_id: 86,
+                provider_id: 8963,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Treatment',
+                patient_id: 87,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 88,
+                provider_id: 5679,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 89,
+                provider_id: 5155,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 90,
+                provider_id: 5178,
+                });
+
+
+
 
 
 
