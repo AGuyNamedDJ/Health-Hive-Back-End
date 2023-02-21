@@ -638,10 +638,10 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_of_birth: '1997-09-01',
                 gender: 'female',
                 address: '6343 Pine St, Philadelphia, PA, 19101',
-                phone_number: '2158751111',
+                phone_number: '2154667845',
                 email: 'scarlettd97@gmail.com',
                 emergency_contact_name: 'Aria Davis',
-                emergency_contact_phone: '2158752222'
+                emergency_contact_phone: '2154684545'
             });
             await createPatient({
                 first_name: 'Evelyn',
@@ -4494,7 +4494,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'Elizabeth Nguyen',
                 title: 'Anesthesiologist',
                 specialty: 'Anesthesiology',
-                provider_id: 1537,
+                provider_id: 1538,
                 email: 'nguyen@healthhive.com',
                 phone_number: '3386462524'
             });
@@ -4614,7 +4614,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'Megan Brown',
                 title: 'Physician',
                 specialty: 'Emergency Medicine',
-                provider_id: 4567,
+                provider_id: 4568,
                 email: 'mbrown@healthhive.com',
                 phone_number: '3386575890'
             });
@@ -5158,7 +5158,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 name: 'Ashley Anderson',
                 title: 'Psychiatrist',
                 specialty: 'Mental Health',
-                provider_id: 5678,
+                provider_id: 5679,
                 email: 'aanderson@healthhive.com',
                 phone_number: '3386757890'
             });
@@ -5584,7 +5584,7 @@ const { createUsers, getAllUsers } = require('./Users');
             await createTreatmentPlan({
                 plan: 'Anxiety Disorder Treatment',
                 patient_id: 28,
-                provider_id: 5678,
+                provider_id: 5677,
                 });
             await createTreatmentPlan({
                 plan: 'Chronic Fatigue Syndrome Treatment',
@@ -5696,6 +5696,78 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 50,
                 provider_id: 8023,
                 });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 51,
+                provider_id: 1538
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Sinusitis Treatment',
+                patient_id: 52,
+                provider_id: 5537
+                });
+            await createTreatmentPlan({
+                plan: 'Carpel Tunnel Syndrome Treatment',
+                patient_id: 53,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 54,
+                provider_id: 5125
+                });
+            await createTreatmentPlan({
+                plan: 'Viral Meningitis Treatment',
+                patient_id: 55,
+                provider_id: 5723,
+                });
+            await createTreatmentPlan({
+                plan: 'Stress Induced Headache Treatment',
+                patient_id: 56,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 57,
+                provider_id: 5121,
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Management',
+                patient_id: 58,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: 'Gastroesophageal Reflux Disease Treatment',
+                patient_id: 59,
+                provider_id: 5637,
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 
 
 
