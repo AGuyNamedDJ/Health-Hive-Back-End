@@ -6011,21 +6011,191 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 113,
                 provider_id: 5911
                 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Chronic Migraines Treatment',
+                patient_id: 114,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 115,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 116,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 117,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Neurological Disorder Treatment',
+                patient_id: 118,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Epileptic Seizure Disorder Management',
+                patient_id: 119,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Cerebral Palsy Treatment',
+                patient_id: 120,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Treatment',
+                patient_id: 121,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 122,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Treatment',
+                patient_id: 123,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 124,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 125,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 126,
+                provider_id: 68337,
+                });
+            await createTreatmentPlan({
+                plan: 'Ophthalmic Issues Treatment',
+                patient_id: 127,
+                provider_id: 7567,
+                });
+            await createTreatmentPlan({
+                plan: 'Ophthalmic Issues Treatment',
+                patient_id: 128,
+                provider_id: 7638,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Myocardial Infarction Treatment',
+                patient_id: 129,
+                provider_id: 2586,
+                });
+            await createTreatmentPlan({
+                plan: 'Myocardial Infarction Treatment',
+                patient_id: 130,
+                provider_id: 2514,
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Coronary Syndrome Treatment',
+                patient_id: 131,
+                provider_id: 2655,
+                });
+            await createTreatmentPlan({
+                plan: 'Cardiac Arrhythmia Treatment',
+                patient_id: 132,
+                provider_id: 2655,
+                });
+            await createTreatmentPlan({
+                plan: 'Myocardial Infarction Treatment',
+                patient_id: 133,
+                provider_id: 2514,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Dermatitis Treatment',
+                patient_id: 134,
+                provider_id: 3567,
+                });
+            await createTreatmentPlan({
+                plan: 'Eczema Treatment',
+                patient_id: 135,
+                provider_id: 3456,
+                });
+            await createTreatmentPlan({
+                plan: 'Skin Rash Treatment',
+                patient_id: 136,
+                provider_id: 3901,
+                });
+            await createTreatmentPlan({
+                plan: 'Eczema Treatment',
+                patient_id: 137,
+                provider_id: 3456,
+                });
+            await createTreatmentPlan({
+                plan: 'Eczema Treatment',
+                patient_id: 138,
+                provider_id: 3901,
+                });
+            await createTreatmentPlan({
+                plan: 'Gaucher Disease Treatment',
+                patient_id: 139,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Mitochondrial Disease Treatment',
+                patient_id: 140,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Inflammatory Demyelinating Polyneuropathy Treatment',
+                patient_id: 141,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Rare Autoimmune Disorder Treatment',
+                patient_id: 142,
+                provider_id: 5121,
+                });
+            await createTreatmentPlan({
+                plan: 'Xeroderma Pigmentosum Treatment',
+                patient_id: 143,
+                provider_id: 3901,
+                });
+            await createTreatmentPlan({
+                plan: 'Amyotrophic Lateral Sclerosis Treatment',
+                patient_id: 144,
+                provider_id: 3579,
+                });
+            await createTreatmentPlan({
+                plan: 'Ehlers-Danlos Syndrome Treatment',
+                patient_id: 145,
+                provider_id: 8846,
+                });
+            await createTreatmentPlan({
+                plan: 'Niemann-Pick Disease Treatment',
+                patient_id: 146,
+                provider_id: 8965,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Inflammatory Demyelinating Polyneuropathy Treatment',
+                patient_id: 147,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Autoimmune Disorder Treatment',
+                patient_id: 148,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'Primary Aldosteronism Treatment',
+                patient_id: 149,
+                provider_id: 5143
+                });
+            await createTreatmentPlan({
+                plan: 'Autoimmune Hemolytic Anemia Treatment',
+                patient_id: 150,
+                provider_id: 5143
+                });
 
 
 
