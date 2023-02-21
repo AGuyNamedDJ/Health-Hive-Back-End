@@ -6246,8 +6246,61 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 160,
                 provider_id: 5125,
                 });
-
-
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                patient_id: 161,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Irritable Bowel Syndrome (IBS)',
+                patient_id: 162,
+                provider_id: 5343,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma',
+                patient_id: 163,
+                provider_id: 5537,
+                });
+            await createTreatmentPlan({
+                plan: 'Pneumonia',
+                patient_id: 164,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma',
+                patient_id: 165,
+                provider_id: 5201,
+                });
+            await createTreatmentPlan({
+                plan: 'Influenza',
+                patient_id: 166,
+                provider_id: 5723,
+                });
+            await createTreatmentPlan({
+                plan: 'Rheumatoid Arthritis',
+                patient_id: 167,
+                provider_id: 5780,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                patient_id: 168,
+                provider_id: 5780,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma',
+                patient_id: 169,
+                provider_id: 5589,
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetes Mellitus',
+                patient_id: 170,
+                provider_id: 5780,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 171,
+                provider_id: 5589,
+                });
 
 
 
