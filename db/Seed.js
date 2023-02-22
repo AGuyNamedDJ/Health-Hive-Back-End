@@ -6446,6 +6446,172 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 200,
                 provider_id: 5343,
                 });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 201,
+                provider_id: 5537,
+                });
+            await createTreatmentPlan({
+                plan: 'Gout Treatment',
+                patient_id: 202,
+                provider_id: 5201,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 203,
+                provider_id: 5780,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 204,
+                provider_id: 5589,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 205,
+                provider_id: 5537,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 206,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 207,
+                provider_id: 5201,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 208,
+                provider_id: 5125,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 209,
+                provider_id: 5723,
+                });
+            await createTreatmentPlan({
+                plan: 'Gastroesophageal Reflux Disease Treatment',
+                patient_id: 210,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 211,
+                provider_id: 5537,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 212,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 213,
+                provider_id: 5456,
+                });
+            await createTreatmentPlan({
+                plan: "Crohn's Disease Treatment",
+                patient_id: 214,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 215,
+                provider_id: 5198,
+                });
+            await createTreatmentPlan({
+                plan: "Crohn's Disease Treatment",
+                patient_id: 216,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: "Type 2 DiabetesTreatment",
+                patient_id: 217,
+                provider_id: 5143,
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
