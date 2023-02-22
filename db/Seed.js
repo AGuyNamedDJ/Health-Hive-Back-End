@@ -6527,22 +6527,105 @@ const { createUsers, getAllUsers } = require('./Users');
                 provider_id: 5143,
                 });
             await createTreatmentPlan({
-                plan: "Type 2 DiabetesTreatment",
+                plan: "Type 2 Diabetes Treatment",
                 patient_id: 217,
                 provider_id: 5143,
                 });
-
-
-
-
-
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Pulmonary Embolism Treatment',
+                patient_id: 218,
+                provider_id: 8960,
+                });
+            await createTreatmentPlan({
+                plan: 'Esophageal Cancer Treatment',
+                patient_id: 219,
+                provider_id: 7589,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 220,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Colorectal Cancer Treatment',
+                patient_id: 221,
+                provider_id: "7589"
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 222,
+                provider_id: 5180,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 223,
+                provider_id: 5163,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 224,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: "Chron's Disease Treatment",
+                patient_id: 225,
+                provider_id: 5913,
+                });
+            await createTreatmentPlan({
+                plan: 'Meningitis Treatment',
+                patient_id: 226,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 227,
+                provider_id: 5178,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 228,
+                provider_id: 5163,
+                });
+            await createTreatmentPlan({
+                plan: 'Fibromyalgia Treatment',
+                patient_id: 229,
+                provider_id: 5343
+                });
+            await createTreatmentPlan({
+                plan: 'Multiple Sclerosis Treatment',
+                patient_id: 230,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 231,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 232,
+                provider_id: 5143
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetes Mellitus Treatment',
+                patient_id: 233,
+                provider_id: 5643,
+                });
+            await createTreatmentPlan({
+                plan: 'Multiple Sclerosis Treatment',
+                patient_id: 234,
+                provider_id: 6837,
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Treatment',
+                patient_id: 235,
+                provider_id: 5178
+                });
+            await createTreatmentPlan({
+                plan: 'Rheumatoid Arthritis Treatment',
+                patient_id: 236,
+                provider_id: 5198,
+                });
 
 
 
