@@ -7158,43 +7158,224 @@ const { createUsers, getAllUsers } = require('./Users');
                 });
             await createTreatmentPlan({
                 plan: 'Heart Attack Treatment',
-                patient_id: 541,
+                patient_id: 341,
                 provider_id: 2655
                 });
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 342,
+                provider_id: 5780
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 343,
+                provider_id: 5679
+                });
+            await createTreatmentPlan({
+                plan: 'Depression Treatment',
+                patient_id: 344,
+                provider_id: 5679
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 345,
+                provider_id: 5163
+                });
+            await createTreatmentPlan({
+                plan: 'Bacterial Pneumonia Treatment',
+                patient_id: 346,
+                provider_id: 5155
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 347,
+                provider_id: 5163
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Migraine Treatment',
+                patient_id: 348,
+                provider_id: 6547
+                });
+            await createTreatmentPlan({
+                plan: 'Congestive Heart Failure Treatment',
+                patient_id: 349,
+                provider_id: 2655
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 350,
+                provider_id: 6547
+                });
+            await createTreatmentPlan({
+                plan: 'Breast Cancer Treatment',
+                patient_id: 351,
+                provider_id: 7012
+                });
+            await createTreatmentPlan({
+                plan: 'Breast Cancer Treatment',
+                patient_id: 352,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Breast Cancer Treatment',
+                patient_id: 353,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Cardiac Arrest Treatment',
+                patient_id: 354,
+                provider_id: 4567
+                });
+            await createTreatmentPlan({
+                plan: 'Brain Tumor Treatment',
+                patient_id: 355,
+                provider_id: 6537
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 356,
+                provider_id: 5201
+                });
+            await createTreatmentPlan({
+                plan: 'Eczema Treatment',
+                patient_id: 357,
+                provider_id: 3777
+                });
+            await createTreatmentPlan({
+                plan: 'Chest Pain Treatment',
+                patient_id: 358,
+                provider_id: 4937
+                });
+            await createTreatmentPlan({
+                plan: 'Chest Pain Treatment',
+                patient_id: 359,
+                provider_id: 2586
+                });
+            await createTreatmentPlan({
+                plan: 'Heart Failure Treatment',
+                patient_id: 360,
+                provider_id: 2514
+                });
+            await createTreatmentPlan({
+                plan: 'Arthritis Treatment',
+                patient_id: 361,
+                provider_id: 5537
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Leg Treatment',
+                patient_id: 362,
+                provider_id: 4986
+                });
+            await createTreatmentPlan({
+                plan: 'Cardiac Arrest Treatment',
+                patient_id: 363,
+                provider_id: 4672
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 364,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 365,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 366,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Pneumonia Treatment',
+                patient_id: 367,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 368,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 369,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Chest Pain Treatment',
+                patient_id: 370,
+                provider_id: 2655
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 371,
+                provider_id: 5780
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 372,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Meniere\'s Disease Treatment',
+                patient_id: 373,
+                provider_id: 5913
+                });
+            await createTreatmentPlan({
+                plan: 'Breast Cancer Treatment',
+                patient_id: 374,
+                provider_id: 7012
+                });
+            await createTreatmentPlan({
+                plan: 'Breast Cancer Treatment',
+                patient_id: 375,
+                provider_id: 7012
+                });
+            await createTreatmentPlan({
+                plan: 'Cardiovascular Disease Treatment',
+                patient_id: 376,
+                provider_id: 5655
+                });
+            await createTreatmentPlan({
+                plan: 'Breast Cancer Treatment',
+                patient_id: 377,
+                provider_id: 7012
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 378,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Infectious Mononucleosis Treatment',
+                patient_id: 379,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 380,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 381,
+                provider_id: 5679
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Treatment',
+                patient_id: 382,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Treatment',
+                patient_id: 383,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 384,
+                provider_id: 2586
+                });
 
 
 
