@@ -6696,13 +6696,61 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 249,
                 provider_id: 6547
                 });
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: 'Traumatic Brain Injury Treatment',
+                patient_id: 250,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 251,
+                provider_id: 8035
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 252,
+                provider_id: 8846
+                });
+            await createTreatmentPlan({
+                plan: 'Bone Fracture Treatment',
+                patient_id: 253,
+                provider_id: 8846
+                });
+            await createTreatmentPlan({
+                plan: 'Traumatic Brain Injury Treatment',
+                patient_id: 254,
+                provider_id: 6547,
+                });
+            await createTreatmentPlan({
+                plan: 'Sprained Ankle Treatment',
+                patient_id: 255,
+                provider_id: 8001
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 256,
+                provider_id: 8023
+                });
+            await createTreatmentPlan({
+                plan: 'Stress Fracture Treatment',
+                patient_id: 257,
+                provider_id: 8846
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Bone Treatment',
+                patient_id: 258,
+                provider_id: 8001
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Bone Treatment',
+                patient_id: 259,
+                provider_id: 8846
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Arm Treatment',
+                patient_id: 260,
+                provider_id: 8001
+                });
 
 
 
