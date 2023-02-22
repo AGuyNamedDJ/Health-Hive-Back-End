@@ -6956,11 +6956,212 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 300,
                 provider_id: 4678
                 });
-            
+            await createTreatmentPlan({
+                plan: 'Rheumatoid Arthritis Treatment',
+                patient_id: 301,
+                provider_id: 5456
+                });
+            await createTreatmentPlan({
+                plan: 'Bursitis Treatment',
+                patient_id: 302,
+                provider_id: 8961
+                });
+            await createTreatmentPlan({
+                plan: 'Broken Arm Treatment',
+                patient_id: 303,
+                provider_id: 8961
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 304,
+                provider_id: 6547
+                });
+            await createTreatmentPlan({
+                plan: 'Back Injury Treatment',
+                patient_id: 305,
+                provider_id: 8961
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 306,
+                provider_id: 6547
+                });
+            await createTreatmentPlan({
+                plan: 'Irritable Bowel Syndrome Treatment',
+                patient_id: 307,
+                provider_id: 5913
+                });
+            await createTreatmentPlan({
+                plan: 'Stress Induced Insomnia Treatment',
+                patient_id: 308,
+                provider_id: 5679
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 309,
+                provider_id: 8961
+                });
+            await createTreatmentPlan({
+                plan: 'Stomach Ulcer Treatment',
+                patient_id: 310,
+                provider_id: 5913
+                });
+            await createTreatmentPlan({
+                plan: 'Stomach Ulcer Treatment',
+                patient_id: 311,
+                provider_id: 5913
+                });
+            await createTreatmentPlan({
+                plan: 'Pneumonia Treatment',
+                patient_id: 312,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Pneumonia Treatment',
+                patient_id: 313,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 314,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Pneumonia Treatment',
+                patient_id: 315,
+                provider_id: 5155
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 316,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 317,
+                provider_id: 5104
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Bronchitis Treatment',
+                patient_id: 318,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 319,
+                provider_id: 7589
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 320,
+                provider_id: 5104
+                });
+            await createTreatmentPlan({
+                plan: 'Allergic Rhinitis Treatment',
+                patient_id: 321,
+                provider_id: '5456'
+                });
+            await createTreatmentPlan({
+                plan: 'Bacterial Pneumonia Treatment',
+                patient_id: 322,
+                provider_id: 5537
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetes Mellitus Treatment',
+                patient_id: 323,
+                provider_id: 5456
+                });
+            await createTreatmentPlan({
+                plan: 'Cardiac Arrest Treatment',
+                patient_id: 324,
+                provider_id: 2586
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 325,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 326,
+                provider_id: 7032
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 327,
+                provider_id: 6837
+                });
+            await createTreatmentPlan({
+                plan: 'Breast Cancer Treatment',
+                patient_id: 328,
+                provider_id: 7012
+                });
+            await createTreatmentPlan({
+                plan: 'Pulmonary Embolism Treatment',
+                patient_id: 329,
+                provider_id: 5643
+                });
+            await createTreatmentPlan({
+                plan: 'Acute Bronchitis Treatment',
+                patient_id: 330,
+                provider_id: 5143
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Kidney Disease Treatment',
+                patient_id: 331,
+                provider_id: 5198
+                });
+            await createTreatmentPlan({
+                plan: 'Anxiety Disorder Treatment',
+                patient_id: 332,
+                provider_id: 5679
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 333,
+                provider_id: 7589
+                });
+            await createTreatmentPlan({
+                plan: 'Lung Cancer Treatment',
+                patient_id: 334,
+                provider_id: 7589
+                });
+            await createTreatmentPlan({
+                plan: 'High Blood Pressure Treatment',
+                patient_id: 335,
+                provider_id: 5201
+                });
+            await createTreatmentPlan({
+                plan: 'Rheumatoid Arthritis Treatment',
+                patient_id: 336,
+                provider_id: 5201
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                patient_id: 337,
+                provider_id: 5201
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Treatment',
+                patient_id: 338,
+                provider_id: 5780
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Management',
+                patient_id: 339,
+                provider_id: 5589
+                });
+            await createTreatmentPlan({
+                plan: 'Migraine Headache Treatment',
+                patient_id: 340,
+                provider_id: 5723
+                });
+            await createTreatmentPlan({
+                plan: 'Heart Attack Treatment',
+                patient_id: 541,
+                provider_id: 2655
+                });
                 
-
-
-
 
 
 
