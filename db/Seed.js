@@ -6626,20 +6626,76 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 236,
                 provider_id: 5198,
                 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            await createTreatmentPlan({
+                plan: "Chron's Disease Treatment",
+                patient_id: 237,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 238,
+                provider_id: 5104,
+                });
+            await createTreatmentPlan({
+                plan: "Chron's Disease Treatment",
+                patient_id: 239,
+                provider_id: 5143,
+                });
+            await createTreatmentPlan({
+                plan: 'Multiple Sclerosis Treatment',
+                patient_id: 240,
+                provider_id: 6537,
+                });
+            await createTreatmentPlan({
+                plan: 'Diabetes Treatment',
+                patient_id: 241,
+                provider_id: 5589,
+                });
+            await createTreatmentPlan({
+                plan: 'Type 2 Diabetes Treatment',
+                patient_id: 242,
+                provider_id: 5723,
+                });
+            await createTreatmentPlan({
+                plan: 'Chronic Fatigue Syndrome Treatment',
+                patient_id: 243,
+                provider_id: 5780,
+                });
+            await createTreatmentPlan({
+                plan: "Chron's Disease Treatment",
+                patient_id: 244,
+                provider_id: 5343,
+                });
+            await createTreatmentPlan({
+                plan: "Chron's Disease Treatment",
+                patient_id: 245,
+                provider_id: 5382,
+                });
+            await createTreatmentPlan({
+                plan: 'Arm Fracture Treatment',
+                patient_id: 246,
+                provider_id: 4579,
+                });
+            await createTreatmentPlan({
+                plan: 'Arm Fracture Treatment',
+                patient_id: 247,
+                provider_id: 4967,
+                });
+            await createTreatmentPlan({
+                plan: 'Arm Fracture Treatment',
+                patient_id: 248,
+                provider_id: 4579,
+                });
+            await createTreatmentPlan({
+                plan: 'Soft Tissue Injury Treatment',
+                patient_id: 249,
+                provider_id: 8846
+                });
+            await createTreatmentPlan({
+                plan: 'Traumatic Brain Injury Treatment',
+                patient_id: 249,
+                provider_id: 6547
+                });
 
 
 
