@@ -6751,7 +6751,47 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id: 260,
                 provider_id: 8001
                 });
-
+            await createTreatmentPlan({
+                plan: 'Fibromyalgia Treatment',
+                patient_id: 261,
+                provider_id: 5104,
+                });
+            await createTreatmentPlan({
+                plan: 'Sprained Ankle Treatment',
+                patient_id: 262,
+                provider_id: 8846,
+                });
+            await createTreatmentPlan({
+                plan: 'Fractured Arm Treatment',
+                patient_id: 263,
+                provider_id: 8001
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 264,
+                provider_id: 5201
+                });
+            await createTreatmentPlan({
+                plan: 'Bone Fracture Treatment',
+                patient_id: 265,
+                provider_id: 8035
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 266,
+                provider_id: 6547
+                });
+            await createTreatmentPlan({
+                plan: 'Stroke Treatment',
+                patient_id: 266,
+                provider_id: 5121
+                });
+            await createTreatmentPlan({
+                plan: 'Asthma Treatment',
+                patient_id: 267,
+                provider_id: 5198
+                });
+            
 
 
 
