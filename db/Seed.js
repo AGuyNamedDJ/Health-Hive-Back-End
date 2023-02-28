@@ -10142,6 +10142,21 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
+    // Method: createInitialProcedureStaff;
+    async function createInitialProcedureStaff() {
+        console.log('Starting to create procedure staff...')
+        try {
+            await createProcedureStaff({
+                staff_id: [1, 56]
+                    // use an array for 1+
+            });
+            console.log('Finished creating procedure staff.');
+        } catch (error) {
+            console.error('Error when creating procedure staff!');
+            console.log(error);
+        }
+    };
+
     // Method: createInitialProcedure;
     async function createInitialProcedure() {
         console.log('Starting to create procedure...')
@@ -10195,21 +10210,6 @@ const { createUsers, getAllUsers } = require('./Users');
         }
     };
 
-    // Method: createInitialProcedureStaff;
-    async function createInitialProcedureStaff() {
-        console.log('Starting to create procedure staff...')
-        try {
-            await createProcedureStaff({
-                staff_id: [1, 56]
-                    // use an array for 1+
-            });
-            console.log('Finished creating procedure staff.');
-        } catch (error) {
-            console.error('Error when creating procedure staff!');
-            console.log(error);
-        }
-    };
-
     // Rebuild DB:
     async function rebuildDB() {
         try {
@@ -10224,8 +10224,8 @@ const { createUsers, getAllUsers } = require('./Users');
             await createInitialAppointment();
             await createInitialMedicalRecord();
             await createInitialMedication();
-            await createInitialProcedure();
             await createInitialProcedureStaff();
+            await createInitialProcedure();
         } catch (error) {
             console.log('Error during rebuildDB!')
             console.log(error.detail);
