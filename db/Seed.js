@@ -177,6 +177,11 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id INTEGER REFERENCES treatment_plan(id) DEFAULT NULL,
                 provider_id INTEGER REFERENCES staff(provider_id)
             );
+            CREATE TABLE procedure_staff(
+                id SERIAL PRIMARY KEY,
+                staff_id INTEGER REFERENCES staff(id),
+                UNIQUE (procedure_id, staff_id)
+            );         
             CREATE TABLE procedure(
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(100) NOT NULL,
@@ -185,13 +190,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 patient_id INTEGER REFERENCES patient(id),
                 treatment_id INTEGER REFERENCES treatment_plan(id),
                 procedure_staff_id INTEGER REFERENCES procedure_staff(id)
-            );
-            CREATE TABLE procedure_staff(
-                id SERIAL PRIMARY KEY,
-                procedure_id INTEGER REFERENCES procedure(id),
-                staff_id INTEGER REFERENCES staff(id),
-                UNIQUE (procedure_id, staff_id)
-            );                  
+            );         
             `);
             console.log('Finished building tables.');
             } catch (error) {
@@ -10153,7 +10152,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2022-11-15',
                 patient_id: 1,
                 treatment_id: 1,
-                staff_id: 1537
+                procedure_staff_id: [2, 56]
             });
             await createProcedure({
                 name: 'Diabetes Type 2 Treatment Plan',
@@ -10161,7 +10160,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2023-03-15',
                 patient_id: 2,
                 treatment_id: 2,
-                staff_id: [5456, 5343]
+                procedure_staff_id: [2, 56]
                 });
             await createProcedure({
                 name: 'Stroke Rehabilitation',
@@ -10169,7 +10168,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2023-06-20',
                 patient_id: 3,
                 treatment_id: 3,
-                staff_id: [6837, 6537]
+                procedure_staff_id: [2, 56]
                 });
             await createProcedure({
                 name: 'Acute Bronchitis Treatment',
@@ -10177,7 +10176,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2023-08-15',
                 patient_id: 4,
                 treatment_id: 4,
-                staff_id: [5155, 7548]
+                procedure_staff_id: [2, 56]
                 });
             await createProcedure({
                 name: 'Multiple Sclerosis Treatment',
@@ -10185,7 +10184,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2023-07-10',
                 patient_id: 5,
                 treatment_id: 5,
-                staff_id: [5637, 2, 56]
+                procedure_staff_id: [2, 56]
                 });
 
 
@@ -10201,8 +10200,7 @@ const { createUsers, getAllUsers } = require('./Users');
         console.log('Starting to create procedure staff...')
         try {
             await createProcedureStaff({
-                procedure_id: 1,
-                staff_id: 1
+                staff_id: [1, 56]
                     // use an array for 1+
             });
             console.log('Finished creating procedure staff.');
