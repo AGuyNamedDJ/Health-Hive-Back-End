@@ -7377,17 +7377,6 @@ const { createUsers, getAllUsers } = require('./Users');
                 provider_id: 2586
                 });
 
-
-
-
-
-
-
-
-
-                
-
-
             console.log('Finished creating treatment plan.');
         } catch (error) {
             console.error('Error when creating treatment plan!');
@@ -10166,6 +10155,18 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id: 1,
                 staff_id: 1
             });
+            await createProcedure({
+                name: 'Diabetes Type 2 Treatment Plan',
+                description: "The treatment plan for a patient with diabetes type 2 may include lifestyle changes such as a healthy diet, regular physical activity, and stress management. Medications such as metformin may also be prescribed to help regulate blood sugar levels. Regular monitoring of blood sugar levels and A1C levels is important to track the effectiveness of the treatment plan. The healthcare provider may also make adjustments to the treatment plan as needed. The goal of the treatment plan is to manage blood sugar levels, prevent complications, and improve overall health.",
+                date_performed: '2023-03-15',
+                patient_id: 2,
+                treatment_id: 2,
+                staff_id: 1
+                });
+
+
+
+
             console.log('Finished creating procedure.');
         } catch (error) {
             console.error('Error when creating procedure!');
