@@ -10259,8 +10259,30 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id: 12,
                 staff_id: [5178, 53]
                 });
-
-
+            await createProcedure({
+                name: 'Diabetes Management',
+                description: "Diabetes management involves controlling blood sugar levels and preventing the development of related complications. This may involve lifestyle changes, such as exercise and a healthy diet, as well as medication. Regular monitoring of blood sugar levels is important in diabetes management, as well as regular check-ups with a healthcare provider. The goal of diabetes management is to prevent short-term and long-term complications and maintain a good quality of life.",
+                date_performed: '2021-10-15',
+                patient_id: 13,
+                treatment_id: 13,
+                staff_id: [5382, 52]
+                });
+            await createProcedure({
+                name: 'Chronic Myeloid Leukemia Treatment',
+                description: "Chronic myeloid leukemia (CML) is a type of blood cancer that affects the bone marrow. Treatment for CML may include medication, such as tyrosine kinase inhibitors, or a stem cell transplant. The goal of CML treatment is to control the cancer and prevent progression to a more advanced stage. The treatment plan for CML may change over time, based on the patient's response to treatment and the progression of the disease. Monitoring and regular follow-up are important components of CML treatment.",
+                date_performed: '2021-09-30',
+                patient_id: 14,
+                treatment_id: 14,
+                staff_id: [7051, 62, 2, 55]
+                });
+            await createProcedure({
+                name: 'Chronic Fatigue Syndrome Treatment',
+                description: "Chronic fatigue syndrome (CFS) is a complex condition characterized by persistent fatigue that cannot be explained by any underlying medical condition. The exact cause of CFS is unknown, but it may be related to a combination of physical, psychological, and environmental factors. Treatment for CFS may involve a combination of medications, lifestyle changes, and psychotherapy. Patients with CFS may also benefit from exercise, sleep management, and stress reduction techniques. The goal of CFS treatment is to improve symptoms and quality of life.",
+                date_performed: '2021-09-10',
+                patient_id: 15,
+                treatment_id: 15,
+                staff_id: [5155, 52, 50]
+                });
 
 
 
