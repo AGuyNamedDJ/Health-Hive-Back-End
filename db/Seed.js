@@ -184,7 +184,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed DATE NOT NULL,
                 patient_id INTEGER REFERENCES patient(id),
                 treatment_id INTEGER REFERENCES treatment_plan(id),
-                staff_id INTEGER REFERENCES staff(id)
+                procedure_staff_id INTEGER REFERENCES procedure_staff(id)
             );
             CREATE TABLE procedure_staff(
                 id SERIAL PRIMARY KEY,
@@ -10153,7 +10153,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2022-11-15',
                 patient_id: 1,
                 treatment_id: 1,
-                staff_id: 1
+                staff_id: 1537
             });
             await createProcedure({
                 name: 'Diabetes Type 2 Treatment Plan',
@@ -10161,10 +10161,32 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2023-03-15',
                 patient_id: 2,
                 treatment_id: 2,
-                staff_id: 1
+                staff_id: [5456, 5343]
                 });
-
-
+            await createProcedure({
+                name: 'Stroke Rehabilitation',
+                description: "Stroke rehabilitation is a critical component of recovery from a stroke. The rehabilitation process begins as soon as possible after the stroke, typically within 24-48 hours. The goal of rehabilitation is to help the patient regain as much independence and function as possible. This may involve physical therapy, occupational therapy, speech therapy, and other forms of therapy. A stroke rehabilitation program may also involve the use of assistive devices such as wheelchairs, canes, or walkers. The rehabilitation process is tailored to the individual patient and may take several weeks or months to complete.",
+                date_performed: '2023-06-20',
+                patient_id: 3,
+                treatment_id: 3,
+                staff_id: [6837, 6537]
+                });
+            await createProcedure({
+                name: 'Acute Bronchitis Treatment',
+                description: "Acute bronchitis is a type of respiratory infection that causes inflammation in the bronchial tubes. Treatment typically involves relieving symptoms and allowing the body to fight the infection. This may include rest, hydration, over-the-counter pain relievers, and cough suppressants. In some cases, antibiotics may be prescribed if the bronchitis is caused by a bacterial infection. In severe cases, a short course of oral corticosteroids may be prescribed to reduce inflammation in the bronchial tubes. The duration of treatment for acute bronchitis varies based on the severity of the condition.",
+                date_performed: '2023-08-15',
+                patient_id: 4,
+                treatment_id: 4,
+                staff_id: [5155, 7548]
+                });
+            await createProcedure({
+                name: 'Multiple Sclerosis Treatment',
+                description: "Multiple sclerosis (MS) is a chronic autoimmune disease that affects the central nervous system. MS treatment aims to slow down the progression of the disease, manage symptoms, and improve quality of life. Treatment options for MS may include disease-modifying drugs, corticosteroids, and physical therapy. A treatment plan for MS may also include rehabilitation and lifestyle changes, such as exercise and stress management. The goal of MS treatment is to maximize function and minimize disability, and the treatment plan may change over time as the disease progresses.",
+                date_performed: '2023-07-10',
+                patient_id: 5,
+                treatment_id: 5,
+                staff_id: [5637, 2, 56]
+                });
 
 
             console.log('Finished creating procedure.');
