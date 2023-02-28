@@ -10185,8 +10185,100 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2023-07-10',
                 patient_id: 5,
                 treatment_id: 5,
-                staff_id: [5637, 2, 56]
+                staff_id: [5637, 2, 54]
                 });
+            await createProcedure({
+                name: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                description: "Chronic obstructive pulmonary disease (COPD) is a lung condition that makes it difficult to breathe. COPD treatment aims to relieve symptoms, improve quality of life, and slow down the progression of the disease. Treatment options for COPD may include bronchodilators, corticosteroids, and oxygen therapy. A treatment plan for COPD may also include lifestyle changes, such as quitting smoking, exercise, and stress management. The goal of COPD treatment is to maximize lung function and minimize breathing difficulties.",
+                date_performed: '2023-07-15',
+                patient_id: 6,
+                treatment_id: 6,
+                staff_id: [5723, 54]
+                });
+            await createProcedure({
+                name: 'Stroke Treatment',
+                description: "Stroke treatment involves a combination of emergency and rehabilitation care. The immediate goal of stroke treatment is to restore blood flow to the brain as quickly as possible. This may involve medication to break up blood clots, or surgery to remove them. After the acute phase of treatment, rehabilitation begins. Stroke rehabilitation may involve physical therapy, occupational therapy, and speech therapy to help the patient regain as much function as possible. The rehabilitation process is tailored to the individual patient and may take several weeks or months to complete.",
+                date_performed: '2023-08-15',
+                patient_id: 7,
+                treatment_id: 7,
+                staff_id: [6547, 56]
+                });
+            await createProcedure({
+                name: 'Stroke Treatment',
+                description: "Stroke treatment is focused on rapid evaluation and intervention to minimize brain damage and improve recovery. Treatment options for stroke may include medications, such as thrombolytics, to dissolve blood clots and improve blood flow to the brain. Other treatments may include physical therapy, occupational therapy, and speech therapy to help the patient regain as much independence and function as possible. In some cases, surgery may be necessary to remove clots or repair damaged blood vessels. The stroke treatment plan is tailored to the individual patient and may change as the patient's condition changes.",
+                date_performed: '2023-07-12',
+                patient_id: 7,
+                treatment_id: 7,
+                staff_id: [6547, 54]
+                });
+            await createProcedure({
+                name: 'GERD Treatment',
+                description: "Gastroesophageal reflux disease (GERD) is a condition in which stomach acid flows back into the esophagus, causing heartburn and other symptoms. GERD treatment may include lifestyle changes such as avoiding trigger foods, losing weight, and avoiding lying down after eating. Medications, such as antacids, proton pump inhibitors, and H2 blockers, may also be used to manage symptoms. In severe cases, surgery may be necessary to tighten the lower esophageal sphincter. A treatment plan for GERD will be tailored to the individual patient and may need to be adjusted over time.",
+                date_performed: '2023-08-10',
+                patient_id: 8,
+                treatment_id: 8,
+                staff_id: [5913, 52, 55]
+                });
+            await createProcedure({
+                name: 'GERD Treatment',
+                description: "Gastroesophageal reflux disease (GERD) is a chronic digestive disorder that occurs when stomach acid flows back into the esophagus. GERD treatment aims to reduce symptoms and prevent complications. Treatment options may include lifestyle changes, such as avoiding certain foods and losing weight, and medications such as antacids and proton pump inhibitors. In severe cases, surgery may be necessary. The goal of GERD treatment is to relieve symptoms and prevent further damage to the esophagus.",
+                date_performed: '2023-08-15',
+                patient_id: 8,
+                treatment_id: 8,
+                staff_id: [5913, 57]
+                });
+            await createProcedure({
+                name: 'Acute Bronchitis Treatment',
+                description: "Acute bronchitis is a type of respiratory infection that causes inflammation of the bronchial tubes. Symptoms of acute bronchitis include coughing, wheezing, and chest pain. Treatment options for acute bronchitis may include antibiotics, over-the-counter pain relievers, and bronchodilators. In some cases, inhaled corticosteroids may also be prescribed to reduce inflammation. It is also important to get plenty of rest and stay hydrated during the recovery process. The goal of treatment is to reduce symptoms and prevent complications such as pneumonia.",
+                date_performed: '2023-07-15',
+                patient_id: 9,
+                treatment_id: 9,
+                staff_id: [5178, 54]
+                });
+            await createProcedure({
+                name: 'Arthritis Treatment',
+                description: "Arthritis is a condition that causes inflammation in the joints. The goal of arthritis treatment is to reduce pain and improve joint function. Treatment options for arthritis may include pain-relieving medications, physical therapy, and lifestyle changes such as exercise and weight management. In some cases, joint injections or surgery may also be recommended. A treatment plan for arthritis is usually tailored to the individual patient and may change over time based on the patient's response to treatment.",
+                date_performed: '2023-08-15',
+                patient_id: 10,
+                treatment_id: 10,
+                staff_id: [8846, 60]
+                });
+            await createProcedure({
+                name: 'Chronic Obstructive Pulmonary Disease Treatment',
+                description: "Chronic obstructive pulmonary disease (COPD) is a progressive lung disease that makes it difficult to breathe. COPD treatment aims to relieve symptoms, prevent complications, and improve quality of life. Treatment options for COPD may include bronchodilators, corticosteroids, oxygen therapy, and pulmonary rehabilitation. A treatment plan for COPD may also include lifestyle changes, such as quitting smoking and avoiding exposure to irritants. The goal of COPD treatment is to slow down the progression of the disease and improve breathing.",
+                date_performed: '2023-08-12',
+                patient_id: 11,
+                treatment_id: 11,
+                staff_id: [5537, 50]
+                });
+            await createProcedure({
+                name: 'Arthritis Treatment',
+                description: "Arthritis is a group of diseases that cause pain, swelling, and stiffness in the joints. The goal of arthritis treatment is to reduce pain and improve joint function. Treatment options for arthritis may include medication, physical therapy, exercise, weight management, and assistive devices. In some cases, surgery may be necessary. A treatment plan for arthritis is individualized and may change over time as the disease progresses. The patient's overall health, age, and the type of arthritis they have are all factors that can impact the treatment plan.",
+                date_performed: '2021-09-21',
+                patient_id: 12,
+                treatment_id: 12,
+                staff_id: [5178, 53]
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             console.log('Finished creating procedure.');
@@ -10197,6 +10289,7 @@ const { createUsers, getAllUsers } = require('./Users');
     };
 
     // Method: createInitialProcedureStaff;
+        // This will be left blank, we don't need it anymore
     async function createInitialProcedureStaff() {
         console.log('Starting to create procedure staff...')
         try {
