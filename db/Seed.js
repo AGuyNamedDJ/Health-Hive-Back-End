@@ -10321,11 +10321,71 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_performed: '2021-09-15',
                 patient_id: 20,
                 treatment_id: 20,
-                staff_id: [5674, 52]
+                staff_id: [5674, 52, 4, 55, 53]
                 });
-                    
-                    
-                    
+            await createProcedure({
+                name: 'Gastroesophageal Reflux Disease (GERD) Treatment',
+                description: "Gastroesophageal reflux disease (GERD) is a chronic digestive disorder that occurs when stomach acid or bile flows back into the esophagus. Symptoms of GERD may include heartburn, chest pain, and difficulty swallowing. Treatment for GERD may include lifestyle changes, such as avoiding certain foods, losing weight, and not eating close to bedtime. Medications, such as antacids, proton pump inhibitors, and H2 receptor blockers, may also be prescribed to manage symptoms. In some cases, surgery may be necessary to treat GERD.",
+                date_performed: '2022-09-18',
+                patient_id: 21,
+                treatment_id: 21,
+                staff_id: [5913, 59]
+                });
+            await createProcedure({
+                name: 'Chronic Migraines Treatment',
+                description: "Chronic migraines are a type of headache disorder characterized by the frequent occurrence of headache pain, often on more than 15 days per month. Treatment for chronic migraines may involve a combination of medications, lifestyle changes, and behavioral therapies. Medications may include preventive drugs, pain-relieving drugs, and abortive drugs. Lifestyle changes may include stress management, regular sleep patterns, and regular exercise. Behavioral therapies may include cognitive behavioral therapy, biofeedback, and relaxation techniques. The goal of treatment is to reduce the frequency and severity of migraines and improve the patient's quality of life.",
+                date_performed: '2022-12-15',
+                patient_id: 22,
+                treatment_id: 22,
+                staff_id: [6837, 52]
+                });         
+            await createProcedure({
+                name: 'Chronic Migraines Treatment',
+                description: "Chronic migraines are a type of headache that occur for more than 15 days per month for at least 3 months. Treatment for chronic migraines may involve a combination of medications, lifestyle changes, and behavioral modifications. Some medications used to treat chronic migraines include pain relievers, anti-inflammatory drugs, and preventive medications. Lifestyle changes may include stress management techniques and regular exercise. Behavioral modifications may include maintaining a consistent sleep schedule and avoiding triggers that can cause migraines.",
+                date_performed: '2021-12-01',
+                patient_id: 23,
+                treatment_id: 23,
+                staff_id: [6537, 6537]
+                });   
+            await createProcedure({
+                name: 'Acute Gastroenteritis Treatment',
+                description: "Acute gastroenteritis is an inflammation of the stomach and intestines caused by a viral or bacterial infection. Treatment for acute gastroenteritis typically involves managing symptoms, such as dehydration and electrolyte imbalances. This may involve replacing lost fluids and electrolytes through oral rehydration therapy or intravenous fluids. In some cases, antibiotics may be prescribed if a bacterial infection is the underlying cause. The goal of treatment is to relieve symptoms and prevent complications, such as dehydration.",
+                date_performed: '2023-09-12',
+                patient_id: 24,
+                treatment_id: 24,
+                staff_id: [5537, 60]
+                });
+            await createProcedure({
+                name: 'Chronic Sinusitis Treatment',
+                description: "Chronic sinusitis is a condition in which the sinuses become inflamed and swollen for at least 12 weeks. Treatment for chronic sinusitis may include antibiotics, decongestants, and nasal sprays. In some cases, surgery may be necessary to remove any blockages in the sinuses. A treatment plan for chronic sinusitis may also involve lifestyle changes, such as avoiding triggers like smoke or pollution, and using a humidifier. The goal of treatment is to relieve symptoms and improve quality of life.",
+                date_performed: '2022-10-17',
+                patient_id: 25,
+                treatment_id: 25,
+                staff_id: [5201, 54]
+                });
+            await createProcedure({
+                name: 'Acute Bronchitis Treatment',
+                description: "Acute bronchitis is a respiratory condition characterized by inflammation of the bronchial tubes. The primary symptoms of acute bronchitis are cough, chest discomfort, and production of mucus. Treatment for acute bronchitis typically involves relieving symptoms and allowing the body to recover on its own. This may involve the use of over-the-counter pain relievers, decongestants, and expectorants. In some cases, antibiotics may be prescribed to treat a bacterial infection. Bed rest and increased fluid intake can also help to speed recovery.",
+                date_performed: '2023-09-15',
+                patient_id: 26,
+                treatment_id: 26,
+                staff_id: [5382]
+                });
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
