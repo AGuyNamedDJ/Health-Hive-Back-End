@@ -10371,9 +10371,41 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id: 26,
                 staff_id: [5382]
                 });
-
-
+            await createProcedure({
+                name: 'Type 2 Diabetes Treatment',
+                description: "Type 2 diabetes is a chronic condition that affects the way your body metabolizes sugar. The primary symptoms of type 2 diabetes are increased thirst, frequent urination, and fatigue. Treatment for type 2 diabetes typically involves lifestyle changes such as a healthy diet and regular exercise, as well as medication to help manage blood sugar levels. In some cases, insulin may be necessary to control blood sugar. Monitoring blood sugar levels regularly is also important for managing type 2 diabetes.",
+                date_performed: '2023-03-03',
+                patient_id: 27,
+                treatment_id: 27,
+                staff_id: [5125, 54]
+                });
+            await createProcedure({
+                name: 'Anxiety Disorder Treatment',
+                description: "Anxiety disorder is a condition characterized by excessive and persistent worry or fear about everyday situations. The primary symptoms of anxiety disorder include restlessness, fatigue, difficulty concentrating, irritability, muscle tension, and sleep disturbance. Treatment for anxiety disorder typically involves therapy, medication, or a combination of both. Cognitive-behavioral therapy and exposure therapy are common approaches to treating anxiety disorder. Medications such as selective serotonin reuptake inhibitors (SSRIs) and benzodiazepines may also be prescribed to help manage symptoms.",
+                date_performed: '2023-03-03',
+                patient_id: 28,
+                treatment_id: 28,
+                staff_id: [5679, 53]
+                });
+            await createProcedure({
+                name: 'Chronic Fatigue Syndrome Treatment',
+                description: "Chronic fatigue syndrome (CFS) is a complex and poorly understood condition characterized by severe and persistent fatigue that is not alleviated by rest. Other symptoms of CFS may include muscle pain, joint pain, headaches, and sleep disturbances. There is no cure for CFS, and treatment typically focuses on symptom management. This may include medications to address pain and sleep disturbances, as well as lifestyle changes such as pacing activities, dietary adjustments, and stress reduction techniques.",
+                date_performed: '2023-03-03',
+                patient_id: 29,
+                treatment_id: 29,
+                staff_id: [5201, 52]
+                });
+            await createProcedure({
+                name: "Meniere's Disease Treatment",
+                description: "Meniere's disease is a disorder of the inner ear that can cause episodes of vertigo, tinnitus, and hearing loss. The exact cause of Meniere's disease is unknown, but it is believed to be related to fluid buildup in the inner ear. Treatment for Meniere's disease typically involves managing symptoms and preventing future episodes. This may include medications to control vertigo and nausea, diuretics to reduce fluid buildup, and changes to the diet and lifestyle to reduce stress and improve overall health.",
+                date_performed: '2023-03-03',
+                patient_id: 30,
+                treatment_id: 30,
+                staff_id: [6013, 59]
+                });
                 
+
+        
 
 
 
