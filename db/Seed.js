@@ -10403,9 +10403,89 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id: 30,
                 staff_id: [6013, 59]
                 });
+            await createProcedure({
+                name: 'Depression Treatment',
+                description: "Depression is a mental health disorder that affects the way you think, feel, and behave. Treatment for depression typically involves a combination of medication and therapy. Antidepressant medications can help to regulate brain chemicals that affect mood, while therapy can help to address underlying emotional issues and provide coping strategies. Lifestyle changes, such as regular exercise and healthy eating habits, can also help to alleviate symptoms of depression.",
+                date_performed: '2023-03-03',
+                patient_id: 31,
+                treatment_id: 31,
+                staff_id: [5601, 54]
+                });
+            await createProcedure({
+                name: 'Stroke Treatment',
+                description: "Stroke is a serious medical condition that occurs when the blood supply to part of the brain is interrupted or reduced, depriving brain tissue of oxygen and nutrients. Treatment for stroke typically involves rapid medical intervention to restore blood flow to the brain and prevent further damage. This may include the use of clot-busting drugs, surgery, or other procedures. Rehabilitation and ongoing care are also important for stroke recovery.",
+                date_performed: '2023-10-15',
+                patient_id: 32,
+                treatment_id: 32,
+                staff_id: [6837, 55]
+                });
+            await createProcedure({
+                name: 'Stroke Treatment',
+                description: 'Stroke is a medical emergency that occurs when blood supply to the brain is interrupted or reduced, causing brain cells to die. Treatment for stroke typically involves restoring blood flow to the brain and preventing further damage. This may involve medications to break up blood clots, surgery to remove blockages, or other interventions depending on the type and severity of the stroke. Rehabilitation and ongoing care are also important components of stroke treatment.',
+                date_performed: '2023-05-23',
+                patient_id: 33,
+                treatment_id: 33,
+                staff_id: [6837, 54]
+                });
+            await createProcedure({
+                name: 'Diabetes Mellitus Treatment',
+                description: 'Diabetes mellitus is a chronic condition characterized by high blood sugar levels. Treatment for diabetes mellitus typically involves managing blood sugar levels through a combination of medication, diet, and exercise. Depending on the severity of the condition, insulin therapy may be necessary. It is also important for patients with diabetes mellitus to monitor their blood pressure, cholesterol levels, and kidney function.',
+                date_performed: '2023-10-20',
+                patient_id: 34,
+                treatment_id: 34,
+                staff_id: [5382, 62]
+                });
+            await createProcedure({
+                name: 'Chronic Bronchitis Treatment',
+                description: 'Chronic bronchitis is a long-term inflammation of the airways in the lungs that results in coughing and shortness of breath. Treatment for chronic bronchitis typically involves lifestyle changes, such as quitting smoking, and medications to relieve symptoms and prevent complications. Bronchodilators and corticosteroids are common medications used to treat chronic bronchitis, while antibiotics may be prescribed if the condition is caused by a bacterial infection.',
+                date_performed: '2023-03-06',
+                patient_id: 35,
+                treatment_id: 35,
+                staff_id: [5780, 52]
+                });
+            await createProcedure({
+                name: 'Chronic Migraine Management',
+                description: 'Chronic migraines are a neurological condition characterized by recurring headaches that can be severe and debilitating. Treatment for chronic migraines typically involves a combination of lifestyle changes and medications to prevent migraines and relieve symptoms. Lifestyle changes may include stress management techniques, regular exercise, and healthy sleep habits. Medications used to treat chronic migraines may include beta blockers, antidepressants, and anti-seizure drugs.',
+                date_performed: '2023-08-10',
+                patient_id: 36,
+                treatment_id: 36,
+                staff_id: [6547, 55]
+                });
+            await createProcedure({
+                name: 'Chronic Obstructive Pulmonary Disease Treatment',
+                description: 'Chronic obstructive pulmonary disease (COPD) is a lung disease that causes breathing difficulties and can be caused by smoking, air pollution, and other factors. Treatment for COPD typically involves lifestyle changes, such as quitting smoking and avoiding lung irritants, as well as medications to relieve symptoms and prevent complications. Medications used to treat COPD may include bronchodilators, corticosteroids, and antibiotics in some cases. Pulmonary rehabilitation programs may also be helpful for patients with COPD.',
+                date_performed: '2023-09-01',
+                patient_id: 37,
+                treatment_id: 37,
+                staff_id: [5643, 58]
+                });
+            await createProcedure({
+                name: 'Type 2 Diabetes Management',
+                description: 'Type 2 diabetes is a chronic condition that affects how your body processes blood sugar. Treatment for type 2 diabetes typically involves a combination of lifestyle changes, such as a healthy diet and regular exercise, as well as medication to help regulate blood sugar levels. Patients with type 2 diabetes may also need to monitor their blood sugar levels regularly and adjust their medication and lifestyle habits accordingly.',
+                date_performed: '2023-10-20',
+                patient_id: 38,
+                treatment_id: 38,
+                staff_id: [5143, 62]
+                });
+            await createProcedure({
+                name: 'Chronic Fatigue Syndrome Treatment',
+                description: 'Chronic fatigue syndrome (CFS) is a complex disorder characterized by persistent fatigue that is not relieved by rest and may worsen with physical or mental activity. Treatment for CFS typically involves a combination of medications to relieve symptoms and lifestyle changes to manage the condition. Medications used to treat CFS may include antidepressants, sleep aids, and pain relievers. Lifestyle changes may include a healthy diet, regular exercise, and stress management techniques.',
+                date_performed: '2023-09-01',
+                patient_id: 39,
+                treatment_id: 39,
+                staff_id: [5643, 58]
+                });
+            await createProcedure({
+                name: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+                description: 'Chronic obstructive pulmonary disease (COPD) is a chronic lung disease that causes breathing difficulties and can be caused by smoking, air pollution, and other factors. Treatment for COPD typically involves lifestyle changes, such as quitting smoking and avoiding lung irritants, as well as medications to relieve symptoms and prevent complications. Medications used to treat COPD may include bronchodilators, corticosteroids, and antibiotics in some cases. Pulmonary rehabilitation programs may also be helpful for patients with COPD.',
+                date_performed: '2023-11-01',
+                patient_id: 40,
+                treatment_id: 40,
+                staff_id: [5121, 60]
+                });
                 
 
-        
+
 
 
 
