@@ -10283,11 +10283,49 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id: 15,
                 staff_id: [5155, 52, 50]
                 });
-
-
-
-
-
+            await createProcedure({
+                name: 'Acute Bronchitis Treatment',
+                description: "Acute bronchitis is a respiratory condition that causes inflammation in the bronchial tubes. The main symptom of acute bronchitis is a persistent cough, which may be accompanied by other symptoms such as wheezing, chest tightness, and shortness of breath. Treatment for acute bronchitis may include rest, hydration, and over-the-counter medications to relieve symptoms. In severe cases, antibiotics may be prescribed to treat a bacterial infection. A treatment plan for acute bronchitis may also involve avoiding triggers such as air pollution or secondhand smoke.",
+                date_performed: '2021-11-15',
+                patient_id: 16,
+                treatment_id: 16,
+                staff_id: [5125, 53]
+                });
+            await createProcedure({
+                name: 'Irritable Bowel Syndrome Treatment',
+                description: "Irritable bowel syndrome (IBS) is a chronic condition that affects the large intestine. Symptoms of IBS may include abdominal pain, bloating, constipation, and diarrhea. Treatment for IBS may involve dietary changes, stress management, and medication. A treatment plan for IBS may also include fiber supplements, probiotics, and antispasmodic medication. The goal of IBS treatment is to manage symptoms and improve quality of life.",
+                date_performed: '2023-07-26',
+                patient_id: 17,
+                treatment_id: 17,
+                staff_id: [5913, 57]
+                });
+            await createProcedure({
+                name: 'Osteoarthritis Treatment',
+                description: "Osteoarthritis is a common joint disorder that results from the wear and tear of joints over time. The goal of osteoarthritis treatment is to reduce pain and improve function. Treatment options for osteoarthritis may include pain relievers, physical therapy, weight loss, and joint injections. In some cases, surgery may be recommended to repair or replace the affected joint. The treatment plan for osteoarthritis is tailored to the individual patient and may change over time as the condition progresses.",
+                date_performed: '2021-09-15',
+                patient_id: 18,
+                treatment_id: 18,
+                staff_id: [8023, 56, 55]
+                });
+            await createProcedure({
+                name: 'Stroke Treatment',
+                description: "Stroke treatment aims to minimize brain damage and improve the patient's chances of recovery. The type of treatment a patient receives will depend on the type of stroke they have had and how quickly they receive care. Treatment options for stroke may include medications, surgery, and rehabilitation. Medications may include clot-busting drugs, blood thinners, and blood pressure medications. Rehabilitation may include physical therapy, occupational therapy, and speech therapy. The goal of stroke treatment is to help the patient regain as much independence and function as possible.",
+                date_performed: '2023-09-10',
+                patient_id: 19,
+                treatment_id: 19,
+                staff_id: [6547, 56, 5, 60]
+                });
+            await createProcedure({
+                name: 'Chronic Kidney Disease Treatment',
+                description: "Chronic kidney disease (CKD) is a long-term condition in which the kidneys gradually lose function over time. Treatment for CKD aims to slow down the progression of the disease and manage any symptoms that may occur. Treatment options may include medications, lifestyle changes, and in severe cases, dialysis or kidney transplant. A treatment plan for CKD may also include monitoring for complications and managing coexisting health conditions. Regular check-ups with a healthcare provider are important for monitoring the progression of the disease and adjusting the treatment plan as needed.",
+                date_performed: '2021-09-15',
+                patient_id: 20,
+                treatment_id: 20,
+                staff_id: [5674, 52]
+                });
+                    
+                    
+                    
 
 
 
