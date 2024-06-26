@@ -143,8 +143,7 @@ const { createUsers, getAllUsers } = require('./Users');
                 id SERIAL PRIMARY KEY,
                 plan TEXT NOT NULL,
                 patient_id INTEGER REFERENCES patient(id),
-                provider_id INTEGER REFERENCES staff(provider_id),
-                FOREIGN KEY (provider_id) REFERENCES staff(provider_id)
+                provider_id INTEGER REFERENCES staff(provider_id)
               );              
               CREATE TABLE appointment(
                 id SERIAL PRIMARY KEY,
@@ -638,10 +637,10 @@ const { createUsers, getAllUsers } = require('./Users');
                 date_of_birth: '1997-09-01',
                 gender: 'female',
                 address: '6343 Pine St, Philadelphia, PA, 19101',
-                phone_number: '2154667845',
+                phone_number: '2154674949',
                 email: 'scarlettd97@gmail.com',
                 emergency_contact_name: 'Aria Davis',
-                emergency_contact_phone: '2154684545'
+                emergency_contact_phone: '2154674949'
             });
             await createPatient({
                 first_name: 'Evelyn',
@@ -10155,334 +10154,334 @@ const { createUsers, getAllUsers } = require('./Users');
                 treatment_id: 1,
                 staff_id: 1537
             });
-            await createProcedure({
-                name: 'Diabetes Type 2 Treatment Plan',
-                description: "The treatment plan for a patient with diabetes type 2 may include lifestyle changes such as a healthy diet, regular physical activity, and stress management. Medications such as metformin may also be prescribed to help regulate blood sugar levels. Regular monitoring of blood sugar levels and A1C levels is important to track the effectiveness of the treatment plan. The healthcare provider may also make adjustments to the treatment plan as needed. The goal of the treatment plan is to manage blood sugar levels, prevent complications, and improve overall health.",
-                date_performed: '2023-03-15',
-                patient_id: 2,
-                treatment_id: 2,
-                staff_id: [5456, 5343]
-                });
-            await createProcedure({
-                name: 'Stroke Rehabilitation',
-                description: "Stroke rehabilitation is a critical component of recovery from a stroke. The rehabilitation process begins as soon as possible after the stroke, typically within 24-48 hours. The goal of rehabilitation is to help the patient regain as much independence and function as possible. This may involve physical therapy, occupational therapy, speech therapy, and other forms of therapy. A stroke rehabilitation program may also involve the use of assistive devices such as wheelchairs, canes, or walkers. The rehabilitation process is tailored to the individual patient and may take several weeks or months to complete.",
-                date_performed: '2023-06-20',
-                patient_id: 3,
-                treatment_id: 3,
-                staff_id: [6837, 6537]
-                });
-            await createProcedure({
-                name: 'Acute Bronchitis Treatment',
-                description: "Acute bronchitis is a type of respiratory infection that causes inflammation in the bronchial tubes. Treatment typically involves relieving symptoms and allowing the body to fight the infection. This may include rest, hydration, over-the-counter pain relievers, and cough suppressants. In some cases, antibiotics may be prescribed if the bronchitis is caused by a bacterial infection. In severe cases, a short course of oral corticosteroids may be prescribed to reduce inflammation in the bronchial tubes. The duration of treatment for acute bronchitis varies based on the severity of the condition.",
-                date_performed: '2023-08-15',
-                patient_id: 4,
-                treatment_id: 4,
-                staff_id: [5155, 7548]
-                });
-            await createProcedure({
-                name: 'Multiple Sclerosis Treatment',
-                description: "Multiple sclerosis (MS) is a chronic autoimmune disease that affects the central nervous system. MS treatment aims to slow down the progression of the disease, manage symptoms, and improve quality of life. Treatment options for MS may include disease-modifying drugs, corticosteroids, and physical therapy. A treatment plan for MS may also include rehabilitation and lifestyle changes, such as exercise and stress management. The goal of MS treatment is to maximize function and minimize disability, and the treatment plan may change over time as the disease progresses.",
-                date_performed: '2023-07-10',
-                patient_id: 5,
-                treatment_id: 5,
-                staff_id: [5637, 2, 54]
-                });
-            await createProcedure({
-                name: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
-                description: "Chronic obstructive pulmonary disease (COPD) is a lung condition that makes it difficult to breathe. COPD treatment aims to relieve symptoms, improve quality of life, and slow down the progression of the disease. Treatment options for COPD may include bronchodilators, corticosteroids, and oxygen therapy. A treatment plan for COPD may also include lifestyle changes, such as quitting smoking, exercise, and stress management. The goal of COPD treatment is to maximize lung function and minimize breathing difficulties.",
-                date_performed: '2023-07-15',
-                patient_id: 6,
-                treatment_id: 6,
-                staff_id: [5723, 54]
-                });
-            await createProcedure({
-                name: 'Stroke Treatment',
-                description: "Stroke treatment involves a combination of emergency and rehabilitation care. The immediate goal of stroke treatment is to restore blood flow to the brain as quickly as possible. This may involve medication to break up blood clots, or surgery to remove them. After the acute phase of treatment, rehabilitation begins. Stroke rehabilitation may involve physical therapy, occupational therapy, and speech therapy to help the patient regain as much function as possible. The rehabilitation process is tailored to the individual patient and may take several weeks or months to complete.",
-                date_performed: '2023-08-15',
-                patient_id: 7,
-                treatment_id: 7,
-                staff_id: [6547, 56]
-                });
-            await createProcedure({
-                name: 'Stroke Treatment',
-                description: "Stroke treatment is focused on rapid evaluation and intervention to minimize brain damage and improve recovery. Treatment options for stroke may include medications, such as thrombolytics, to dissolve blood clots and improve blood flow to the brain. Other treatments may include physical therapy, occupational therapy, and speech therapy to help the patient regain as much independence and function as possible. In some cases, surgery may be necessary to remove clots or repair damaged blood vessels. The stroke treatment plan is tailored to the individual patient and may change as the patient's condition changes.",
-                date_performed: '2023-07-12',
-                patient_id: 7,
-                treatment_id: 7,
-                staff_id: [6547, 54]
-                });
-            await createProcedure({
-                name: 'GERD Treatment',
-                description: "Gastroesophageal reflux disease (GERD) is a condition in which stomach acid flows back into the esophagus, causing heartburn and other symptoms. GERD treatment may include lifestyle changes such as avoiding trigger foods, losing weight, and avoiding lying down after eating. Medications, such as antacids, proton pump inhibitors, and H2 blockers, may also be used to manage symptoms. In severe cases, surgery may be necessary to tighten the lower esophageal sphincter. A treatment plan for GERD will be tailored to the individual patient and may need to be adjusted over time.",
-                date_performed: '2023-08-10',
-                patient_id: 8,
-                treatment_id: 8,
-                staff_id: [5913, 52, 55]
-                });
-            await createProcedure({
-                name: 'GERD Treatment',
-                description: "Gastroesophageal reflux disease (GERD) is a chronic digestive disorder that occurs when stomach acid flows back into the esophagus. GERD treatment aims to reduce symptoms and prevent complications. Treatment options may include lifestyle changes, such as avoiding certain foods and losing weight, and medications such as antacids and proton pump inhibitors. In severe cases, surgery may be necessary. The goal of GERD treatment is to relieve symptoms and prevent further damage to the esophagus.",
-                date_performed: '2023-08-15',
-                patient_id: 8,
-                treatment_id: 8,
-                staff_id: [5913, 57]
-                });
-            await createProcedure({
-                name: 'Acute Bronchitis Treatment',
-                description: "Acute bronchitis is a type of respiratory infection that causes inflammation of the bronchial tubes. Symptoms of acute bronchitis include coughing, wheezing, and chest pain. Treatment options for acute bronchitis may include antibiotics, over-the-counter pain relievers, and bronchodilators. In some cases, inhaled corticosteroids may also be prescribed to reduce inflammation. It is also important to get plenty of rest and stay hydrated during the recovery process. The goal of treatment is to reduce symptoms and prevent complications such as pneumonia.",
-                date_performed: '2023-07-15',
-                patient_id: 9,
-                treatment_id: 9,
-                staff_id: [5178, 54]
-                });
-            await createProcedure({
-                name: 'Arthritis Treatment',
-                description: "Arthritis is a condition that causes inflammation in the joints. The goal of arthritis treatment is to reduce pain and improve joint function. Treatment options for arthritis may include pain-relieving medications, physical therapy, and lifestyle changes such as exercise and weight management. In some cases, joint injections or surgery may also be recommended. A treatment plan for arthritis is usually tailored to the individual patient and may change over time based on the patient's response to treatment.",
-                date_performed: '2023-08-15',
-                patient_id: 10,
-                treatment_id: 10,
-                staff_id: [8846, 60]
-                });
-            await createProcedure({
-                name: 'Chronic Obstructive Pulmonary Disease Treatment',
-                description: "Chronic obstructive pulmonary disease (COPD) is a progressive lung disease that makes it difficult to breathe. COPD treatment aims to relieve symptoms, prevent complications, and improve quality of life. Treatment options for COPD may include bronchodilators, corticosteroids, oxygen therapy, and pulmonary rehabilitation. A treatment plan for COPD may also include lifestyle changes, such as quitting smoking and avoiding exposure to irritants. The goal of COPD treatment is to slow down the progression of the disease and improve breathing.",
-                date_performed: '2023-08-12',
-                patient_id: 11,
-                treatment_id: 11,
-                staff_id: [5537, 50]
-                });
-            await createProcedure({
-                name: 'Arthritis Treatment',
-                description: "Arthritis is a group of diseases that cause pain, swelling, and stiffness in the joints. The goal of arthritis treatment is to reduce pain and improve joint function. Treatment options for arthritis may include medication, physical therapy, exercise, weight management, and assistive devices. In some cases, surgery may be necessary. A treatment plan for arthritis is individualized and may change over time as the disease progresses. The patient's overall health, age, and the type of arthritis they have are all factors that can impact the treatment plan.",
-                date_performed: '2021-09-21',
-                patient_id: 12,
-                treatment_id: 12,
-                staff_id: [5178, 53]
-                });
-            await createProcedure({
-                name: 'Diabetes Management',
-                description: "Diabetes management involves controlling blood sugar levels and preventing the development of related complications. This may involve lifestyle changes, such as exercise and a healthy diet, as well as medication. Regular monitoring of blood sugar levels is important in diabetes management, as well as regular check-ups with a healthcare provider. The goal of diabetes management is to prevent short-term and long-term complications and maintain a good quality of life.",
-                date_performed: '2021-10-15',
-                patient_id: 13,
-                treatment_id: 13,
-                staff_id: [5382, 52]
-                });
-            await createProcedure({
-                name: 'Chronic Myeloid Leukemia Treatment',
-                description: "Chronic myeloid leukemia (CML) is a type of blood cancer that affects the bone marrow. Treatment for CML may include medication, such as tyrosine kinase inhibitors, or a stem cell transplant. The goal of CML treatment is to control the cancer and prevent progression to a more advanced stage. The treatment plan for CML may change over time, based on the patient's response to treatment and the progression of the disease. Monitoring and regular follow-up are important components of CML treatment.",
-                date_performed: '2021-09-30',
-                patient_id: 14,
-                treatment_id: 14,
-                staff_id: [7051, 62, 2, 55]
-                });
-            await createProcedure({
-                name: 'Chronic Fatigue Syndrome Treatment',
-                description: "Chronic fatigue syndrome (CFS) is a complex condition characterized by persistent fatigue that cannot be explained by any underlying medical condition. The exact cause of CFS is unknown, but it may be related to a combination of physical, psychological, and environmental factors. Treatment for CFS may involve a combination of medications, lifestyle changes, and psychotherapy. Patients with CFS may also benefit from exercise, sleep management, and stress reduction techniques. The goal of CFS treatment is to improve symptoms and quality of life.",
-                date_performed: '2021-09-10',
-                patient_id: 15,
-                treatment_id: 15,
-                staff_id: [5155, 52, 50]
-                });
-            await createProcedure({
-                name: 'Acute Bronchitis Treatment',
-                description: "Acute bronchitis is a respiratory condition that causes inflammation in the bronchial tubes. The main symptom of acute bronchitis is a persistent cough, which may be accompanied by other symptoms such as wheezing, chest tightness, and shortness of breath. Treatment for acute bronchitis may include rest, hydration, and over-the-counter medications to relieve symptoms. In severe cases, antibiotics may be prescribed to treat a bacterial infection. A treatment plan for acute bronchitis may also involve avoiding triggers such as air pollution or secondhand smoke.",
-                date_performed: '2021-11-15',
-                patient_id: 16,
-                treatment_id: 16,
-                staff_id: [5125, 53]
-                });
-            await createProcedure({
-                name: 'Irritable Bowel Syndrome Treatment',
-                description: "Irritable bowel syndrome (IBS) is a chronic condition that affects the large intestine. Symptoms of IBS may include abdominal pain, bloating, constipation, and diarrhea. Treatment for IBS may involve dietary changes, stress management, and medication. A treatment plan for IBS may also include fiber supplements, probiotics, and antispasmodic medication. The goal of IBS treatment is to manage symptoms and improve quality of life.",
-                date_performed: '2023-07-26',
-                patient_id: 17,
-                treatment_id: 17,
-                staff_id: [5913, 57]
-                });
-            await createProcedure({
-                name: 'Osteoarthritis Treatment',
-                description: "Osteoarthritis is a common joint disorder that results from the wear and tear of joints over time. The goal of osteoarthritis treatment is to reduce pain and improve function. Treatment options for osteoarthritis may include pain relievers, physical therapy, weight loss, and joint injections. In some cases, surgery may be recommended to repair or replace the affected joint. The treatment plan for osteoarthritis is tailored to the individual patient and may change over time as the condition progresses.",
-                date_performed: '2021-09-15',
-                patient_id: 18,
-                treatment_id: 18,
-                staff_id: [8023, 56, 55]
-                });
-            await createProcedure({
-                name: 'Stroke Treatment',
-                description: "Stroke treatment aims to minimize brain damage and improve the patient's chances of recovery. The type of treatment a patient receives will depend on the type of stroke they have had and how quickly they receive care. Treatment options for stroke may include medications, surgery, and rehabilitation. Medications may include clot-busting drugs, blood thinners, and blood pressure medications. Rehabilitation may include physical therapy, occupational therapy, and speech therapy. The goal of stroke treatment is to help the patient regain as much independence and function as possible.",
-                date_performed: '2023-09-10',
-                patient_id: 19,
-                treatment_id: 19,
-                staff_id: [6547, 56, 5, 60]
-                });
-            await createProcedure({
-                name: 'Chronic Kidney Disease Treatment',
-                description: "Chronic kidney disease (CKD) is a long-term condition in which the kidneys gradually lose function over time. Treatment for CKD aims to slow down the progression of the disease and manage any symptoms that may occur. Treatment options may include medications, lifestyle changes, and in severe cases, dialysis or kidney transplant. A treatment plan for CKD may also include monitoring for complications and managing coexisting health conditions. Regular check-ups with a healthcare provider are important for monitoring the progression of the disease and adjusting the treatment plan as needed.",
-                date_performed: '2021-09-15',
-                patient_id: 20,
-                treatment_id: 20,
-                staff_id: [5674, 52, 4, 55, 53]
-                });
-            await createProcedure({
-                name: 'Gastroesophageal Reflux Disease (GERD) Treatment',
-                description: "Gastroesophageal reflux disease (GERD) is a chronic digestive disorder that occurs when stomach acid or bile flows back into the esophagus. Symptoms of GERD may include heartburn, chest pain, and difficulty swallowing. Treatment for GERD may include lifestyle changes, such as avoiding certain foods, losing weight, and not eating close to bedtime. Medications, such as antacids, proton pump inhibitors, and H2 receptor blockers, may also be prescribed to manage symptoms. In some cases, surgery may be necessary to treat GERD.",
-                date_performed: '2022-09-18',
-                patient_id: 21,
-                treatment_id: 21,
-                staff_id: [5913, 59]
-                });
-            await createProcedure({
-                name: 'Chronic Migraines Treatment',
-                description: "Chronic migraines are a type of headache disorder characterized by the frequent occurrence of headache pain, often on more than 15 days per month. Treatment for chronic migraines may involve a combination of medications, lifestyle changes, and behavioral therapies. Medications may include preventive drugs, pain-relieving drugs, and abortive drugs. Lifestyle changes may include stress management, regular sleep patterns, and regular exercise. Behavioral therapies may include cognitive behavioral therapy, biofeedback, and relaxation techniques. The goal of treatment is to reduce the frequency and severity of migraines and improve the patient's quality of life.",
-                date_performed: '2022-12-15',
-                patient_id: 22,
-                treatment_id: 22,
-                staff_id: [6837, 52]
-                });         
-            await createProcedure({
-                name: 'Chronic Migraines Treatment',
-                description: "Chronic migraines are a type of headache that occur for more than 15 days per month for at least 3 months. Treatment for chronic migraines may involve a combination of medications, lifestyle changes, and behavioral modifications. Some medications used to treat chronic migraines include pain relievers, anti-inflammatory drugs, and preventive medications. Lifestyle changes may include stress management techniques and regular exercise. Behavioral modifications may include maintaining a consistent sleep schedule and avoiding triggers that can cause migraines.",
-                date_performed: '2021-12-01',
-                patient_id: 23,
-                treatment_id: 23,
-                staff_id: [6537, 6537]
-                });   
-            await createProcedure({
-                name: 'Acute Gastroenteritis Treatment',
-                description: "Acute gastroenteritis is an inflammation of the stomach and intestines caused by a viral or bacterial infection. Treatment for acute gastroenteritis typically involves managing symptoms, such as dehydration and electrolyte imbalances. This may involve replacing lost fluids and electrolytes through oral rehydration therapy or intravenous fluids. In some cases, antibiotics may be prescribed if a bacterial infection is the underlying cause. The goal of treatment is to relieve symptoms and prevent complications, such as dehydration.",
-                date_performed: '2023-09-12',
-                patient_id: 24,
-                treatment_id: 24,
-                staff_id: [5537, 60]
-                });
-            await createProcedure({
-                name: 'Chronic Sinusitis Treatment',
-                description: "Chronic sinusitis is a condition in which the sinuses become inflamed and swollen for at least 12 weeks. Treatment for chronic sinusitis may include antibiotics, decongestants, and nasal sprays. In some cases, surgery may be necessary to remove any blockages in the sinuses. A treatment plan for chronic sinusitis may also involve lifestyle changes, such as avoiding triggers like smoke or pollution, and using a humidifier. The goal of treatment is to relieve symptoms and improve quality of life.",
-                date_performed: '2022-10-17',
-                patient_id: 25,
-                treatment_id: 25,
-                staff_id: [5201, 54]
-                });
-            await createProcedure({
-                name: 'Acute Bronchitis Treatment',
-                description: "Acute bronchitis is a respiratory condition characterized by inflammation of the bronchial tubes. The primary symptoms of acute bronchitis are cough, chest discomfort, and production of mucus. Treatment for acute bronchitis typically involves relieving symptoms and allowing the body to recover on its own. This may involve the use of over-the-counter pain relievers, decongestants, and expectorants. In some cases, antibiotics may be prescribed to treat a bacterial infection. Bed rest and increased fluid intake can also help to speed recovery.",
-                date_performed: '2023-09-15',
-                patient_id: 26,
-                treatment_id: 26,
-                staff_id: [5382]
-                });
-            await createProcedure({
-                name: 'Type 2 Diabetes Treatment',
-                description: "Type 2 diabetes is a chronic condition that affects the way your body metabolizes sugar. The primary symptoms of type 2 diabetes are increased thirst, frequent urination, and fatigue. Treatment for type 2 diabetes typically involves lifestyle changes such as a healthy diet and regular exercise, as well as medication to help manage blood sugar levels. In some cases, insulin may be necessary to control blood sugar. Monitoring blood sugar levels regularly is also important for managing type 2 diabetes.",
-                date_performed: '2023-03-03',
-                patient_id: 27,
-                treatment_id: 27,
-                staff_id: [5125, 54]
-                });
-            await createProcedure({
-                name: 'Anxiety Disorder Treatment',
-                description: "Anxiety disorder is a condition characterized by excessive and persistent worry or fear about everyday situations. The primary symptoms of anxiety disorder include restlessness, fatigue, difficulty concentrating, irritability, muscle tension, and sleep disturbance. Treatment for anxiety disorder typically involves therapy, medication, or a combination of both. Cognitive-behavioral therapy and exposure therapy are common approaches to treating anxiety disorder. Medications such as selective serotonin reuptake inhibitors (SSRIs) and benzodiazepines may also be prescribed to help manage symptoms.",
-                date_performed: '2023-03-03',
-                patient_id: 28,
-                treatment_id: 28,
-                staff_id: [5679, 53]
-                });
-            await createProcedure({
-                name: 'Chronic Fatigue Syndrome Treatment',
-                description: "Chronic fatigue syndrome (CFS) is a complex and poorly understood condition characterized by severe and persistent fatigue that is not alleviated by rest. Other symptoms of CFS may include muscle pain, joint pain, headaches, and sleep disturbances. There is no cure for CFS, and treatment typically focuses on symptom management. This may include medications to address pain and sleep disturbances, as well as lifestyle changes such as pacing activities, dietary adjustments, and stress reduction techniques.",
-                date_performed: '2023-03-03',
-                patient_id: 29,
-                treatment_id: 29,
-                staff_id: [5201, 52]
-                });
-            await createProcedure({
-                name: "Meniere's Disease Treatment",
-                description: "Meniere's disease is a disorder of the inner ear that can cause episodes of vertigo, tinnitus, and hearing loss. The exact cause of Meniere's disease is unknown, but it is believed to be related to fluid buildup in the inner ear. Treatment for Meniere's disease typically involves managing symptoms and preventing future episodes. This may include medications to control vertigo and nausea, diuretics to reduce fluid buildup, and changes to the diet and lifestyle to reduce stress and improve overall health.",
-                date_performed: '2023-03-03',
-                patient_id: 30,
-                treatment_id: 30,
-                staff_id: [6013, 59]
-                });
-            await createProcedure({
-                name: 'Depression Treatment',
-                description: "Depression is a mental health disorder that affects the way you think, feel, and behave. Treatment for depression typically involves a combination of medication and therapy. Antidepressant medications can help to regulate brain chemicals that affect mood, while therapy can help to address underlying emotional issues and provide coping strategies. Lifestyle changes, such as regular exercise and healthy eating habits, can also help to alleviate symptoms of depression.",
-                date_performed: '2023-03-03',
-                patient_id: 31,
-                treatment_id: 31,
-                staff_id: [5601, 54]
-                });
-            await createProcedure({
-                name: 'Stroke Treatment',
-                description: "Stroke is a serious medical condition that occurs when the blood supply to part of the brain is interrupted or reduced, depriving brain tissue of oxygen and nutrients. Treatment for stroke typically involves rapid medical intervention to restore blood flow to the brain and prevent further damage. This may include the use of clot-busting drugs, surgery, or other procedures. Rehabilitation and ongoing care are also important for stroke recovery.",
-                date_performed: '2023-10-15',
-                patient_id: 32,
-                treatment_id: 32,
-                staff_id: [6837, 55]
-                });
-            await createProcedure({
-                name: 'Stroke Treatment',
-                description: 'Stroke is a medical emergency that occurs when blood supply to the brain is interrupted or reduced, causing brain cells to die. Treatment for stroke typically involves restoring blood flow to the brain and preventing further damage. This may involve medications to break up blood clots, surgery to remove blockages, or other interventions depending on the type and severity of the stroke. Rehabilitation and ongoing care are also important components of stroke treatment.',
-                date_performed: '2023-05-23',
-                patient_id: 33,
-                treatment_id: 33,
-                staff_id: [6837, 54]
-                });
-            await createProcedure({
-                name: 'Diabetes Mellitus Treatment',
-                description: 'Diabetes mellitus is a chronic condition characterized by high blood sugar levels. Treatment for diabetes mellitus typically involves managing blood sugar levels through a combination of medication, diet, and exercise. Depending on the severity of the condition, insulin therapy may be necessary. It is also important for patients with diabetes mellitus to monitor their blood pressure, cholesterol levels, and kidney function.',
-                date_performed: '2023-10-20',
-                patient_id: 34,
-                treatment_id: 34,
-                staff_id: [5382, 62]
-                });
-            await createProcedure({
-                name: 'Chronic Bronchitis Treatment',
-                description: 'Chronic bronchitis is a long-term inflammation of the airways in the lungs that results in coughing and shortness of breath. Treatment for chronic bronchitis typically involves lifestyle changes, such as quitting smoking, and medications to relieve symptoms and prevent complications. Bronchodilators and corticosteroids are common medications used to treat chronic bronchitis, while antibiotics may be prescribed if the condition is caused by a bacterial infection.',
-                date_performed: '2023-03-06',
-                patient_id: 35,
-                treatment_id: 35,
-                staff_id: [5780, 52]
-                });
-            await createProcedure({
-                name: 'Chronic Migraine Management',
-                description: 'Chronic migraines are a neurological condition characterized by recurring headaches that can be severe and debilitating. Treatment for chronic migraines typically involves a combination of lifestyle changes and medications to prevent migraines and relieve symptoms. Lifestyle changes may include stress management techniques, regular exercise, and healthy sleep habits. Medications used to treat chronic migraines may include beta blockers, antidepressants, and anti-seizure drugs.',
-                date_performed: '2023-08-10',
-                patient_id: 36,
-                treatment_id: 36,
-                staff_id: [6547, 55]
-                });
-            await createProcedure({
-                name: 'Chronic Obstructive Pulmonary Disease Treatment',
-                description: 'Chronic obstructive pulmonary disease (COPD) is a lung disease that causes breathing difficulties and can be caused by smoking, air pollution, and other factors. Treatment for COPD typically involves lifestyle changes, such as quitting smoking and avoiding lung irritants, as well as medications to relieve symptoms and prevent complications. Medications used to treat COPD may include bronchodilators, corticosteroids, and antibiotics in some cases. Pulmonary rehabilitation programs may also be helpful for patients with COPD.',
-                date_performed: '2023-09-01',
-                patient_id: 37,
-                treatment_id: 37,
-                staff_id: [5643, 58]
-                });
-            await createProcedure({
-                name: 'Type 2 Diabetes Management',
-                description: 'Type 2 diabetes is a chronic condition that affects how your body processes blood sugar. Treatment for type 2 diabetes typically involves a combination of lifestyle changes, such as a healthy diet and regular exercise, as well as medication to help regulate blood sugar levels. Patients with type 2 diabetes may also need to monitor their blood sugar levels regularly and adjust their medication and lifestyle habits accordingly.',
-                date_performed: '2023-10-20',
-                patient_id: 38,
-                treatment_id: 38,
-                staff_id: [5143, 62]
-                });
-            await createProcedure({
-                name: 'Chronic Fatigue Syndrome Treatment',
-                description: 'Chronic fatigue syndrome (CFS) is a complex disorder characterized by persistent fatigue that is not relieved by rest and may worsen with physical or mental activity. Treatment for CFS typically involves a combination of medications to relieve symptoms and lifestyle changes to manage the condition. Medications used to treat CFS may include antidepressants, sleep aids, and pain relievers. Lifestyle changes may include a healthy diet, regular exercise, and stress management techniques.',
-                date_performed: '2023-09-01',
-                patient_id: 39,
-                treatment_id: 39,
-                staff_id: [5643, 58]
-                });
-            await createProcedure({
-                name: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
-                description: 'Chronic obstructive pulmonary disease (COPD) is a chronic lung disease that causes breathing difficulties and can be caused by smoking, air pollution, and other factors. Treatment for COPD typically involves lifestyle changes, such as quitting smoking and avoiding lung irritants, as well as medications to relieve symptoms and prevent complications. Medications used to treat COPD may include bronchodilators, corticosteroids, and antibiotics in some cases. Pulmonary rehabilitation programs may also be helpful for patients with COPD.',
-                date_performed: '2023-11-01',
-                patient_id: 40,
-                treatment_id: 40,
-                staff_id: [5121, 60]
-                });
+            // await createProcedure({
+            //     name: 'Diabetes Type 2 Treatment Plan',
+            //     description: "The treatment plan for a patient with diabetes type 2 may include lifestyle changes such as a healthy diet, regular physical activity, and stress management. Medications such as metformin may also be prescribed to help regulate blood sugar levels. Regular monitoring of blood sugar levels and A1C levels is important to track the effectiveness of the treatment plan. The healthcare provider may also make adjustments to the treatment plan as needed. The goal of the treatment plan is to manage blood sugar levels, prevent complications, and improve overall health.",
+            //     date_performed: '2023-03-15',
+            //     patient_id: 2,
+            //     treatment_id: 2,
+            //     staff_id: [5456, 5343]
+            //     });
+            // await createProcedure({
+            //     name: 'Stroke Rehabilitation',
+            //     description: "Stroke rehabilitation is a critical component of recovery from a stroke. The rehabilitation process begins as soon as possible after the stroke, typically within 24-48 hours. The goal of rehabilitation is to help the patient regain as much independence and function as possible. This may involve physical therapy, occupational therapy, speech therapy, and other forms of therapy. A stroke rehabilitation program may also involve the use of assistive devices such as wheelchairs, canes, or walkers. The rehabilitation process is tailored to the individual patient and may take several weeks or months to complete.",
+            //     date_performed: '2023-06-20',
+            //     patient_id: 3,
+            //     treatment_id: 3,
+            //     staff_id: [6837, 6537]
+            //     });
+            // await createProcedure({
+            //     name: 'Acute Bronchitis Treatment',
+            //     description: "Acute bronchitis is a type of respiratory infection that causes inflammation in the bronchial tubes. Treatment typically involves relieving symptoms and allowing the body to fight the infection. This may include rest, hydration, over-the-counter pain relievers, and cough suppressants. In some cases, antibiotics may be prescribed if the bronchitis is caused by a bacterial infection. In severe cases, a short course of oral corticosteroids may be prescribed to reduce inflammation in the bronchial tubes. The duration of treatment for acute bronchitis varies based on the severity of the condition.",
+            //     date_performed: '2023-08-15',
+            //     patient_id: 4,
+            //     treatment_id: 4,
+            //     staff_id: [5155, 7548]
+            //     });
+            // await createProcedure({
+            //     name: 'Multiple Sclerosis Treatment',
+            //     description: "Multiple sclerosis (MS) is a chronic autoimmune disease that affects the central nervous system. MS treatment aims to slow down the progression of the disease, manage symptoms, and improve quality of life. Treatment options for MS may include disease-modifying drugs, corticosteroids, and physical therapy. A treatment plan for MS may also include rehabilitation and lifestyle changes, such as exercise and stress management. The goal of MS treatment is to maximize function and minimize disability, and the treatment plan may change over time as the disease progresses.",
+            //     date_performed: '2023-07-10',
+            //     patient_id: 5,
+            //     treatment_id: 5,
+            //     staff_id: [5637, 2, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+            //     description: "Chronic obstructive pulmonary disease (COPD) is a lung condition that makes it difficult to breathe. COPD treatment aims to relieve symptoms, improve quality of life, and slow down the progression of the disease. Treatment options for COPD may include bronchodilators, corticosteroids, and oxygen therapy. A treatment plan for COPD may also include lifestyle changes, such as quitting smoking, exercise, and stress management. The goal of COPD treatment is to maximize lung function and minimize breathing difficulties.",
+            //     date_performed: '2023-07-15',
+            //     patient_id: 6,
+            //     treatment_id: 6,
+            //     staff_id: [5723, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'Stroke Treatment',
+            //     description: "Stroke treatment involves a combination of emergency and rehabilitation care. The immediate goal of stroke treatment is to restore blood flow to the brain as quickly as possible. This may involve medication to break up blood clots, or surgery to remove them. After the acute phase of treatment, rehabilitation begins. Stroke rehabilitation may involve physical therapy, occupational therapy, and speech therapy to help the patient regain as much function as possible. The rehabilitation process is tailored to the individual patient and may take several weeks or months to complete.",
+            //     date_performed: '2023-08-15',
+            //     patient_id: 7,
+            //     treatment_id: 7,
+            //     staff_id: [6547, 56]
+            //     });
+            // await createProcedure({
+            //     name: 'Stroke Treatment',
+            //     description: "Stroke treatment is focused on rapid evaluation and intervention to minimize brain damage and improve recovery. Treatment options for stroke may include medications, such as thrombolytics, to dissolve blood clots and improve blood flow to the brain. Other treatments may include physical therapy, occupational therapy, and speech therapy to help the patient regain as much independence and function as possible. In some cases, surgery may be necessary to remove clots or repair damaged blood vessels. The stroke treatment plan is tailored to the individual patient and may change as the patient's condition changes.",
+            //     date_performed: '2023-07-12',
+            //     patient_id: 7,
+            //     treatment_id: 7,
+            //     staff_id: [6547, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'GERD Treatment',
+            //     description: "Gastroesophageal reflux disease (GERD) is a condition in which stomach acid flows back into the esophagus, causing heartburn and other symptoms. GERD treatment may include lifestyle changes such as avoiding trigger foods, losing weight, and avoiding lying down after eating. Medications, such as antacids, proton pump inhibitors, and H2 blockers, may also be used to manage symptoms. In severe cases, surgery may be necessary to tighten the lower esophageal sphincter. A treatment plan for GERD will be tailored to the individual patient and may need to be adjusted over time.",
+            //     date_performed: '2023-08-10',
+            //     patient_id: 8,
+            //     treatment_id: 8,
+            //     staff_id: [5913, 52, 55]
+            //     });
+            // await createProcedure({
+            //     name: 'GERD Treatment',
+            //     description: "Gastroesophageal reflux disease (GERD) is a chronic digestive disorder that occurs when stomach acid flows back into the esophagus. GERD treatment aims to reduce symptoms and prevent complications. Treatment options may include lifestyle changes, such as avoiding certain foods and losing weight, and medications such as antacids and proton pump inhibitors. In severe cases, surgery may be necessary. The goal of GERD treatment is to relieve symptoms and prevent further damage to the esophagus.",
+            //     date_performed: '2023-08-15',
+            //     patient_id: 8,
+            //     treatment_id: 8,
+            //     staff_id: [5913, 57]
+            //     });
+            // await createProcedure({
+            //     name: 'Acute Bronchitis Treatment',
+            //     description: "Acute bronchitis is a type of respiratory infection that causes inflammation of the bronchial tubes. Symptoms of acute bronchitis include coughing, wheezing, and chest pain. Treatment options for acute bronchitis may include antibiotics, over-the-counter pain relievers, and bronchodilators. In some cases, inhaled corticosteroids may also be prescribed to reduce inflammation. It is also important to get plenty of rest and stay hydrated during the recovery process. The goal of treatment is to reduce symptoms and prevent complications such as pneumonia.",
+            //     date_performed: '2023-07-15',
+            //     patient_id: 9,
+            //     treatment_id: 9,
+            //     staff_id: [5178, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'Arthritis Treatment',
+            //     description: "Arthritis is a condition that causes inflammation in the joints. The goal of arthritis treatment is to reduce pain and improve joint function. Treatment options for arthritis may include pain-relieving medications, physical therapy, and lifestyle changes such as exercise and weight management. In some cases, joint injections or surgery may also be recommended. A treatment plan for arthritis is usually tailored to the individual patient and may change over time based on the patient's response to treatment.",
+            //     date_performed: '2023-08-15',
+            //     patient_id: 10,
+            //     treatment_id: 10,
+            //     staff_id: [8846, 60]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Obstructive Pulmonary Disease Treatment',
+            //     description: "Chronic obstructive pulmonary disease (COPD) is a progressive lung disease that makes it difficult to breathe. COPD treatment aims to relieve symptoms, prevent complications, and improve quality of life. Treatment options for COPD may include bronchodilators, corticosteroids, oxygen therapy, and pulmonary rehabilitation. A treatment plan for COPD may also include lifestyle changes, such as quitting smoking and avoiding exposure to irritants. The goal of COPD treatment is to slow down the progression of the disease and improve breathing.",
+            //     date_performed: '2023-08-12',
+            //     patient_id: 11,
+            //     treatment_id: 11,
+            //     staff_id: [5537, 50]
+            //     });
+            // await createProcedure({
+            //     name: 'Arthritis Treatment',
+            //     description: "Arthritis is a group of diseases that cause pain, swelling, and stiffness in the joints. The goal of arthritis treatment is to reduce pain and improve joint function. Treatment options for arthritis may include medication, physical therapy, exercise, weight management, and assistive devices. In some cases, surgery may be necessary. A treatment plan for arthritis is individualized and may change over time as the disease progresses. The patient's overall health, age, and the type of arthritis they have are all factors that can impact the treatment plan.",
+            //     date_performed: '2021-09-21',
+            //     patient_id: 12,
+            //     treatment_id: 12,
+            //     staff_id: [5178, 53]
+            //     });
+            // await createProcedure({
+            //     name: 'Diabetes Management',
+            //     description: "Diabetes management involves controlling blood sugar levels and preventing the development of related complications. This may involve lifestyle changes, such as exercise and a healthy diet, as well as medication. Regular monitoring of blood sugar levels is important in diabetes management, as well as regular check-ups with a healthcare provider. The goal of diabetes management is to prevent short-term and long-term complications and maintain a good quality of life.",
+            //     date_performed: '2021-10-15',
+            //     patient_id: 13,
+            //     treatment_id: 13,
+            //     staff_id: [5382, 52]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Myeloid Leukemia Treatment',
+            //     description: "Chronic myeloid leukemia (CML) is a type of blood cancer that affects the bone marrow. Treatment for CML may include medication, such as tyrosine kinase inhibitors, or a stem cell transplant. The goal of CML treatment is to control the cancer and prevent progression to a more advanced stage. The treatment plan for CML may change over time, based on the patient's response to treatment and the progression of the disease. Monitoring and regular follow-up are important components of CML treatment.",
+            //     date_performed: '2021-09-30',
+            //     patient_id: 14,
+            //     treatment_id: 14,
+            //     staff_id: [7051, 62, 2, 55]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Fatigue Syndrome Treatment',
+            //     description: "Chronic fatigue syndrome (CFS) is a complex condition characterized by persistent fatigue that cannot be explained by any underlying medical condition. The exact cause of CFS is unknown, but it may be related to a combination of physical, psychological, and environmental factors. Treatment for CFS may involve a combination of medications, lifestyle changes, and psychotherapy. Patients with CFS may also benefit from exercise, sleep management, and stress reduction techniques. The goal of CFS treatment is to improve symptoms and quality of life.",
+            //     date_performed: '2021-09-10',
+            //     patient_id: 15,
+            //     treatment_id: 15,
+            //     staff_id: [5155, 52, 50]
+            //     });
+            // await createProcedure({
+            //     name: 'Acute Bronchitis Treatment',
+            //     description: "Acute bronchitis is a respiratory condition that causes inflammation in the bronchial tubes. The main symptom of acute bronchitis is a persistent cough, which may be accompanied by other symptoms such as wheezing, chest tightness, and shortness of breath. Treatment for acute bronchitis may include rest, hydration, and over-the-counter medications to relieve symptoms. In severe cases, antibiotics may be prescribed to treat a bacterial infection. A treatment plan for acute bronchitis may also involve avoiding triggers such as air pollution or secondhand smoke.",
+            //     date_performed: '2021-11-15',
+            //     patient_id: 16,
+            //     treatment_id: 16,
+            //     staff_id: [5125, 53]
+            //     });
+            // await createProcedure({
+            //     name: 'Irritable Bowel Syndrome Treatment',
+            //     description: "Irritable bowel syndrome (IBS) is a chronic condition that affects the large intestine. Symptoms of IBS may include abdominal pain, bloating, constipation, and diarrhea. Treatment for IBS may involve dietary changes, stress management, and medication. A treatment plan for IBS may also include fiber supplements, probiotics, and antispasmodic medication. The goal of IBS treatment is to manage symptoms and improve quality of life.",
+            //     date_performed: '2023-07-26',
+            //     patient_id: 17,
+            //     treatment_id: 17,
+            //     staff_id: [5913, 57]
+            //     });
+            // await createProcedure({
+            //     name: 'Osteoarthritis Treatment',
+            //     description: "Osteoarthritis is a common joint disorder that results from the wear and tear of joints over time. The goal of osteoarthritis treatment is to reduce pain and improve function. Treatment options for osteoarthritis may include pain relievers, physical therapy, weight loss, and joint injections. In some cases, surgery may be recommended to repair or replace the affected joint. The treatment plan for osteoarthritis is tailored to the individual patient and may change over time as the condition progresses.",
+            //     date_performed: '2021-09-15',
+            //     patient_id: 18,
+            //     treatment_id: 18,
+            //     staff_id: [8023, 56, 55]
+            //     });
+            // await createProcedure({
+            //     name: 'Stroke Treatment',
+            //     description: "Stroke treatment aims to minimize brain damage and improve the patient's chances of recovery. The type of treatment a patient receives will depend on the type of stroke they have had and how quickly they receive care. Treatment options for stroke may include medications, surgery, and rehabilitation. Medications may include clot-busting drugs, blood thinners, and blood pressure medications. Rehabilitation may include physical therapy, occupational therapy, and speech therapy. The goal of stroke treatment is to help the patient regain as much independence and function as possible.",
+            //     date_performed: '2023-09-10',
+            //     patient_id: 19,
+            //     treatment_id: 19,
+            //     staff_id: [6547, 56, 5, 60]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Kidney Disease Treatment',
+            //     description: "Chronic kidney disease (CKD) is a long-term condition in which the kidneys gradually lose function over time. Treatment for CKD aims to slow down the progression of the disease and manage any symptoms that may occur. Treatment options may include medications, lifestyle changes, and in severe cases, dialysis or kidney transplant. A treatment plan for CKD may also include monitoring for complications and managing coexisting health conditions. Regular check-ups with a healthcare provider are important for monitoring the progression of the disease and adjusting the treatment plan as needed.",
+            //     date_performed: '2021-09-15',
+            //     patient_id: 20,
+            //     treatment_id: 20,
+            //     staff_id: [5674, 52, 4, 55, 53]
+            //     });
+            // await createProcedure({
+            //     name: 'Gastroesophageal Reflux Disease (GERD) Treatment',
+            //     description: "Gastroesophageal reflux disease (GERD) is a chronic digestive disorder that occurs when stomach acid or bile flows back into the esophagus. Symptoms of GERD may include heartburn, chest pain, and difficulty swallowing. Treatment for GERD may include lifestyle changes, such as avoiding certain foods, losing weight, and not eating close to bedtime. Medications, such as antacids, proton pump inhibitors, and H2 receptor blockers, may also be prescribed to manage symptoms. In some cases, surgery may be necessary to treat GERD.",
+            //     date_performed: '2022-09-18',
+            //     patient_id: 21,
+            //     treatment_id: 21,
+            //     staff_id: [5913, 59]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Migraines Treatment',
+            //     description: "Chronic migraines are a type of headache disorder characterized by the frequent occurrence of headache pain, often on more than 15 days per month. Treatment for chronic migraines may involve a combination of medications, lifestyle changes, and behavioral therapies. Medications may include preventive drugs, pain-relieving drugs, and abortive drugs. Lifestyle changes may include stress management, regular sleep patterns, and regular exercise. Behavioral therapies may include cognitive behavioral therapy, biofeedback, and relaxation techniques. The goal of treatment is to reduce the frequency and severity of migraines and improve the patient's quality of life.",
+            //     date_performed: '2022-12-15',
+            //     patient_id: 22,
+            //     treatment_id: 22,
+            //     staff_id: [6837, 52]
+            //     });         
+            // await createProcedure({
+            //     name: 'Chronic Migraines Treatment',
+            //     description: "Chronic migraines are a type of headache that occur for more than 15 days per month for at least 3 months. Treatment for chronic migraines may involve a combination of medications, lifestyle changes, and behavioral modifications. Some medications used to treat chronic migraines include pain relievers, anti-inflammatory drugs, and preventive medications. Lifestyle changes may include stress management techniques and regular exercise. Behavioral modifications may include maintaining a consistent sleep schedule and avoiding triggers that can cause migraines.",
+            //     date_performed: '2021-12-01',
+            //     patient_id: 23,
+            //     treatment_id: 23,
+            //     staff_id: [6537, 6537]
+            //     });   
+            // await createProcedure({
+            //     name: 'Acute Gastroenteritis Treatment',
+            //     description: "Acute gastroenteritis is an inflammation of the stomach and intestines caused by a viral or bacterial infection. Treatment for acute gastroenteritis typically involves managing symptoms, such as dehydration and electrolyte imbalances. This may involve replacing lost fluids and electrolytes through oral rehydration therapy or intravenous fluids. In some cases, antibiotics may be prescribed if a bacterial infection is the underlying cause. The goal of treatment is to relieve symptoms and prevent complications, such as dehydration.",
+            //     date_performed: '2023-09-12',
+            //     patient_id: 24,
+            //     treatment_id: 24,
+            //     staff_id: [5537, 60]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Sinusitis Treatment',
+            //     description: "Chronic sinusitis is a condition in which the sinuses become inflamed and swollen for at least 12 weeks. Treatment for chronic sinusitis may include antibiotics, decongestants, and nasal sprays. In some cases, surgery may be necessary to remove any blockages in the sinuses. A treatment plan for chronic sinusitis may also involve lifestyle changes, such as avoiding triggers like smoke or pollution, and using a humidifier. The goal of treatment is to relieve symptoms and improve quality of life.",
+            //     date_performed: '2022-10-17',
+            //     patient_id: 25,
+            //     treatment_id: 25,
+            //     staff_id: [5201, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'Acute Bronchitis Treatment',
+            //     description: "Acute bronchitis is a respiratory condition characterized by inflammation of the bronchial tubes. The primary symptoms of acute bronchitis are cough, chest discomfort, and production of mucus. Treatment for acute bronchitis typically involves relieving symptoms and allowing the body to recover on its own. This may involve the use of over-the-counter pain relievers, decongestants, and expectorants. In some cases, antibiotics may be prescribed to treat a bacterial infection. Bed rest and increased fluid intake can also help to speed recovery.",
+            //     date_performed: '2023-09-15',
+            //     patient_id: 26,
+            //     treatment_id: 26,
+            //     staff_id: [5382]
+            //     });
+            // await createProcedure({
+            //     name: 'Type 2 Diabetes Treatment',
+            //     description: "Type 2 diabetes is a chronic condition that affects the way your body metabolizes sugar. The primary symptoms of type 2 diabetes are increased thirst, frequent urination, and fatigue. Treatment for type 2 diabetes typically involves lifestyle changes such as a healthy diet and regular exercise, as well as medication to help manage blood sugar levels. In some cases, insulin may be necessary to control blood sugar. Monitoring blood sugar levels regularly is also important for managing type 2 diabetes.",
+            //     date_performed: '2023-03-03',
+            //     patient_id: 27,
+            //     treatment_id: 27,
+            //     staff_id: [5125, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'Anxiety Disorder Treatment',
+            //     description: "Anxiety disorder is a condition characterized by excessive and persistent worry or fear about everyday situations. The primary symptoms of anxiety disorder include restlessness, fatigue, difficulty concentrating, irritability, muscle tension, and sleep disturbance. Treatment for anxiety disorder typically involves therapy, medication, or a combination of both. Cognitive-behavioral therapy and exposure therapy are common approaches to treating anxiety disorder. Medications such as selective serotonin reuptake inhibitors (SSRIs) and benzodiazepines may also be prescribed to help manage symptoms.",
+            //     date_performed: '2023-03-03',
+            //     patient_id: 28,
+            //     treatment_id: 28,
+            //     staff_id: [5679, 53]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Fatigue Syndrome Treatment',
+            //     description: "Chronic fatigue syndrome (CFS) is a complex and poorly understood condition characterized by severe and persistent fatigue that is not alleviated by rest. Other symptoms of CFS may include muscle pain, joint pain, headaches, and sleep disturbances. There is no cure for CFS, and treatment typically focuses on symptom management. This may include medications to address pain and sleep disturbances, as well as lifestyle changes such as pacing activities, dietary adjustments, and stress reduction techniques.",
+            //     date_performed: '2023-03-03',
+            //     patient_id: 29,
+            //     treatment_id: 29,
+            //     staff_id: [5201, 52]
+            //     });
+            // await createProcedure({
+            //     name: "Meniere's Disease Treatment",
+            //     description: "Meniere's disease is a disorder of the inner ear that can cause episodes of vertigo, tinnitus, and hearing loss. The exact cause of Meniere's disease is unknown, but it is believed to be related to fluid buildup in the inner ear. Treatment for Meniere's disease typically involves managing symptoms and preventing future episodes. This may include medications to control vertigo and nausea, diuretics to reduce fluid buildup, and changes to the diet and lifestyle to reduce stress and improve overall health.",
+            //     date_performed: '2023-03-03',
+            //     patient_id: 30,
+            //     treatment_id: 30,
+            //     staff_id: [6013, 59]
+            //     });
+            // await createProcedure({
+            //     name: 'Depression Treatment',
+            //     description: "Depression is a mental health disorder that affects the way you think, feel, and behave. Treatment for depression typically involves a combination of medication and therapy. Antidepressant medications can help to regulate brain chemicals that affect mood, while therapy can help to address underlying emotional issues and provide coping strategies. Lifestyle changes, such as regular exercise and healthy eating habits, can also help to alleviate symptoms of depression.",
+            //     date_performed: '2023-03-03',
+            //     patient_id: 31,
+            //     treatment_id: 31,
+            //     staff_id: [5601, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'Stroke Treatment',
+            //     description: "Stroke is a serious medical condition that occurs when the blood supply to part of the brain is interrupted or reduced, depriving brain tissue of oxygen and nutrients. Treatment for stroke typically involves rapid medical intervention to restore blood flow to the brain and prevent further damage. This may include the use of clot-busting drugs, surgery, or other procedures. Rehabilitation and ongoing care are also important for stroke recovery.",
+            //     date_performed: '2023-10-15',
+            //     patient_id: 32,
+            //     treatment_id: 32,
+            //     staff_id: [6837, 55]
+            //     });
+            // await createProcedure({
+            //     name: 'Stroke Treatment',
+            //     description: 'Stroke is a medical emergency that occurs when blood supply to the brain is interrupted or reduced, causing brain cells to die. Treatment for stroke typically involves restoring blood flow to the brain and preventing further damage. This may involve medications to break up blood clots, surgery to remove blockages, or other interventions depending on the type and severity of the stroke. Rehabilitation and ongoing care are also important components of stroke treatment.',
+            //     date_performed: '2023-05-23',
+            //     patient_id: 33,
+            //     treatment_id: 33,
+            //     staff_id: [6837, 54]
+            //     });
+            // await createProcedure({
+            //     name: 'Diabetes Mellitus Treatment',
+            //     description: 'Diabetes mellitus is a chronic condition characterized by high blood sugar levels. Treatment for diabetes mellitus typically involves managing blood sugar levels through a combination of medication, diet, and exercise. Depending on the severity of the condition, insulin therapy may be necessary. It is also important for patients with diabetes mellitus to monitor their blood pressure, cholesterol levels, and kidney function.',
+            //     date_performed: '2023-10-20',
+            //     patient_id: 34,
+            //     treatment_id: 34,
+            //     staff_id: [5382, 62]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Bronchitis Treatment',
+            //     description: 'Chronic bronchitis is a long-term inflammation of the airways in the lungs that results in coughing and shortness of breath. Treatment for chronic bronchitis typically involves lifestyle changes, such as quitting smoking, and medications to relieve symptoms and prevent complications. Bronchodilators and corticosteroids are common medications used to treat chronic bronchitis, while antibiotics may be prescribed if the condition is caused by a bacterial infection.',
+            //     date_performed: '2023-03-06',
+            //     patient_id: 35,
+            //     treatment_id: 35,
+            //     staff_id: [5780, 52]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Migraine Management',
+            //     description: 'Chronic migraines are a neurological condition characterized by recurring headaches that can be severe and debilitating. Treatment for chronic migraines typically involves a combination of lifestyle changes and medications to prevent migraines and relieve symptoms. Lifestyle changes may include stress management techniques, regular exercise, and healthy sleep habits. Medications used to treat chronic migraines may include beta blockers, antidepressants, and anti-seizure drugs.',
+            //     date_performed: '2023-08-10',
+            //     patient_id: 36,
+            //     treatment_id: 36,
+            //     staff_id: [6547, 55]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Obstructive Pulmonary Disease Treatment',
+            //     description: 'Chronic obstructive pulmonary disease (COPD) is a lung disease that causes breathing difficulties and can be caused by smoking, air pollution, and other factors. Treatment for COPD typically involves lifestyle changes, such as quitting smoking and avoiding lung irritants, as well as medications to relieve symptoms and prevent complications. Medications used to treat COPD may include bronchodilators, corticosteroids, and antibiotics in some cases. Pulmonary rehabilitation programs may also be helpful for patients with COPD.',
+            //     date_performed: '2023-09-01',
+            //     patient_id: 37,
+            //     treatment_id: 37,
+            //     staff_id: [5643, 58]
+            //     });
+            // await createProcedure({
+            //     name: 'Type 2 Diabetes Management',
+            //     description: 'Type 2 diabetes is a chronic condition that affects how your body processes blood sugar. Treatment for type 2 diabetes typically involves a combination of lifestyle changes, such as a healthy diet and regular exercise, as well as medication to help regulate blood sugar levels. Patients with type 2 diabetes may also need to monitor their blood sugar levels regularly and adjust their medication and lifestyle habits accordingly.',
+            //     date_performed: '2023-10-20',
+            //     patient_id: 38,
+            //     treatment_id: 38,
+            //     staff_id: [5143, 62]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Fatigue Syndrome Treatment',
+            //     description: 'Chronic fatigue syndrome (CFS) is a complex disorder characterized by persistent fatigue that is not relieved by rest and may worsen with physical or mental activity. Treatment for CFS typically involves a combination of medications to relieve symptoms and lifestyle changes to manage the condition. Medications used to treat CFS may include antidepressants, sleep aids, and pain relievers. Lifestyle changes may include a healthy diet, regular exercise, and stress management techniques.',
+            //     date_performed: '2023-09-01',
+            //     patient_id: 39,
+            //     treatment_id: 39,
+            //     staff_id: [5643, 58]
+            //     });
+            // await createProcedure({
+            //     name: 'Chronic Obstructive Pulmonary Disease (COPD) Treatment',
+            //     description: 'Chronic obstructive pulmonary disease (COPD) is a chronic lung disease that causes breathing difficulties and can be caused by smoking, air pollution, and other factors. Treatment for COPD typically involves lifestyle changes, such as quitting smoking and avoiding lung irritants, as well as medications to relieve symptoms and prevent complications. Medications used to treat COPD may include bronchodilators, corticosteroids, and antibiotics in some cases. Pulmonary rehabilitation programs may also be helpful for patients with COPD.',
+            //     date_performed: '2023-11-01',
+            //     patient_id: 40,
+            //     treatment_id: 40,
+            //     staff_id: [5121, 60]
+            //     });
                 
 
 
@@ -10565,14 +10564,14 @@ const { createUsers, getAllUsers } = require('./Users');
             console.log('Starting to test database...');
 
             // User Testing;
-            console.log('Calling getAllUsers...')
-            const users = await getAllUsers();
-            console.log('User results: ', users)
+            // console.log('Calling getAllUsers...')
+            // const users = await getAllUsers();
+            // console.log('User results: ', users)
 
             // Patient Testing;
-            console.log('Calling getAllPatient...')
-            const patient = await getAllPatient();
-            console.log('User results: ', patient)
+            // console.log('Calling getAllPatient...')
+            // const patient = await getAllPatient();
+            // console.log('User results: ', patient)
 
             // console.log('Calling getPatientId...')
             // const patientId = await getPatientById(1);
@@ -10607,9 +10606,9 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('patientphone results: ', patientEmPho)
 
             // Staff Testing;
-            console.log('Calling getAllStaff...')
-            const staff = await getAllStaff();
-            console.log('Staff results: ', staff)
+            // console.log('Calling getAllStaff...')
+            // const staff = await getAllStaff();
+            // console.log('Staff results: ', staff)
 
             // console.log('Calling getStaffById...')
             // const staffId = await getStaffById(1);
@@ -10628,9 +10627,9 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('Staff results: ', staffProviderId)
 
             // Treatment Plan Testing;
-            console.log('Calling getAllTreatmentPlan...')
-            const treatment = await getAllTreatmentPlan();
-            console.log('Treatment results: ', treatment)
+            // console.log('Calling getAllTreatmentPlan...')
+            // const treatment = await getAllTreatmentPlan();
+            // console.log('Treatment results: ', treatment)
 
             // console.log('Calling treatmentId...')
             // const treatmentId = await getTreatmentPlanById(1);
@@ -10645,9 +10644,9 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('Treatment results: ', treatmentPatient)
             
             // Appointment Testing;
-            console.log('Calling getAllAppointment...')
-            const appointment = await getAllAppointment();
-            console.log('appointment results: ', appointment)
+            // console.log('Calling getAllAppointment...')
+            // const appointment = await getAllAppointment();
+            // console.log('appointment results: ', appointment)
 
             // console.log('Calling appointmentdate...')
             // const appointmentdate = await getAppointmentByDate('2023-01-05');
@@ -10676,9 +10675,9 @@ const { createUsers, getAllUsers } = require('./Users');
 
             
             // Medical Record Testing;
-            console.log('Calling getAllMedicalRecord...');
-            const medicalRecord = await getAllMedicalRecord();
-            console.log('medical record results: ', medicalRecord);
+            // console.log('Calling getAllMedicalRecord...');
+            // const medicalRecord = await getAllMedicalRecord();
+            // console.log('medical record results: ', medicalRecord);
 
             // console.log('Calling getMedicalRecordById...');
             // const medicalRecordId = await getMedicalRecordById(1);
@@ -10689,9 +10688,9 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('medical record patientId results: ', medicalRecordPatientId);
 
             // Medication Testing
-            console.log('Calling getAllMedication...');
-            const medication = await getAllMedication();
-            console.log('medication results: ', medication);
+            // console.log('Calling getAllMedication...');
+            // const medication = await getAllMedication();
+            // console.log('medication results: ', medication);
 
             // console.log('Calling getMedicationById...');
             // const medicationById = await getMedicationById(1);
@@ -10710,9 +10709,9 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('medicationProvider results: ', medicationProvider);
 
             // Procedure Testing
-            console.log('Calling getAllProcedure...')
-            const procedure = await getAllProcedure();
-            console.log('procedure results: ', procedure)
+            // console.log('Calling getAllProcedure...')
+            // const procedure = await getAllProcedure();
+            // console.log('procedure results: ', procedure)
 
             // console.log('Calling getProcedureById...')
             // const procedureId = await getProcedureById(1);
@@ -10731,9 +10730,9 @@ const { createUsers, getAllUsers } = require('./Users');
             // console.log('procedureStaff results: ', procedureStaff)
 
             // Procedure Staff Testing
-            console.log('Calling getAllProcedureStaff...')
-            const procedureStaff = await getAllProcedureStaff();
-            console.log('procedureStaff results: ', procedureStaff)
+            // console.log('Calling getAllProcedureStaff...')
+            // const procedureStaff = await getAllProcedureStaff();
+            // console.log('procedureStaff results: ', procedureStaff)
 
             // console.log('Calling getProcedureStaffById...')
             // const procedureStaffId = await getProcedureStaffById(1);
