@@ -30,8 +30,8 @@ Explore this repository to understand the structure, conventions, and coding sty
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [File & Directory Structure](#file-directory-structure)
-   - [public/](#public)
-   - [src/](#src)
+   - [api/](#api-structure)
+   - [db/](#db)
 5. [APIs & Libraries Used](#api)
 6. [Testing](#testing)
 7. [Credits](#credits)
@@ -85,7 +85,7 @@ Please ensure you have the necessary access rights and permissions when performi
 
 ---
 
-## Usage
+## Usage <a name="usage"></a>
 
 After successfully running the server, navigate to localhost:3000 (or the port indicated in your terminal) in your browser. You should see the landing page of the HealthHive backend system.
 
@@ -110,11 +110,11 @@ For detailed usage and examples of each API endpoint, refer to the API documenta
 
 ---
 
-## File & Directory Structure
+## File & Directory Structure <a name="file-directory-structure"></a>
 
 The HealthHive backend project is organized as follows:
 
-### api/
+### api/ <a name="api-structure"></a>
 
 Contains the API endpoint definitions and the logic for handling requests and responses.
 
@@ -130,7 +130,7 @@ Contains the API endpoint definitions and the logic for handling requests and re
     • users.js: Manages user-related endpoints (authentication, authorization).
     • utilities.js: Contains utility functions used across the API.
 
-### db/
+### db/ <a name="db"></a>
 
 Contains the database models and schemas.
 
@@ -266,7 +266,7 @@ By providing an overview and examples, you offer clear guidance on the APIs’ c
 
 ---
 
-## Testing
+## Testing <a name="testing"></a>
 
 Testing is a crucial part of the development process to ensure the reliability and functionality of the HealthHive backend. In this project, manual testing was conducted through extensive logging and step-by-step verification of each functionality.
 
@@ -309,21 +309,21 @@ For example, to test the Create Patient endpoint:
         "email": "john.doe@example.com"
     }
     ```
-    3.	Verify Logs:
+    3. Verify Logs:
         • Check the server logs to ensure the data was received and processed correctly.
         • Verify the logs show the expected data at each stage of the process.
-    4.	Database Verification:
+    4. Database Verification:
         • Use a PostgreSQL client to query the patients table and verify that the new patient record has been added correctly.
 
     By following this detailed manual testing process, you can ensure each part of the system works as intended and catch any issues early.
 
 ---
 
-## Credits
+## Credits <a name="credits"></a>
 
 HealthHive was designed and developed by Dalron J. Robertson, showcasing his expertise in backend development and his commitment to creating efficient, secure, and scalable solutions for healthcare data management.
 
-    •	Project Lead and Developer: Dalron J. Robertson
+    • Project Lead and Developer: Dalron J. Robertson
 
 ---
 
