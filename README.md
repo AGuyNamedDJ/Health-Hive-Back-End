@@ -84,3 +84,74 @@ Note: If changes are made to the package.json file, you will need to stop the se
 Please ensure you have the necessary access rights and permissions when performing the above operations. If you encounter any issues, please refer to the 'issues' section of the repository.
 
 ---
+
+## Usage
+
+After successfully running the server, navigate to localhost:3000 (or the port indicated in your terminal) in your browser. You should see the landing page of the HealthHive backend system.
+
+The backend system includes several key functionalities accessible via the API endpoints:
+
+    1. Appointments: Manage appointments with endpoints to create, read, update, and delete appointment records.
+    2. Patients: Handle patient information, including adding new patients, updating existing records, and retrieving patient details.
+    3. Medical Records: Store and manage patient medical records securely.
+    4. Medications: Track medication information and manage prescriptions.
+    5. Procedures:** Maintain records of medical procedures performed.
+    6. Staff: Manage hospital staff information and their roles.
+    7. Treatment Plans: Develop and manage patient treatment plans.
+
+### Example API Endpoints:
+
+    • Create Appointment: POST /api/appointment
+    • Get Patient Information: GET /api/patient/:id
+    • Update Medical Record: PUT /api/medicalRecord/:id
+    • Delete Medication: DELETE /api/medication/:id
+
+For detailed usage and examples of each API endpoint, refer to the API documentation included in this repository.
+
+---
+
+## File & Directory Structure
+
+The HealthHive backend project is organized as follows:
+
+api/
+
+Contains the API endpoint definitions and the logic for handling requests and responses.
+
+    • appointment.js: Manages appointment-related endpoints.
+    • index.js: Entry point for the API routes.
+    • medicalRecord.js: Manages medical record-related endpoints.
+    • medication.js: Manages medication-related endpoints.
+    • patient.js: Manages patient-related endpoints.
+    • procedure.js: Manages procedure-related endpoints.
+    • procedureStaff.js: Manages procedure staff-related endpoints.
+    • staff.js: Manages staff-related endpoints.
+    • treatmentPlan.js: Manages treatment plan-related endpoints.
+    • users.js: Manages user-related endpoints (authentication, authorization).
+    • utilities.js: Contains utility functions used across the API.
+
+db/
+
+Contains the database models and schemas.
+
+    • Appointment.js: Defines the schema for appointment data.
+    • Index.js: Entry point for database connection and model aggregation.
+    • MedicalRecord.js: Defines the schema for medical record data.
+    • Medication.js: Defines the schema for medication data.
+    • Patient.js: Defines the schema for patient data.
+    • Procedure.js: Defines the schema for procedure data.
+    • ProcedureStaff.js: Defines the schema for procedure staff data.
+    • Seed.js: Script for seeding the database with initial data.
+    • Staff.js: Defines the schema for staff data.
+    • TreatmentPlan.js: Defines the schema for treatment plan data.
+    • Users.js: Defines the schema for user data.
+
+Root Directory
+
+    • .env: Contains environment variables for configuration.
+    • .gitignore: Specifies files and directories to be ignored by Git.
+    • package-lock.json: Contains the exact versions of dependencies installed.
+    • package.json: Lists project dependencies and scripts.
+    • README.md: The main documentation file for the project.
+    • SDLC.md: Details the Software Development Life Cycle for the project.
+    • server.js: Entry point for starting the server.
