@@ -158,18 +158,6 @@ Contains the database models and schemas.
 
 ---
 
-## Contact Information <a name="contact-information"></a>
-
-For any questions or concerns, you can reach out to me through the following methods:
-
-- Email: dalronj.robertson@gmail.com
-- Github: [AGuyNamedDJ](https://github.com/AGuyNamedDJ)
-- LinkedIn: [Dalron J. Robertson](https://www.linkedin.com/in/dalronjrobertson/)
-- Website: [dalronjrobertson.com](https://dalronjrobertson.com)
-- YouTube: [AGNDJ](https://youtube.com/@AGNDJ)
-
-I'm always open to feedback, collaboration, or simply a chat. Feel free to get in touch!
-
 ## APIs & Libraries Used <a name="api"></a>
 
 This website is built using a variety of powerful libraries and APIs to ensure a smooth, interactive user experience. Here is a list of them:
@@ -271,3 +259,82 @@ curl -X POST http://localhost:3000/api/patient -H "Content-Type: application/jso
   "email": "john.doe@example.com"
 }'
 ```
+
+This request will create a new patient record in the system. Similar requests can be made for other endpoints to manage appointments, medical records, medications, procedures, staff, and treatment plans.
+
+By providing an overview and examples, you offer clear guidance on the APIs’ capabilities without duplicating the detailed file structure information. This makes the section both informative and concise.
+
+---
+
+## Testing
+
+Testing is a crucial part of the development process to ensure the reliability and functionality of the HealthHive backend. In this project, manual testing was conducted through extensive logging and step-by-step verification of each functionality.
+
+### Testing Approach
+
+    1. Logging: Throughout the codebase, console.log statements were used to trace the execution flow and validate the data at various stages of processing.
+    2. Endpoint Verification: Each API endpoint was manually tested using tools like Postman to ensure they work as expected. This included verifying the responses for different request types (GET, POST, PUT, DELETE).
+    3. Error Handling: Specific scenarios were tested to check how the system handles errors, such as invalid input data or unauthorized access attempts.
+    4. Database Operations: Database operations (CRUD) were verified by directly querying the PostgreSQL database before and after API calls to ensure data consistency.
+
+### Example Testing Process
+
+For example, to test the Create Patient endpoint:
+
+    1. Logging in Code: Add console.log statements in patient.js to log the incoming request data and the response being sent back.
+
+    ```
+    router.post('/', async (req, res) => {
+        try {
+            console.log('Creating new patient with data:', req.body);
+            const newPatient = await Patient.create(req.body);
+            console.log('New patient created:', newPatient);
+            res.status(201).json(newPatient);
+        } catch (error) {
+            console.error('Error creating patient:', error);
+            res.status(500).json({ error: 'Failed to create patient' });
+        }
+        });
+    ```
+
+    2. Manual Request with Postman:
+        • Open Postman and create a POST request to http://localhost:3000/api/patient.
+        • In the body of the request, include the patient data in JSON format:
+    ```
+    {
+        "name": "John Doe",
+        "dob": "1980-01-01",
+        "address": "123 Main St, Anytown, USA",
+        "phone": "555-1234",
+        "email": "john.doe@example.com"
+    }
+    ```
+    3.	Verify Logs:
+        • Check the server logs to ensure the data was received and processed correctly.
+        • Verify the logs show the expected data at each stage of the process.
+    4.	Database Verification:
+        • Use a PostgreSQL client to query the patients table and verify that the new patient record has been added correctly.
+
+    By following this detailed manual testing process, you can ensure each part of the system works as intended and catch any issues early.
+
+---
+
+## Credits
+
+HealthHive was designed and developed by Dalron J. Robertson, showcasing his expertise in backend development and his commitment to creating efficient, secure, and scalable solutions for healthcare data management.
+
+    •	Project Lead and Developer: Dalron J. Robertson
+
+---
+
+## Contact Information <a name="contact-information"></a>
+
+For any questions or concerns, you can reach out to me through the following methods:
+
+- Email: dalronj.robertson@gmail.com
+- Github: [AGuyNamedDJ](https://github.com/AGuyNamedDJ)
+- LinkedIn: [Dalron J. Robertson](https://www.linkedin.com/in/dalronjrobertson/)
+- Website: [dalronjrobertson.com](https://dalronjrobertson.com)
+- YouTube: [AGNDJ](https://youtube.com/@AGNDJ)
+
+I'm always open to feedback, collaboration, or simply a chat. Feel free to get in touch!
