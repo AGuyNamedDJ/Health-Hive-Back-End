@@ -114,7 +114,7 @@ For detailed usage and examples of each API endpoint, refer to the API documenta
 
 The HealthHive backend project is organized as follows:
 
-api/
+### api/
 
 Contains the API endpoint definitions and the logic for handling requests and responses.
 
@@ -130,7 +130,7 @@ Contains the API endpoint definitions and the logic for handling requests and re
     • users.js: Manages user-related endpoints (authentication, authorization).
     • utilities.js: Contains utility functions used across the API.
 
-db/
+### db/
 
 Contains the database models and schemas.
 
@@ -146,7 +146,7 @@ Contains the database models and schemas.
     • TreatmentPlan.js: Defines the schema for treatment plan data.
     • Users.js: Defines the schema for user data.
 
-Root Directory
+### Root Directory
 
     • .env: Contains environment variables for configuration.
     • .gitignore: Specifies files and directories to be ignored by Git.
@@ -155,3 +155,119 @@ Root Directory
     • README.md: The main documentation file for the project.
     • SDLC.md: Details the Software Development Life Cycle for the project.
     • server.js: Entry point for starting the server.
+
+---
+
+## Contact Information <a name="contact-information"></a>
+
+For any questions or concerns, you can reach out to me through the following methods:
+
+- Email: dalronj.robertson@gmail.com
+- Github: [AGuyNamedDJ](https://github.com/AGuyNamedDJ)
+- LinkedIn: [Dalron J. Robertson](https://www.linkedin.com/in/dalronjrobertson/)
+- Website: [dalronjrobertson.com](https://dalronjrobertson.com)
+- YouTube: [AGNDJ](https://youtube.com/@AGNDJ)
+
+I'm always open to feedback, collaboration, or simply a chat. Feel free to get in touch!
+
+## APIs & Libraries Used <a name="api"></a>
+
+This website is built using a variety of powerful libraries and APIs to ensure a smooth, interactive user experience. Here is a list of them:
+
+### Libraries:
+
+    1. bcrypt: A library to help you hash passwords. It’s widely used for securely storing passwords in a database.
+    2. cors: A middleware for enabling Cross-Origin Resource Sharing (CORS) in Express applications, allowing your API to handle requests from different origins.
+    3. dotenv: A module that loads environment variables from a .env file into process.env. It helps manage configuration and secrets securely.
+    4. express: A fast, unopinionated, minimalist web framework for Node.js, used for building APIs and web applications.
+    5. jsonwebtoken: A library for generating and verifying JSON Web Tokens (JWT), used for secure user authentication.
+    6. morgan: An HTTP request logger middleware for Node.js, useful for logging requests in your application.
+    7. pg: A PostgreSQL client for Node.js, used for interacting with PostgreSQL databases.
+
+### APIs:
+
+HealthHive provides a comprehensive set of RESTful APIs to manage hospital data efficiently. Here’s an overview of the key functionalities provided by the APIs:
+
+#### Authentication and User Management
+
+HealthHive includes secure user authentication and authorization using JSON Web Tokens (JWT). It ensures that only authorized personnel can access sensitive hospital data.
+
+    • Register User: POST /api/users/register - Registers a new user with the system.
+    • Login User: POST /api/users/login - Authenticates a user and issues a JWT.
+
+#### Patient Management
+
+Efficiently manage patient information, ensuring all records are up-to-date and easily accessible.
+
+    • Create Patient: POST /api/patient - Adds a new patient to the system.
+    • Retrieve Patient: GET /api/patient/:id - Retrieves details of a specific patient.
+    • Update Patient: PUT /api/patient/:id - Updates patient information.
+    • Delete Patient: DELETE /api/patient/:id - Deletes a patient record.
+
+#### Appointment Scheduling
+
+Streamline the scheduling and management of patient appointments.
+
+    • Create Appointment: POST /api/appointment - Schedules a new appointment.
+    • Retrieve Appointment: GET /api/appointment/:id - Retrieves details of a specific appointment.
+    • Update Appointment: PUT /api/appointment/:id - Updates appointment details.
+    • Delete Appointment: DELETE /api/appointment/:id - Cancels an appointment.
+
+#### Medical Records
+
+Securely manage patient medical records, ensuring privacy and accuracy.
+
+    • Create Medical Record: POST /api/medicalRecord - Adds a new medical record.
+    • Retrieve Medical Record: GET /api/medicalRecord/:id - Retrieves a specific medical record.
+    • Update Medical Record: PUT /api/medicalRecord/:id - Updates a medical record.
+    • Delete Medical Record: DELETE /api/medicalRecord/:id - Deletes a medical record.
+
+#### Medications
+
+Keep track of prescribed medications and manage medication data efficiently.
+
+    • Create Medication: POST /api/medication - Adds a new medication entry.
+    • Retrieve Medication: GET /api/medication/:id - Retrieves details of a specific medication.
+    • Update Medication: PUT /api/medication/:id - Updates medication information.
+    • Delete Medication: DELETE /api/medication/:id - Deletes a medication entry.
+
+#### Procedures
+
+Manage records of medical procedures, ensuring all relevant data is captured and accessible.
+
+    • Create Procedure: POST /api/procedure - Adds a new procedure record.
+    • Retrieve Procedure: GET /api/procedure/:id - Retrieves details of a specific procedure.
+    • Update Procedure: PUT /api/procedure/:id - Updates procedure information.
+    • Delete Procedure: DELETE /api/procedure/:id - Deletes a procedure record.
+
+#### Staff Management
+
+Maintain information about hospital staff, their roles, and assignments.
+
+    • Add Staff Member: POST /api/staff - Adds a new staff member.
+    • Retrieve Staff Member: GET /api/staff/:id - Retrieves details of a specific staff member.
+    • Update Staff Member: PUT /api/staff/:id - Updates staff information.
+    • Delete Staff Member: DELETE /api/staff/:id - Removes a staff member from the system.
+
+#### Treatment Plans
+
+Develop and manage comprehensive treatment plans for patients.
+
+    • Create Treatment Plan: POST /api/treatmentPlan - Adds a new treatment plan.
+    • Retrieve Treatment Plan: GET /api/treatmentPlan/:id - Retrieves details of a specific treatment plan.
+    • Update Treatment Plan: PUT /api/treatmentPlan/:id - Updates a treatment plan.
+    • Delete Treatment Plan: DELETE /api/treatmentPlan/:id - Deletes a treatment plan.
+
+#### Example Usage
+
+To get a feel for how to interact with the HealthHive APIs, here’s an example of how to create a new patient record:
+
+```
+curl -X POST http://localhost:3000/api/patient -H "Content-Type: application/json" -d '{
+  "name": "John Doe",
+  "dob": "1980-01-01",
+  "address": "123 Main St, Anytown, USA",
+  "phone": "555-1234",
+  "email": "john.doe@example.com"
+}'
+```
